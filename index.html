@@ -625,7 +625,7 @@ function renderCard() {
   phase = "asking";
   const isKR = direction === "kr_ru";
   const question = isKR ? current.korean : current.translation;
-  const promptText = isKR ? "translation?" : "in Korean? (hangul or romanization)";
+  const promptText = "";
   const placeholder = isKR ? "type answer…" : "한국어 or romanization…";
   const fireBadge = current.status === "forgotten" ? '<span class="tag forgotten">🔥 forgotten</span>' : '';
 
