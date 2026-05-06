@@ -868,7 +868,7 @@ function renderSentence() {
   sentPhase = "asking";
   const isKR = sentDir === "kr_en";
   const question = isKR ? currentSent.kr : currentSent.en;
-  const promptText = isKR ? "" : "translate to Korean (hangul or romanization)";
+  const promptText = "";
 
   card.innerHTML = `
     <div class="question-meta">
