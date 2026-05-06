@@ -450,6 +450,103 @@
   .glossary-item .hangul { font-weight: 500; margin-right: 6px; }
   .glossary-item .romaja { color: var(--muted); font-size: 12px; font-style: italic; }
 
+
+  /* Streak header */
+  .stat-pill.streak { background: var(--accent-soft); }
+  .stat-pill.streak .num { color: var(--accent); }
+  .stat-pill.timer .num { font-variant-numeric: tabular-nums; }
+  .stat-pill.timer.met .num { color: var(--green); }
+  /* Weekly focus selector */
+  .focus-row { font-size: 13px; color: var(--muted); margin-top: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .focus-row select { font-family: inherit; font-size: 13px; padding: 4px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--card); }
+  /* Today mode chip */
+  .chip.today.active { background: var(--green); border-color: var(--green); }
+  /* Chunks display */
+  .chunks-block {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    text-align: left;
+  }
+  .chunks-block h5 {
+    margin: 0 0 8px;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+  }
+  .chunk-item {
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .chunk-item:last-child { margin-bottom: 0; }
+  .chunk-item .hangul { font-weight: 500; }
+  .chunk-item .arrow { color: var(--muted); }
+  .chunk-item .source-tag {
+    font-size: 10px;
+    background: var(--card);
+    padding: 1px 6px;
+    border-radius: 3px;
+    color: var(--muted);
+    text-transform: lowercase;
+    border: 1px solid var(--border);
+  }
+  /* Journal */
+  .journal-today {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 24px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+  }
+  .journal-today .date { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+  .journal-today h3 { font-family: 'Noto Sans KR'; font-size: 22px; margin: 0 0 14px; }
+  textarea#journalInput {
+    width: 100%;
+    min-height: 220px;
+    padding: 14px 16px;
+    font-family: 'Noto Sans KR', 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--ink);
+    outline: none;
+    resize: vertical;
+  }
+  textarea#journalInput:focus { border-color: var(--accent); }
+  .journal-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: 13px; color: var(--muted); }
+  .journal-prompt {
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .journal-history {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 20px;
+    box-shadow: var(--shadow);
+  }
+  .journal-history h4 { margin: 0 0 12px; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .journal-entry { padding: 10px 0; border-top: 1px solid var(--border); cursor: pointer; }
+  .journal-entry:first-of-type { border-top: none; }
+  .journal-entry .entry-date { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  .journal-entry .entry-text { font-family: 'Noto Sans KR'; font-size: 15px; line-height: 1.5; max-height: 60px; overflow: hidden; }
+
   @media (max-width: 480px) {
     .question { font-size: 36px; }
     .card { padding: 24px 16px; min-height: 240px; }
@@ -471,17 +568,23 @@
     <button class="tab active" data-tab="words">Words</button>
     <button class="tab" data-tab="sentences">Sentences</button>
     <button class="tab" data-tab="reading">Reading</button>
+    <button class="tab" data-tab="journal">Journal</button>
   </nav>
 
   <div class="view active" id="wordsView">
     <div class="controls">
       <div class="control-row">
         <span class="control-label">mode</span>
+        <button class="chip today" data-mode="today">🎯 Today</button>
         <button class="chip fire active" data-mode="forgotten">🔥 Forgotten</button>
         <button class="chip" data-mode="new">✨ New</button>
         <button class="chip" data-mode="all">All</button>
         <select class="chip" id="topicSel"><option value="">by topic…</option></select>
         <select class="chip" id="unitSel"><option value="">by unit…</option></select>
+      </div>
+      <div class="focus-row">
+        <span>this week's focus:</span>
+        <select id="weekUnitSel"></select>
       </div>
       <div class="control-row">
         <span class="control-label">direction</span>
@@ -516,6 +619,19 @@
     <div id="textViewer" hidden></div>
   </div>
 
+  <div class="view" id="journalView">
+    <div class="journal-today">
+      <div class="date" id="journalDate"></div>
+      <div class="journal-prompt" id="journalPrompt"></div>
+      <textarea id="journalInput" placeholder="오늘은... (Today...)" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>
+      <div class="journal-meta">
+        <span id="journalSaveStatus">auto-saves as you type</span>
+        <span id="journalCount">0 chars</span>
+      </div>
+    </div>
+    <div class="journal-history" id="journalHistory"></div>
+  </div>
+
   <div class="footer-actions">
     <button id="exportBtn">export progress</button>·
     <button id="resetBtn">reset stats</button>
@@ -526,6 +642,7 @@
 const VOCAB = [{"korean":"시계","romanization":"sigye","translation":"clock","status":"forgotten","unit":"5","topic":"objects","example":"시계가 있어요. — There is a clock."},{"korean":"돈","romanization":"don","translation":"money","status":"forgotten","unit":"5","topic":"objects","example":"돈이 없어요. — I don't have money."},{"korean":"창문","romanization":"changmun","translation":"window","status":"forgotten","unit":"5","topic":"objects","example":"창문을 열어요. — I open the window."},{"korean":"방향","romanization":"banghyang","translation":"direction","status":"forgotten","unit":"5","topic":"place","example":"어느 방향이에요? — Which direction?"},{"korean":"이동","romanization":"idong","translation":"movement","status":"forgotten","unit":"5","topic":"place","example":"이동 시간이 길어요. — The travel time is long."},{"korean":"근처","romanization":"geuncheo","translation":"nearby","status":"forgotten","unit":"5","topic":"place","example":"학교 근처에 살아요. — I live near the school."},{"korean":"주차장","romanization":"juchajang","translation":"parking lot","status":"forgotten","unit":"5","topic":"place","example":"주차장이 어디예요? — Where is the parking lot?"},{"korean":"건물","romanization":"geonmul","translation":"building","status":"forgotten","unit":"5","topic":"place","example":"큰 건물이에요. — It's a big building."},{"korean":"맞아요","romanization":"majayo","translation":"that's right","status":"forgotten","unit":"5","topic":"phrases","example":"네 맞아요. — Yes, that's right."},{"korean":"학교","romanization":"hakgyo","translation":"school","status":"forgotten","unit":"5","topic":"place","example":"학교에 가요. — I go to school."},{"korean":"지난","romanization":"jinan","translation":"last/past","status":"forgotten","unit":"5","topic":"time","example":"지난 주에. — Last week."},{"korean":"봄","romanization":"bom","translation":"spring","status":"forgotten","unit":"1B","topic":"seasons","example":"봄이 좋아요. — I like spring."},{"korean":"여름","romanization":"yeoreum","translation":"summer","status":"forgotten","unit":"1B","topic":"seasons","example":"여름이 더워요. — Summer is hot."},{"korean":"가을","romanization":"gaeul","translation":"autumn/fall","status":"forgotten","unit":"1B","topic":"seasons","example":"가을이 시원해요. — Autumn is cool."},{"korean":"겨울","romanization":"gyeoul","translation":"winter","status":"forgotten","unit":"1B","topic":"seasons","example":"겨울이 추워요. — Winter is cold."},{"korean":"요일","romanization":"yoil","translation":"day of week","status":"forgotten","unit":"1B","topic":"time","example":"오늘은 무슨 요일이에요? — What day is today?"},{"korean":"술","romanization":"sul","translation":"alcohol","status":"forgotten","unit":"1B","topic":"food","example":"술을 안 마셔요. — I don't drink alcohol."},{"korean":"야구","romanization":"yagu","translation":"baseball","status":"forgotten","unit":"1B","topic":"sports","example":"야구를 좋아해요. — I like baseball."},{"korean":"수박","romanization":"subak","translation":"watermelon","status":"forgotten","unit":"1B","topic":"food","example":"수박이 맛있어요. — Watermelon is delicious."},{"korean":"사진 찍다","romanization":"sajin jjikda","translation":"to take a photo","status":"forgotten","unit":"1B","topic":"hobbies","example":"사진을 찍어요. — I take photos."},{"korean":"낚시","romanization":"naksi","translation":"fishing","status":"forgotten","unit":"1B","topic":"hobbies","example":"낚시를 해요. — I go fishing."},{"korean":"시간","romanization":"sigan","translation":"time","status":"forgotten","unit":"1B","topic":"time","example":"시간이 없어요. — I don't have time."},{"korean":"자전거를 타다","romanization":"jajeongeoreul tada","translation":"to ride a bike","status":"forgotten","unit":"1B","topic":"hobbies","example":"자전거를 타요. — I ride a bike."},{"korean":"맵다","romanization":"maepda","translation":"spicy","status":"forgotten","unit":"1B","topic":"food","example":"김치가 매워요. — Kimchi is spicy."},{"korean":"아프다","romanization":"apeuda","translation":"to be sick / to hurt","status":"forgotten","unit":"4","topic":"state","example":"머리가 아파요. — My head hurts."},{"korean":"배고프다","romanization":"baegopeuda","translation":"to be hungry","status":"forgotten","unit":"4","topic":"state","example":"배가 고파요. — I'm hungry."},{"korean":"나쁘다","romanization":"nappeuda","translation":"to be bad","status":"forgotten","unit":"4","topic":"state","example":"날씨가 나빠요. — The weather is bad."},{"korean":"슬프다","romanization":"seulpeuda","translation":"to be sad","status":"forgotten","unit":"4","topic":"state","example":"슬퍼요. — I'm sad."},{"korean":"피곤하다","romanization":"pigonhada","translation":"to be tired","status":"forgotten","unit":"4","topic":"state","example":"피곤해요. — I'm tired."},{"korean":"쉽다","romanization":"swipda","translation":"to be easy","status":"forgotten","unit":"4","topic":"state","example":"쉬워요. — It's easy."},{"korean":"어렵다","romanization":"eoryeopda","translation":"to be difficult","status":"forgotten","unit":"4","topic":"state","example":"어려워요. — It's difficult."},{"korean":"바쁘다","romanization":"bappeuda","translation":"to be busy","status":"forgotten","unit":"4","topic":"state","example":"바빠요. — I'm busy."},{"korean":"늦다","romanization":"neutda","translation":"to be late","status":"forgotten","unit":"4","topic":"state","example":"늦었어요. — I'm late."},{"korean":"비가 오다","romanization":"biga oda","translation":"to rain","status":"forgotten","unit":"4","topic":"weather","example":"비가 와요. — It's raining."},{"korean":"눈이 오다","romanization":"nuni oda","translation":"to snow","status":"forgotten","unit":"4","topic":"weather","example":"눈이 와요. — It's snowing."},{"korean":"덥다","romanization":"deopda","translation":"to be hot","status":"forgotten","unit":"4","topic":"weather","example":"오늘 더워요. — It's hot today."},{"korean":"가족","romanization":"gajok","translation":"family","status":"forgotten","unit":"4","topic":"people","example":"제 가족이에요. — It's my family."},{"korean":"숙제","romanization":"sukje","translation":"homework","status":"forgotten","unit":"4","topic":"study","example":"숙제를 해요. — I do homework."},{"korean":"시험","romanization":"siheom","translation":"exam","status":"forgotten","unit":"4","topic":"study","example":"시험이 어려워요. — The exam is hard."},{"korean":"배","romanization":"bae","translation":"stomach","status":"forgotten","unit":"4","topic":"body","example":"배가 아파요. — My stomach hurts."},{"korean":"새","romanization":"sae","translation":"bird","status":"forgotten","unit":"3","topic":"nature","example":"새가 노래해요. — The bird sings."},{"korean":"지갑","romanization":"jigap","translation":"wallet","status":"forgotten","unit":"3","topic":"objects","example":"지갑을 잃어버렸어요. — I lost my wallet."},{"korean":"생선","romanization":"saengseon","translation":"fish (food)","status":"forgotten","unit":"3","topic":"food","example":"생선을 먹어요. — I eat fish."},{"korean":"넥타이","romanization":"nektai","translation":"tie","status":"forgotten","unit":"3","topic":"clothes","example":"넥타이를 매요. — I tie a tie."},{"korean":"스카프","romanization":"seukapeu","translation":"scarf","status":"forgotten","unit":"3","topic":"clothes","example":"스카프가 예뻐요. — The scarf is pretty."},{"korean":"모자","romanization":"moja","translation":"hat/cap","status":"forgotten","unit":"3","topic":"clothes","example":"모자를 써요. — I put on a hat."},{"korean":"안경","romanization":"angyeong","translation":"glasses","status":"forgotten","unit":"3","topic":"clothes","example":"안경을 써요. — I wear glasses."},{"korean":"구두","romanization":"gudu","translation":"dress shoes","status":"forgotten","unit":"3","topic":"clothes","example":"구두를 신어요. — I put on dress shoes."},{"korean":"양복","romanization":"yangbok","translation":"men's suit","status":"forgotten","unit":"3","topic":"clothes","example":"양복을 입어요. — I put on a suit."},{"korean":"벗다","romanization":"beotda","translation":"to take off (clothes)","status":"forgotten","unit":"3","topic":"clothes","example":"옷을 벗어요. — I take off clothes."},{"korean":"양말","romanization":"yangmal","translation":"socks","status":"forgotten","unit":"3","topic":"clothes","example":"양말을 신어요. — I put on socks."},{"korean":"약속","romanization":"yaksok","translation":"appointment/promise","status":"forgotten","unit":"3","topic":"phrases","example":"약속이 있어요. — I have an appointment."},{"korean":"기분","romanization":"gibun","translation":"mood","status":"forgotten","unit":"3","topic":"state","example":"기분이 좋아요. — I'm in a good mood."},{"korean":"아침","romanization":"achim","translation":"morning/breakfast","status":"forgotten","unit":"3","topic":"time","example":"아침을 먹어요. — I eat breakfast."},{"korean":"점심","romanization":"jeomsim","translation":"lunch","status":"forgotten","unit":"3","topic":"time","example":"점심을 먹어요. — I eat lunch."},{"korean":"저녁","romanization":"jeonyeok","translation":"evening/dinner","status":"forgotten","unit":"3","topic":"time","example":"저녁을 먹어요. — I eat dinner."},{"korean":"매일","romanization":"maeil","translation":"every day","status":"forgotten","unit":"2","topic":"frequency","example":"매일 운동해요. — I exercise every day."},{"korean":"자주","romanization":"jaju","translation":"often","status":"forgotten","unit":"2","topic":"frequency","example":"자주 가요. — I go often."},{"korean":"가끔","romanization":"gaggeum","translation":"sometimes","status":"forgotten","unit":"2","topic":"frequency","example":"가끔 만나요. — We meet sometimes."},{"korean":"당구를 치다","romanization":"danggureul chida","translation":"to play billiards","status":"forgotten","unit":"2","topic":"hobbies","example":"당구를 쳐요. — I play billiards."},{"korean":"볼링을 치다","romanization":"bollingeul chida","translation":"to bowl","status":"forgotten","unit":"2","topic":"hobbies","example":"볼링을 쳐요. — I go bowling."},{"korean":"노래를 부르다","romanization":"noraereul bureuda","translation":"to sing a song","status":"forgotten","unit":"2","topic":"hobbies","example":"노래를 불러요. — I sing a song."},{"korean":"사진을 찍다","romanization":"sajineul jjikda","translation":"to take a photo","status":"forgotten","unit":"2","topic":"hobbies","example":"사진을 찍어요. — I take photos."},{"korean":"축구를 하다","romanization":"chukgureul hada","translation":"to play soccer","status":"forgotten","unit":"2","topic":"hobbies","example":"축구를 해요. — I play soccer."},{"korean":"그림을 그리다","romanization":"geurimeul geurida","translation":"to draw a picture","status":"forgotten","unit":"2","topic":"hobbies","example":"그림을 그려요. — I draw a picture."},{"korean":"등산을 하다","romanization":"deungsaneul hada","translation":"to go hiking","status":"forgotten","unit":"2","topic":"hobbies","example":"등산을 해요. — I go hiking."},{"korean":"춤을 추다","romanization":"chumeul chuda","translation":"to dance","status":"forgotten","unit":"2","topic":"hobbies","example":"춤을 춰요. — I dance."},{"korean":"누구","romanization":"nugu","translation":"who","status":"new","unit":"5","topic":"questions","example":"저 사람이 누구예요? — Who is that person?"},{"korean":"무엇","romanization":"mueot","translation":"what","status":"new","unit":"5","topic":"questions","example":"이게 뭐예요? — What is this?"},{"korean":"언제","romanization":"eonje","translation":"when","status":"new","unit":"5","topic":"questions","example":"언제 와요? — When are you coming?"},{"korean":"어디","romanization":"eodi","translation":"where","status":"new","unit":"5","topic":"questions","example":"어디 가요? — Where are you going?"},{"korean":"어떤","romanization":"eotteon","translation":"what kind of","status":"new","unit":"5","topic":"questions","example":"어떤 음식 좋아해요? — What kind of food do you like?"},{"korean":"왜","romanization":"wae","translation":"why","status":"new","unit":"5","topic":"questions","example":"왜 안 가요? — Why aren't you going?"},{"korean":"어떻게","romanization":"eotteoke","translation":"how","status":"new","unit":"5","topic":"questions","example":"어떻게 가요? — How do you get there?"},{"korean":"얼마나","romanization":"eolmana","translation":"how much / how long","status":"new","unit":"5","topic":"questions","example":"얼마나 걸려요? — How long does it take?"},{"korean":"몇 번","romanization":"myeot beon","translation":"what number","status":"new","unit":"5","topic":"questions","example":"몇 번 버스예요? — Which bus number is it?"},{"korean":"무슨","romanization":"museun","translation":"what / which","status":"new","unit":"5","topic":"questions","example":"무슨 일이에요? — What's the matter?"},{"korean":"전화번호","romanization":"jeonhwabeonho","translation":"phone number","status":"new","unit":"5","topic":"objects","example":"전화번호가 뭐예요? — What's your phone number?"},{"korean":"화장실","romanization":"hwajangsil","translation":"bathroom","status":"new","unit":"5","topic":"place","example":"화장실이 어디예요? — Where is the bathroom?"},{"korean":"여행","romanization":"yeohaeng","translation":"travel/trip","status":"new","unit":"5","topic":"place","example":"여행을 가요. — I'm going on a trip."},{"korean":"공항","romanization":"gonghang","translation":"airport","status":"new","unit":"5","topic":"place","example":"공항에 가요. — I'm going to the airport."},{"korean":"은행","romanization":"eunhaeng","translation":"bank","status":"new","unit":"5","topic":"place","example":"은행에 가요. — I'm going to the bank."},{"korean":"수업","romanization":"sueop","translation":"class/lesson","status":"new","unit":"5","topic":"study","example":"수업이 있어요. — I have class."},{"korean":"일찍","romanization":"iljjik","translation":"early","status":"new","unit":"5","topic":"time","example":"일찍 일어나요. — I get up early."},{"korean":"계절","romanization":"gyejeol","translation":"season","status":"new","unit":"5","topic":"time","example":"어느 계절을 좋아해요? — Which season do you like?"},{"korean":"월요일","romanization":"woryoil","translation":"Monday","status":"new","unit":"base","topic":"weekdays","example":"월요일에 만나요. — Let's meet on Monday."},{"korean":"화요일","romanization":"hwayoil","translation":"Tuesday","status":"new","unit":"base","topic":"weekdays","example":"오늘은 화요일이에요. — Today is Tuesday."},{"korean":"수요일","romanization":"suyoil","translation":"Wednesday","status":"new","unit":"base","topic":"weekdays","example":"수요일에 시간 있어요? — Are you free on Wednesday?"},{"korean":"목요일","romanization":"mogyoil","translation":"Thursday","status":"new","unit":"base","topic":"weekdays","example":"목요일에 시험이 있어요. — I have an exam on Thursday."},{"korean":"금요일","romanization":"geumyoil","translation":"Friday","status":"new","unit":"base","topic":"weekdays","example":"금요일이 좋아요. — I like Friday."},{"korean":"토요일","romanization":"toyoil","translation":"Saturday","status":"new","unit":"base","topic":"weekdays","example":"토요일에 쉬어요. — I rest on Saturday."},{"korean":"일요일","romanization":"iryoil","translation":"Sunday","status":"new","unit":"base","topic":"weekdays","example":"일요일에 자요. — I sleep on Sunday."},{"korean":"하나","romanization":"hana","translation":"one (native)","status":"new","unit":"base","topic":"numbers native","example":"사과 하나. — One apple."},{"korean":"둘","romanization":"dul","translation":"two (native)","status":"new","unit":"base","topic":"numbers native","example":"사람 둘. — Two people."},{"korean":"셋","romanization":"set","translation":"three (native)","status":"new","unit":"base","topic":"numbers native","example":"셋 주세요. — Three please."},{"korean":"넷","romanization":"net","translation":"four (native)","status":"new","unit":"base","topic":"numbers native","example":"넷이에요. — It's four."},{"korean":"다섯","romanization":"daseot","translation":"five (native)","status":"new","unit":"base","topic":"numbers native","example":"다섯 시. — Five o'clock."},{"korean":"여섯","romanization":"yeoseot","translation":"six (native)","status":"new","unit":"base","topic":"numbers native","example":"여섯 시. — Six o'clock."},{"korean":"일곱","romanization":"ilgop","translation":"seven (native)","status":"new","unit":"base","topic":"numbers native","example":"일곱 시. — Seven o'clock."},{"korean":"여덟","romanization":"yeodeol","translation":"eight (native)","status":"new","unit":"base","topic":"numbers native","example":"여덟 시. — Eight o'clock."},{"korean":"아홉","romanization":"ahop","translation":"nine (native)","status":"new","unit":"base","topic":"numbers native","example":"아홉 시. — Nine o'clock."},{"korean":"열","romanization":"yeol","translation":"ten (native)","status":"new","unit":"base","topic":"numbers native","example":"열 명. — Ten people."},{"korean":"스물","romanization":"seumul","translation":"twenty (native)","status":"new","unit":"base","topic":"numbers native","example":"스물 살. — Twenty years old."},{"korean":"서른","romanization":"seoreun","translation":"thirty (native)","status":"new","unit":"base","topic":"numbers native","example":"서른 살. — Thirty years old."},{"korean":"백","romanization":"baek","translation":"hundred (sino)","status":"new","unit":"base","topic":"numbers sino","example":"백 원. — One hundred won."},{"korean":"천","romanization":"cheon","translation":"thousand (sino)","status":"new","unit":"base","topic":"numbers sino","example":"천 원. — One thousand won."},{"korean":"만","romanization":"man","translation":"ten thousand (sino)","status":"new","unit":"base","topic":"numbers sino","example":"만 원. — Ten thousand won."},{"korean":"앞","romanization":"ap","translation":"in front of","status":"new","unit":"base","topic":"place","example":"학교 앞에. — In front of the school."},{"korean":"뒤","romanization":"dwi","translation":"behind","status":"new","unit":"base","topic":"place","example":"집 뒤에. — Behind the house."},{"korean":"아래","romanization":"arae","translation":"under","status":"new","unit":"base","topic":"place","example":"책상 아래에. — Under the desk."},{"korean":"위","romanization":"wi","translation":"on / above","status":"new","unit":"base","topic":"place","example":"책상 위에. — On the desk."},{"korean":"안","romanization":"an","translation":"inside","status":"new","unit":"base","topic":"place","example":"방 안에. — Inside the room."},{"korean":"밖","romanization":"bak","translation":"outside","status":"new","unit":"base","topic":"place","example":"집 밖에. — Outside the house."},{"korean":"옆","romanization":"yeop","translation":"beside / next to","status":"new","unit":"base","topic":"place","example":"저 옆에. — Next to me."},{"korean":"올라가다","romanization":"ollagada","translation":"to go up","status":"new","unit":"5","topic":"movement","example":"계단으로 올라가세요. — Go up the stairs."},{"korean":"내려가다","romanization":"naeryeogada","translation":"to go down","status":"new","unit":"5","topic":"movement","example":"아래로 내려가세요. — Go down."},{"korean":"나가다","romanization":"nagada","translation":"to go out","status":"new","unit":"5","topic":"movement","example":"밖으로 나가세요. — Go outside."},{"korean":"들어가다","romanization":"deureogada","translation":"to go in / enter","status":"new","unit":"5","topic":"movement","example":"안으로 들어가세요. — Go inside."},{"korean":"똑바로 가다","romanization":"ttokbaro gada","translation":"to go straight","status":"new","unit":"5","topic":"movement","example":"똑바로 가세요. — Go straight."},{"korean":"돌아가다","romanization":"doragada","translation":"to go back / go around","status":"new","unit":"5","topic":"movement","example":"돌아가세요. — Go back."},{"korean":"건너가다","romanization":"geonneogada","translation":"to cross over","status":"new","unit":"5","topic":"movement","example":"길을 건너가세요. — Cross the street."},{"korean":"지나가다","romanization":"jinagada","translation":"to pass by","status":"new","unit":"5","topic":"movement","example":"지나가세요. — Go past."},{"korean":"음식","romanization":"eumsik","translation":"food","status":"new","unit":"1B","topic":"food","example":"한국 음식이 맛있어요. — Korean food is delicious."},{"korean":"선물","romanization":"seonmul","translation":"gift","status":"new","unit":"1B","topic":"objects","example":"선물을 받아요. — I receive a gift."},{"korean":"고기","romanization":"gogi","translation":"meat","status":"new","unit":"1B","topic":"food","example":"고기를 먹어요. — I eat meat."},{"korean":"것","romanization":"geot","translation":"thing","status":"new","unit":"1B","topic":"phrases","example":"이것은 무엇이에요? — What is this?"},{"korean":"맛","romanization":"mat","translation":"taste","status":"new","unit":"1B","topic":"food","example":"맛이 좋아요. — It tastes good."},{"korean":"초밥","romanization":"chobap","translation":"sushi","status":"new","unit":"1B","topic":"food","example":"초밥을 먹어요. — I eat sushi."},{"korean":"받다","romanization":"batda","translation":"to receive","status":"new","unit":"1B","topic":"verbs","example":"선물을 받아요. — I receive a gift."},{"korean":"주문하다","romanization":"jumunhada","translation":"to order","status":"new","unit":"1B","topic":"verbs","example":"음식을 주문해요. — I order food."},{"korean":"가장","romanization":"gajang","translation":"the most","status":"new","unit":"1B","topic":"phrases","example":"가장 좋아해요. — I like it the most."},{"korean":"미안하다","romanization":"mianhada","translation":"to be sorry","status":"new","unit":"1B","topic":"phrases","example":"미안해요. — I'm sorry."},{"korean":"혼자","romanization":"honja","translation":"alone","status":"new","unit":"1B","topic":"phrases","example":"혼자 가요. — I go alone."},{"korean":"치다","romanization":"chida","translation":"to play (tennis) / to hit","status":"new","unit":"1B","topic":"verbs","example":"테니스를 쳐요. — I play tennis."},{"korean":"운전하다","romanization":"unjeonhada","translation":"to drive","status":"new","unit":"1B","topic":"verbs","example":"운전해요. — I drive."},{"korean":"조금","romanization":"jogeum","translation":"a little","status":"new","unit":"1B","topic":"phrases","example":"조금 알아요. — I know a little."},{"korean":"하지만","romanization":"hajiman","translation":"but / however","status":"new","unit":"1B","topic":"phrases","example":"비싸요. 하지만 좋아요. — It's expensive. But it's good."},{"korean":"일주일에 한 번","romanization":"iljuire han beon","translation":"once a week","status":"new","unit":"1B","topic":"frequency","example":"일주일에 한 번 가요. — I go once a week."},{"korean":"한 달에 한 번","romanization":"han dare han beon","translation":"once a month","status":"new","unit":"1B","topic":"frequency","example":"한 달에 한 번 만나요. — We meet once a month."},{"korean":"일 년에 한 번","romanization":"il nyeone han beon","translation":"once a year","status":"new","unit":"1B","topic":"frequency","example":"일 년에 한 번 여행해요. — I travel once a year."},{"korean":"크다","romanization":"keuda","translation":"to be big","status":"new","unit":"4","topic":"descriptions","example":"집이 커요. — The house is big."},{"korean":"작다","romanization":"jakda","translation":"to be small","status":"new","unit":"4","topic":"descriptions","example":"방이 작아요. — The room is small."},{"korean":"넓다","romanization":"neolda","translation":"to be wide / spacious","status":"new","unit":"4","topic":"descriptions","example":"길이 넓어요. — The road is wide."},{"korean":"좁다","romanization":"jopda","translation":"to be narrow","status":"new","unit":"4","topic":"descriptions","example":"길이 좁아요. — The road is narrow."},{"korean":"높다","romanization":"nopda","translation":"to be high","status":"new","unit":"4","topic":"descriptions","example":"산이 높아요. — The mountain is high."},{"korean":"낮다","romanization":"natda","translation":"to be low","status":"new","unit":"4","topic":"descriptions","example":"책상이 낮아요. — The desk is low."},{"korean":"길다","romanization":"gilda","translation":"to be long","status":"new","unit":"4","topic":"descriptions","example":"머리가 길어요. — The hair is long."},{"korean":"짧다","romanization":"jjalda","translation":"to be short","status":"new","unit":"4","topic":"descriptions","example":"머리가 짧아요. — The hair is short."},{"korean":"비싸다","romanization":"bissada","translation":"to be expensive","status":"new","unit":"4","topic":"descriptions","example":"옷이 비싸요. — Clothes are expensive."},{"korean":"싸다","romanization":"ssada","translation":"to be cheap","status":"new","unit":"4","topic":"descriptions","example":"옷이 싸요. — Clothes are cheap."},{"korean":"편하다","romanization":"pyeonhada","translation":"to be comfortable","status":"new","unit":"4","topic":"descriptions","example":"의자가 편해요. — The chair is comfortable."},{"korean":"불편하다","romanization":"bulpyeonhada","translation":"to be uncomfortable","status":"new","unit":"4","topic":"descriptions","example":"불편해요. — It's uncomfortable."},{"korean":"꿈","romanization":"kkum","translation":"dream","status":"new","unit":"4","topic":"phrases","example":"꿈을 꿔요. — I have a dream."},{"korean":"찾다","romanization":"chatda","translation":"to look for","status":"new","unit":"4","topic":"verbs","example":"책을 찾아요. — I look for the book."},{"korean":"손님","romanization":"sonnim","translation":"guest / customer","status":"new","unit":"4","topic":"people","example":"손님이 와요. — A guest is coming."},{"korean":"기다리다","romanization":"gidarida","translation":"to wait","status":"new","unit":"4","topic":"verbs","example":"기다려 주세요. — Please wait."},{"korean":"가격","romanization":"gagyeok","translation":"price","status":"new","unit":"4","topic":"phrases","example":"가격이 어때요? — How is the price?"},{"korean":"옷차림","romanization":"otcharim","translation":"outfit / attire","status":"new","unit":"3","topic":"clothes","example":"옷차림이 멋있어요. — Your outfit looks great."},{"korean":"티셔츠","romanization":"tisyeocheu","translation":"T-shirt","status":"new","unit":"3","topic":"clothes","example":"티셔츠를 입어요. — I wear a T-shirt."},{"korean":"청바지","romanization":"cheongbaji","translation":"jeans","status":"new","unit":"3","topic":"clothes","example":"청바지를 입어요. — I wear jeans."},{"korean":"치마","romanization":"chima","translation":"skirt","status":"new","unit":"3","topic":"clothes","example":"치마를 입어요. — I wear a skirt."},{"korean":"정장","romanization":"jeongjang","translation":"formal suit","status":"new","unit":"3","topic":"clothes","example":"정장을 입어요. — I wear a suit."},{"korean":"운동복","romanization":"undongbok","translation":"sportswear","status":"new","unit":"3","topic":"clothes","example":"운동복을 입어요. — I wear sportswear."},{"korean":"매다","romanization":"maeda","translation":"to put on (tie/scarf)","status":"new","unit":"3","topic":"clothes","example":"넥타이를 매요. — I tie a tie."},{"korean":"입다","romanization":"ipda","translation":"to put on (clothes)","status":"new","unit":"3","topic":"clothes","example":"옷을 입어요. — I put on clothes."},{"korean":"쓰다","romanization":"sseuda","translation":"to put on (cap/glasses)","status":"new","unit":"3","topic":"clothes","example":"모자를 써요. — I put on a hat."},{"korean":"신다","romanization":"sinda","translation":"to put on (shoes)","status":"new","unit":"3","topic":"clothes","example":"신발을 신어요. — I put on shoes."},{"korean":"결혼식","romanization":"gyeolhonsik","translation":"wedding","status":"new","unit":"3","topic":"events","example":"결혼식에 가요. — I'm going to a wedding."},{"korean":"아직","romanization":"ajik","translation":"still / yet","status":"new","unit":"3","topic":"phrases","example":"아직 안 했어요. — I haven't done it yet."},{"korean":"이따가","romanization":"ittaga","translation":"later (today)","status":"new","unit":"3","topic":"time","example":"이따가 봐요. — See you later."},{"korean":"계획","romanization":"gyehoek","translation":"plan","status":"new","unit":"3","topic":"phrases","example":"계획이 있어요. — I have a plan."},{"korean":"이유","romanization":"iyu","translation":"reason","status":"new","unit":"3","topic":"phrases","example":"이유가 뭐예요? — What's the reason?"},{"korean":"채소","romanization":"chaeso","translation":"vegetables","status":"new","unit":"3","topic":"food","example":"채소를 먹어요. — I eat vegetables."},{"korean":"야채","romanization":"yachae","translation":"vegetables","status":"new","unit":"3","topic":"food","example":"야채가 신선해요. — The vegetables are fresh."},{"korean":"너무","romanization":"neomu","translation":"too / very","status":"new","unit":"3","topic":"phrases","example":"너무 비싸요. — Too expensive."},{"korean":"운동화","romanization":"undonghwa","translation":"sneakers","status":"new","unit":"3","topic":"clothes","example":"운동화를 신어요. — I wear sneakers."},{"korean":"기차역","romanization":"gichayeok","translation":"train station","status":"new","unit":"3","topic":"place","example":"기차역이 어디예요? — Where is the train station?"},{"korean":"취미","romanization":"chwimi","translation":"hobby","status":"new","unit":"2","topic":"hobbies","example":"취미가 뭐예요? — What's your hobby?"},{"korean":"그림","romanization":"geurim","translation":"picture / drawing","status":"new","unit":"2","topic":"hobbies","example":"그림이 예뻐요. — The picture is pretty."},{"korean":"노래","romanization":"norae","translation":"song","status":"new","unit":"2","topic":"hobbies","example":"노래가 좋아요. — The song is good."},{"korean":"신문","romanization":"sinmun","translation":"newspaper","status":"new","unit":"2","topic":"objects","example":"신문을 읽어요. — I read the newspaper."},{"korean":"사무실","romanization":"samusil","translation":"office","status":"new","unit":"2","topic":"place","example":"사무실에 가요. — I'm going to the office."},{"korean":"옷장","romanization":"otjang","translation":"wardrobe","status":"new","unit":"2","topic":"objects","example":"옷장이 커요. — The wardrobe is big."},{"korean":"독서","romanization":"dokseo","translation":"reading","status":"new","unit":"2","topic":"hobbies","example":"독서를 좋아해요. — I like reading."},{"korean":"전","romanization":"jeon","translation":"ago / before","status":"new","unit":"2","topic":"time","example":"1년 전에. — One year ago."},{"korean":"빌리다","romanization":"billida","translation":"to borrow","status":"new","unit":"2","topic":"verbs","example":"책을 빌려요. — I borrow a book."},{"korean":"그리다","romanization":"geurida","translation":"to draw","status":"new","unit":"2","topic":"verbs","example":"그림을 그려요. — I draw a picture."},{"korean":"돈을 찾다","romanization":"doneul chatda","translation":"to withdraw money","status":"new","unit":"2","topic":"phrases","example":"돈을 찾아요. — I withdraw money."},{"korean":"보통","romanization":"botong","translation":"usually","status":"new","unit":"2","topic":"frequency","example":"보통 8시에 일어나요. — I usually get up at 8."},{"korean":"특히","romanization":"teukhi","translation":"particularly / especially","status":"new","unit":"2","topic":"phrases","example":"특히 좋아해요. — I particularly like it."},{"korean":"년","romanization":"nyeon","translation":"year","status":"new","unit":"2","topic":"time","example":"2년 동안. — For 2 years."}];
 const SENTENCES = [{"kr":"시계가 너무 비싸요.","rom":"sigyega neomu bissayo.","en":"The clock is too expensive.","vocab":["시계","너무","비싸다"]},{"kr":"어디에 화장실이 있어요?","rom":"eodie hwajangsiri isseoyo?","en":"Where is the bathroom?","vocab":["어디","화장실"]},{"kr":"오늘 학교에 가요.","rom":"oneul hakgyoe gayo.","en":"Today I go to school.","vocab":["학교"]},{"kr":"지난 주말에 영화를 봤어요.","rom":"jinan jumare yeonghwareul bwasseoyo.","en":"Last weekend I watched a movie.","vocab":["지난"]},{"kr":"여름이 더워서 수박을 먹어요.","rom":"yeoreumi deowoseo subageul meogeoyo.","en":"Because summer is hot, I eat watermelon.","vocab":["여름","덥다","수박"]},{"kr":"겨울에는 눈이 와요.","rom":"gyeoureneun nuni wayo.","en":"In winter, it snows.","vocab":["겨울","눈이 오다"]},{"kr":"친구하고 같이 등산을 해요.","rom":"chinguhago gachi deungsaneul haeyo.","en":"I go hiking with a friend.","vocab":["등산을 하다"]},{"kr":"내일 시험이 있어서 바빠요.","rom":"naeil siheomi isseoseo bappayo.","en":"I have an exam tomorrow, so I'm busy.","vocab":["시험","바쁘다"]},{"kr":"지금 너무 피곤해요.","rom":"jigeum neomu pigonhaeyo.","en":"I'm very tired now.","vocab":["너무","피곤하다"]},{"kr":"한국 음식을 좋아해요.","rom":"hanguk eumsigeul joahaeyo.","en":"I like Korean food.","vocab":["음식"]},{"kr":"이 옷은 너무 비싸요. 더 싼 거 있어요?","rom":"i oseun neomu bissayo. deo ssan geo isseoyo?","en":"These clothes are too expensive. Is there something cheaper?","vocab":["너무","비싸다","싸다"]},{"kr":"매일 아침 일찍 일어나요.","rom":"maeil achim iljjik ireonayo.","en":"I get up early every morning.","vocab":["매일","아침","일찍"]},{"kr":"비가 와서 집에 있어요.","rom":"biga waseo jibe isseoyo.","en":"It's raining, so I'm at home.","vocab":["비가 오다"]},{"kr":"주말에 보통 무엇을 해요?","rom":"jumare botong mueoseul haeyo?","en":"What do you usually do on weekends?","vocab":["보통","무엇"]},{"kr":"어떻게 학교에 가요?","rom":"eotteoke hakgyoe gayo?","en":"How do you go to school?","vocab":["어떻게","학교"]},{"kr":"저는 한국어를 조금 알아요.","rom":"jeoneun hangugeoreul jogeum arayo.","en":"I know a little Korean.","vocab":["조금"]},{"kr":"약속이 있어서 일찍 가야 해요.","rom":"yaksogi isseoseo iljjik gaya haeyo.","en":"I have an appointment, so I have to leave early.","vocab":["약속","일찍"]},{"kr":"기차역이 어디에 있어요?","rom":"gichayeogi eodie isseoyo?","en":"Where is the train station?","vocab":["기차역","어디"]},{"kr":"선물을 받아서 기분이 좋아요.","rom":"seonmureul badaseo gibuni joayo.","en":"I got a gift, so I'm in a good mood.","vocab":["선물","받다","기분"]},{"kr":"사진을 찍는 것을 좋아해요.","rom":"sajineul jjikneun geoseul joahaeyo.","en":"I like taking photos.","vocab":["사진을 찍다"]},{"kr":"낚시는 제 취미예요.","rom":"naksineun je chwimiyeyo.","en":"Fishing is my hobby.","vocab":["낚시","취미"]},{"kr":"오늘은 무슨 요일이에요?","rom":"oneureun museun yoirieyo?","en":"What day of the week is it today?","vocab":["무슨","요일"]},{"kr":"저는 일주일에 한 번 운동해요.","rom":"jeoneun iljuire han beon undonghaeyo.","en":"I exercise once a week.","vocab":["일주일에 한 번"]},{"kr":"친구를 두 시간 동안 기다렸어요.","rom":"chingureul du sigan dongan gidaryeosseoyo.","en":"I waited two hours for my friend.","vocab":["기다리다"]},{"kr":"이 노래가 가장 좋아요.","rom":"i noraega gajang joayo.","en":"I like this song the most.","vocab":["노래","가장"]},{"kr":"은행에서 돈을 찾았어요.","rom":"eunhaengeseo doneul chajasseoyo.","en":"I withdrew money from the bank.","vocab":["은행","돈을 찾다"]},{"kr":"야채를 매일 먹어요.","rom":"yachaereul maeil meogeoyo.","en":"I eat vegetables every day.","vocab":["야채","매일"]},{"kr":"가족하고 같이 식당에 갔어요.","rom":"gajokhago gachi sikdange gasseoyo.","en":"I went to a restaurant with my family.","vocab":["가족"]},{"kr":"한국 드라마가 재미있어요.","rom":"hanguk deuramaga jaemiisseoyo.","en":"Korean dramas are fun.","vocab":[]},{"kr":"다음 주에 여행을 갈 거예요.","rom":"daeum jue yeohaengeul gal geoyeyo.","en":"Next week I'm going to travel.","vocab":["여행"]}];
 const TEXTS = [{"id":"unit1b","title_kr":"Unit 1B — 내 음식 이야기","title_en":"Unit 1B — My food story","kr":"저는 한국 음식을 가장 좋아해요. 특히 매운 음식이 맛있어요. 김치는 조금 맵지만 정말 좋아해요. 일주일에 한 번 한국 식당에 가서 고기를 주문해요. 가끔 초밥도 먹어요.\n\n여름에는 수박이 가장 좋아요. 봄에는 자전거를 타요. 가을에는 사진을 찍어요. 겨울에는 시간이 많으면 친구하고 만나요.\n\n술은 안 마셔요. 운전하니까요. 야구를 좋아해서 일 년에 한 번 야구장에 가요. 한 달에 한 번 낚시도 해요. 혼자 가는 게 편해요.\n\n어제 친구한테서 선물을 받았어요. 정말 고마웠어요!","en":"I like Korean food the most. Spicy food is especially delicious. Kimchi is a little spicy, but I really like it. Once a week I go to a Korean restaurant and order meat. Sometimes I eat sushi too.\n\nIn summer, watermelon is the best. In spring, I ride a bike. In autumn, I take photos. In winter, when I have time, I meet up with friends.\n\nI don't drink alcohol — because I drive. I like baseball, so once a year I go to a baseball stadium. Once a month I also go fishing. I prefer going alone.\n\nYesterday I got a gift from a friend. I was really grateful!","glossary":[{"kr":"김치","rom":"gimchi","en":"kimchi"},{"kr":"식당","rom":"sikdang","en":"restaurant"},{"kr":"야구장","rom":"yagujang","en":"baseball stadium"},{"kr":"한테서","rom":"hanteseo","en":"from (someone)"},{"kr":"정말","rom":"jeongmal","en":"really"},{"kr":"고맙다","rom":"gomapda","en":"to be thankful"}]},{"id":"unit2","title_kr":"Unit 2 — 내 취미","title_en":"Unit 2 — My hobbies","kr":"제 취미는 그림을 그리는 것이에요. 매일 그림을 그려요. 가끔 노래도 불러요. 자주 음악도 들어요.\n\n일주일에 두 번 친구하고 등산을 해요. 산에서 사진을 찍는 것도 좋아해요. 주말에 가끔 당구를 치거나 볼링을 쳐요. 보통 친구하고 축구를 해요. 가끔 같이 춤도 춰요.\n\n독서도 좋아해요. 특히 신문을 읽는 걸 좋아해요. 도서관에서 책을 빌려요. 옷장에 책이 너무 많아요. 사무실에서도 책을 읽어요.\n\n일 년 전에 그림을 그리기 시작했어요. 오늘 은행에서 돈을 찾아서 새 그림 도구를 살 거예요.","en":"My hobby is drawing. I draw every day. Sometimes I also sing. I often listen to music too.\n\nTwice a week I go hiking with friends. I also love taking photos in the mountains. On weekends I sometimes play billiards or bowling. I usually play soccer with friends. Sometimes we dance together too.\n\nI also enjoy reading. I especially like reading the newspaper. I borrow books from the library. There are too many books in my wardrobe. I read books at the office too.\n\nI started drawing a year ago. Today I'll withdraw money from the bank to buy new art supplies.","glossary":[{"kr":"도서관","rom":"doseogwan","en":"library"},{"kr":"도구","rom":"dogu","en":"tool / supplies"},{"kr":"시작하다","rom":"sijakhada","en":"to start"},{"kr":"~거나","rom":"-geona","en":"or (between verbs)"}]},{"id":"unit3","title_kr":"Unit 3 — 내 옷차림","title_en":"Unit 3 — My outfit","kr":"오늘은 결혼식이 있어요. 그래서 정장을 입고 넥타이를 매요. 구두를 신고 양말도 새것이에요. 옷차림이 멋있다고 친구가 말했어요. 기분이 좋아요!\n\n보통 회사에 갈 때는 청바지하고 티셔츠를 입어요. 가끔 치마도 입어요. 운동할 때는 운동복을 입고 운동화를 신어요. 추운 날에는 모자를 쓰고 스카프를 매요. 안경도 써요.\n\n저녁에 친구를 만나는 약속이 있어요. 이따가 기차역 근처 식당에서 같이 저녁을 먹을 계획이에요. 새 지갑을 보여 줄 거예요. 너무 비쌌지만 정말 예뻐요.\n\n아침에는 보통 채소하고 생선을 먹어요. 아직 점심 메뉴는 정하지 못했어요.","en":"Today there's a wedding. So I'm wearing a suit and a tie. I have on dress shoes, and my socks are new. My friend said my outfit looks great. I'm in a good mood!\n\nUsually when I go to the office, I wear jeans and a T-shirt. Sometimes I wear a skirt. When I exercise, I wear sportswear and sneakers. On cold days I wear a hat and scarf. I also wear glasses.\n\nIn the evening I have plans to meet a friend. Later we'll have dinner together at a restaurant near the train station. I'm going to show off my new wallet. It was very expensive but really pretty.\n\nIn the morning I usually eat vegetables and fish. I haven't decided on the lunch menu yet.","glossary":[{"kr":"회사","rom":"hoesa","en":"company / office"},{"kr":"정하다","rom":"jeonghada","en":"to decide"},{"kr":"멋있다","rom":"meositda","en":"to be cool / stylish"},{"kr":"보여 주다","rom":"boyeo juda","en":"to show"},{"kr":"추운 날","rom":"chuun nal","en":"cold day"}]},{"id":"unit4","title_kr":"Unit 4 — 오늘의 일기","title_en":"Unit 4 — Today's diary","kr":"오늘은 너무 바빴어요. 아침부터 학교에 가서 시험을 봤어요. 시험이 정말 어려웠어요. 머리가 아파요. 너무 피곤해요.\n\n점심을 안 먹어서 배가 고파요. 식당에 손님이 너무 많아서 오래 기다렸어요. 음식 가격이 비쌌지만 맛있었어요.\n\n오후에 비가 와서 우산을 찾았어요. 지하철도 늦었어요. 기분이 나빴어요. 슬펐어요.\n\n집에 와서 숙제를 했어요. 숙제는 쉬워요. 내일은 날씨가 좋으면 좋겠어요. 너무 덥지 않고 눈도 안 오면 좋겠어요.\n\n저는 큰 꿈이 있어요. 가족하고 넓고 편한 집에서 살고 싶어요. 작은 집은 불편해요.","en":"Today I was very busy. From the morning I went to school and took an exam. The exam was really difficult. My head hurts. I'm very tired.\n\nI didn't have lunch, so I'm hungry. The restaurant had too many customers, so I waited a long time. The food was expensive, but delicious.\n\nIn the afternoon it rained, so I looked for an umbrella. The subway was also late. I was in a bad mood. I was sad.\n\nI came home and did homework. Homework is easy. I hope tomorrow's weather is good. I hope it's not too hot and that it doesn't snow.\n\nI have a big dream. I want to live with my family in a wide, comfortable house. A small house is uncomfortable.","glossary":[{"kr":"머리","rom":"meori","en":"head"},{"kr":"시험을 보다","rom":"siheomeul boda","en":"to take an exam"},{"kr":"우산","rom":"usan","en":"umbrella"},{"kr":"지하철","rom":"jihacheol","en":"subway"},{"kr":"좋겠어요","rom":"joketsseoyo","en":"I hope (it's)"},{"kr":"살다","rom":"salda","en":"to live"}]},{"id":"unit5","title_kr":"Unit 5 — 길 안내","title_en":"Unit 5 — Directions","kr":"실례합니다. 화장실이 어디에 있어요? 학교 근처에 있어요. 어떻게 가요?\n\n은행은 저 큰 건물 안에 있어요. 똑바로 가다가 길을 건너가세요. 그 다음에 왼쪽으로 돌아가세요. 은행 앞에 주차장이 있어요. 거기서 친구를 기다려요.\n\n공항에 가려면 어떻게 가요? 지하철이 제일 빨라요. 지하철역까지 걸어서 가세요. 계단으로 올라가세요. 그 다음에 1번 출구로 나가세요. 거기서 공항까지 30분 걸려요.\n\n오늘은 무슨 요일이에요? 시계를 보세요. 시간이 없어서 일찍 가야 해요. 수업이 곧 시작돼요. 지난 계절에 한국에 갔어요. 정말 좋았어요!","en":"Excuse me, where is the bathroom? It's near the school. How do I get there?\n\nThe bank is inside that big building. Go straight, then cross the street. After that, turn left. There's a parking lot in front of the bank. Wait for your friend there.\n\nHow do I get to the airport? The subway is fastest. Walk to the subway station. Go up the stairs. Then go out through exit 1. From there, it's 30 minutes to the airport.\n\nWhat day of the week is today? Look at the clock. I have no time, so I have to leave early. Class starts soon. Last season I went to Korea. It was really nice!","glossary":[{"kr":"실례합니다","rom":"sillyehamnida","en":"excuse me"},{"kr":"왼쪽","rom":"oenjjok","en":"left side"},{"kr":"지하철","rom":"jihacheol","en":"subway"},{"kr":"출구","rom":"chulgu","en":"exit"},{"kr":"곧","rom":"got","en":"soon"}]},{"id":"morning","title_kr":"내 아침","title_en":"My morning","kr":"저는 매일 아침 일찍 일어나요. 보통 일곱 시쯤 일어나요. 일어나서 아침을 먹어요. 아침에는 빵하고 커피를 먹어요. 그 다음에 학교에 가요. 학교는 집 근처에 있어요. 그래서 걸어서 가요.","en":"I get up early every morning. Usually I wake up around seven o'clock. After waking up, I eat breakfast. In the morning I have bread and coffee. Then I go to school. The school is near my house. So I walk there.","glossary":[{"kr":"쯤","rom":"jjeum","en":"about / approximately"},{"kr":"그 다음에","rom":"geu daeume","en":"after that / then"},{"kr":"걸어서","rom":"georeoseo","en":"on foot / walking"}]},{"id":"food","title_kr":"한국 음식","title_en":"Korean food","kr":"저는 한국 음식을 좋아해요. 특히 김치찌개를 가장 좋아해요. 김치찌개는 조금 매워요. 하지만 정말 맛있어요. 가족하고 같이 한국 식당에 자주 가요. 다음에는 불고기도 먹어 보고 싶어요.","en":"I like Korean food. I especially like kimchi stew the most. Kimchi stew is a little spicy. But it's really delicious. I often go to a Korean restaurant with my family. Next time I want to try bulgogi too.","glossary":[{"kr":"김치찌개","rom":"gimchijjigae","en":"kimchi stew"},{"kr":"정말","rom":"jeongmal","en":"really"},{"kr":"불고기","rom":"bulgogi","en":"bulgogi (marinated beef)"},{"kr":"~어 보고 싶어요","rom":"-eo bogo sipeoyo","en":"I want to try ~"}]},{"id":"weekend","title_kr":"내 주말","title_en":"My weekend","kr":"주말에는 보통 친구를 만나요. 같이 영화를 보거나 카페에 가요. 일요일에는 집에서 쉬어요. 책을 읽거나 음악을 들어요. 가끔 등산을 하러 가요. 산이 너무 높아서 힘들지만 재미있어요.","en":"On weekends I usually meet friends. We watch movies together or go to a cafe. On Sundays I rest at home. I read books or listen to music. Sometimes I go hiking. The mountain is so high it's hard, but it's fun.","glossary":[{"kr":"~거나","rom":"-geona","en":"or (between verbs)"},{"kr":"~러 가요","rom":"-reo gayo","en":"go in order to ~"},{"kr":"힘들다","rom":"himdeulda","en":"to be hard / tough"}]},{"id":"travel","title_kr":"여행 계획","title_en":"Travel plans","kr":"다음 달에 부산에 갈 거예요. 부산은 한국에서 두 번째로 큰 도시예요. 비행기로 가지 않고 기차로 가요. 부산에서 바다를 보고 해산물을 먹고 싶어요. 친구도 같이 갈 거예요. 정말 기대돼요!","en":"Next month I'm going to Busan. Busan is the second-largest city in Korea. I'm not going by plane, I'm going by train. In Busan I want to see the sea and eat seafood. My friend is going with me too. I'm really looking forward to it!","glossary":[{"kr":"부산","rom":"busan","en":"Busan (city)"},{"kr":"두 번째로","rom":"du beonjjaero","en":"second / 2nd"},{"kr":"도시","rom":"dosi","en":"city"},{"kr":"비행기","rom":"bihaenggi","en":"airplane"},{"kr":"바다","rom":"bada","en":"sea"},{"kr":"해산물","rom":"haesanmul","en":"seafood"},{"kr":"기대돼요","rom":"gidaedwaeyo","en":"I'm looking forward to it"}]},{"id":"studying","title_kr":"한국어 공부","title_en":"Studying Korean","kr":"저는 한국어를 일 년 전에 배우기 시작했어요. 처음에는 정말 어려웠어요. 특히 문법이 어려워요. 하지만 매일 조금씩 공부하면 늘어요. K-pop 노래를 들으면서 단어를 배워요. 한국 친구하고 한국어로 이야기하고 싶어요.","en":"I started learning Korean a year ago. At first it was really difficult. Grammar is especially hard. But if I study a little every day, I improve. I learn vocabulary while listening to K-pop songs. I want to talk in Korean with Korean friends.","glossary":[{"kr":"처음에는","rom":"cheoeumeneun","en":"at first"},{"kr":"문법","rom":"munbeop","en":"grammar"},{"kr":"조금씩","rom":"jogeumssik","en":"little by little"},{"kr":"늘다","rom":"neulda","en":"to improve / increase"},{"kr":"~면서","rom":"-myeonseo","en":"while ~ing"},{"kr":"단어","rom":"daneo","en":"vocabulary / word"}]},{"id":"family","title_kr":"내 가족","title_en":"My family","kr":"우리 가족은 네 명이에요. 아버지, 어머니, 오빠하고 저예요. 아버지는 회사에 다니세요. 어머니는 선생님이에요. 오빠는 대학생이에요. 저는 가족을 정말 사랑해요. 우리는 자주 같이 저녁을 먹어요.","en":"There are four people in my family: father, mother, older brother, and me. My father works at a company. My mother is a teacher. My older brother is a university student. I really love my family. We often eat dinner together.","glossary":[{"kr":"명","rom":"myeong","en":"counter for people"},{"kr":"아버지","rom":"abeoji","en":"father"},{"kr":"어머니","rom":"eomeoni","en":"mother"},{"kr":"오빠","rom":"oppa","en":"older brother (of a female)"},{"kr":"회사에 다니다","rom":"hoesae danida","en":"to work at a company"},{"kr":"대학생","rom":"daehaksaeng","en":"university student"},{"kr":"사랑하다","rom":"saranghada","en":"to love"}]}];
+const CHUNKS = {"시계":[{"kr":"시계를 보다","en":"to look at the clock","tag":"common"},{"kr":"시계가 멈췄어요","en":"the clock stopped","tag":"daily"}],"돈":[{"kr":"돈이 없어요","en":"I have no money","tag":"daily"},{"kr":"돈을 모으다","en":"to save money","tag":"common"}],"창문":[{"kr":"창문을 열다","en":"to open the window","tag":"common"},{"kr":"창문 밖을 보다","en":"to look out the window","tag":"K-drama"}],"방향":[{"kr":"어느 방향이에요?","en":"which direction?","tag":"travel"},{"kr":"방향을 잃다","en":"to lose one's way","tag":"idiom"}],"이동":[{"kr":"이동 시간이 길어요","en":"the travel time is long","tag":"travel"}],"근처":[{"kr":"이 근처에 카페 있어요?","en":"is there a cafe nearby?","tag":"travel"},{"kr":"학교 근처에 살아요","en":"I live near the school","tag":"daily"}],"주차장":[{"kr":"주차장이 어디예요?","en":"where is the parking?","tag":"travel"}],"건물":[{"kr":"이 건물 멋있다","en":"this building is cool","tag":"Instagram"},{"kr":"큰 건물이에요","en":"it's a big building","tag":"common"}],"맞아요":[{"kr":"네, 맞아요!","en":"yes, that's right!","tag":"daily"},{"kr":"맞아 맞아","en":"right, right (casual agreement)","tag":"casual"}],"학교":[{"kr":"학교 끝나고 봐!","en":"see you after school!","tag":"casual"},{"kr":"학교에 가요","en":"I go to school","tag":"common"}],"지난":[{"kr":"지난 주말","en":"last weekend","tag":"common"},{"kr":"지난 추억","en":"past memories","tag":"K-pop"}],"봄":[{"kr":"봄봄봄 봄이 왔네요","en":"spring spring spring, spring has come","tag":"K-pop (Roy Kim 봄봄봄)"},{"kr":"봄이 좋아","en":"I love spring","tag":"daily"}],"여름":[{"kr":"여름밤","en":"summer night","tag":"K-drama"},{"kr":"이 여름이 가기 전에","en":"before this summer ends","tag":"K-pop"}],"가을":[{"kr":"가을이 오면","en":"when autumn comes","tag":"K-pop"},{"kr":"가을 단풍","en":"autumn maple leaves","tag":"common"}],"겨울":[{"kr":"추운 겨울","en":"cold winter","tag":"common"},{"kr":"겨울왕국","en":"Frozen (movie title)","tag":"culture"}],"요일":[{"kr":"오늘 무슨 요일이에요?","en":"what day is today?","tag":"daily"}],"술":[{"kr":"술 한잔 할까?","en":"shall we have a drink?","tag":"casual"},{"kr":"술자리","en":"drinking gathering","tag":"culture"}],"야구":[{"kr":"야구장에 가다","en":"go to the baseball stadium","tag":"common"},{"kr":"야구 좋아해요?","en":"do you like baseball?","tag":"casual"}],"수박":[{"kr":"여름엔 수박이 최고","en":"watermelon is the best in summer","tag":"Instagram"},{"kr":"수박 한 통 사다","en":"buy a (whole) watermelon","tag":"daily"}],"사진 찍다":[{"kr":"한 장만 찍어주세요","en":"please take one photo","tag":"travel"},{"kr":"사진 찍어도 돼요?","en":"can I take a photo?","tag":"polite"}],"낚시":[{"kr":"주말 낚시","en":"weekend fishing","tag":"hobby"},{"kr":"낚시 가요","en":"let's go fishing","tag":"casual"}],"시간":[{"kr":"시간이 없어요","en":"I have no time","tag":"daily"},{"kr":"시간 가는 줄 몰랐어","en":"I didn't notice time passing","tag":"K-drama"}],"자전거를 타다":[{"kr":"한강에서 자전거 타","en":"ride a bike at the Han River","tag":"Seoul"}],"맵다":[{"kr":"이거 너무 매워요","en":"this is too spicy","tag":"food"},{"kr":"매운 거 좋아해","en":"I like spicy food","tag":"casual"}],"아프다":[{"kr":"어디가 아파요?","en":"where does it hurt?","tag":"polite"},{"kr":"마음이 아파요","en":"my heart aches","tag":"K-pop"}],"배고프다":[{"kr":"배고파요","en":"I'm hungry","tag":"daily"},{"kr":"배고파 죽겠어","en":"I'm starving (lit. dying of hunger)","tag":"casual"}],"나쁘다":[{"kr":"나쁜 남자","en":"bad boy","tag":"K-pop trope"},{"kr":"기분 나빠","en":"I'm in a bad mood","tag":"casual"}],"슬프다":[{"kr":"슬픈 노래","en":"sad song","tag":"common"},{"kr":"너무 슬퍼요","en":"I'm so sad","tag":"daily"}],"피곤하다":[{"kr":"오늘 너무 피곤해","en":"so tired today","tag":"Instagram"},{"kr":"피곤한 하루","en":"a tiring day","tag":"caption"}],"쉽다":[{"kr":"한국어가 쉬워요","en":"Korean is easy","tag":"learning"},{"kr":"쉽지 않아","en":"it's not easy","tag":"casual"}],"어렵다":[{"kr":"한국어가 어려워요","en":"Korean is difficult","tag":"learning"},{"kr":"쉽지 않아 어렵지 않아","en":"not easy, not hard","tag":"K-pop (BTS)"}],"바쁘다":[{"kr":"오늘 바빠요","en":"I'm busy today","tag":"daily"},{"kr":"바쁜 일상","en":"busy daily life","tag":"Instagram"}],"늦다":[{"kr":"늦어서 미안해","en":"sorry I'm late","tag":"casual"},{"kr":"늦은 밤","en":"late at night","tag":"K-pop"}],"비가 오다":[{"kr":"비가 와요","en":"it's raining","tag":"daily"},{"kr":"비 오는 날","en":"rainy day","tag":"K-ballad theme"}],"눈이 오다":[{"kr":"첫눈이 와요","en":"first snow is falling","tag":"K-drama"},{"kr":"눈이 와!","en":"it's snowing!","tag":"casual"}],"덥다":[{"kr":"오늘 너무 덥다","en":"it's so hot today","tag":"casual"},{"kr":"더운 여름","en":"hot summer","tag":"common"}],"가족":[{"kr":"가족이 최고","en":"family is the best","tag":"Instagram"},{"kr":"우리 가족","en":"my (our) family","tag":"daily"}],"숙제":[{"kr":"숙제 다 했어?","en":"did you finish your homework?","tag":"casual"},{"kr":"숙제가 많아","en":"I have a lot of homework","tag":"daily"}],"시험":[{"kr":"시험 잘 봤어?","en":"did the exam go well?","tag":"casual"},{"kr":"시험이 끝나면","en":"when exams are over","tag":"common"}],"배":[{"kr":"배가 아파","en":"my stomach hurts","tag":"daily"},{"kr":"배가 불러","en":"I'm full","tag":"casual"}],"새":[{"kr":"새가 노래해","en":"the bird sings","tag":"poetic"},{"kr":"새소리","en":"bird sounds","tag":"common"}],"지갑":[{"kr":"지갑을 잃어버렸어","en":"I lost my wallet","tag":"daily"}],"생선":[{"kr":"생선 구이","en":"grilled fish","tag":"food"},{"kr":"생선을 먹어요","en":"I eat fish","tag":"common"}],"넥타이":[{"kr":"넥타이를 매다","en":"to tie a tie","tag":"common"}],"스카프":[{"kr":"스카프를 두르다","en":"to wear a scarf","tag":"common"}],"모자":[{"kr":"모자 잘 어울려","en":"the hat suits you well","tag":"compliment"},{"kr":"모자를 쓰다","en":"to put on a hat","tag":"common"}],"안경":[{"kr":"안경 어디 있어?","en":"where are my glasses?","tag":"daily"},{"kr":"안경을 쓰다","en":"to wear glasses","tag":"common"}],"구두":[{"kr":"구두를 신다","en":"to put on dress shoes","tag":"common"}],"양복":[{"kr":"양복을 입다","en":"to wear a suit","tag":"common"}],"벗다":[{"kr":"신발 벗고 들어오세요","en":"please take off your shoes","tag":"polite (Korean home)"},{"kr":"옷을 벗다","en":"to take off clothes","tag":"common"}],"양말":[{"kr":"양말을 신다","en":"to put on socks","tag":"common"}],"약속":[{"kr":"약속해","en":"promise me","tag":"K-pop (TWICE)"},{"kr":"약속이 있어요","en":"I have plans","tag":"daily"}],"기분":[{"kr":"기분이 좋아요","en":"I'm in a good mood","tag":"daily"},{"kr":"기분이 어때?","en":"how do you feel?","tag":"casual"}],"아침":[{"kr":"좋은 아침!","en":"good morning!","tag":"daily"},{"kr":"아침을 먹다","en":"to eat breakfast","tag":"common"}],"점심":[{"kr":"점심 뭐 먹을까?","en":"what should we eat for lunch?","tag":"casual"},{"kr":"점심시간","en":"lunch time","tag":"common"}],"저녁":[{"kr":"저녁 같이 먹자","en":"let's eat dinner together","tag":"casual"},{"kr":"저녁노을","en":"sunset","tag":"poetic"}],"매일":[{"kr":"매일 매일","en":"every day, every day","tag":"poetic"},{"kr":"매일 그대와","en":"every day with you","tag":"K-ballad"}],"자주":[{"kr":"자주 못 봐","en":"I can't see you often","tag":"K-pop"},{"kr":"자주 와요","en":"come often","tag":"casual"}],"가끔":[{"kr":"가끔 생각나","en":"I think of you sometimes","tag":"K-pop"},{"kr":"가끔은","en":"sometimes (song-style)","tag":"K-ballad"}],"당구를 치다":[{"kr":"친구하고 당구를 치다","en":"play billiards with friends","tag":"casual"}],"볼링을 치다":[{"kr":"볼링장에 가다","en":"go to a bowling alley","tag":"casual"}],"노래를 부르다":[{"kr":"노래를 잘 불러","en":"sings well","tag":"compliment"},{"kr":"노래방에서","en":"at karaoke","tag":"K-culture"}],"사진을 찍다":[{"kr":"셀카 찍자!","en":"let's take a selfie!","tag":"Instagram"},{"kr":"기념사진","en":"commemorative photo","tag":"travel"}],"축구를 하다":[{"kr":"주말에 축구를 하다","en":"play soccer on weekends","tag":"casual"}],"그림을 그리다":[{"kr":"그림 그리는 게 취미예요","en":"drawing is my hobby","tag":"hobby"}],"등산을 하다":[{"kr":"주말에 등산을 가다","en":"go hiking on weekends","tag":"hobby"}],"춤을 추다":[{"kr":"K-pop에 맞춰 춤을 춰","en":"dance to K-pop","tag":"K-pop"}]};
 
 
 const STORAGE_KEY = "korean_quiz_stats_v1";
@@ -550,6 +667,11 @@ function pool() {
   if (mode === "all") return VOCAB;
   if (mode === "forgotten") return VOCAB.filter(e => e.status === "forgotten");
   if (mode === "new") return VOCAB.filter(e => e.status === "new");
+  if (mode === "today") {
+    // mix forgotten words + this week's unit (new) words
+    const week = getWeekUnit();
+    return VOCAB.filter(e => e.status === "forgotten" || (e.status === "new" && e.unit === week));
+  }
   if (mode === "topic") return VOCAB.filter(e => e.topic === modeValue);
   if (mode === "unit") return VOCAB.filter(e => e.unit === modeValue);
   return VOCAB;
@@ -592,14 +714,18 @@ function checkAnswer(user, correct) {
 }
 
 function renderStats() {
-  const total = VOCAB.length;
   const forgotten = VOCAB.filter(e => e.status === "forgotten").length;
   const learned = Object.values(stats).filter(s => {
     const t = (s.right || 0) + (s.wrong || 0);
     return t >= 4 && s.right / t > 0.85;
   }).length;
+  const dp = getDailyProgress();
+  const min = Math.floor(dp.seconds / 60);
+  const sec = dp.seconds % 60;
+  const goalMet = dp.seconds >= GOAL_SECONDS;
   statsEl.innerHTML = `
-    <span class="stat-pill">total <span class="num">${total}</span></span>
+    <span class="stat-pill streak">🔥 <span class="num">${dp.streak}</span> day${dp.streak === 1 ? "" : "s"}</span>
+    <span class="stat-pill timer ${goalMet ? "met" : ""}">⏱ <span class="num">${min}:${String(sec).padStart(2, "0")}</span> / ${GOAL_MIN}m</span>
     <span class="stat-pill fire">forgotten <span class="num">${forgotten}</span></span>
     <span class="stat-pill">learned <span class="num">${learned}</span></span>
   `;
@@ -709,6 +835,21 @@ function reveal(result, userVal) {
     <button class="btn" id="nextBtn">next →</button>
     <button class="btn secondary" id="repeatBtn">show more often</button>
   `;
+  // Show chunks if we have any for this word
+  const ck = CHUNKS[current.korean];
+  if (ck && ck.length) {
+    const cb = document.createElement("div");
+    cb.className = "chunks-block";
+    cb.innerHTML = `<h5>chunks · how it's used</h5>` + ck.map(c => `
+      <div class="chunk-item">
+        <span class="hangul">${escapeHtml(c.kr)}</span>
+        <span class="arrow">—</span>
+        <span>${escapeHtml(c.en)}</span>
+        <span class="source-tag">${escapeHtml(c.tag)}</span>
+      </div>
+    `).join("");
+    card.appendChild(cb);
+  }
   // Append feedback below input area
   const feedbackContainer = document.createElement("div");
   feedbackContainer.innerHTML = header + answerHtml;
@@ -1036,10 +1177,191 @@ function openText(id) {
   });
 }
 
+
+// ===== DAILY PROGRESS / STREAK / TIMER =====
+const DAILY_KEY = "korean_daily_v1";
+const WEEK_KEY = "korean_week_unit_v1";
+const JOURNAL_PREFIX = "korean_journal_";
+const GOAL_MIN = 15;
+const GOAL_SECONDS = GOAL_MIN * 60;
+const IDLE_MS = 90 * 1000;
+
+function todayStr() {
+  const d = new Date();
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+
+function getDailyProgress() {
+  const raw = localStorage.getItem(DAILY_KEY);
+  let dp = raw ? JSON.parse(raw) : { date: todayStr(), seconds: 0, streak: 0, lastActiveDate: null };
+  const today = todayStr();
+  if (dp.date !== today) {
+    // Day changed — decide if streak continues
+    const yesterday = (() => {
+      const d = new Date(); d.setDate(d.getDate() - 1);
+      return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+    })();
+    let newStreak = dp.streak;
+    if (dp.lastActiveDate === yesterday && dp.seconds > 0) {
+      // streak preserved
+    } else if (dp.lastActiveDate === today) {
+      // already active today, keep
+    } else {
+      newStreak = 0; // streak broken
+    }
+    dp = { date: today, seconds: 0, streak: newStreak, lastActiveDate: dp.lastActiveDate };
+  }
+  return dp;
+}
+
+function saveDailyProgress(dp) {
+  localStorage.setItem(DAILY_KEY, JSON.stringify(dp));
+}
+
+let lastActivityAt = Date.now();
+let timerInterval = null;
+function noteActivity() { lastActivityAt = Date.now(); }
+["click", "keydown", "input", "scroll", "touchstart"].forEach(ev => document.addEventListener(ev, noteActivity, { passive: true }));
+
+function tickTimer() {
+  if (document.hidden) return;
+  if (Date.now() - lastActivityAt > IDLE_MS) return;
+  const dp = getDailyProgress();
+  dp.seconds = (dp.seconds || 0) + 1;
+  // If user just hit goal for the first time today, bump streak
+  if (dp.seconds === GOAL_SECONDS && dp.lastActiveDate !== dp.date) {
+    dp.streak = (dp.streak || 0) + 1;
+    dp.lastActiveDate = dp.date;
+  } else if (dp.seconds > 0 && dp.lastActiveDate !== dp.date && dp.lastActiveDate === null) {
+    // first activity of the day at all
+    dp.lastActiveDate = dp.date;
+    if (dp.streak === 0) dp.streak = 1;
+  }
+  saveDailyProgress(dp);
+  // Update header every 5 sec
+  if (dp.seconds % 5 === 0) renderStats();
+}
+
+function startTimer() {
+  if (timerInterval) return;
+  timerInterval = setInterval(tickTimer, 1000);
+}
+
+// ===== WEEKLY FOCUS =====
+function getWeekUnit() {
+  return localStorage.getItem(WEEK_KEY) || "5";
+}
+function setWeekUnit(u) {
+  localStorage.setItem(WEEK_KEY, u);
+}
+function fillWeekUnitSel() {
+  const sel = document.getElementById("weekUnitSel");
+  if (!sel) return;
+  const units = [...new Set(VOCAB.map(e => e.unit))].sort();
+  sel.innerHTML = units.map(u => `<option value="${u}">unit ${u}</option>`).join("");
+  sel.value = getWeekUnit();
+  sel.onchange = () => {
+    setWeekUnit(sel.value);
+    if (mode === "today") renderCard();
+  };
+}
+
+// ===== JOURNAL =====
+const JOURNAL_PROMPTS = [
+  "오늘 무엇을 했어요? — What did you do today?",
+  "지금 기분이 어때요? — How do you feel right now?",
+  "오늘 날씨가 어땠어요? — How was the weather today?",
+  "오늘 누구를 만났어요? — Who did you meet today?",
+  "내일 무엇을 하고 싶어요? — What do you want to do tomorrow?",
+  "오늘 무엇을 먹었어요? — What did you eat today?",
+  "오늘 가장 좋은 일은 뭐였어요? — What was the best part of today?",
+  "이번 주말 계획이 뭐예요? — What are your plans for this weekend?",
+  "지난 주에 뭐 했어요? — What did you do last week?",
+  "지금 어디에 있어요? — Where are you right now?",
+];
+function pickJournalPrompt() {
+  const seed = todayStr().split("-").reduce((a, b) => a + parseInt(b, 10), 0);
+  return JOURNAL_PROMPTS[seed % JOURNAL_PROMPTS.length];
+}
+
+function renderJournal() {
+  const today = todayStr();
+  document.getElementById("journalDate").textContent = today;
+  document.getElementById("journalPrompt").textContent = "💡 " + pickJournalPrompt();
+  const ta = document.getElementById("journalInput");
+  ta.value = localStorage.getItem(JOURNAL_PREFIX + today) || "";
+  document.getElementById("journalCount").textContent = ta.value.length + " chars";
+
+  let saveTimer = null;
+  ta.oninput = () => {
+    document.getElementById("journalCount").textContent = ta.value.length + " chars";
+    document.getElementById("journalSaveStatus").textContent = "saving…";
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => {
+      if (ta.value.trim()) localStorage.setItem(JOURNAL_PREFIX + today, ta.value);
+      else localStorage.removeItem(JOURNAL_PREFIX + today);
+      document.getElementById("journalSaveStatus").textContent = "saved ✓";
+      renderJournalHistory();
+    }, 500);
+  };
+  renderJournalHistory();
+}
+
+function renderJournalHistory() {
+  const today = todayStr();
+  const entries = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (!key.startsWith(JOURNAL_PREFIX)) continue;
+    const date = key.slice(JOURNAL_PREFIX.length);
+    if (date === today) continue;
+    entries.push({ date, text: localStorage.getItem(key) });
+  }
+  entries.sort((a, b) => b.date.localeCompare(a.date));
+  const el = document.getElementById("journalHistory");
+  if (!entries.length) {
+    el.innerHTML = `<h4>past entries</h4><div style="color:var(--muted);font-size:14px;">No past entries yet. Today's entry will appear here tomorrow.</div>`;
+    return;
+  }
+  el.innerHTML = `<h4>past entries (${entries.length})</h4>` + entries.slice(0, 10).map(e => `
+    <div class="journal-entry" data-date="${e.date}">
+      <div class="entry-date">${e.date}</div>
+      <div class="entry-text">${escapeHtml(e.text)}</div>
+    </div>
+  `).join("");
+  el.querySelectorAll(".journal-entry").forEach(node => {
+    node.onclick = () => {
+      const d = node.dataset.date;
+      const text = localStorage.getItem(JOURNAL_PREFIX + d) || "";
+      alert(`${d}\n\n${text}`);
+    };
+  });
+}
+
+// Hook tab switch to render journal
+const _origBindTabs = bindTabs;
+bindTabs = function() {
+  document.querySelectorAll(".tab").forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const target = btn.dataset.tab;
+      document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
+      document.getElementById(target + "View").classList.add("active");
+      if (target === "sentences") renderSentence();
+      if (target === "reading") renderTextList();
+      if (target === "journal") renderJournal();
+    };
+  });
+};
+
+
 bindTabs();
 bindSentenceControls();
 fillSelectors();
+fillWeekUnitSel();
 bindControls();
+startTimer();
 renderStats();
 renderCard();
 renderSessionBar();
