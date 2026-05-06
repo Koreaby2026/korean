@@ -642,7 +642,6 @@ function renderCard() {
       <button class="btn" id="checkBtn">check</button>
     </div>
     <div class="actions">
-      <button class="btn ghost" id="hintBtn">💡 hint</button>
       <button class="btn ghost" id="skipBtn">skip</button>
     </div>
   `;
@@ -652,7 +651,6 @@ function renderCard() {
     if (e.key === "Enter") submit();
   });
   $("#checkBtn").onclick = submit;
-  $("#hintBtn").onclick = showHint;
   $("#skipBtn").onclick = () => reveal("skip");
 }
 
