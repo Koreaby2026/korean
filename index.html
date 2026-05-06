@@ -907,10 +907,46 @@ function normalize(s) {
   return (s || "").trim().toLowerCase().replace(/\s+/g, " ");
 }
 
+function levenshtein(a, b) {
+  if (a === b) return 0;
+  if (!a) return b.length;
+  if (!b) return a.length;
+  const m = a.length, n = b.length;
+  if (Math.abs(m - n) > 4) return 99; // early bail-out for very different lengths
+  let prev = Array(n + 1).fill(0).map((_, i) => i);
+  for (let i = 1; i <= m; i++) {
+    const curr = [i];
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      curr.push(Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + cost));
+    }
+    prev = curr;
+  }
+  return prev[n];
+}
+
+function fuzzyThreshold(len) {
+  if (len <= 3) return 0;
+  if (len <= 7) return 1;
+  return 2;
+}
+
+// Returns { match: 'exact' | 'typo' | 'none', correct?: string, distance?: number }
 function checkAnswer(user, correct) {
   const u = normalize(user);
-  if (!u) return false;
-  return correct.split("/").some(v => normalize(v) === u);
+  if (!u) return { match: "none" };
+  const variants = correct.split("/").map(v => normalize(v));
+  for (const v of variants) {
+    if (u === v) return { match: "exact" };
+  }
+  // Typo detection — only for short single-word answers (avoid being too lenient on phrases)
+  for (const v of variants) {
+    const dist = levenshtein(u, v);
+    if (dist <= fuzzyThreshold(v.length)) {
+      return { match: "typo", correct: v, distance: dist };
+    }
+  }
+  return { match: "none" };
 }
 
 function renderStats() {
@@ -994,25 +1030,28 @@ function submit() {
     reveal("skip");
     return;
   }
-  let ok;
-  if (direction === "kr_ru") {
-    ok = checkAnswer(val, current.translation);
-  } else {
-    // EN → KR: accept hangul or romanization
-    ok = checkAnswer(val, current.korean) || checkAnswer(val, current.romanization);
+  // Try exact-then-fuzzy across all valid targets
+  const targets = direction === "kr_ru"
+    ? [current.translation]
+    : [current.korean, current.romanization];
+  let best = { match: "none" };
+  for (const t of targets) {
+    const r = checkAnswer(val, t);
+    if (r.match === "exact") { best = r; break; }
+    if (r.match === "typo" && (best.match === "none" || (r.distance < (best.distance ?? 99)))) best = r;
   }
-  reveal(ok ? "correct" : "wrong", val);
+  if (best.match === "exact") reveal("correct", val);
+  else if (best.match === "typo") reveal("typo", val, best.correct);
+  else reveal("wrong", val);
 }
 
-function reveal(result, userVal) {
+function reveal(result, userVal, autoCorrected) {
   phase = "revealed";
   const s = stats[current.korean] = stats[current.korean] || { right: 0, wrong: 0 };
-  if (result === "correct") {
+  if (result === "correct" || result === "typo") {
     s.right++; session.correct++; session.asked++;
-    // If this word was in replay queue and now correct, leave it removed (we already spliced on pick)
   } else if (result === "wrong") {
     s.wrong++; session.asked++;
-    // Add to replay queue if not already there
     if (current && !replayQueue.some(w => w.korean === current.korean)) {
       replayQueue.push(current);
     }
@@ -1027,6 +1066,7 @@ function reveal(result, userVal) {
 
   let header = "";
   if (result === "correct") header = `<div class="feedback correct"><div class="answer-line">✅ correct</div>`;
+  else if (result === "typo") header = `<div class="feedback correct"><div class="answer-line">✅ close enough — typo: <em>${escapeHtml(userVal)}</em> → <strong>${escapeHtml(autoCorrected)}</strong></div>`;
   else if (result === "wrong") header = `<div class="feedback wrong"><div class="answer-line">❌ you wrote: <em>${escapeHtml(userVal)}</em></div>`;
   else header = `<div class="feedback skip"><div class="answer-line">⏭ skipped</div>`;
 
