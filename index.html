@@ -547,6 +547,80 @@
   .journal-entry .entry-date { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
   .journal-entry .entry-text { font-family: 'Noto Sans KR'; font-size: 15px; line-height: 1.5; max-height: 60px; overflow: hidden; }
 
+
+  /* Plan tab */
+  .plan-section { margin-bottom: 24px; }
+  .plan-h {
+    font-size: 13px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+  .plan-card {
+    padding: 20px 22px;
+    min-height: auto;
+    text-align: left;
+  }
+  .focus-stats { display: grid; gap: 8px; }
+  .focus-stats .stat-line { display: flex; justify-content: space-between; align-items: baseline; font-size: 15px; }
+  .focus-stats .stat-line .label { color: var(--muted); }
+  .focus-stats .stat-line .val { font-weight: 600; }
+  .progress-bar {
+    height: 8px;
+    background: var(--bg);
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .progress-bar .fill {
+    height: 100%;
+    background: var(--accent);
+    transition: width 0.3s;
+    border-radius: 4px;
+  }
+  .progress-bar .fill.green { background: var(--green); }
+  .week-chart { display: flex; gap: 6px; align-items: flex-end; height: 140px; padding: 8px 0 24px; }
+  .week-chart .day-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; position: relative; min-height: 100%; justify-content: flex-end; }
+  .week-chart .bar {
+    width: 100%;
+    background: var(--accent);
+    border-radius: 4px 4px 0 0;
+    min-height: 4px;
+    transition: height 0.3s;
+  }
+  .week-chart .bar.met { background: var(--green); }
+  .week-chart .bar.empty { background: var(--border); min-height: 2px; }
+  .week-chart .day-label { font-size: 11px; color: var(--muted); position: absolute; bottom: -22px; }
+  .week-chart .day-min { font-size: 11px; color: var(--muted); }
+  .week-chart .day-min.met { color: var(--green); font-weight: 600; }
+  .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .stats-grid .stat-box {
+    background: var(--bg);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .stats-grid .stat-box .label { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  .stats-grid .stat-box .val { font-size: 22px; font-weight: 600; }
+  .stats-grid .stat-box .sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  textarea#weeklyNotesInput {
+    width: 100%;
+    min-height: 140px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.6;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--ink);
+    outline: none;
+    resize: vertical;
+  }
+  textarea#weeklyNotesInput:focus { border-color: var(--accent); }
+
   @media (max-width: 480px) {
     .question { font-size: 36px; }
     .card { padding: 24px 16px; min-height: 240px; }
@@ -569,6 +643,7 @@
     <button class="tab" data-tab="sentences">Sentences</button>
     <button class="tab" data-tab="reading">Reading</button>
     <button class="tab" data-tab="journal">Journal</button>
+    <button class="tab" data-tab="plan">Plan</button>
   </nav>
 
   <div class="view active" id="wordsView">
@@ -630,6 +705,28 @@
       </div>
     </div>
     <div class="journal-history" id="journalHistory"></div>
+  </div>
+
+  <div class="view" id="planView">
+    <div class="plan-section">
+      <h3 class="plan-h">🎯 This week's focus</h3>
+      <div class="card plan-card" id="weekFocusCard"></div>
+    </div>
+    <div class="plan-section">
+      <h3 class="plan-h">📊 Last 7 days</h3>
+      <div class="card plan-card" id="weekChartCard"></div>
+    </div>
+    <div class="plan-section">
+      <h3 class="plan-h">📈 Overall</h3>
+      <div class="card plan-card" id="overallStatsCard"></div>
+    </div>
+    <div class="plan-section">
+      <h3 class="plan-h">📝 Weekly notes</h3>
+      <div class="card plan-card">
+        <textarea id="weeklyNotesInput" placeholder="What worked this week? What was hard? Plans for next week…"></textarea>
+        <div class="journal-meta"><span id="weeklyNotesStatus">auto-saves as you type</span></div>
+      </div>
+    </div>
   </div>
 
   <div class="footer-actions">
@@ -1180,6 +1277,9 @@ function openText(id) {
 
 // ===== DAILY PROGRESS / STREAK / TIMER =====
 const DAILY_KEY = "korean_daily_v1";
+const HISTORY_KEY = "korean_daily_history_v1";
+const META_KEY = "korean_meta_v1";
+const WEEKLY_NOTES_PREFIX = "korean_weekly_notes_";
 const WEEK_KEY = "korean_week_unit_v1";
 const JOURNAL_PREFIX = "korean_journal_";
 const GOAL_MIN = 15;
@@ -1208,6 +1308,13 @@ function getDailyProgress() {
 
 function saveDailyProgress(dp) {
   localStorage.setItem(DAILY_KEY, JSON.stringify(dp));
+  const h = JSON.parse(localStorage.getItem(HISTORY_KEY) || "{}");
+  h[dp.date] = dp.seconds;
+  // Track longest streak too
+  const meta = JSON.parse(localStorage.getItem(META_KEY) || "{}");
+  meta.maxStreak = Math.max(meta.maxStreak || 0, dp.streak || 0);
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(h));
+  localStorage.setItem(META_KEY, JSON.stringify(meta));
 }
 
 let lastActivityAt = Date.now();
@@ -1325,6 +1432,180 @@ function renderJournalHistory() {
   });
 }
 
+
+// ===== PLAN TAB =====
+function getDailyHistory() {
+  return JSON.parse(localStorage.getItem(HISTORY_KEY) || "{}");
+}
+
+function getMeta() {
+  return JSON.parse(localStorage.getItem(META_KEY) || "{}");
+}
+
+function isoDateNDaysAgo(n) {
+  const d = new Date();
+  d.setDate(d.getDate() - n);
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+
+function isoToWeekday(iso) {
+  const [y, m, day] = iso.split("-").map(Number);
+  return new Date(y, m - 1, day).toLocaleDateString("en-US", { weekday: "short" });
+}
+
+function getCurrentWeekStart() {
+  // Monday-based; gives ISO for monday of current week
+  const d = new Date();
+  const day = d.getDay() || 7; // sun=0 → 7
+  d.setDate(d.getDate() - (day - 1));
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+
+function renderWeekFocusCard() {
+  const week = getWeekUnit();
+  const unitWords = VOCAB.filter(e => e.unit === week);
+  const total = unitWords.length;
+  // "Mastered" = right/total >= 0.85 with at least 4 attempts
+  const mastered = unitWords.filter(e => {
+    const s = stats[e.korean];
+    if (!s) return false;
+    const t = (s.right || 0) + (s.wrong || 0);
+    return t >= 4 && (s.right / t) >= 0.85;
+  }).length;
+  const pct = total ? Math.round(100 * mastered / total) : 0;
+  const card = document.getElementById("weekFocusCard");
+  card.innerHTML = `
+    <div class="focus-stats">
+      <div class="stat-line"><span class="label">Unit</span><span class="val">${escapeHtml(week)}</span></div>
+      <div class="stat-line"><span class="label">Words in unit</span><span class="val">${total}</span></div>
+      <div class="stat-line"><span class="label">Mastered (≥85%, 4+ tries)</span><span class="val">${mastered} / ${total}</span></div>
+    </div>
+    <div class="progress-bar"><div class="fill ${pct >= 80 ? 'green' : ''}" style="width:${pct}%"></div></div>
+    <div style="font-size:13px;color:var(--muted);margin-top:8px;">${pct}% complete · change unit in <strong>Words → this week's focus</strong></div>
+  `;
+}
+
+function renderWeekChartCard() {
+  const history = getDailyHistory();
+  // Today's seconds (live)
+  const dpNow = getDailyProgress();
+  history[dpNow.date] = dpNow.seconds;
+  const days = [];
+  for (let i = 6; i >= 0; i--) {
+    const iso = isoDateNDaysAgo(i);
+    const sec = history[iso] || 0;
+    days.push({ iso, sec, min: Math.floor(sec / 60), met: sec >= GOAL_SECONDS });
+  }
+  const maxSec = Math.max(...days.map(d => d.sec), GOAL_SECONDS);
+  const card = document.getElementById("weekChartCard");
+  card.innerHTML = `
+    <div class="week-chart">
+      ${days.map(d => {
+        const pct = maxSec ? (d.sec / maxSec * 100) : 0;
+        const cls = d.sec === 0 ? "empty" : (d.met ? "met" : "");
+        const minCls = d.met ? "met" : "";
+        const wd = isoToWeekday(d.iso).slice(0, 2);
+        return `
+          <div class="day-col">
+            <div class="day-min ${minCls}">${d.min || ""}</div>
+            <div class="bar ${cls}" style="height:${Math.max(pct, 1)}%"></div>
+            <div class="day-label">${wd}</div>
+          </div>
+        `;
+      }).join("")}
+    </div>
+    <div style="margin-top:24px;font-size:13px;color:var(--muted);">Goal line: ${GOAL_MIN} min · green = goal met</div>
+  `;
+}
+
+function renderOverallStatsCard() {
+  const meta = getMeta();
+  const history = getDailyHistory();
+  const dpNow = getDailyProgress();
+  history[dpNow.date] = dpNow.seconds;
+  // Words mastered overall
+  const masteredWords = Object.entries(stats).filter(([k, s]) => {
+    const t = (s.right || 0) + (s.wrong || 0);
+    return t >= 4 && (s.right / t) >= 0.85;
+  }).length;
+  // Total study time
+  const totalSec = Object.values(history).reduce((a, b) => a + b, 0);
+  const totalMin = Math.floor(totalSec / 60);
+  const totalH = Math.floor(totalMin / 60);
+  const totalDisplay = totalH > 0 ? `${totalH}h ${totalMin % 60}m` : `${totalMin}m`;
+  // Days active
+  const daysActive = Object.values(history).filter(s => s > 60).length;
+  // Sentence stats
+  const sentTotal = Object.keys(sentStats).length;
+  const sentRight = Object.values(sentStats).reduce((a, s) => a + (s.right || 0), 0);
+  // Journal entries
+  let journalCount = 0;
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k && k.startsWith(JOURNAL_PREFIX)) journalCount++;
+  }
+  const card = document.getElementById("overallStatsCard");
+  card.innerHTML = `
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="label">🔥 Current streak</div>
+        <div class="val">${dpNow.streak} days</div>
+        <div class="sub">longest: ${meta.maxStreak || dpNow.streak}</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">⏱ Total study time</div>
+        <div class="val">${totalDisplay}</div>
+        <div class="sub">${daysActive} active days</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">📚 Words mastered</div>
+        <div class="val">${masteredWords} / ${VOCAB.length}</div>
+        <div class="sub">${Math.round(100*masteredWords/VOCAB.length)}% of vocab</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">📝 Sentences practiced</div>
+        <div class="val">${sentTotal}</div>
+        <div class="sub">${sentRight} correct</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">📓 Journal entries</div>
+        <div class="val">${journalCount}</div>
+        <div class="sub">days written in Korean</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">🎯 Today</div>
+        <div class="val">${Math.floor(dpNow.seconds/60)} / ${GOAL_MIN}m</div>
+        <div class="sub">${dpNow.seconds >= GOAL_SECONDS ? "goal met ✓" : "keep going"}</div>
+      </div>
+    </div>
+  `;
+}
+
+function renderWeeklyNotes() {
+  const wkStart = getCurrentWeekStart();
+  const key = WEEKLY_NOTES_PREFIX + wkStart;
+  const ta = document.getElementById("weeklyNotesInput");
+  ta.value = localStorage.getItem(key) || "";
+  let timer = null;
+  ta.oninput = () => {
+    document.getElementById("weeklyNotesStatus").textContent = "saving…";
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      if (ta.value.trim()) localStorage.setItem(key, ta.value);
+      else localStorage.removeItem(key);
+      document.getElementById("weeklyNotesStatus").textContent = "saved ✓";
+    }, 500);
+  };
+}
+
+function renderPlan() {
+  renderWeekFocusCard();
+  renderWeekChartCard();
+  renderOverallStatsCard();
+  renderWeeklyNotes();
+}
+
+
 // Hook tab switch to render journal
 const _origBindTabs = bindTabs;
 bindTabs = function() {
@@ -1338,6 +1619,7 @@ bindTabs = function() {
       if (target === "sentences") renderSentence();
       if (target === "reading") renderTextList();
       if (target === "journal") renderJournal();
+      if (target === "plan") renderPlan();
     };
   });
 };
