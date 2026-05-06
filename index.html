@@ -1196,19 +1196,11 @@ function getDailyProgress() {
   let dp = raw ? JSON.parse(raw) : { date: todayStr(), seconds: 0, streak: 0, lastActiveDate: null };
   const today = todayStr();
   if (dp.date !== today) {
-    // Day changed — decide if streak continues
     const yesterday = (() => {
       const d = new Date(); d.setDate(d.getDate() - 1);
       return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
     })();
-    let newStreak = dp.streak;
-    if (dp.lastActiveDate === yesterday && dp.seconds > 0) {
-      // streak preserved
-    } else if (dp.lastActiveDate === today) {
-      // already active today, keep
-    } else {
-      newStreak = 0; // streak broken
-    }
+    const newStreak = (dp.lastActiveDate === yesterday) ? dp.streak : 0;
     dp = { date: today, seconds: 0, streak: newStreak, lastActiveDate: dp.lastActiveDate };
   }
   return dp;
@@ -1227,18 +1219,13 @@ function tickTimer() {
   if (document.hidden) return;
   if (Date.now() - lastActivityAt > IDLE_MS) return;
   const dp = getDailyProgress();
+  const firstActivityToday = dp.lastActiveDate !== dp.date;
   dp.seconds = (dp.seconds || 0) + 1;
-  // If user just hit goal for the first time today, bump streak
-  if (dp.seconds === GOAL_SECONDS && dp.lastActiveDate !== dp.date) {
+  if (firstActivityToday) {
     dp.streak = (dp.streak || 0) + 1;
     dp.lastActiveDate = dp.date;
-  } else if (dp.seconds > 0 && dp.lastActiveDate !== dp.date && dp.lastActiveDate === null) {
-    // first activity of the day at all
-    dp.lastActiveDate = dp.date;
-    if (dp.streak === 0) dp.streak = 1;
   }
   saveDailyProgress(dp);
-  // Update header every 5 sec
   if (dp.seconds % 5 === 0) renderStats();
 }
 
