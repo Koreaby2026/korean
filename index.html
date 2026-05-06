@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>한국어 · your dictionary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f2;
+    --card: #ffffff;
+    --ink: #1f1d1a;
+    --muted: #7d756c;
+    --accent: #c2410c;
+    --accent-soft: #fde8d8;
+    --green: #15803d;
+    --green-soft: #dcfce7;
+    --red: #b91c1c;
+    --red-soft: #fee2e2;
+    --border: #ece7df;
+    --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.06);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  .hangul { font-family: 'Noto Sans KR', 'Inter', sans-serif; }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 80px;
+  }
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  h1 .kr { font-family: 'Noto Sans KR'; color: var(--accent); margin-right: 6px; }
+  .stats {
+    display: flex;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .stat-pill {
+    background: var(--card);
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+  }
+  .stat-pill .num { color: var(--ink); font-weight: 600; }
+  .stat-pill.fire .num { color: var(--accent); }
+
+  .controls {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 14px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+  }
+  .control-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .control-row:last-child { margin-bottom: 0; }
+  .control-label {
+    font-size: 12px;
+    color: var(--muted);
+    width: 100%;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .chip {
+    background: transparent;
+    border: 1px solid var(--border);
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--ink);
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .chip:hover { background: var(--bg); }
+  .chip.active {
+    background: var(--ink);
+    color: #fff;
+    border-color: var(--ink);
+  }
+  .chip.fire.active { background: var(--accent); border-color: var(--accent); }
+  select.chip {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='%237d756c' d='M0 0l5 6 5-6z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 26px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .question-meta {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .question-meta .tag {
+    background: var(--bg);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .question-meta .tag.forgotten { color: var(--accent); background: var(--accent-soft); }
+  .question {
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    word-break: keep-all;
+  }
+  .question.kr-mode { font-family: 'Noto Sans KR', sans-serif; }
+  .question-prompt {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+  .input-wrap {
+    display: flex;
+    gap: 8px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  input[type="text"] {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-family: inherit;
+    background: var(--bg);
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  input[type="text"]:focus { border-color: var(--accent); }
+  .btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+    background: var(--ink);
+    color: #fff;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn.secondary {
+    background: var(--bg);
+    color: var(--ink);
+    border: 1px solid var(--border);
+  }
+  .btn.ghost {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
+  }
+  .actions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+
+  .feedback {
+    margin-top: 20px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    text-align: left;
+  }
+  .feedback.correct { background: var(--green-soft); color: var(--green); }
+  .feedback.wrong { background: var(--red-soft); color: var(--red); }
+  .feedback.skip { background: var(--bg); color: var(--muted); border: 1px dashed var(--border); }
+  .feedback .answer-line { font-size: 18px; margin-bottom: 4px; }
+  .feedback .answer-line .hangul { font-weight: 600; font-size: 22px; }
+  .feedback .romaja { font-style: italic; font-size: 13px; opacity: 0.8; }
+  .feedback .example { margin-top: 8px; font-size: 14px; opacity: 0.85; }
+
+  .session-bar {
+    margin-top: 16px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .session-bar strong { color: var(--ink); }
+  .session-bar .reset {
+    background: none;
+    border: none;
+    color: var(--muted);
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 13px;
+    padding: 0;
+    margin-left: 8px;
+  }
+  .empty { text-align: center; color: var(--muted); padding: 40px 20px; }
+
+  .footer-actions {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .footer-actions a, .footer-actions button {
+    color: var(--muted);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: inherit;
+    font-size: 12px;
+    margin: 0 6px;
+    padding: 0;
+  }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 4px;
+    box-shadow: var(--shadow);
+  }
+  .tab {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .tab:hover { color: var(--ink); }
+  .tab.active {
+    background: var(--ink);
+    color: #fff;
+  }
+  .view { display: none; }
+  .view.active { display: block; }
+
+  /* Sentences */
+  .sentence-card .question {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-align: left;
+    padding: 0 8px;
+  }
+  .sentence-card .question.kr-mode { font-size: 24px; }
+  textarea#sentenceInput {
+    width: 100%;
+    min-height: 80px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-family: inherit;
+    background: var(--bg);
+    color: var(--ink);
+    outline: none;
+    resize: vertical;
+    line-height: 1.5;
+  }
+  textarea#sentenceInput:focus { border-color: var(--accent); }
+  .sentence-feedback {
+    margin-top: 16px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    text-align: left;
+    background: var(--bg);
+    border: 1px solid var(--border);
+  }
+  .sentence-feedback .your-answer {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .sentence-feedback .your-answer .text { color: var(--ink); }
+  .sentence-feedback .correct-answer {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+  .sentence-feedback .correct-answer .hangul { font-weight: 500; }
+  .sentence-feedback .romaja {
+    font-size: 13px;
+    color: var(--muted);
+    font-style: italic;
+    margin-bottom: 6px;
+  }
+  .sentence-feedback .gloss {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .grade-row {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+  .btn.grade-good { background: var(--green); }
+  .btn.grade-bad { background: var(--red); }
+
+  /* Reading */
+  .text-list {
+    display: grid;
+    gap: 12px;
+  }
+  .text-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    cursor: pointer;
+    transition: all 0.15s;
+    box-shadow: var(--shadow);
+  }
+  .text-item:hover { transform: translateY(-1px); border-color: var(--accent); }
+  .text-item .title-kr { font-family: 'Noto Sans KR'; font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+  .text-item .title-en { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+  .text-item .preview { font-family: 'Noto Sans KR'; font-size: 14px; color: var(--muted); line-height: 1.5; }
+  .text-viewer {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: var(--shadow);
+  }
+  .text-viewer .back {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  .text-viewer h2 {
+    font-family: 'Noto Sans KR';
+    margin: 0 0 4px;
+    font-size: 22px;
+  }
+  .text-viewer .subtitle {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  .text-body {
+    font-family: 'Noto Sans KR';
+    font-size: 19px;
+    line-height: 1.85;
+    margin-bottom: 16px;
+  }
+  .text-body .word {
+    cursor: pointer;
+    border-bottom: 1px dashed transparent;
+    transition: all 0.15s;
+  }
+  .text-body .word.has-gloss { border-bottom-color: var(--accent); }
+  .text-body .word.has-gloss:hover { background: var(--accent-soft); }
+  .text-body .word.revealed { background: var(--accent-soft); }
+  .text-toggles {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0;
+    flex-wrap: wrap;
+  }
+  .text-translation {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 12px;
+  }
+  .glossary {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  .glossary h4 {
+    margin: 0 0 8px;
+    font-size: 13px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .glossary-item { margin-bottom: 4px; }
+  .glossary-item .hangul { font-weight: 500; margin-right: 6px; }
+  .glossary-item .romaja { color: var(--muted); font-size: 12px; font-style: italic; }
+
+  @media (max-width: 480px) {
+    .question { font-size: 36px; }
+    .card { padding: 24px 16px; min-height: 240px; }
+    .container { padding: 16px 12px 60px; }
+    h1 { font-size: 18px; }
+    .sentence-card .question { font-size: 20px; }
+    .text-body { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1><span class="kr">한국어</span>· your dictionary</h1>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="words">Words</button>
+    <button class="tab" data-tab="sentences">Sentences</button>
+    <button class="tab" data-tab="reading">Reading</button>
+  </nav>
+
+  <div class="view active" id="wordsView">
+    <div class="controls">
+      <div class="control-row">
+        <span class="control-label">mode</span>
+        <button class="chip fire active" data-mode="forgotten">🔥 Forgotten</button>
+        <button class="chip" data-mode="new">✨ New</button>
+        <button class="chip" data-mode="all">All</button>
+        <select class="chip" id="topicSel"><option value="">by topic…</option></select>
+        <select class="chip" id="unitSel"><option value="">by unit…</option></select>
+      </div>
+      <div class="control-row">
+        <span class="control-label">direction</span>
+        <button class="chip" data-dir="kr_ru">한 → en</button>
+        <button class="chip active" data-dir="ru_kr">en → 한</button>
+      </div>
+    </div>
+
+    <div class="card" id="card">
+      <div class="empty">Loading…</div>
+    </div>
+
+    <div class="session-bar" id="sessionBar"></div>
+  </div>
+
+  <div class="view" id="sentencesView">
+    <div class="controls">
+      <div class="control-row">
+        <span class="control-label">direction</span>
+        <button class="chip" data-sdir="kr_en">한 → en</button>
+        <button class="chip active" data-sdir="en_kr">en → 한</button>
+      </div>
+    </div>
+    <div class="card sentence-card" id="sentenceCard">
+      <div class="empty">Loading…</div>
+    </div>
+    <div class="session-bar" id="sentenceSessionBar"></div>
+  </div>
+
+  <div class="view" id="readingView">
+    <div id="textList" class="text-list"></div>
+    <div id="textViewer" hidden></div>
+  </div>
+
+  <div class="footer-actions">
+    <button id="exportBtn">export progress</button>·
+    <button id="resetBtn">reset stats</button>
+  </div>
+</div>
+
+<script>
+const VOCAB = [{"korean":"시계","romanization":"sigye","translation":"clock","status":"forgotten","unit":"5","topic":"objects","example":"시계가 있어요. — There is a clock."},{"korean":"돈","romanization":"don","translation":"money","status":"forgotten","unit":"5","topic":"objects","example":"돈이 없어요. — I don't have money."},{"korean":"창문","romanization":"changmun","translation":"window","status":"forgotten","unit":"5","topic":"objects","example":"창문을 열어요. — I open the window."},{"korean":"방향","romanization":"banghyang","translation":"direction","status":"forgotten","unit":"5","topic":"place","example":"어느 방향이에요? — Which direction?"},{"korean":"이동","romanization":"idong","translation":"movement","status":"forgotten","unit":"5","topic":"place","example":"이동 시간이 길어요. — The travel time is long."},{"korean":"근처","romanization":"geuncheo","translation":"nearby","status":"forgotten","unit":"5","topic":"place","example":"학교 근처에 살아요. — I live near the school."},{"korean":"주차장","romanization":"juchajang","translation":"parking lot","status":"forgotten","unit":"5","topic":"place","example":"주차장이 어디예요? — Where is the parking lot?"},{"korean":"건물","romanization":"geonmul","translation":"building","status":"forgotten","unit":"5","topic":"place","example":"큰 건물이에요. — It's a big building."},{"korean":"맞아요","romanization":"majayo","translation":"that's right","status":"forgotten","unit":"5","topic":"phrases","example":"네 맞아요. — Yes, that's right."},{"korean":"학교","romanization":"hakgyo","translation":"school","status":"forgotten","unit":"5","topic":"place","example":"학교에 가요. — I go to school."},{"korean":"지난","romanization":"jinan","translation":"last/past","status":"forgotten","unit":"5","topic":"time","example":"지난 주에. — Last week."},{"korean":"봄","romanization":"bom","translation":"spring","status":"forgotten","unit":"1B","topic":"seasons","example":"봄이 좋아요. — I like spring."},{"korean":"여름","romanization":"yeoreum","translation":"summer","status":"forgotten","unit":"1B","topic":"seasons","example":"여름이 더워요. — Summer is hot."},{"korean":"가을","romanization":"gaeul","translation":"autumn/fall","status":"forgotten","unit":"1B","topic":"seasons","example":"가을이 시원해요. — Autumn is cool."},{"korean":"겨울","romanization":"gyeoul","translation":"winter","status":"forgotten","unit":"1B","topic":"seasons","example":"겨울이 추워요. — Winter is cold."},{"korean":"요일","romanization":"yoil","translation":"day of week","status":"forgotten","unit":"1B","topic":"time","example":"오늘은 무슨 요일이에요? — What day is today?"},{"korean":"술","romanization":"sul","translation":"alcohol","status":"forgotten","unit":"1B","topic":"food","example":"술을 안 마셔요. — I don't drink alcohol."},{"korean":"야구","romanization":"yagu","translation":"baseball","status":"forgotten","unit":"1B","topic":"sports","example":"야구를 좋아해요. — I like baseball."},{"korean":"수박","romanization":"subak","translation":"watermelon","status":"forgotten","unit":"1B","topic":"food","example":"수박이 맛있어요. — Watermelon is delicious."},{"korean":"사진 찍다","romanization":"sajin jjikda","translation":"to take a photo","status":"forgotten","unit":"1B","topic":"hobbies","example":"사진을 찍어요. — I take photos."},{"korean":"낚시","romanization":"naksi","translation":"fishing","status":"forgotten","unit":"1B","topic":"hobbies","example":"낚시를 해요. — I go fishing."},{"korean":"시간","romanization":"sigan","translation":"time","status":"forgotten","unit":"1B","topic":"time","example":"시간이 없어요. — I don't have time."},{"korean":"자전거를 타다","romanization":"jajeongeoreul tada","translation":"to ride a bike","status":"forgotten","unit":"1B","topic":"hobbies","example":"자전거를 타요. — I ride a bike."},{"korean":"맵다","romanization":"maepda","translation":"spicy","status":"forgotten","unit":"1B","topic":"food","example":"김치가 매워요. — Kimchi is spicy."},{"korean":"아프다","romanization":"apeuda","translation":"to be sick / to hurt","status":"forgotten","unit":"4","topic":"state","example":"머리가 아파요. — My head hurts."},{"korean":"배고프다","romanization":"baegopeuda","translation":"to be hungry","status":"forgotten","unit":"4","topic":"state","example":"배가 고파요. — I'm hungry."},{"korean":"나쁘다","romanization":"nappeuda","translation":"to be bad","status":"forgotten","unit":"4","topic":"state","example":"날씨가 나빠요. — The weather is bad."},{"korean":"슬프다","romanization":"seulpeuda","translation":"to be sad","status":"forgotten","unit":"4","topic":"state","example":"슬퍼요. — I'm sad."},{"korean":"피곤하다","romanization":"pigonhada","translation":"to be tired","status":"forgotten","unit":"4","topic":"state","example":"피곤해요. — I'm tired."},{"korean":"쉽다","romanization":"swipda","translation":"to be easy","status":"forgotten","unit":"4","topic":"state","example":"쉬워요. — It's easy."},{"korean":"어렵다","romanization":"eoryeopda","translation":"to be difficult","status":"forgotten","unit":"4","topic":"state","example":"어려워요. — It's difficult."},{"korean":"바쁘다","romanization":"bappeuda","translation":"to be busy","status":"forgotten","unit":"4","topic":"state","example":"바빠요. — I'm busy."},{"korean":"늦다","romanization":"neutda","translation":"to be late","status":"forgotten","unit":"4","topic":"state","example":"늦었어요. — I'm late."},{"korean":"비가 오다","romanization":"biga oda","translation":"to rain","status":"forgotten","unit":"4","topic":"weather","example":"비가 와요. — It's raining."},{"korean":"눈이 오다","romanization":"nuni oda","translation":"to snow","status":"forgotten","unit":"4","topic":"weather","example":"눈이 와요. — It's snowing."},{"korean":"덥다","romanization":"deopda","translation":"to be hot","status":"forgotten","unit":"4","topic":"weather","example":"오늘 더워요. — It's hot today."},{"korean":"가족","romanization":"gajok","translation":"family","status":"forgotten","unit":"4","topic":"people","example":"제 가족이에요. — It's my family."},{"korean":"숙제","romanization":"sukje","translation":"homework","status":"forgotten","unit":"4","topic":"study","example":"숙제를 해요. — I do homework."},{"korean":"시험","romanization":"siheom","translation":"exam","status":"forgotten","unit":"4","topic":"study","example":"시험이 어려워요. — The exam is hard."},{"korean":"배","romanization":"bae","translation":"stomach","status":"forgotten","unit":"4","topic":"body","example":"배가 아파요. — My stomach hurts."},{"korean":"새","romanization":"sae","translation":"bird","status":"forgotten","unit":"3","topic":"nature","example":"새가 노래해요. — The bird sings."},{"korean":"지갑","romanization":"jigap","translation":"wallet","status":"forgotten","unit":"3","topic":"objects","example":"지갑을 잃어버렸어요. — I lost my wallet."},{"korean":"생선","romanization":"saengseon","translation":"fish (food)","status":"forgotten","unit":"3","topic":"food","example":"생선을 먹어요. — I eat fish."},{"korean":"넥타이","romanization":"nektai","translation":"tie","status":"forgotten","unit":"3","topic":"clothes","example":"넥타이를 매요. — I tie a tie."},{"korean":"스카프","romanization":"seukapeu","translation":"scarf","status":"forgotten","unit":"3","topic":"clothes","example":"스카프가 예뻐요. — The scarf is pretty."},{"korean":"모자","romanization":"moja","translation":"hat/cap","status":"forgotten","unit":"3","topic":"clothes","example":"모자를 써요. — I put on a hat."},{"korean":"안경","romanization":"angyeong","translation":"glasses","status":"forgotten","unit":"3","topic":"clothes","example":"안경을 써요. — I wear glasses."},{"korean":"구두","romanization":"gudu","translation":"dress shoes","status":"forgotten","unit":"3","topic":"clothes","example":"구두를 신어요. — I put on dress shoes."},{"korean":"양복","romanization":"yangbok","translation":"men's suit","status":"forgotten","unit":"3","topic":"clothes","example":"양복을 입어요. — I put on a suit."},{"korean":"벗다","romanization":"beotda","translation":"to take off (clothes)","status":"forgotten","unit":"3","topic":"clothes","example":"옷을 벗어요. — I take off clothes."},{"korean":"양말","romanization":"yangmal","translation":"socks","status":"forgotten","unit":"3","topic":"clothes","example":"양말을 신어요. — I put on socks."},{"korean":"약속","romanization":"yaksok","translation":"appointment/promise","status":"forgotten","unit":"3","topic":"phrases","example":"약속이 있어요. — I have an appointment."},{"korean":"기분","romanization":"gibun","translation":"mood","status":"forgotten","unit":"3","topic":"state","example":"기분이 좋아요. — I'm in a good mood."},{"korean":"아침","romanization":"achim","translation":"morning/breakfast","status":"forgotten","unit":"3","topic":"time","example":"아침을 먹어요. — I eat breakfast."},{"korean":"점심","romanization":"jeomsim","translation":"lunch","status":"forgotten","unit":"3","topic":"time","example":"점심을 먹어요. — I eat lunch."},{"korean":"저녁","romanization":"jeonyeok","translation":"evening/dinner","status":"forgotten","unit":"3","topic":"time","example":"저녁을 먹어요. — I eat dinner."},{"korean":"매일","romanization":"maeil","translation":"every day","status":"forgotten","unit":"2","topic":"frequency","example":"매일 운동해요. — I exercise every day."},{"korean":"자주","romanization":"jaju","translation":"often","status":"forgotten","unit":"2","topic":"frequency","example":"자주 가요. — I go often."},{"korean":"가끔","romanization":"gaggeum","translation":"sometimes","status":"forgotten","unit":"2","topic":"frequency","example":"가끔 만나요. — We meet sometimes."},{"korean":"당구를 치다","romanization":"danggureul chida","translation":"to play billiards","status":"forgotten","unit":"2","topic":"hobbies","example":"당구를 쳐요. — I play billiards."},{"korean":"볼링을 치다","romanization":"bollingeul chida","translation":"to bowl","status":"forgotten","unit":"2","topic":"hobbies","example":"볼링을 쳐요. — I go bowling."},{"korean":"노래를 부르다","romanization":"noraereul bureuda","translation":"to sing a song","status":"forgotten","unit":"2","topic":"hobbies","example":"노래를 불러요. — I sing a song."},{"korean":"사진을 찍다","romanization":"sajineul jjikda","translation":"to take a photo","status":"forgotten","unit":"2","topic":"hobbies","example":"사진을 찍어요. — I take photos."},{"korean":"축구를 하다","romanization":"chukgureul hada","translation":"to play soccer","status":"forgotten","unit":"2","topic":"hobbies","example":"축구를 해요. — I play soccer."},{"korean":"그림을 그리다","romanization":"geurimeul geurida","translation":"to draw a picture","status":"forgotten","unit":"2","topic":"hobbies","example":"그림을 그려요. — I draw a picture."},{"korean":"등산을 하다","romanization":"deungsaneul hada","translation":"to go hiking","status":"forgotten","unit":"2","topic":"hobbies","example":"등산을 해요. — I go hiking."},{"korean":"춤을 추다","romanization":"chumeul chuda","translation":"to dance","status":"forgotten","unit":"2","topic":"hobbies","example":"춤을 춰요. — I dance."},{"korean":"누구","romanization":"nugu","translation":"who","status":"new","unit":"5","topic":"questions","example":"저 사람이 누구예요? — Who is that person?"},{"korean":"무엇","romanization":"mueot","translation":"what","status":"new","unit":"5","topic":"questions","example":"이게 뭐예요? — What is this?"},{"korean":"언제","romanization":"eonje","translation":"when","status":"new","unit":"5","topic":"questions","example":"언제 와요? — When are you coming?"},{"korean":"어디","romanization":"eodi","translation":"where","status":"new","unit":"5","topic":"questions","example":"어디 가요? — Where are you going?"},{"korean":"어떤","romanization":"eotteon","translation":"what kind of","status":"new","unit":"5","topic":"questions","example":"어떤 음식 좋아해요? — What kind of food do you like?"},{"korean":"왜","romanization":"wae","translation":"why","status":"new","unit":"5","topic":"questions","example":"왜 안 가요? — Why aren't you going?"},{"korean":"어떻게","romanization":"eotteoke","translation":"how","status":"new","unit":"5","topic":"questions","example":"어떻게 가요? — How do you get there?"},{"korean":"얼마나","romanization":"eolmana","translation":"how much / how long","status":"new","unit":"5","topic":"questions","example":"얼마나 걸려요? — How long does it take?"},{"korean":"몇 번","romanization":"myeot beon","translation":"what number","status":"new","unit":"5","topic":"questions","example":"몇 번 버스예요? — Which bus number is it?"},{"korean":"무슨","romanization":"museun","translation":"what / which","status":"new","unit":"5","topic":"questions","example":"무슨 일이에요? — What's the matter?"},{"korean":"전화번호","romanization":"jeonhwabeonho","translation":"phone number","status":"new","unit":"5","topic":"objects","example":"전화번호가 뭐예요? — What's your phone number?"},{"korean":"화장실","romanization":"hwajangsil","translation":"bathroom","status":"new","unit":"5","topic":"place","example":"화장실이 어디예요? — Where is the bathroom?"},{"korean":"여행","romanization":"yeohaeng","translation":"travel/trip","status":"new","unit":"5","topic":"place","example":"여행을 가요. — I'm going on a trip."},{"korean":"공항","romanization":"gonghang","translation":"airport","status":"new","unit":"5","topic":"place","example":"공항에 가요. — I'm going to the airport."},{"korean":"은행","romanization":"eunhaeng","translation":"bank","status":"new","unit":"5","topic":"place","example":"은행에 가요. — I'm going to the bank."},{"korean":"수업","romanization":"sueop","translation":"class/lesson","status":"new","unit":"5","topic":"study","example":"수업이 있어요. — I have class."},{"korean":"일찍","romanization":"iljjik","translation":"early","status":"new","unit":"5","topic":"time","example":"일찍 일어나요. — I get up early."},{"korean":"계절","romanization":"gyejeol","translation":"season","status":"new","unit":"5","topic":"time","example":"어느 계절을 좋아해요? — Which season do you like?"},{"korean":"월요일","romanization":"woryoil","translation":"Monday","status":"new","unit":"base","topic":"weekdays","example":"월요일에 만나요. — Let's meet on Monday."},{"korean":"화요일","romanization":"hwayoil","translation":"Tuesday","status":"new","unit":"base","topic":"weekdays","example":"오늘은 화요일이에요. — Today is Tuesday."},{"korean":"수요일","romanization":"suyoil","translation":"Wednesday","status":"new","unit":"base","topic":"weekdays","example":"수요일에 시간 있어요? — Are you free on Wednesday?"},{"korean":"목요일","romanization":"mogyoil","translation":"Thursday","status":"new","unit":"base","topic":"weekdays","example":"목요일에 시험이 있어요. — I have an exam on Thursday."},{"korean":"금요일","romanization":"geumyoil","translation":"Friday","status":"new","unit":"base","topic":"weekdays","example":"금요일이 좋아요. — I like Friday."},{"korean":"토요일","romanization":"toyoil","translation":"Saturday","status":"new","unit":"base","topic":"weekdays","example":"토요일에 쉬어요. — I rest on Saturday."},{"korean":"일요일","romanization":"iryoil","translation":"Sunday","status":"new","unit":"base","topic":"weekdays","example":"일요일에 자요. — I sleep on Sunday."},{"korean":"하나","romanization":"hana","translation":"one (native)","status":"new","unit":"base","topic":"numbers native","example":"사과 하나. — One apple."},{"korean":"둘","romanization":"dul","translation":"two (native)","status":"new","unit":"base","topic":"numbers native","example":"사람 둘. — Two people."},{"korean":"셋","romanization":"set","translation":"three (native)","status":"new","unit":"base","topic":"numbers native","example":"셋 주세요. — Three please."},{"korean":"넷","romanization":"net","translation":"four (native)","status":"new","unit":"base","topic":"numbers native","example":"넷이에요. — It's four."},{"korean":"다섯","romanization":"daseot","translation":"five (native)","status":"new","unit":"base","topic":"numbers native","example":"다섯 시. — Five o'clock."},{"korean":"여섯","romanization":"yeoseot","translation":"six (native)","status":"new","unit":"base","topic":"numbers native","example":"여섯 시. — Six o'clock."},{"korean":"일곱","romanization":"ilgop","translation":"seven (native)","status":"new","unit":"base","topic":"numbers native","example":"일곱 시. — Seven o'clock."},{"korean":"여덟","romanization":"yeodeol","translation":"eight (native)","status":"new","unit":"base","topic":"numbers native","example":"여덟 시. — Eight o'clock."},{"korean":"아홉","romanization":"ahop","translation":"nine (native)","status":"new","unit":"base","topic":"numbers native","example":"아홉 시. — Nine o'clock."},{"korean":"열","romanization":"yeol","translation":"ten (native)","status":"new","unit":"base","topic":"numbers native","example":"열 명. — Ten people."},{"korean":"스물","romanization":"seumul","translation":"twenty (native)","status":"new","unit":"base","topic":"numbers native","example":"스물 살. — Twenty years old."},{"korean":"서른","romanization":"seoreun","translation":"thirty (native)","status":"new","unit":"base","topic":"numbers native","example":"서른 살. — Thirty years old."},{"korean":"백","romanization":"baek","translation":"hundred (sino)","status":"new","unit":"base","topic":"numbers sino","example":"백 원. — One hundred won."},{"korean":"천","romanization":"cheon","translation":"thousand (sino)","status":"new","unit":"base","topic":"numbers sino","example":"천 원. — One thousand won."},{"korean":"만","romanization":"man","translation":"ten thousand (sino)","status":"new","unit":"base","topic":"numbers sino","example":"만 원. — Ten thousand won."},{"korean":"앞","romanization":"ap","translation":"in front of","status":"new","unit":"base","topic":"place","example":"학교 앞에. — In front of the school."},{"korean":"뒤","romanization":"dwi","translation":"behind","status":"new","unit":"base","topic":"place","example":"집 뒤에. — Behind the house."},{"korean":"아래","romanization":"arae","translation":"under","status":"new","unit":"base","topic":"place","example":"책상 아래에. — Under the desk."},{"korean":"위","romanization":"wi","translation":"on / above","status":"new","unit":"base","topic":"place","example":"책상 위에. — On the desk."},{"korean":"안","romanization":"an","translation":"inside","status":"new","unit":"base","topic":"place","example":"방 안에. — Inside the room."},{"korean":"밖","romanization":"bak","translation":"outside","status":"new","unit":"base","topic":"place","example":"집 밖에. — Outside the house."},{"korean":"옆","romanization":"yeop","translation":"beside / next to","status":"new","unit":"base","topic":"place","example":"저 옆에. — Next to me."},{"korean":"올라가다","romanization":"ollagada","translation":"to go up","status":"new","unit":"5","topic":"movement","example":"계단으로 올라가세요. — Go up the stairs."},{"korean":"내려가다","romanization":"naeryeogada","translation":"to go down","status":"new","unit":"5","topic":"movement","example":"아래로 내려가세요. — Go down."},{"korean":"나가다","romanization":"nagada","translation":"to go out","status":"new","unit":"5","topic":"movement","example":"밖으로 나가세요. — Go outside."},{"korean":"들어가다","romanization":"deureogada","translation":"to go in / enter","status":"new","unit":"5","topic":"movement","example":"안으로 들어가세요. — Go inside."},{"korean":"똑바로 가다","romanization":"ttokbaro gada","translation":"to go straight","status":"new","unit":"5","topic":"movement","example":"똑바로 가세요. — Go straight."},{"korean":"돌아가다","romanization":"doragada","translation":"to go back / go around","status":"new","unit":"5","topic":"movement","example":"돌아가세요. — Go back."},{"korean":"건너가다","romanization":"geonneogada","translation":"to cross over","status":"new","unit":"5","topic":"movement","example":"길을 건너가세요. — Cross the street."},{"korean":"지나가다","romanization":"jinagada","translation":"to pass by","status":"new","unit":"5","topic":"movement","example":"지나가세요. — Go past."},{"korean":"음식","romanization":"eumsik","translation":"food","status":"new","unit":"1B","topic":"food","example":"한국 음식이 맛있어요. — Korean food is delicious."},{"korean":"선물","romanization":"seonmul","translation":"gift","status":"new","unit":"1B","topic":"objects","example":"선물을 받아요. — I receive a gift."},{"korean":"고기","romanization":"gogi","translation":"meat","status":"new","unit":"1B","topic":"food","example":"고기를 먹어요. — I eat meat."},{"korean":"것","romanization":"geot","translation":"thing","status":"new","unit":"1B","topic":"phrases","example":"이것은 무엇이에요? — What is this?"},{"korean":"맛","romanization":"mat","translation":"taste","status":"new","unit":"1B","topic":"food","example":"맛이 좋아요. — It tastes good."},{"korean":"초밥","romanization":"chobap","translation":"sushi","status":"new","unit":"1B","topic":"food","example":"초밥을 먹어요. — I eat sushi."},{"korean":"받다","romanization":"batda","translation":"to receive","status":"new","unit":"1B","topic":"verbs","example":"선물을 받아요. — I receive a gift."},{"korean":"주문하다","romanization":"jumunhada","translation":"to order","status":"new","unit":"1B","topic":"verbs","example":"음식을 주문해요. — I order food."},{"korean":"가장","romanization":"gajang","translation":"the most","status":"new","unit":"1B","topic":"phrases","example":"가장 좋아해요. — I like it the most."},{"korean":"미안하다","romanization":"mianhada","translation":"to be sorry","status":"new","unit":"1B","topic":"phrases","example":"미안해요. — I'm sorry."},{"korean":"혼자","romanization":"honja","translation":"alone","status":"new","unit":"1B","topic":"phrases","example":"혼자 가요. — I go alone."},{"korean":"치다","romanization":"chida","translation":"to play (tennis) / to hit","status":"new","unit":"1B","topic":"verbs","example":"테니스를 쳐요. — I play tennis."},{"korean":"운전하다","romanization":"unjeonhada","translation":"to drive","status":"new","unit":"1B","topic":"verbs","example":"운전해요. — I drive."},{"korean":"조금","romanization":"jogeum","translation":"a little","status":"new","unit":"1B","topic":"phrases","example":"조금 알아요. — I know a little."},{"korean":"하지만","romanization":"hajiman","translation":"but / however","status":"new","unit":"1B","topic":"phrases","example":"비싸요. 하지만 좋아요. — It's expensive. But it's good."},{"korean":"일주일에 한 번","romanization":"iljuire han beon","translation":"once a week","status":"new","unit":"1B","topic":"frequency","example":"일주일에 한 번 가요. — I go once a week."},{"korean":"한 달에 한 번","romanization":"han dare han beon","translation":"once a month","status":"new","unit":"1B","topic":"frequency","example":"한 달에 한 번 만나요. — We meet once a month."},{"korean":"일 년에 한 번","romanization":"il nyeone han beon","translation":"once a year","status":"new","unit":"1B","topic":"frequency","example":"일 년에 한 번 여행해요. — I travel once a year."},{"korean":"크다","romanization":"keuda","translation":"to be big","status":"new","unit":"4","topic":"descriptions","example":"집이 커요. — The house is big."},{"korean":"작다","romanization":"jakda","translation":"to be small","status":"new","unit":"4","topic":"descriptions","example":"방이 작아요. — The room is small."},{"korean":"넓다","romanization":"neolda","translation":"to be wide / spacious","status":"new","unit":"4","topic":"descriptions","example":"길이 넓어요. — The road is wide."},{"korean":"좁다","romanization":"jopda","translation":"to be narrow","status":"new","unit":"4","topic":"descriptions","example":"길이 좁아요. — The road is narrow."},{"korean":"높다","romanization":"nopda","translation":"to be high","status":"new","unit":"4","topic":"descriptions","example":"산이 높아요. — The mountain is high."},{"korean":"낮다","romanization":"natda","translation":"to be low","status":"new","unit":"4","topic":"descriptions","example":"책상이 낮아요. — The desk is low."},{"korean":"길다","romanization":"gilda","translation":"to be long","status":"new","unit":"4","topic":"descriptions","example":"머리가 길어요. — The hair is long."},{"korean":"짧다","romanization":"jjalda","translation":"to be short","status":"new","unit":"4","topic":"descriptions","example":"머리가 짧아요. — The hair is short."},{"korean":"비싸다","romanization":"bissada","translation":"to be expensive","status":"new","unit":"4","topic":"descriptions","example":"옷이 비싸요. — Clothes are expensive."},{"korean":"싸다","romanization":"ssada","translation":"to be cheap","status":"new","unit":"4","topic":"descriptions","example":"옷이 싸요. — Clothes are cheap."},{"korean":"편하다","romanization":"pyeonhada","translation":"to be comfortable","status":"new","unit":"4","topic":"descriptions","example":"의자가 편해요. — The chair is comfortable."},{"korean":"불편하다","romanization":"bulpyeonhada","translation":"to be uncomfortable","status":"new","unit":"4","topic":"descriptions","example":"불편해요. — It's uncomfortable."},{"korean":"꿈","romanization":"kkum","translation":"dream","status":"new","unit":"4","topic":"phrases","example":"꿈을 꿔요. — I have a dream."},{"korean":"찾다","romanization":"chatda","translation":"to look for","status":"new","unit":"4","topic":"verbs","example":"책을 찾아요. — I look for the book."},{"korean":"손님","romanization":"sonnim","translation":"guest / customer","status":"new","unit":"4","topic":"people","example":"손님이 와요. — A guest is coming."},{"korean":"기다리다","romanization":"gidarida","translation":"to wait","status":"new","unit":"4","topic":"verbs","example":"기다려 주세요. — Please wait."},{"korean":"가격","romanization":"gagyeok","translation":"price","status":"new","unit":"4","topic":"phrases","example":"가격이 어때요? — How is the price?"},{"korean":"옷차림","romanization":"otcharim","translation":"outfit / attire","status":"new","unit":"3","topic":"clothes","example":"옷차림이 멋있어요. — Your outfit looks great."},{"korean":"티셔츠","romanization":"tisyeocheu","translation":"T-shirt","status":"new","unit":"3","topic":"clothes","example":"티셔츠를 입어요. — I wear a T-shirt."},{"korean":"청바지","romanization":"cheongbaji","translation":"jeans","status":"new","unit":"3","topic":"clothes","example":"청바지를 입어요. — I wear jeans."},{"korean":"치마","romanization":"chima","translation":"skirt","status":"new","unit":"3","topic":"clothes","example":"치마를 입어요. — I wear a skirt."},{"korean":"정장","romanization":"jeongjang","translation":"formal suit","status":"new","unit":"3","topic":"clothes","example":"정장을 입어요. — I wear a suit."},{"korean":"운동복","romanization":"undongbok","translation":"sportswear","status":"new","unit":"3","topic":"clothes","example":"운동복을 입어요. — I wear sportswear."},{"korean":"매다","romanization":"maeda","translation":"to put on (tie/scarf)","status":"new","unit":"3","topic":"clothes","example":"넥타이를 매요. — I tie a tie."},{"korean":"입다","romanization":"ipda","translation":"to put on (clothes)","status":"new","unit":"3","topic":"clothes","example":"옷을 입어요. — I put on clothes."},{"korean":"쓰다","romanization":"sseuda","translation":"to put on (cap/glasses)","status":"new","unit":"3","topic":"clothes","example":"모자를 써요. — I put on a hat."},{"korean":"신다","romanization":"sinda","translation":"to put on (shoes)","status":"new","unit":"3","topic":"clothes","example":"신발을 신어요. — I put on shoes."},{"korean":"결혼식","romanization":"gyeolhonsik","translation":"wedding","status":"new","unit":"3","topic":"events","example":"결혼식에 가요. — I'm going to a wedding."},{"korean":"아직","romanization":"ajik","translation":"still / yet","status":"new","unit":"3","topic":"phrases","example":"아직 안 했어요. — I haven't done it yet."},{"korean":"이따가","romanization":"ittaga","translation":"later (today)","status":"new","unit":"3","topic":"time","example":"이따가 봐요. — See you later."},{"korean":"계획","romanization":"gyehoek","translation":"plan","status":"new","unit":"3","topic":"phrases","example":"계획이 있어요. — I have a plan."},{"korean":"이유","romanization":"iyu","translation":"reason","status":"new","unit":"3","topic":"phrases","example":"이유가 뭐예요? — What's the reason?"},{"korean":"채소","romanization":"chaeso","translation":"vegetables","status":"new","unit":"3","topic":"food","example":"채소를 먹어요. — I eat vegetables."},{"korean":"야채","romanization":"yachae","translation":"vegetables","status":"new","unit":"3","topic":"food","example":"야채가 신선해요. — The vegetables are fresh."},{"korean":"너무","romanization":"neomu","translation":"too / very","status":"new","unit":"3","topic":"phrases","example":"너무 비싸요. — Too expensive."},{"korean":"운동화","romanization":"undonghwa","translation":"sneakers","status":"new","unit":"3","topic":"clothes","example":"운동화를 신어요. — I wear sneakers."},{"korean":"기차역","romanization":"gichayeok","translation":"train station","status":"new","unit":"3","topic":"place","example":"기차역이 어디예요? — Where is the train station?"},{"korean":"취미","romanization":"chwimi","translation":"hobby","status":"new","unit":"2","topic":"hobbies","example":"취미가 뭐예요? — What's your hobby?"},{"korean":"그림","romanization":"geurim","translation":"picture / drawing","status":"new","unit":"2","topic":"hobbies","example":"그림이 예뻐요. — The picture is pretty."},{"korean":"노래","romanization":"norae","translation":"song","status":"new","unit":"2","topic":"hobbies","example":"노래가 좋아요. — The song is good."},{"korean":"신문","romanization":"sinmun","translation":"newspaper","status":"new","unit":"2","topic":"objects","example":"신문을 읽어요. — I read the newspaper."},{"korean":"사무실","romanization":"samusil","translation":"office","status":"new","unit":"2","topic":"place","example":"사무실에 가요. — I'm going to the office."},{"korean":"옷장","romanization":"otjang","translation":"wardrobe","status":"new","unit":"2","topic":"objects","example":"옷장이 커요. — The wardrobe is big."},{"korean":"독서","romanization":"dokseo","translation":"reading","status":"new","unit":"2","topic":"hobbies","example":"독서를 좋아해요. — I like reading."},{"korean":"전","romanization":"jeon","translation":"ago / before","status":"new","unit":"2","topic":"time","example":"1년 전에. — One year ago."},{"korean":"빌리다","romanization":"billida","translation":"to borrow","status":"new","unit":"2","topic":"verbs","example":"책을 빌려요. — I borrow a book."},{"korean":"그리다","romanization":"geurida","translation":"to draw","status":"new","unit":"2","topic":"verbs","example":"그림을 그려요. — I draw a picture."},{"korean":"돈을 찾다","romanization":"doneul chatda","translation":"to withdraw money","status":"new","unit":"2","topic":"phrases","example":"돈을 찾아요. — I withdraw money."},{"korean":"보통","romanization":"botong","translation":"usually","status":"new","unit":"2","topic":"frequency","example":"보통 8시에 일어나요. — I usually get up at 8."},{"korean":"특히","romanization":"teukhi","translation":"particularly / especially","status":"new","unit":"2","topic":"phrases","example":"특히 좋아해요. — I particularly like it."},{"korean":"년","romanization":"nyeon","translation":"year","status":"new","unit":"2","topic":"time","example":"2년 동안. — For 2 years."}];
+const SENTENCES = [{"kr":"시계가 너무 비싸요.","rom":"sigyega neomu bissayo.","en":"The clock is too expensive.","vocab":["시계","너무","비싸다"]},{"kr":"어디에 화장실이 있어요?","rom":"eodie hwajangsiri isseoyo?","en":"Where is the bathroom?","vocab":["어디","화장실"]},{"kr":"오늘 학교에 가요.","rom":"oneul hakgyoe gayo.","en":"Today I go to school.","vocab":["학교"]},{"kr":"지난 주말에 영화를 봤어요.","rom":"jinan jumare yeonghwareul bwasseoyo.","en":"Last weekend I watched a movie.","vocab":["지난"]},{"kr":"여름이 더워서 수박을 먹어요.","rom":"yeoreumi deowoseo subageul meogeoyo.","en":"Because summer is hot, I eat watermelon.","vocab":["여름","덥다","수박"]},{"kr":"겨울에는 눈이 와요.","rom":"gyeoureneun nuni wayo.","en":"In winter, it snows.","vocab":["겨울","눈이 오다"]},{"kr":"친구하고 같이 등산을 해요.","rom":"chinguhago gachi deungsaneul haeyo.","en":"I go hiking with a friend.","vocab":["등산을 하다"]},{"kr":"내일 시험이 있어서 바빠요.","rom":"naeil siheomi isseoseo bappayo.","en":"I have an exam tomorrow, so I'm busy.","vocab":["시험","바쁘다"]},{"kr":"지금 너무 피곤해요.","rom":"jigeum neomu pigonhaeyo.","en":"I'm very tired now.","vocab":["너무","피곤하다"]},{"kr":"한국 음식을 좋아해요.","rom":"hanguk eumsigeul joahaeyo.","en":"I like Korean food.","vocab":["음식"]},{"kr":"이 옷은 너무 비싸요. 더 싼 거 있어요?","rom":"i oseun neomu bissayo. deo ssan geo isseoyo?","en":"These clothes are too expensive. Is there something cheaper?","vocab":["너무","비싸다","싸다"]},{"kr":"매일 아침 일찍 일어나요.","rom":"maeil achim iljjik ireonayo.","en":"I get up early every morning.","vocab":["매일","아침","일찍"]},{"kr":"비가 와서 집에 있어요.","rom":"biga waseo jibe isseoyo.","en":"It's raining, so I'm at home.","vocab":["비가 오다"]},{"kr":"주말에 보통 무엇을 해요?","rom":"jumare botong mueoseul haeyo?","en":"What do you usually do on weekends?","vocab":["보통","무엇"]},{"kr":"어떻게 학교에 가요?","rom":"eotteoke hakgyoe gayo?","en":"How do you go to school?","vocab":["어떻게","학교"]},{"kr":"저는 한국어를 조금 알아요.","rom":"jeoneun hangugeoreul jogeum arayo.","en":"I know a little Korean.","vocab":["조금"]},{"kr":"약속이 있어서 일찍 가야 해요.","rom":"yaksogi isseoseo iljjik gaya haeyo.","en":"I have an appointment, so I have to leave early.","vocab":["약속","일찍"]},{"kr":"기차역이 어디에 있어요?","rom":"gichayeogi eodie isseoyo?","en":"Where is the train station?","vocab":["기차역","어디"]},{"kr":"선물을 받아서 기분이 좋아요.","rom":"seonmureul badaseo gibuni joayo.","en":"I got a gift, so I'm in a good mood.","vocab":["선물","받다","기분"]},{"kr":"사진을 찍는 것을 좋아해요.","rom":"sajineul jjikneun geoseul joahaeyo.","en":"I like taking photos.","vocab":["사진을 찍다"]},{"kr":"낚시는 제 취미예요.","rom":"naksineun je chwimiyeyo.","en":"Fishing is my hobby.","vocab":["낚시","취미"]},{"kr":"오늘은 무슨 요일이에요?","rom":"oneureun museun yoirieyo?","en":"What day of the week is it today?","vocab":["무슨","요일"]},{"kr":"저는 일주일에 한 번 운동해요.","rom":"jeoneun iljuire han beon undonghaeyo.","en":"I exercise once a week.","vocab":["일주일에 한 번"]},{"kr":"친구를 두 시간 동안 기다렸어요.","rom":"chingureul du sigan dongan gidaryeosseoyo.","en":"I waited two hours for my friend.","vocab":["기다리다"]},{"kr":"이 노래가 가장 좋아요.","rom":"i noraega gajang joayo.","en":"I like this song the most.","vocab":["노래","가장"]},{"kr":"은행에서 돈을 찾았어요.","rom":"eunhaengeseo doneul chajasseoyo.","en":"I withdrew money from the bank.","vocab":["은행","돈을 찾다"]},{"kr":"야채를 매일 먹어요.","rom":"yachaereul maeil meogeoyo.","en":"I eat vegetables every day.","vocab":["야채","매일"]},{"kr":"가족하고 같이 식당에 갔어요.","rom":"gajokhago gachi sikdange gasseoyo.","en":"I went to a restaurant with my family.","vocab":["가족"]},{"kr":"한국 드라마가 재미있어요.","rom":"hanguk deuramaga jaemiisseoyo.","en":"Korean dramas are fun.","vocab":[]},{"kr":"다음 주에 여행을 갈 거예요.","rom":"daeum jue yeohaengeul gal geoyeyo.","en":"Next week I'm going to travel.","vocab":["여행"]}];
+const TEXTS = [{"id":"morning","title_kr":"내 아침","title_en":"My morning","kr":"저는 매일 아침 일찍 일어나요. 보통 일곱 시쯤 일어나요. 일어나서 아침을 먹어요. 아침에는 빵하고 커피를 먹어요. 그 다음에 학교에 가요. 학교는 집 근처에 있어요. 그래서 걸어서 가요.","en":"I get up early every morning. Usually I wake up around seven o'clock. After waking up, I eat breakfast. In the morning I have bread and coffee. Then I go to school. The school is near my house. So I walk there.","glossary":[{"kr":"쯤","rom":"jjeum","en":"about / approximately"},{"kr":"그 다음에","rom":"geu daeume","en":"after that / then"},{"kr":"걸어서","rom":"georeoseo","en":"on foot / walking"}]},{"id":"food","title_kr":"한국 음식","title_en":"Korean food","kr":"저는 한국 음식을 좋아해요. 특히 김치찌개를 가장 좋아해요. 김치찌개는 조금 매워요. 하지만 정말 맛있어요. 가족하고 같이 한국 식당에 자주 가요. 다음에는 불고기도 먹어 보고 싶어요.","en":"I like Korean food. I especially like kimchi stew the most. Kimchi stew is a little spicy. But it's really delicious. I often go to a Korean restaurant with my family. Next time I want to try bulgogi too.","glossary":[{"kr":"김치찌개","rom":"gimchijjigae","en":"kimchi stew"},{"kr":"정말","rom":"jeongmal","en":"really"},{"kr":"불고기","rom":"bulgogi","en":"bulgogi (marinated beef)"},{"kr":"~어 보고 싶어요","rom":"-eo bogo sipeoyo","en":"I want to try ~"}]},{"id":"weekend","title_kr":"내 주말","title_en":"My weekend","kr":"주말에는 보통 친구를 만나요. 같이 영화를 보거나 카페에 가요. 일요일에는 집에서 쉬어요. 책을 읽거나 음악을 들어요. 가끔 등산을 하러 가요. 산이 너무 높아서 힘들지만 재미있어요.","en":"On weekends I usually meet friends. We watch movies together or go to a cafe. On Sundays I rest at home. I read books or listen to music. Sometimes I go hiking. The mountain is so high it's hard, but it's fun.","glossary":[{"kr":"~거나","rom":"-geona","en":"or (between verbs)"},{"kr":"~러 가요","rom":"-reo gayo","en":"go in order to ~"},{"kr":"힘들다","rom":"himdeulda","en":"to be hard / tough"}]},{"id":"travel","title_kr":"여행 계획","title_en":"Travel plans","kr":"다음 달에 부산에 갈 거예요. 부산은 한국에서 두 번째로 큰 도시예요. 비행기로 가지 않고 기차로 가요. 부산에서 바다를 보고 해산물을 먹고 싶어요. 친구도 같이 갈 거예요. 정말 기대돼요!","en":"Next month I'm going to Busan. Busan is the second-largest city in Korea. I'm not going by plane, I'm going by train. In Busan I want to see the sea and eat seafood. My friend is going with me too. I'm really looking forward to it!","glossary":[{"kr":"부산","rom":"busan","en":"Busan (city)"},{"kr":"두 번째로","rom":"du beonjjaero","en":"second / 2nd"},{"kr":"도시","rom":"dosi","en":"city"},{"kr":"비행기","rom":"bihaenggi","en":"airplane"},{"kr":"바다","rom":"bada","en":"sea"},{"kr":"해산물","rom":"haesanmul","en":"seafood"},{"kr":"기대돼요","rom":"gidaedwaeyo","en":"I'm looking forward to it"}]},{"id":"studying","title_kr":"한국어 공부","title_en":"Studying Korean","kr":"저는 한국어를 일 년 전에 배우기 시작했어요. 처음에는 정말 어려웠어요. 특히 문법이 어려워요. 하지만 매일 조금씩 공부하면 늘어요. K-pop 노래를 들으면서 단어를 배워요. 한국 친구하고 한국어로 이야기하고 싶어요.","en":"I started learning Korean a year ago. At first it was really difficult. Grammar is especially hard. But if I study a little every day, I improve. I learn vocabulary while listening to K-pop songs. I want to talk in Korean with Korean friends.","glossary":[{"kr":"처음에는","rom":"cheoeumeneun","en":"at first"},{"kr":"문법","rom":"munbeop","en":"grammar"},{"kr":"조금씩","rom":"jogeumssik","en":"little by little"},{"kr":"늘다","rom":"neulda","en":"to improve / increase"},{"kr":"~면서","rom":"-myeonseo","en":"while ~ing"},{"kr":"단어","rom":"daneo","en":"vocabulary / word"}]},{"id":"family","title_kr":"내 가족","title_en":"My family","kr":"우리 가족은 네 명이에요. 아버지, 어머니, 오빠하고 저예요. 아버지는 회사에 다니세요. 어머니는 선생님이에요. 오빠는 대학생이에요. 저는 가족을 정말 사랑해요. 우리는 자주 같이 저녁을 먹어요.","en":"There are four people in my family: father, mother, older brother, and me. My father works at a company. My mother is a teacher. My older brother is a university student. I really love my family. We often eat dinner together.","glossary":[{"kr":"명","rom":"myeong","en":"counter for people"},{"kr":"아버지","rom":"abeoji","en":"father"},{"kr":"어머니","rom":"eomeoni","en":"mother"},{"kr":"오빠","rom":"oppa","en":"older brother (of a female)"},{"kr":"회사에 다니다","rom":"hoesae danida","en":"to work at a company"},{"kr":"대학생","rom":"daehaksaeng","en":"university student"},{"kr":"사랑하다","rom":"saranghada","en":"to love"}]}];
+
+
+const STORAGE_KEY = "korean_quiz_stats_v1";
+let stats = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+let mode = "forgotten";
+let modeValue = null;
+let direction = "ru_kr";
+let session = { asked: 0, correct: 0 };
+let current = null;
+let phase = "asking"; // asking | revealed
+
+const $ = (s) => document.querySelector(s);
+const card = $("#card");
+const statsEl = $("#stats");
+const sessionBar = $("#sessionBar");
+
+function saveStats() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+}
+
+function pool() {
+  if (mode === "all") return VOCAB;
+  if (mode === "forgotten") return VOCAB.filter(e => e.status === "forgotten");
+  if (mode === "new") return VOCAB.filter(e => e.status === "new");
+  if (mode === "topic") return VOCAB.filter(e => e.topic === modeValue);
+  if (mode === "unit") return VOCAB.filter(e => e.unit === modeValue);
+  return VOCAB;
+}
+
+function weight(entry) {
+  let w = entry.status === "forgotten" ? 3.0 : 1.0;
+  const s = stats[entry.korean];
+  if (s) {
+    const total = (s.right || 0) + (s.wrong || 0);
+    w += (s.wrong || 0) * 0.7;
+    w -= (s.right || 0) * 0.15;
+    if (total >= 4 && (s.right / total) > 0.85) w *= 0.4;
+  }
+  // avoid repeating last word immediately
+  if (current && entry.korean === current.korean) w *= 0.05;
+  return Math.max(w, 0.2);
+}
+
+function pick(p) {
+  if (!p.length) return null;
+  const weights = p.map(weight);
+  const sum = weights.reduce((a, b) => a + b, 0);
+  let r = Math.random() * sum;
+  for (let i = 0; i < p.length; i++) {
+    r -= weights[i];
+    if (r <= 0) return p[i];
+  }
+  return p[p.length - 1];
+}
+
+function normalize(s) {
+  return (s || "").trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+function checkAnswer(user, correct) {
+  const u = normalize(user);
+  if (!u) return false;
+  return correct.split("/").some(v => normalize(v) === u);
+}
+
+function renderStats() {
+  const total = VOCAB.length;
+  const forgotten = VOCAB.filter(e => e.status === "forgotten").length;
+  const learned = Object.values(stats).filter(s => {
+    const t = (s.right || 0) + (s.wrong || 0);
+    return t >= 4 && s.right / t > 0.85;
+  }).length;
+  statsEl.innerHTML = `
+    <span class="stat-pill">total <span class="num">${total}</span></span>
+    <span class="stat-pill fire">forgotten <span class="num">${forgotten}</span></span>
+    <span class="stat-pill">learned <span class="num">${learned}</span></span>
+  `;
+}
+
+function renderSessionBar() {
+  if (!session.asked) {
+    sessionBar.innerHTML = "";
+    return;
+  }
+  const pct = Math.round(100 * session.correct / session.asked);
+  sessionBar.innerHTML = `session: <strong>${session.correct}/${session.asked}</strong> (${pct}%) <button class="reset" id="newSession">new session</button>`;
+  $("#newSession").onclick = () => { session = { asked: 0, correct: 0 }; renderSessionBar(); };
+}
+
+function renderCard() {
+  const p = pool();
+  if (!p.length) {
+    card.innerHTML = `<div class="empty">Empty here. Pick another mode.</div>`;
+    return;
+  }
+  current = pick(p);
+  phase = "asking";
+  const isKR = direction === "kr_ru";
+  const question = isKR ? current.korean : current.translation;
+  const promptText = isKR ? "translation?" : "in Korean? (hangul or romanization)";
+  const placeholder = isKR ? "type answer…" : "한국어 or romanization…";
+  const fireBadge = current.status === "forgotten" ? '<span class="tag forgotten">🔥 forgotten</span>' : '';
+
+  card.innerHTML = `
+    <div class="question-meta">
+      ${fireBadge}
+      <span class="tag">unit ${current.unit}</span>
+      <span class="tag">${current.topic}</span>
+    </div>
+    <div class="question ${isKR ? 'kr-mode' : ''}">${escapeHtml(question)}</div>
+    <div class="question-prompt">${promptText}</div>
+    <div class="input-wrap">
+      <input type="text" id="answerInput" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="${placeholder}">
+      <button class="btn" id="checkBtn">check</button>
+    </div>
+    <div class="actions">
+      <button class="btn ghost" id="hintBtn">💡 hint</button>
+      <button class="btn ghost" id="skipBtn">skip</button>
+    </div>
+  `;
+  const input = $("#answerInput");
+  input.focus();
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") submit();
+  });
+  $("#checkBtn").onclick = submit;
+  $("#hintBtn").onclick = showHint;
+  $("#skipBtn").onclick = () => reveal("skip");
+}
+
+function showHint() {
+  const hintEl = card.querySelector(".question-prompt");
+  hintEl.innerHTML = `hint: <strong>${escapeHtml(current.romanization)}</strong>`;
+}
+
+function submit() {
+  if (phase !== "asking") return;
+  const input = $("#answerInput");
+  const val = input.value.trim();
+  if (!val) {
+    reveal("skip");
+    return;
+  }
+  let ok;
+  if (direction === "kr_ru") {
+    ok = checkAnswer(val, current.translation);
+  } else {
+    // EN → KR: accept hangul or romanization
+    ok = checkAnswer(val, current.korean) || checkAnswer(val, current.romanization);
+  }
+  reveal(ok ? "correct" : "wrong", val);
+}
+
+function reveal(result, userVal) {
+  phase = "revealed";
+  const s = stats[current.korean] = stats[current.korean] || { right: 0, wrong: 0 };
+  if (result === "correct") { s.right++; session.correct++; session.asked++; }
+  else if (result === "wrong") { s.wrong++; session.asked++; }
+  else { /* skip — not counted */ }
+  s.last = new Date().toISOString();
+  saveStats();
+
+  const isKR = direction === "kr_ru";
+  const correct = isKR ? current.translation : current.korean;
+  const pair = isKR ? current.korean : current.translation;
+
+  let header = "";
+  if (result === "correct") header = `<div class="feedback correct"><div class="answer-line">✅ correct</div>`;
+  else if (result === "wrong") header = `<div class="feedback wrong"><div class="answer-line">❌ you wrote: <em>${escapeHtml(userVal)}</em></div>`;
+  else header = `<div class="feedback skip"><div class="answer-line">⏭ skipped</div>`;
+
+  const answerHtml = `
+    <div class="answer-line">
+      <span class="hangul">${escapeHtml(current.korean)}</span>
+      <span class="romaja"> [${escapeHtml(current.romanization)}]</span>
+      — ${escapeHtml(current.translation)}
+    </div>
+    ${current.example ? `<div class="example">${escapeHtml(current.example)}</div>` : ""}
+    </div>
+  `;
+
+  card.querySelector(".actions").innerHTML = `
+    <button class="btn" id="nextBtn">next →</button>
+    <button class="btn secondary" id="repeatBtn">show more often</button>
+  `;
+  // Append feedback below input area
+  const feedbackContainer = document.createElement("div");
+  feedbackContainer.innerHTML = header + answerHtml;
+  card.appendChild(feedbackContainer);
+
+  $("#nextBtn").onclick = next;
+  $("#nextBtn").focus();
+  $("#repeatBtn").onclick = () => {
+    s.wrong = (s.wrong || 0) + 1;
+    saveStats();
+    next();
+  };
+
+  document.addEventListener("keydown", spaceToNext);
+  renderSessionBar();
+  renderStats();
+}
+
+function spaceToNext(e) {
+  if (phase !== "revealed") return;
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    next();
+  }
+}
+
+function next() {
+  document.removeEventListener("keydown", spaceToNext);
+  renderCard();
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+function fillSelectors() {
+  const topics = [...new Set(VOCAB.map(e => e.topic))].sort();
+  const units = [...new Set(VOCAB.map(e => e.unit))].sort();
+  const topicSel = $("#topicSel");
+  topics.forEach(t => {
+    const cnt = VOCAB.filter(e => e.topic === t).length;
+    const opt = document.createElement("option");
+    opt.value = t; opt.textContent = `${t} (${cnt})`;
+    topicSel.appendChild(opt);
+  });
+  const unitSel = $("#unitSel");
+  units.forEach(u => {
+    const cnt = VOCAB.filter(e => e.unit === u).length;
+    const opt = document.createElement("option");
+    opt.value = u; opt.textContent = `unit ${u} (${cnt})`;
+    unitSel.appendChild(opt);
+  });
+  topicSel.onchange = () => {
+    if (!topicSel.value) return;
+    setMode("topic", topicSel.value);
+    unitSel.value = "";
+    document.querySelectorAll("[data-mode]").forEach(b => b.classList.remove("active"));
+  };
+  unitSel.onchange = () => {
+    if (!unitSel.value) return;
+    setMode("unit", unitSel.value);
+    topicSel.value = "";
+    document.querySelectorAll("[data-mode]").forEach(b => b.classList.remove("active"));
+  };
+}
+
+function setMode(m, v = null) {
+  mode = m;
+  modeValue = v;
+  session = { asked: 0, correct: 0 };
+  renderCard();
+  renderSessionBar();
+}
+
+function bindControls() {
+  document.querySelectorAll("[data-mode]").forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll("[data-mode]").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      $("#topicSel").value = "";
+      $("#unitSel").value = "";
+      setMode(btn.dataset.mode);
+    };
+  });
+  document.querySelectorAll("[data-dir]").forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll("[data-dir]").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      direction = btn.dataset.dir;
+      renderCard();
+    };
+  });
+  $("#resetBtn").onclick = () => {
+    if (confirm("Reset all answer stats?")) {
+      stats = {};
+      saveStats();
+      session = { asked: 0, correct: 0 };
+      renderStats();
+      renderSessionBar();
+    }
+  };
+  $("#exportBtn").onclick = () => {
+    const blob = new Blob([JSON.stringify(stats, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = "korean_stats.json"; a.click();
+    URL.revokeObjectURL(url);
+  };
+}
+
+// ===== TABS =====
+function bindTabs() {
+  document.querySelectorAll(".tab").forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const target = btn.dataset.tab;
+      document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
+      document.getElementById(target + "View").classList.add("active");
+      if (target === "sentences") renderSentence();
+      if (target === "reading") renderTextList();
+    };
+  });
+}
+
+// ===== SENTENCES =====
+const SENT_KEY = "korean_sentence_stats_v1";
+let sentStats = JSON.parse(localStorage.getItem(SENT_KEY) || "{}");
+let sentDir = "en_kr";
+let currentSent = null;
+let sentPhase = "asking";
+let sentSession = { asked: 0, correct: 0 };
+
+function saveSentStats() { localStorage.setItem(SENT_KEY, JSON.stringify(sentStats)); }
+
+function pickSentence() {
+  const weights = SENTENCES.map(s => {
+    const st = sentStats[s.kr] || {};
+    let w = 1.0 + (st.wrong || 0) * 0.8 - (st.right || 0) * 0.15;
+    if (currentSent && s.kr === currentSent.kr) w *= 0.05;
+    return Math.max(w, 0.2);
+  });
+  const sum = weights.reduce((a, b) => a + b, 0);
+  let r = Math.random() * sum;
+  for (let i = 0; i < SENTENCES.length; i++) {
+    r -= weights[i];
+    if (r <= 0) return SENTENCES[i];
+  }
+  return SENTENCES[0];
+}
+
+function renderSentence() {
+  const card = $("#sentenceCard");
+  currentSent = pickSentence();
+  sentPhase = "asking";
+  const isKR = sentDir === "kr_en";
+  const question = isKR ? currentSent.kr : currentSent.en;
+  const promptText = isKR ? "translate to English" : "translate to Korean (hangul or romanization)";
+
+  card.innerHTML = `
+    <div class="question-meta">
+      <span class="tag">sentence ${SENTENCES.indexOf(currentSent) + 1} / ${SENTENCES.length}</span>
+    </div>
+    <div class="question ${isKR ? 'kr-mode' : ''}">${escapeHtml(question)}</div>
+    <div class="question-prompt">${promptText}</div>
+    <textarea id="sentenceInput" placeholder="type your translation…" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>
+    <div class="actions">
+      <button class="btn" id="revealBtn">reveal answer</button>
+      <button class="btn ghost" id="sentSkipBtn">skip</button>
+    </div>
+  `;
+  $("#sentenceInput").focus();
+  $("#sentenceInput").addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) revealSentence();
+  });
+  $("#revealBtn").onclick = revealSentence;
+  $("#sentSkipBtn").onclick = () => {
+    currentSent = null;
+    renderSentence();
+  };
+}
+
+function revealSentence() {
+  if (sentPhase !== "asking") return;
+  sentPhase = "revealed";
+  const userVal = $("#sentenceInput").value.trim();
+  const isKR = sentDir === "kr_en";
+  const correct = isKR ? currentSent.en : currentSent.kr;
+
+  const card = $("#sentenceCard");
+  const fb = document.createElement("div");
+  fb.className = "sentence-feedback";
+  fb.innerHTML = `
+    ${userVal ? `<div class="your-answer">your answer: <span class="text">${escapeHtml(userVal)}</span></div>` : ""}
+    <div class="correct-answer">
+      <span class="hangul">${escapeHtml(currentSent.kr)}</span>
+    </div>
+    <div class="romaja">[${escapeHtml(currentSent.rom)}]</div>
+    <div class="gloss">${escapeHtml(currentSent.en)}</div>
+  `;
+  card.appendChild(fb);
+
+  // Replace actions with grade buttons
+  card.querySelector(".actions").innerHTML = `
+    <button class="btn grade-good" id="gotItBtn">✅ got it</button>
+    <button class="btn grade-bad" id="missedBtn">❌ missed it</button>
+  `;
+  $("#gotItBtn").onclick = () => gradeSentence("right");
+  $("#missedBtn").onclick = () => gradeSentence("wrong");
+  $("#gotItBtn").focus();
+}
+
+function gradeSentence(result) {
+  const s = sentStats[currentSent.kr] = sentStats[currentSent.kr] || { right: 0, wrong: 0 };
+  if (result === "right") { s.right++; sentSession.correct++; sentSession.asked++; }
+  else { s.wrong++; sentSession.asked++; }
+  s.last = new Date().toISOString();
+  saveSentStats();
+  renderSentenceSessionBar();
+  renderSentence();
+}
+
+function renderSentenceSessionBar() {
+  const bar = $("#sentenceSessionBar");
+  if (!sentSession.asked) { bar.innerHTML = ""; return; }
+  const pct = Math.round(100 * sentSession.correct / sentSession.asked);
+  bar.innerHTML = `session: <strong>${sentSession.correct}/${sentSession.asked}</strong> (${pct}%) <button class="reset" id="newSentSession">new session</button>`;
+  $("#newSentSession").onclick = () => { sentSession = { asked: 0, correct: 0 }; renderSentenceSessionBar(); };
+}
+
+function bindSentenceControls() {
+  document.querySelectorAll("[data-sdir]").forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll("[data-sdir]").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      sentDir = btn.dataset.sdir;
+      renderSentence();
+    };
+  });
+}
+
+// ===== READING =====
+function renderTextList() {
+  $("#textViewer").hidden = true;
+  $("#textList").hidden = false;
+  $("#textList").innerHTML = TEXTS.map(t => `
+    <div class="text-item" data-id="${t.id}">
+      <div class="title-kr">${escapeHtml(t.title_kr)}</div>
+      <div class="title-en">${escapeHtml(t.title_en)}</div>
+      <div class="preview">${escapeHtml(t.kr.slice(0, 60))}…</div>
+    </div>
+  `).join("");
+  document.querySelectorAll(".text-item").forEach(el => {
+    el.onclick = () => openText(el.dataset.id);
+  });
+}
+
+function openText(id) {
+  const t = TEXTS.find(x => x.id === id);
+  if (!t) return;
+  $("#textList").hidden = true;
+  const v = $("#textViewer");
+  v.hidden = false;
+
+  // Build clickable Korean: highlight glossary entries
+  const glossMap = {};
+  t.glossary.forEach(g => { glossMap[g.kr] = g; });
+  let bodyHtml = escapeHtml(t.kr);
+  // Replace each glossary term with a span (longest first to avoid overlaps)
+  const keys = Object.keys(glossMap).sort((a, b) => b.length - a.length);
+  keys.forEach(k => {
+    const escK = escapeHtml(k);
+    const re = new RegExp(escK.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g');
+    bodyHtml = bodyHtml.replace(re, `<span class="word has-gloss" data-key="${escK.replace(/"/g, '&quot;')}">${escK}</span>`);
+  });
+
+  v.innerHTML = `
+    <div class="text-viewer">
+      <button class="back" id="backBtn">← back to list</button>
+      <h2>${escapeHtml(t.title_kr)}</h2>
+      <div class="subtitle">${escapeHtml(t.title_en)}</div>
+      <div class="text-body" id="textBody">${bodyHtml}</div>
+      <div class="text-toggles">
+        <button class="btn secondary" id="toggleEn">show English</button>
+        <button class="btn secondary" id="toggleGloss">show glossary</button>
+      </div>
+      <div class="text-translation" id="enPanel" hidden>${escapeHtml(t.en)}</div>
+      <div class="glossary" id="glossPanel" hidden>
+        <h4>glossary</h4>
+        ${t.glossary.map(g => `
+          <div class="glossary-item">
+            <span class="hangul">${escapeHtml(g.kr)}</span>
+            <span class="romaja">[${escapeHtml(g.rom)}]</span>
+            — ${escapeHtml(g.en)}
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `;
+  $("#backBtn").onclick = renderTextList;
+  $("#toggleEn").onclick = () => {
+    const p = $("#enPanel");
+    p.hidden = !p.hidden;
+    $("#toggleEn").textContent = p.hidden ? "show English" : "hide English";
+  };
+  $("#toggleGloss").onclick = () => {
+    const p = $("#glossPanel");
+    p.hidden = !p.hidden;
+    $("#toggleGloss").textContent = p.hidden ? "show glossary" : "hide glossary";
+  };
+  // Click on highlighted glossary words to reveal inline
+  document.querySelectorAll("#textBody .word.has-gloss").forEach(el => {
+    el.onclick = () => {
+      const g = glossMap[el.dataset.key];
+      if (!g) return;
+      el.classList.toggle("revealed");
+      let tip = el.querySelector(".tip");
+      if (tip) { tip.remove(); return; }
+      const span = document.createElement("span");
+      span.className = "tip";
+      span.style.cssText = "font-family:Inter;font-size:13px;color:var(--accent);margin-left:4px;";
+      span.textContent = `(${g.en})`;
+      el.appendChild(span);
+    };
+  });
+}
+
+bindTabs();
+bindSentenceControls();
+fillSelectors();
+bindControls();
+renderStats();
+renderCard();
+renderSessionBar();
+</script>
+</body>
+</html>
