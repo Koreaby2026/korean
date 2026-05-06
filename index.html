@@ -621,6 +621,88 @@
   }
   textarea#weeklyNotesInput:focus { border-color: var(--accent); }
 
+
+  /* Word list view */
+  .word-list-container {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .word-list-header {
+    padding: 12px 18px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .word-list-header strong { color: var(--ink); }
+  .word-row {
+    display: grid;
+    grid-template-columns: 26px 1fr 1.2fr 80px;
+    gap: 10px;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--border);
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  .word-row:last-child { border-bottom: none; }
+  .word-row:hover { background: var(--bg); }
+  .word-row.expanded { background: var(--bg); }
+  .word-status { font-size: 14px; }
+  .word-main { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .word-main .word-kr { font-family: 'Noto Sans KR'; font-size: 16px; font-weight: 500; }
+  .word-main .word-rom { font-size: 11px; color: var(--muted); font-style: italic; }
+  .word-en { font-size: 14px; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .word-acc { font-size: 12px; color: var(--muted); text-align: right; }
+  .word-acc.good { color: var(--green); }
+  .word-acc.bad { color: var(--accent); }
+  .word-detail {
+    padding: 8px 18px 16px 54px;
+    background: var(--bg);
+    font-size: 13px;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+    display: none;
+  }
+  .word-detail.open { display: block; }
+  .word-detail .example { margin-bottom: 6px; font-family: 'Noto Sans KR'; font-size: 14px; }
+  .word-detail .chunk-mini {
+    margin-top: 4px;
+    padding-left: 12px;
+    border-left: 2px solid var(--accent);
+  }
+  .empty-list {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--muted);
+  }
+
+  /* Replay queue indicator */
+  .replay-indicator {
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 12px;
+    display: none;
+    text-align: center;
+  }
+  .replay-indicator.show { display: block; }
+
+  @media (max-width: 480px) {
+    .word-row { grid-template-columns: 22px 1fr 60px; }
+    .word-en { display: none; }
+    .word-detail { padding-left: 18px; }
+    .word-detail .word-en-mobile { color: var(--ink); margin-bottom: 6px; }
+  }
+
   @media (max-width: 480px) {
     .question { font-size: 36px; }
     .card { padding: 24px 16px; min-height: 240px; }
@@ -649,6 +731,11 @@
   <div class="view active" id="wordsView">
     <div class="controls">
       <div class="control-row">
+        <span class="control-label">view</span>
+        <button class="chip active" data-view="quiz">🎯 Quiz</button>
+        <button class="chip" data-view="list">📋 List</button>
+      </div>
+      <div class="control-row">
         <span class="control-label">mode</span>
         <button class="chip today" data-mode="today">🎯 Today</button>
         <button class="chip fire active" data-mode="forgotten">🔥 Forgotten</button>
@@ -668,9 +755,13 @@
       </div>
     </div>
 
+    <div class="replay-indicator" id="replayIndicator"></div>
+
     <div class="card" id="card">
       <div class="empty">Loading…</div>
     </div>
+
+    <div class="word-list-container" id="wordList" hidden></div>
 
     <div class="session-bar" id="sessionBar"></div>
   </div>
@@ -750,6 +841,9 @@ let direction = "ru_kr";
 let session = { asked: 0, correct: 0 };
 let current = null;
 let phase = "asking"; // asking | revealed
+let viewMode = "quiz"; // quiz | list
+let replayQueue = []; // FIFO of wrong-answered entries this session
+let cardsSinceLastReplay = 0;
 
 const $ = (s) => document.querySelector(s);
 const card = $("#card");
@@ -790,6 +884,15 @@ function weight(entry) {
 
 function pick(p) {
   if (!p.length) return null;
+  cardsSinceLastReplay++;
+  // Every ~3 cards, pull from replay queue if there's a queued word that's still in the pool
+  if (replayQueue.length > 0 && cardsSinceLastReplay >= 3) {
+    const idx = replayQueue.findIndex(w => p.some(e => e.korean === w.korean) && (!current || w.korean !== current.korean));
+    if (idx >= 0) {
+      cardsSinceLastReplay = 0;
+      return replayQueue.splice(idx, 1)[0];
+    }
+  }
   const weights = p.map(weight);
   const sum = weights.reduce((a, b) => a + b, 0);
   let r = Math.random() * sum;
@@ -839,6 +942,7 @@ function renderSessionBar() {
 }
 
 function renderCard() {
+  renderReplayIndicator();
   const p = pool();
   if (!p.length) {
     card.innerHTML = `<div class="empty">Empty here. Pick another mode.</div>`;
@@ -903,8 +1007,16 @@ function submit() {
 function reveal(result, userVal) {
   phase = "revealed";
   const s = stats[current.korean] = stats[current.korean] || { right: 0, wrong: 0 };
-  if (result === "correct") { s.right++; session.correct++; session.asked++; }
-  else if (result === "wrong") { s.wrong++; session.asked++; }
+  if (result === "correct") {
+    s.right++; session.correct++; session.asked++;
+    // If this word was in replay queue and now correct, leave it removed (we already spliced on pick)
+  } else if (result === "wrong") {
+    s.wrong++; session.asked++;
+    // Add to replay queue if not already there
+    if (current && !replayQueue.some(w => w.korean === current.korean)) {
+      replayQueue.push(current);
+    }
+  }
   else { /* skip — not counted */ }
   s.last = new Date().toISOString();
   saveStats();
@@ -1017,7 +1129,11 @@ function setMode(m, v = null) {
   mode = m;
   modeValue = v;
   session = { asked: 0, correct: 0 };
-  renderCard();
+  if (viewMode === "list") {
+    renderWordList();
+  } else {
+    renderCard();
+  }
   renderSessionBar();
 }
 
@@ -1056,6 +1172,116 @@ function bindControls() {
     URL.revokeObjectURL(url);
   };
 }
+
+
+function renderReplayIndicator() {
+  const el = document.getElementById("replayIndicator");
+  if (!el) return;
+  if (replayQueue.length > 0) {
+    el.classList.add("show");
+    el.innerHTML = `📌 replay queue: <strong>${replayQueue.length}</strong> word${replayQueue.length === 1 ? "" : "s"} from earlier mistakes`;
+  } else {
+    el.classList.remove("show");
+  }
+}
+
+function setViewMode(v) {
+  viewMode = v;
+  document.querySelectorAll("[data-view]").forEach(b => b.classList.toggle("active", b.dataset.view === v));
+  if (v === "list") {
+    document.getElementById("card").hidden = true;
+    document.getElementById("replayIndicator").style.display = "none";
+    document.getElementById("sessionBar").style.display = "none";
+    document.getElementById("wordList").hidden = false;
+    renderWordList();
+  } else {
+    document.getElementById("card").hidden = false;
+    document.getElementById("replayIndicator").style.display = "";
+    document.getElementById("sessionBar").style.display = "";
+    document.getElementById("wordList").hidden = true;
+    renderCard();
+  }
+}
+
+function renderWordList() {
+  const p = pool();
+  const el = document.getElementById("wordList");
+  if (!p.length) {
+    el.innerHTML = `<div class="empty-list">No words match this filter.</div>`;
+    return;
+  }
+  // Sort: forgotten first, then by korean
+  const sorted = [...p].sort((a, b) => {
+    if (a.status !== b.status) return a.status === "forgotten" ? -1 : 1;
+    return a.korean.localeCompare(b.korean, "ko");
+  });
+  const rows = sorted.map(e => {
+    const s = stats[e.korean];
+    let acc = "—";
+    let accClass = "";
+    if (s) {
+      const t = (s.right || 0) + (s.wrong || 0);
+      if (t > 0) {
+        const pct = Math.round(100 * (s.right || 0) / t);
+        acc = `${s.right || 0}/${t} (${pct}%)`;
+        accClass = pct >= 85 ? "good" : (pct < 50 ? "bad" : "");
+      }
+    }
+    const statusIcon = e.status === "forgotten" ? "🔥" : "✨";
+    return `
+      <div class="word-row" data-key="${escapeHtml(e.korean)}">
+        <div class="word-status">${statusIcon}</div>
+        <div class="word-main">
+          <div class="word-kr">${escapeHtml(e.korean)}</div>
+          <div class="word-rom">${escapeHtml(e.romanization)}</div>
+        </div>
+        <div class="word-en">${escapeHtml(e.translation)}</div>
+        <div class="word-acc ${accClass}">${acc}</div>
+      </div>
+      <div class="word-detail" data-key="${escapeHtml(e.korean)}">
+        <div class="word-en-mobile" style="color:var(--ink);margin-bottom:6px;">${escapeHtml(e.translation)}</div>
+        ${e.example ? `<div class="example">${escapeHtml(e.example)}</div>` : ""}
+        <div style="font-size:11px;color:var(--muted);">unit ${escapeHtml(e.unit)} · ${escapeHtml(e.topic)}</div>
+        ${(CHUNKS[e.korean] || []).map(c => `
+          <div class="chunk-mini">
+            <span style="font-family:'Noto Sans KR';">${escapeHtml(c.kr)}</span>
+            <span> — ${escapeHtml(c.en)}</span>
+            <span style="font-size:10px;color:var(--muted);"> · ${escapeHtml(c.tag)}</span>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  }).join("");
+  const headerCount = `<strong>${sorted.length}</strong> word${sorted.length === 1 ? "" : "s"}`;
+  el.innerHTML = `
+    <div class="word-list-header">
+      <span>${headerCount}</span>
+      <span>tap a word for details</span>
+    </div>
+    ${rows}
+  `;
+  el.querySelectorAll(".word-row").forEach(row => {
+    row.onclick = () => {
+      const key = row.dataset.key;
+      const detail = el.querySelector(`.word-detail[data-key="${CSS.escape(key)}"]`);
+      const wasOpen = detail.classList.contains("open");
+      // close all others
+      el.querySelectorAll(".word-detail.open").forEach(d => d.classList.remove("open"));
+      el.querySelectorAll(".word-row.expanded").forEach(r => r.classList.remove("expanded"));
+      if (!wasOpen) {
+        detail.classList.add("open");
+        row.classList.add("expanded");
+      }
+    };
+  });
+}
+
+function bindViewToggle() {
+  document.querySelectorAll("[data-view]").forEach(btn => {
+    btn.onclick = () => setViewMode(btn.dataset.view);
+  });
+}
+
 
 // ===== TABS =====
 function bindTabs() {
@@ -1630,6 +1856,7 @@ bindSentenceControls();
 fillSelectors();
 fillWeekUnitSel();
 bindControls();
+bindViewToggle();
 startTimer();
 renderStats();
 renderCard();
