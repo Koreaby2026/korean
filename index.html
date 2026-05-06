@@ -546,6 +546,24 @@
   .journal-entry:first-of-type { border-top: none; }
   .journal-entry .entry-date { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
   .journal-entry .entry-text { font-family: 'Noto Sans KR'; font-size: 15px; line-height: 1.5; max-height: 60px; overflow: hidden; }
+  .journal-export {
+    margin-top: 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 18px;
+    box-shadow: var(--shadow);
+  }
+  .journal-export-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .journal-export-label { font-size: 13px; color: var(--muted); }
+  .journal-export-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+  .journal-export-actions .btn { padding: 8px 12px; font-size: 13px; }
 
 
   /* Plan tab */
@@ -796,6 +814,7 @@
       </div>
     </div>
     <div class="journal-history" id="journalHistory"></div>
+    <div class="journal-export" id="journalExport"></div>
   </div>
 
   <div class="view" id="planView">
@@ -1665,6 +1684,109 @@ function renderJournal() {
     }, 500);
   };
   renderJournalHistory();
+  renderJournalExport();
+}
+
+function getAllJournalEntries() {
+  const entries = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (!key || !key.startsWith(JOURNAL_PREFIX)) continue;
+    const date = key.slice(JOURNAL_PREFIX.length);
+    const text = localStorage.getItem(key);
+    if (text && text.trim()) entries.push({ date, text });
+  }
+  entries.sort((a, b) => a.date.localeCompare(b.date));
+  return entries;
+}
+
+function downloadFile(filename, content, mime) {
+  const blob = new Blob([content], { type: mime });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function exportJournalMD() {
+  const entries = getAllJournalEntries();
+  if (!entries.length) { alert("No entries to export yet."); return; }
+  const lines = [
+    `# Korean Journal`,
+    `_Exported ${todayStr()} · ${entries.length} entr${entries.length === 1 ? "y" : "ies"}_`,
+    "",
+  ];
+  // Reverse so newest first in Markdown
+  for (const e of [...entries].reverse()) {
+    lines.push(`## ${e.date}`, "", e.text, "");
+  }
+  downloadFile(`korean-journal-${todayStr()}.md`, lines.join("\n"), "text/markdown");
+}
+
+function exportJournalJSON() {
+  const entries = getAllJournalEntries();
+  if (!entries.length) { alert("No entries to export yet."); return; }
+  const payload = {
+    exportedAt: new Date().toISOString(),
+    appVersion: "korean-journal-1",
+    entries,
+  };
+  downloadFile(`korean-journal-${todayStr()}.json`, JSON.stringify(payload, null, 2), "application/json");
+}
+
+function importJournalJSON(file) {
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const data = JSON.parse(reader.result);
+      const list = Array.isArray(data) ? data : data.entries;
+      if (!Array.isArray(list)) throw new Error("Invalid format");
+      let imported = 0, overwritten = 0, skipped = 0;
+      for (const e of list) {
+        if (!e.date || !e.text) continue;
+        const key = JOURNAL_PREFIX + e.date;
+        const existing = localStorage.getItem(key);
+        if (existing && existing.trim() === e.text.trim()) { skipped++; continue; }
+        if (existing) overwritten++;
+        else imported++;
+        localStorage.setItem(key, e.text);
+      }
+      alert(`Imported ${imported} new entr${imported === 1 ? "y" : "ies"}.${overwritten ? ` Overwrote ${overwritten}.` : ""}${skipped ? ` Skipped ${skipped} duplicates.` : ""}`);
+      renderJournal();
+    } catch (e) {
+      alert("Import failed: " + e.message);
+    }
+  };
+  reader.readAsText(file);
+}
+
+function renderJournalExport() {
+  const el = document.getElementById("journalExport");
+  if (!el) return;
+  const count = getAllJournalEntries().length;
+  el.innerHTML = `
+    <div class="journal-export-bar">
+      <span class="journal-export-label">${count} entr${count === 1 ? "y" : "ies"} saved on this device</span>
+      <div class="journal-export-actions">
+        <button class="btn secondary" id="exportMdBtn">📥 export .md</button>
+        <button class="btn secondary" id="exportJsonBtn">📦 backup .json</button>
+        <button class="btn ghost" id="importJsonBtn">📤 import…</button>
+        <input type="file" id="importFile" accept=".json,application/json" hidden>
+      </div>
+    </div>
+  `;
+  document.getElementById("exportMdBtn").onclick = exportJournalMD;
+  document.getElementById("exportJsonBtn").onclick = exportJournalJSON;
+  const importInput = document.getElementById("importFile");
+  document.getElementById("importJsonBtn").onclick = () => importInput.click();
+  importInput.onchange = () => {
+    if (importInput.files && importInput.files[0]) importJournalJSON(importInput.files[0]);
+    importInput.value = "";
+  };
 }
 
 function renderJournalHistory() {
