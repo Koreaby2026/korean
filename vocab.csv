@@ -196,8 +196,8 @@ korean,romanization,translation,status,unit,topic,example
 생일,saengil,birthday,forgotten,5,events,오늘은 제 생일이에요. — Today is my birthday.
 걸리다,geollida,to take (time),forgotten,5,verbs,얼마나 걸려요? — How long does it take?
 시장,sijang,market,forgotten,5,place,시장에서 야채를 사요. — I buy vegetables at the market.
-비행기,bihaenggi,airplane,forgotten,5,transport,비행기로 공항에 가요. — I'm going to the airport by plane.
-기차,gicha,train,forgotten,5,transport,기차를 타고 부산에 가요. — I'm taking the train to Busan.
+비행기,bihaenggi,airplane,forgotten,6,transport,비행기로 공항에 가요. — I'm going to the airport by plane.
+기차,gicha,train,forgotten,6,transport,기차를 타고 부산에 가요. — I'm taking the train to Busan.
 무섭다,museopda,to be scary,new,5,state,저는 무서운 영화를 좋아해요. — I like scary movies.
 스페인어,seupeineo,Spanish (language),new,5,phrases,스페인어를 어떻게 배웠어요? — How did you learn Spanish?
 쯤,jjeum,about / approximately,new,5,phrases,시간이 한 시간쯤 걸려요. — It takes about one hour.
@@ -211,3 +211,18 @@ korean,romanization,translation,status,unit,topic,example
 빵집,ppangjip,bakery,new,5,place,빵집 앞에서 길을 건너세요. — Cross the road in front of the bakery.
 약국,yakguk,pharmacy,new,5,place,약국 옆에 우리 집이 있어요. — Our house is next to the pharmacy.
 지도,jido,map,new,5,objects,지도를 보고 길을 찾아 보세요. — Look at the map and try to find the way.
+교통수단,gyotongsudan,transportation,new,6,transport,여러분이 자주 타는 교통수단은 뭐예요? — What transportation do you often use?
+우체국,uchaeguk,post office,new,6,place,은행은 우체국 옆에 있어요. — The bank is next to the post office.
+오토바이,otobai,motorcycle,new,6,transport,집에 오토바이를 타고 가요. — I go home by motorcycle.
+택시,taeksi,taxi,new,6,transport,백화점에 택시를 타고 갔어요. — I took a taxi to the department store.
+지하철,jihacheol,subway,new,6,transport,학교에 지하철을 타고 가요. — I go to school by subway.
+갈아타다,garatada,to transfer,new,6,verbs,버스로 갈아타요. — Transfer to the bus.
+내리다,naerida,to get off,new,6,verbs,택시에서 내려요. — Get off the taxi.
+가깝다,gakkapda,to be close / near,new,6,descriptions,집에서 회사까지 가까워요. — It's close from home to the company.
+멀다,meolda,to be far,new,6,descriptions,세종학당은 집에서 멀어요. — Sejong Institute is far from home.
+정류장,jeongnyujang,bus stop,new,6,place,버스 정류장에서 호텔까지 어떻게 가요? — How do I get from the bus stop to the hotel?
+호텔,hotel,hotel,new,6,place,공항에서 호텔까지 어떻게 가요? — How do I get from the airport to the hotel?
+차,cha,car,new,6,transport,제 차를 타고 가요. — I'll take my car.
+간식,gansik,snack,new,6,food,간식은 뭘 살까요? — What snack should we buy?
+싫어하다,sireohada,to dislike,new,6,verbs,저는 쇼핑을 싫어해요. — I dislike shopping.
+미술관,misulgwan,art museum,new,6,place,오늘 오후에 미술관에 갈까요? — Shall we go to the art museum this afternoon?
