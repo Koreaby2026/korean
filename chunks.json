@@ -818,5 +818,146 @@
       "en": "KTX (Korean high-speed train)",
       "tag": "Korea"
     }
+  ],
+  "무섭다": [
+    {
+      "kr": "무서운 영화",
+      "en": "scary movie",
+      "tag": "common"
+    },
+    {
+      "kr": "너무 무서워!",
+      "en": "so scary!",
+      "tag": "casual"
+    }
+  ],
+  "스페인어": [
+    {
+      "kr": "스페인어를 배우다",
+      "en": "to learn Spanish",
+      "tag": "common"
+    }
+  ],
+  "쯤": [
+    {
+      "kr": "5시쯤",
+      "en": "around 5 o'clock",
+      "tag": "common"
+    },
+    {
+      "kr": "한 시간쯤",
+      "en": "about an hour",
+      "tag": "common"
+    }
+  ],
+  "테니스장": [
+    {
+      "kr": "테니스장에서 만나요",
+      "en": "let's meet at the tennis court",
+      "tag": "casual"
+    }
+  ],
+  "저쪽": [
+    {
+      "kr": "저쪽으로 가세요",
+      "en": "go that way",
+      "tag": "directions"
+    },
+    {
+      "kr": "저쪽에 있어요",
+      "en": "it's over there",
+      "tag": "directions"
+    }
+  ],
+  "시청": [
+    {
+      "kr": "시청 앞",
+      "en": "in front of the city hall",
+      "tag": "Seoul"
+    },
+    {
+      "kr": "서울 시청",
+      "en": "Seoul City Hall",
+      "tag": "Seoul"
+    }
+  ],
+  "엘리베이터": [
+    {
+      "kr": "엘리베이터를 타다",
+      "en": "to take the elevator",
+      "tag": "common"
+    },
+    {
+      "kr": "엘리베이터가 고장났어요",
+      "en": "the elevator is broken",
+      "tag": "daily"
+    }
+  ],
+  "병원": [
+    {
+      "kr": "병원에 가다",
+      "en": "to go to the hospital",
+      "tag": "common"
+    },
+    {
+      "kr": "병원에서 진료를 받다",
+      "en": "to get a medical check-up",
+      "tag": "formal"
+    }
+  ],
+  "알다": [
+    {
+      "kr": "잘 알아요",
+      "en": "I know well",
+      "tag": "casual"
+    },
+    {
+      "kr": "알아요?",
+      "en": "do you know?",
+      "tag": "casual"
+    },
+    {
+      "kr": "그거 알아?",
+      "en": "you know that?",
+      "tag": "casual"
+    }
+  ],
+  "그러면": [
+    {
+      "kr": "그러면 어떻게 해요?",
+      "en": "then what do we do?",
+      "tag": "casual"
+    },
+    {
+      "kr": "그러면 좋겠어요",
+      "en": "then it would be good",
+      "tag": "common"
+    }
+  ],
+  "빵집": [
+    {
+      "kr": "빵집에서 빵을 사다",
+      "en": "buy bread at the bakery",
+      "tag": "daily"
+    }
+  ],
+  "약국": [
+    {
+      "kr": "약국에서 약을 사다",
+      "en": "buy medicine at the pharmacy",
+      "tag": "common"
+    }
+  ],
+  "지도": [
+    {
+      "kr": "지도를 보다",
+      "en": "to look at a map",
+      "tag": "travel"
+    },
+    {
+      "kr": "구글 지도",
+      "en": "Google Maps",
+      "tag": "tech"
+    }
   ]
 }
