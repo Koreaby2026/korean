@@ -1071,7 +1071,7 @@ function renderCard() {
   const isKR = direction === "kr_ru";
   const question = isKR ? current.korean : current.translation;
   const promptText = "";
-  const placeholder = isKR ? "type answer…" : "한국어 or romanization…";
+  const placeholder = isKR ? "type answer…" : "한국어…";
   const fireBadge = current.status === "forgotten" ? '<span class="tag forgotten">🔥 forgotten</span>' : '';
 
   card.innerHTML = `
@@ -1156,7 +1156,6 @@ function reveal(result, userVal, autoCorrected) {
   const answerHtml = `
     <div class="answer-line">
       ${icon ? `<span class="word-icon">${icon}</span> ` : ""}<span class="hangul">${escapeHtml(current.korean)}</span>
-      <span class="romaja"> [${escapeHtml(current.romanization)}]</span>
       — ${escapeHtml(current.translation)}
     </div>
     ${current.example ? `<div class="example">${escapeHtml(current.example)}</div>` : ""}
@@ -1493,7 +1492,6 @@ function revealSentence() {
     <div class="correct-answer">
       <span class="hangul">${escapeHtml(currentSent.kr)}</span>
     </div>
-    <div class="romaja">[${escapeHtml(currentSent.rom)}]</div>
     <div class="gloss">${escapeHtml(currentSent.en)}</div>
   `;
   card.appendChild(fb);
@@ -1588,7 +1586,6 @@ function openText(id) {
         ${t.glossary.map(g => `
           <div class="glossary-item">
             <span class="hangul">${escapeHtml(g.kr)}</span>
-            <span class="romaja">[${escapeHtml(g.rom)}]</span>
             — ${escapeHtml(g.en)}
           </div>
         `).join("")}
