@@ -38,7 +38,6 @@ model = genanki.Model(
                     "<div style='font-size:13px;color:#999;margin-top:6px'>type the Korean word</div>",
             "afmt": "{{FrontSide}}<hr id='answer'>"
                     "<div style='font-size:34px;font-weight:600'>{{Korean}}</div>"
-                    "<div style='font-size:14px;color:#666;font-style:italic;margin-top:4px'>[{{Romanization}}]</div>"
                     "<div style='font-size:14px;color:#888;margin-top:10px'>{{Example}}</div>"
                     "<div style='font-size:11px;color:#bbb;margin-top:14px'>unit {{Unit}} · {{Topic}}</div>",
         },
@@ -47,7 +46,6 @@ model = genanki.Model(
             "qfmt": "<div style='font-size:36px;font-weight:600'>{{Korean}}</div>",
             "afmt": "{{FrontSide}}<hr id='answer'>"
                     "<div style='font-size:18px'>{{English}}</div>"
-                    "<div style='font-size:14px;color:#666;font-style:italic;margin-top:4px'>[{{Romanization}}]</div>"
                     "<div style='font-size:14px;color:#888;margin-top:10px'>{{Example}}</div>"
                     "<div style='font-size:11px;color:#bbb;margin-top:14px'>unit {{Unit}} · {{Topic}}</div>",
         },
