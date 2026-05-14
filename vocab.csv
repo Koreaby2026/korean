@@ -169,7 +169,7 @@ korean,romanization,translation,status,unit,topic,example
 결혼식,gyeolhonsik,wedding,new,3,events,결혼식에 가요. — I'm going to a wedding.
 아직,ajik,still / yet,new,3,phrases,아직 안 했어요. — I haven't done it yet.
 이따가,ittaga,later (today),new,3,time,이따가 봐요. — See you later.
-계획,gyehoek,plan,new,3,phrases,계획이 있어요. — I have a plan.
+계획,gyehoek,plan,forgotten,3,phrases,계획이 있어요. — I have a plan.
 이유,iyu,reason,new,3,phrases,이유가 뭐예요? — What's the reason?
 채소,chaeso,vegetables,new,3,food,채소를 먹어요. — I eat vegetables.
 야채,yachae,vegetables,new,3,food,야채가 신선해요. — The vegetables are fresh.
@@ -226,3 +226,26 @@ korean,romanization,translation,status,unit,topic,example
 간식,gansik,snack,new,6,food,간식은 뭘 살까요? — What snack should we buy?
 싫어하다,sireohada,to dislike,new,6,verbs,저는 쇼핑을 싫어해요. — I dislike shopping.
 미술관,misulgwan,art museum,new,6,place,오늘 오후에 미술관에 갈까요? — Shall we go to the art museum this afternoon?
+산,san,mountain,new,7,nature,산이 높아요. — The mountain is high.
+섬,seom,island,new,7,nature,섬이 많아요. — There are many islands.
+도시,dosi,city,new,7,place,도시가 커요. — The city is big.
+호수,hosu,lake,new,7,nature,호수가 아름다워요. — The lake is beautiful.
+약,yak,medicine,new,7,objects,약을 먹어요. — I take medicine.
+여권,yeogwon,passport,new,7,travel,여권을 만들어요. — I make a passport.
+수영복,suyeongbok,swimsuit,new,7,travel,수영복을 사요. — I buy a swimsuit.
+구경,gugyeong,sightseeing,new,7,travel,구경을 해요. — I go sightseeing.
+맛집,matjip,popular restaurant,new,7,place,맛집에 가요. — I'm going to a popular restaurant.
+경주,Gyeongju,Gyeongju (city),new,7,place,경주로 여행을 갈 거예요. — I will travel to Gyeongju.
+닭갈비,dakgalbi,dakgalbi (spicy stir-fried chicken),new,7,food,오늘 저녁에 닭갈비를 먹으려고 해요. — I plan to eat dakgalbi tonight.
+휴가,hyuga,vacation,new,7,travel,이번 휴가에 여행을 가려고 해요. — I plan to travel on this vacation.
+자르다,jareuda,to cut,new,7,verbs,머리를 자르려고 해요. — I plan to cut my hair.
+불국사,Bulguksa,Bulguksa Temple,new,7,place,경주에 가려고 해요. 불국사에 가고 박물관에도 가려고 해요. — I plan to go to Gyeongju. I plan to visit Bulguksa and the museum too.
+설악산,Seoraksan,Seoraksan Mountain,new,7,place,친구들하고 설악산으로 여행을 가요. — I'm going on a trip to Seoraksan with friends.
+밤,bam,night,new,7,time,밤에 친구들과 파티를 하려고 해요. — I plan to have a party with friends at night.
+등산화,deungsanhwa,hiking boots,new,7,travel,등산화를 사려고 해요. — I plan to buy hiking boots.
+선글라스,seongeullaseu,sunglasses,new,7,travel,선글라스를 샀어요. — I bought sunglasses.
+준비하다,junbihada,to prepare,forgotten,7,verbs,여행을 준비해요. — I prepare for the trip.
+작년,jangnyeon,last year,forgotten,7,time,작년에 한국에 갔어요. — I went to Korea last year.
+후에,hue,after,forgotten,7,time,수업 후에 만나요. — Let's meet after class.
+힘들다,himdeulda,to be hard / difficult,forgotten,7,state,일이 힘들어요. — Work is hard.
+오래,orae,a long time,forgotten,7,time,오래 기다렸어요. — I waited a long time.
