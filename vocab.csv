@@ -131,7 +131,7 @@ korean,romanization,translation,status,unit,topic,example
 주문하다,jumunhada,to order,new,1B,verbs,음식을 주문해요. — I order food.
 가장,gajang,the most,new,1B,phrases,가장 좋아해요. — I like it the most.
 미안하다,mianhada,to be sorry,new,1B,phrases,미안해요. — I'm sorry.
-혼자,honja,alone,new,1B,phrases,혼자 가요. — I go alone.
+혼자,honja,alone,forgotten,1B,phrases,혼자 가요. — I go alone.
 치다,chida,to play (tennis) / to hit,new,1B,verbs,테니스를 쳐요. — I play tennis.
 운전하다,unjeonhada,to drive,new,1B,verbs,운전해요. — I drive.
 조금,jogeum,a little,new,1B,phrases,조금 알아요. — I know a little.
@@ -139,18 +139,18 @@ korean,romanization,translation,status,unit,topic,example
 일주일에 한 번,iljuire han beon,once a week,new,1B,frequency,일주일에 한 번 가요. — I go once a week.
 한 달에 한 번,han dare han beon,once a month,new,1B,frequency,한 달에 한 번 만나요. — We meet once a month.
 일 년에 한 번,il nyeone han beon,once a year,new,1B,frequency,일 년에 한 번 여행해요. — I travel once a year.
-크다,keuda,to be big,new,4,descriptions,집이 커요. — The house is big.
+크다,keuda,to be big,forgotten,4,descriptions,집이 커요. — The house is big.
 작다,jakda,to be small,new,4,descriptions,방이 작아요. — The room is small.
-넓다,neolda,to be wide / spacious,new,4,descriptions,길이 넓어요. — The road is wide.
+넓다,neolda,to be wide / spacious,forgotten,4,descriptions,길이 넓어요. — The road is wide.
 좁다,jopda,to be narrow,new,4,descriptions,길이 좁아요. — The road is narrow.
-높다,nopda,to be high,new,4,descriptions,산이 높아요. — The mountain is high.
+높다,nopda,to be high,forgotten,4,descriptions,산이 높아요. — The mountain is high.
 낮다,natda,to be low,new,4,descriptions,책상이 낮아요. — The desk is low.
-길다,gilda,to be long,new,4,descriptions,머리가 길어요. — The hair is long.
+길다,gilda,to be long,forgotten,4,descriptions,머리가 길어요. — The hair is long.
 짧다,jjalda,to be short,new,4,descriptions,머리가 짧아요. — The hair is short.
-비싸다,bissada,to be expensive,new,4,descriptions,옷이 비싸요. — Clothes are expensive.
+비싸다,bissada,to be expensive,forgotten,4,descriptions,옷이 비싸요. — Clothes are expensive.
 싸다,ssada,to be cheap,new,4,descriptions,옷이 싸요. — Clothes are cheap.
-편하다,pyeonhada,to be comfortable,new,4,descriptions,의자가 편해요. — The chair is comfortable.
-불편하다,bulpyeonhada,to be uncomfortable,new,4,descriptions,불편해요. — It's uncomfortable.
+편하다,pyeonhada,to be comfortable,forgotten,4,descriptions,의자가 편해요. — The chair is comfortable.
+불편하다,bulpyeonhada,to be uncomfortable,forgotten,4,descriptions,불편해요. — It's uncomfortable.
 꿈,kkum,dream,new,4,phrases,꿈을 꿔요. — I have a dream.
 찾다,chatda,to look for,new,4,verbs,책을 찾아요. — I look for the book.
 손님,sonnim,guest / customer,new,4,people,손님이 와요. — A guest is coming.
@@ -218,8 +218,8 @@ korean,romanization,translation,status,unit,topic,example
 지하철,jihacheol,subway,new,6,transport,학교에 지하철을 타고 가요. — I go to school by subway.
 갈아타다,garatada,to transfer,new,6,verbs,버스로 갈아타요. — Transfer to the bus.
 내리다,naerida,to get off,new,6,verbs,택시에서 내려요. — Get off the taxi.
-가깝다,gakkapda,to be close / near,new,6,descriptions,집에서 회사까지 가까워요. — It's close from home to the company.
-멀다,meolda,to be far,new,6,descriptions,세종학당은 집에서 멀어요. — Sejong Institute is far from home.
+가깝다,gakkapda,to be close / near,forgotten,6,descriptions,집에서 회사까지 가까워요. — It's close from home to the company.
+멀다,meolda,to be far,forgotten,6,descriptions,세종학당은 집에서 멀어요. — Sejong Institute is far from home.
 정류장,jeongnyujang,bus stop,new,6,place,버스 정류장에서 호텔까지 어떻게 가요? — How do I get from the bus stop to the hotel?
 호텔,hotel,hotel,new,6,place,공항에서 호텔까지 어떻게 가요? — How do I get from the airport to the hotel?
 차,cha,car,new,6,transport,제 차를 타고 가요. — I'll take my car.
@@ -249,3 +249,35 @@ korean,romanization,translation,status,unit,topic,example
 후에,hue,after,forgotten,7,time,수업 후에 만나요. — Let's meet after class.
 힘들다,himdeulda,to be hard / difficult,forgotten,7,state,일이 힘들어요. — Work is hard.
 오래,orae,a long time,forgotten,7,time,오래 기다렸어요. — I waited a long time.
+방학,banghak,school vacation,forgotten,7,time,방학에 여행을 가요. — I travel during the school vacation.
+청소하다,cheongsohada,to clean,forgotten,7,verbs,방을 청소해요. — I clean the room.
+이를 닦다,ireul dakda,to brush teeth,forgotten,7,verbs,이를 닦아요. — I brush my teeth.
+세수하다,sesuhada,to wash one's face,forgotten,7,verbs,아침에 세수해요. — I wash my face in the morning.
+설거지하다,seolgeojihada,to wash dishes,forgotten,7,verbs,설거지를 해요. — I do the dishes.
+많다,manta,to be many / a lot,forgotten,4,descriptions,사람이 많아요. — There are many people.
+깨끗하다,kkaekkeutada,to be clean,forgotten,4,descriptions,방이 깨끗해요. — The room is clean.
+재미있다,jaemiitda,to be fun / interesting,forgotten,4,descriptions,영화가 재미있어요. — The movie is fun.
+무겁다,mugeopda,to be heavy,forgotten,4,descriptions,가방이 무거워요. — The bag is heavy.
+좋다,jota,to be good,forgotten,4,descriptions,날씨가 좋아요. — The weather is good.
+기쁘다,gippeuda,to be glad,forgotten,4,state,만나서 기뻐요. — I'm glad to meet you.
+빠르다,ppareuda,to be fast,forgotten,4,descriptions,차가 빨라요. — The car is fast.
+적다,jeokda,to be few,forgotten,4,descriptions,사람이 적어요. — There are few people.
+더럽다,deoreopda,to be dirty,forgotten,4,descriptions,방이 더러워요. — The room is dirty.
+재미없다,jaemieopda,to be uninteresting,forgotten,4,descriptions,수업이 재미없어요. — The class is boring.
+가볍다,gabyeopda,to be light (weight),forgotten,4,descriptions,가방이 가벼워요. — The bag is light.
+느리다,neurida,to be slow,forgotten,4,descriptions,버스가 느려요. — The bus is slow.
+춥다,chupda,to be cold,forgotten,4,weather,겨울이 추워요. — Winter is cold.
+따뜻하다,ttatteutada,to be warm,forgotten,4,weather,봄이 따뜻해요. — Spring is warm.
+쌀쌀하다,ssalssalhada,to be cool / chilly,forgotten,4,weather,날씨가 쌀쌀해요. — The weather is chilly.
+맑다,makda,to be clear (weather),forgotten,4,weather,하늘이 맑아요. — The sky is clear.
+흐리다,heurida,to be cloudy,forgotten,4,weather,날씨가 흐려요. — The weather is cloudy.
+나라,nara,country,forgotten,7,place,어느 나라에서 왔어요? — Which country are you from?
+쪽,jjok,page,forgotten,7,objects,몇 쪽이에요? — What page is it?
+빨리,ppalli,quickly,forgotten,7,time,빨리 오세요. — Please come quickly.
+아름답다,areumdapda,to be beautiful,forgotten,7,descriptions,꽃이 아름다워요. — The flower is beautiful.
+유명하다,yumyeonghada,to be famous,forgotten,7,descriptions,이 식당이 유명해요. — This restaurant is famous.
+다음,daeum,next,forgotten,7,time,다음 주에 만나요. — Let's meet next week.
+주부,jubu,housewife,forgotten,7,people,저는 주부예요. — I'm a housewife.
+남자,namja,man,forgotten,7,people,저 남자가 누구예요? — Who is that man?
+여자,yeoja,woman,forgotten,7,people,저 여자가 친구예요. — That woman is my friend.
+귤,gyul,mandarin (fruit),forgotten,7,food,귤이 맛있어요. — Mandarins are delicious.
