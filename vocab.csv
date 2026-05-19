@@ -295,7 +295,7 @@ korean,romanization,translation,status,unit,topic,example
 죄송하다,joesonghada,to be sorry (formal),forgotten,4,phrases,죄송합니다. — I'm sorry.
 잠시,jamsi,a moment,forgotten,4,time,잠시만 기다리세요. — Please wait a moment.
 보이다,boida,to show,forgotten,4,verbs,바지를 보여 주세요. — Please show me the pants.
-경험,gyeongheom,experience,new,8,phrases,여행 경험을 이야기해요. — I talk about my travel experience.
+경험,gyeongheom,experience,forgotten,8,phrases,여행 경험을 이야기해요. — I talk about my travel experience.
 거리,geori,street,new,8,place,거리 구경을 해요. — I sightsee the streets.
 축제,chukje,festival,new,8,events,축제에 가요. — I go to a festival.
 전통 시장,jeontong sijang,traditional market,new,8,place,전통 시장에 가요. — I go to a traditional market.
@@ -309,7 +309,7 @@ korean,romanization,translation,status,unit,topic,example
 이,i,tooth,new,8,body,이가 아파요. — My tooth hurts.
 닦다,dakda,to clean / wipe,new,8,verbs,창문을 닦아요. — I clean the window.
 설거지,seolgeoji,dishwashing,new,8,phrases,설거지를 해요. — I do the dishes.
-샤워하다,syawohada,to shower,new,8,verbs,샤워해요. — I shower.
+샤워하다,syawohada,to shower,forgotten,8,verbs,샤워해요. — I shower.
 더,deo,more,new,8,phrases,더 비싸요. — It's more expensive.
 다녀오다,danyeooda,to come back / go and return,new,8,verbs,여행 잘 다녀왔어요. — I had a good trip.
 지난번,jinanbeon,last time,new,8,time,지난번보다 좋았어요. — It was better than last time.
@@ -362,3 +362,9 @@ korean,romanization,translation,status,unit,topic,example
 샐러드,saelleodeu,salad,new,10,food,샐러드를 먹어요. — I eat salad.
 제일,jeil,the most / best,new,10,phrases,제일 좋아해요. — I like it the most.
 습관,seupgwan,habit,new,10,phrases,좋은 습관이 있어요. — I have a good habit.
+손을 씻다,soneul ssitda,to wash hands,forgotten,7,verbs,손을 씻어요. — I wash my hands.
+빨래하다,ppallaehada,to do laundry,forgotten,7,verbs,빨래해요. — I do the laundry.
+바퀴벌레,bakwibeolle,cockroach,forgotten,7,nature,바퀴벌레가 무서워요. — Cockroaches are scary.
+새 옷,sae ot,new clothes,forgotten,4,clothes,새 옷을 샀어요. — I bought new clothes.
+여행 경험,yeohaeng gyeongheom,travel experience,forgotten,8,phrases,여행 경험을 이야기해요. — I talk about travel experience.
+테니스를 치다,teniseureul chida,to play tennis,forgotten,2,hobbies,테니스를 쳐요. — I play tennis.
