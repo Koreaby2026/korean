@@ -188,7 +188,7 @@ korean,romanization,translation,status,unit,topic,example
 그리다,geurida,to draw,new,2,verbs,그림을 그려요. — I draw a picture.
 돈을 찾다,doneul chatda,to withdraw money,new,2,phrases,돈을 찾아요. — I withdraw money.
 보통,botong,usually,new,2,frequency,보통 8시에 일어나요. — I usually get up at 8.
-특히,teukhi,particularly / especially,new,2,phrases,특히 좋아해요. — I particularly like it.
+특히,teukhi,particularly / especially,forgotten,2,phrases,특히 좋아해요. — I particularly like it.
 년,nyeon,year,new,2,time,2년 동안. — For 2 years.
 박물관,bakmulgwan,museum,forgotten,5,place,박물관에 가요. — I'm going to the museum.
 지하,jiha,basement / underground,forgotten,5,place,지하에 주차장이 있어요. — There's a parking lot in the basement.
@@ -305,7 +305,7 @@ korean,romanization,translation,status,unit,topic,example
 명동,Myeongdong,Myeong-dong,new,8,place,명동에 가요. — I go to Myeong-dong.
 인사동,Insadong,Insa-dong,new,8,place,인사동에서 전통 음식을 먹었어요. — I ate traditional food in Insa-dong.
 멋있다,meositda,to be cool / fantastic,new,8,descriptions,가수가 멋있어요. — The singer is cool.
-끝나다,kkeutnada,to finish / end,new,8,verbs,수업이 끝났어요. — Class is over.
+끝나다,kkeutnada,to finish / end,forgotten,8,verbs,수업이 끝났어요. — Class is over.
 이,i,tooth,new,8,body,이가 아파요. — My tooth hurts.
 닦다,dakda,to clean / wipe,new,8,verbs,창문을 닦아요. — I clean the window.
 설거지,seolgeoji,dishwashing,new,8,phrases,설거지를 해요. — I do the dishes.
@@ -314,8 +314,8 @@ korean,romanization,translation,status,unit,topic,example
 다녀오다,danyeooda,to come back / go and return,new,8,verbs,여행 잘 다녀왔어요. — I had a good trip.
 지난번,jinanbeon,last time,new,8,time,지난번보다 좋았어요. — It was better than last time.
 괜찮다,gwaenchanta,to be fine / all right,new,8,phrases,괜찮아요. — It's okay.
-바닷가,badatga,beach,new,8,place,바닷가에서 산책했어요. — I walked at the beach.
-푹,puk,well / soundly,new,8,phrases,푹 쉬었어요. — I rested well.
+바닷가,badatga,beach,forgotten,8,place,바닷가에서 산책했어요. — I walked at the beach.
+푹,puk,really / deeply / soundly,forgotten,8,phrases,푹 쉬었어요. — I rested well.
 끝,kkeut,end,new,8,phrases,축제를 끝까지 봤어요. — I watched the festival to the end.
 먼저,meonjeo,first / before,new,8,phrases,먼저 가세요. — Go first.
 경복궁,Gyeongbokgung,Gyeongbokgung Palace,new,8,place,경복궁을 구경했어요. — I sightsaw Gyeongbokgung.
@@ -340,7 +340,7 @@ korean,romanization,translation,status,unit,topic,example
 기침,gichim,cough,new,9,body,기침을 해요. — I cough.
 몸,mom,body,new,9,body,오늘은 몸이 어때요? — How is your body today?
 복잡하다,bokjapada,to be crowded / complicated,new,9,descriptions,길이 복잡해요. — The street is crowded.
-아까,akka,a moment ago,new,10,time,아까 길이 복잡했어요. — The street was crowded a moment ago.
+아까,akka,a moment ago,forgotten,10,time,아까 길이 복잡했어요. — The street was crowded a moment ago.
 단어,daneo,word,new,10,study,단어를 외워요. — I memorize words.
 외우다,oeuda,to memorize,new,10,verbs,단어를 외워요. — I memorize words.
 드시다,deusida,to eat / drink (honorific),new,10,verbs,맛있게 드세요. — Eat well (enjoy).
@@ -368,3 +368,6 @@ korean,romanization,translation,status,unit,topic,example
 새 옷,sae ot,new clothes,forgotten,4,clothes,새 옷을 샀어요. — I bought new clothes.
 여행 경험,yeohaeng gyeongheom,travel experience,forgotten,8,phrases,여행 경험을 이야기해요. — I talk about travel experience.
 테니스를 치다,teniseureul chida,to play tennis,forgotten,2,hobbies,테니스를 쳐요. — I play tennis.
+모두,modu,all / everyone,forgotten,8,phrases,모두 같이 가요. — Let's all go together.
+낫다,natda,to get better / recover,forgotten,9,verbs,감기가 다 나았어요. — My cold is all gone.
+고향,gohyang,hometown,forgotten,8,place,고향이 어디예요? — Where is your hometown?
