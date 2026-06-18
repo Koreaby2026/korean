@@ -1,73 +1,72 @@
 #separator:tab
 #html:false
 #tags column:4
-시계	clock [sigye]  시계가 있어요. — There is a clock.	forgotten unit5 objects
-돈	money [don]  돈이 없어요. — I don't have money.	forgotten unit5 objects
-창문	window [changmun]  창문을 열어요. — I open the window.	forgotten unit5 objects
-방향	direction [banghyang]  어느 방향이에요? — Which direction?	forgotten unit5 place
-이동	movement [idong]  이동 시간이 길어요. — The travel time is long.	forgotten unit5 place
-근처	nearby [geuncheo]  학교 근처에 살아요. — I live near the school.	forgotten unit5 place
-주차장	parking lot [juchajang]  주차장이 어디예요? — Where is the parking lot?	forgotten unit5 place
-건물	building [geonmul]  큰 건물이에요. — It's a big building.	forgotten unit5 place
-맞아요	that's right [majayo]  네 맞아요. — Yes, that's right.	forgotten unit5 phrases
-학교	school [hakgyo]  학교에 가요. — I go to school.	forgotten unit5 place
-지난	last/past [jinan]  지난 주에. — Last week.	forgotten unit5 time
-봄	spring [bom]  봄이 좋아요. — I like spring.	forgotten unit1B seasons
-여름	summer [yeoreum]  여름이 더워요. — Summer is hot.	forgotten unit1B seasons
-가을	autumn/fall [gaeul]  가을이 시원해요. — Autumn is cool.	forgotten unit1B seasons
-겨울	winter [gyeoul]  겨울이 추워요. — Winter is cold.	forgotten unit1B seasons
-요일	day of week [yoil]  오늘은 무슨 요일이에요? — What day is today?	forgotten unit1B time
-술	alcohol [sul]  술을 안 마셔요. — I don't drink alcohol.	forgotten unit1B food
-야구	baseball [yagu]  야구를 좋아해요. — I like baseball.	forgotten unit1B sports
-수박	watermelon [subak]  수박이 맛있어요. — Watermelon is delicious.	forgotten unit1B food
-사진 찍다	to take a photo [sajin jjikda]  사진을 찍어요. — I take photos.	forgotten unit1B hobbies
-낚시	fishing [naksi]  낚시를 해요. — I go fishing.	forgotten unit1B hobbies
-시간	time [sigan]  시간이 없어요. — I don't have time.	forgotten unit1B time
-자전거를 타다	to ride a bike [jajeongeoreul tada]  자전거를 타요. — I ride a bike.	forgotten unit1B hobbies
-맵다	spicy [maepda]  김치가 매워요. — Kimchi is spicy.	forgotten unit1B food
-아프다	to be sick / to hurt [apeuda]  머리가 아파요. — My head hurts.	forgotten unit4 state
-배고프다	to be hungry [baegopeuda]  배가 고파요. — I'm hungry.	forgotten unit4 state
-나쁘다	to be bad [nappeuda]  날씨가 나빠요. — The weather is bad.	forgotten unit4 state
-슬프다	to be sad [seulpeuda]  슬퍼요. — I'm sad.	forgotten unit4 state
-피곤하다	to be tired [pigonhada]  피곤해요. — I'm tired.	forgotten unit4 state
-쉽다	to be easy [swipda]  쉬워요. — It's easy.	forgotten unit4 state
-어렵다	to be difficult [eoryeopda]  어려워요. — It's difficult.	forgotten unit4 state
-바쁘다	to be busy [bappeuda]  바빠요. — I'm busy.	forgotten unit4 state
-늦다	to be late [neutda]  늦었어요. — I'm late.	forgotten unit4 state
-비가 오다	to rain [biga oda]  비가 와요. — It's raining.	forgotten unit4 weather
-눈이 오다	to snow [nuni oda]  눈이 와요. — It's snowing.	forgotten unit4 weather
-덥다	to be hot [deopda]  오늘 더워요. — It's hot today.	forgotten unit4 weather
-가족	family [gajok]  제 가족이에요. — It's my family.	forgotten unit4 people
-숙제	homework [sukje]  숙제를 해요. — I do homework.	forgotten unit4 study
-시험	exam [siheom]  시험이 어려워요. — The exam is hard.	forgotten unit4 study
-배	stomach [bae]  배가 아파요. — My stomach hurts.	forgotten unit4 body
-새	bird [sae]  새가 노래해요. — The bird sings.	forgotten unit3 nature
-지갑	wallet [jigap]  지갑을 잃어버렸어요. — I lost my wallet.	forgotten unit3 objects
-생선	fish (food) [saengseon]  생선을 먹어요. — I eat fish.	forgotten unit3 food
-넥타이	tie [nektai]  넥타이를 매요. — I tie a tie.	forgotten unit3 clothes
-스카프	scarf [seukapeu]  스카프가 예뻐요. — The scarf is pretty.	forgotten unit3 clothes
-모자	hat/cap [moja]  모자를 써요. — I put on a hat.	forgotten unit3 clothes
-안경	glasses [angyeong]  안경을 써요. — I wear glasses.	forgotten unit3 clothes
-구두	dress shoes [gudu]  구두를 신어요. — I put on dress shoes.	forgotten unit3 clothes
-양복	men's suit [yangbok]  양복을 입어요. — I put on a suit.	forgotten unit3 clothes
-벗다	to take off (clothes) [beotda]  옷을 벗어요. — I take off clothes.	forgotten unit3 clothes
-양말	socks [yangmal]  양말을 신어요. — I put on socks.	forgotten unit3 clothes
-약속	appointment/promise [yaksok]  약속이 있어요. — I have an appointment.	forgotten unit3 phrases
-기분	mood [gibun]  기분이 좋아요. — I'm in a good mood.	forgotten unit3 state
-아침	morning/breakfast [achim]  아침을 먹어요. — I eat breakfast.	forgotten unit3 time
-점심	lunch [jeomsim]  점심을 먹어요. — I eat lunch.	forgotten unit3 time
-저녁	evening/dinner [jeonyeok]  저녁을 먹어요. — I eat dinner.	forgotten unit3 time
-매일	every day [maeil]  매일 운동해요. — I exercise every day.	forgotten unit2 frequency
-자주	often [jaju]  자주 가요. — I go often.	forgotten unit2 frequency
-가끔	sometimes [gaggeum]  가끔 만나요. — We meet sometimes.	forgotten unit2 frequency
-당구를 치다	to play billiards [danggureul chida]  당구를 쳐요. — I play billiards.	forgotten unit2 hobbies
-볼링을 치다	to bowl [bollingeul chida]  볼링을 쳐요. — I go bowling.	forgotten unit2 hobbies
-노래를 부르다	to sing a song [noraereul bureuda]  노래를 불러요. — I sing a song.	forgotten unit2 hobbies
-사진을 찍다	to take a photo [sajineul jjikda]  사진을 찍어요. — I take photos.	forgotten unit2 hobbies
-축구를 하다	to play soccer [chukgureul hada]  축구를 해요. — I play soccer.	forgotten unit2 hobbies
-그림을 그리다	to draw a picture [geurimeul geurida]  그림을 그려요. — I draw a picture.	forgotten unit2 hobbies
-등산을 하다	to go hiking [deungsaneul hada]  등산을 해요. — I go hiking.	forgotten unit2 hobbies
-춤을 추다	to dance [chumeul chuda]  춤을 춰요. — I dance.	forgotten unit2 hobbies
+시계	clock [sigye]  시계가 있어요. — There is a clock.	new unit5 objects
+돈	money [don]  돈이 없어요. — I don't have money.	new unit7 objects
+창문	window [changmun]  창문을 열어요. — I open the window.	new unit5 objects
+방향	direction [banghyang]  어느 방향이에요? — Which direction?	new unit5 place
+이동	movement [idong]  이동 시간이 길어요. — The travel time is long.	new unit5 place
+근처	nearby [geuncheo]  학교 근처에 살아요. — I live near the school.	new unit2 place
+주차장	parking lot [juchajang]  주차장이 어디예요? — Where is the parking lot?	new unit5 place
+건물	building [geonmul]  큰 건물이에요. — It's a big building.	new unit5 place
+맞아요	that's right [majayo]  네 맞아요. — Yes, that's right.	new unit5 phrases
+학교	school [hakgyo]  학교에 가요. — I go to school.	new unit5 place
+지난	last/past [jinan]  지난 주에. — Last week.	new unit5 time
+봄	spring [bom]  봄이 좋아요. — I like spring.	new unit1B seasons
+여름	summer [yeoreum]  여름이 더워요. — Summer is hot.	new unit1B seasons
+가을	autumn/fall [gaeul]  가을이 시원해요. — Autumn is cool.	new unit1B seasons
+겨울	winter [gyeoul]  겨울이 추워요. — Winter is cold.	new unit1B seasons
+요일	day of week [yoil]  오늘은 무슨 요일이에요? — What day is today?	new unit1B time
+술	alcohol [sul]  술을 안 마셔요. — I don't drink alcohol.	new unit1B food
+야구	baseball [yagu]  야구를 좋아해요. — I like baseball.	new unit1B sports
+수박	watermelon [subak]  수박이 맛있어요. — Watermelon is delicious.	new unit4 food
+낚시	fishing [naksi]  낚시를 해요. — I go fishing.	new unit1B hobbies
+시간	time [sigan]  시간이 없어요. — I don't have time.	new unit1B time
+자전거를 타다	to ride a bike [jajeongeoreul tada]  자전거를 타요. — I ride a bike.	new unit1B hobbies
+맵다	spicy [maepda]  김치가 매워요. — Kimchi is spicy.	new unit1B food
+아프다	to be sick / to hurt [apeuda]  머리가 아파요. — My head hurts.	new unit9 state
+배고프다	to be hungry [baegopeuda]  배가 고파요. — I'm hungry.	new unit6 state
+나쁘다	to be bad [nappeuda]  날씨가 나빠요. — The weather is bad.	new unit4 state
+슬프다	to be sad [seulpeuda]  슬퍼요. — I'm sad.	new unit4 state
+피곤하다	to be tired [pigonhada]  피곤해요. — I'm tired.	new unit4 state
+쉽다	to be easy [swipda]  쉬워요. — It's easy.	new unit4 state
+어렵다	to be difficult [eoryeopda]  어려워요. — It's difficult.	new unit4 state
+바쁘다	to be busy [bappeuda]  바빠요. — I'm busy.	new unit4 state
+늦다	to be late [neutda]  늦었어요. — I'm late.	new unit6 state
+비가 오다	to rain [biga oda]  비가 와요. — It's raining.	new unit4 weather
+눈이 오다	to snow [nuni oda]  눈이 와요. — It's snowing.	new unit4 weather
+덥다	to be hot [deopda]  오늘 더워요. — It's hot today.	new unit4 weather
+가족	family [gajok]  제 가족이에요. — It's my family.	new unit4 people
+숙제	homework [sukje]  숙제를 해요. — I do homework.	new unit10 study
+시험	exam [siheom]  시험이 어려워요. — The exam is hard.	new unit4 study
+배	stomach [bae]  배가 아파요. — My stomach hurts.	new unit9 body
+새	bird [sae]  새가 노래해요. — The bird sings.	new unit3 nature
+지갑	wallet [jigap]  지갑을 잃어버렸어요. — I lost my wallet.	new unit3 objects
+생선	fish (food) [saengseon]  생선을 먹어요. — I eat fish.	new unit3 food
+넥타이	tie [nektai]  넥타이를 매요. — I tie a tie.	new unit3 clothes
+스카프	scarf [seukapeu]  스카프가 예뻐요. — The scarf is pretty.	new unit3 clothes
+모자	hat/cap [moja]  모자를 써요. — I put on a hat.	new unit3 clothes
+안경	glasses [angyeong]  안경을 써요. — I wear glasses.	new unit3 clothes
+구두	dress shoes [gudu]  구두를 신어요. — I put on dress shoes.	new unit3 clothes
+양복	men's suit [yangbok]  양복을 입어요. — I put on a suit.	new unit3 clothes
+벗다	to take off (clothes) [beotda]  옷을 벗어요. — I take off clothes.	new unit3 clothes
+양말	socks [yangmal]  양말을 신어요. — I put on socks.	new unit3 clothes
+약속	appointment/promise [yaksok]  약속이 있어요. — I have an appointment.	new unit3 phrases
+기분	mood [gibun]  기분이 좋아요. — I'm in a good mood.	new unit3 state
+아침	morning/breakfast [achim]  아침을 먹어요. — I eat breakfast.	new unit3 time
+점심	lunch [jeomsim]  점심을 먹어요. — I eat lunch.	new unit3 time
+저녁	evening/dinner [jeonyeok]  저녁을 먹어요. — I eat dinner.	new unit3 time
+매일	every day [maeil]  매일 운동해요. — I exercise every day.	new unit2 frequency
+자주	often [jaju]  자주 가요. — I go often.	new unit2 frequency
+가끔	sometimes [gaggeum]  가끔 만나요. — We meet sometimes.	new unit10 frequency
+당구를 치다	to play billiards [danggureul chida]  당구를 쳐요. — I play billiards.	new unit2 hobbies
+볼링을 치다	to bowl [bollingeul chida]  볼링을 쳐요. — I go bowling.	new unit2 hobbies
+노래를 부르다	to sing a song [noraereul bureuda]  노래를 불러요. — I sing a song.	new unit2 hobbies
+사진을 찍다	to take a photo [sajineul jjikda]  사진을 찍어요. — I take photos.	new unit2 hobbies
+축구를 하다	to play soccer [chukgureul hada]  축구를 해요. — I play soccer.	new unit2 hobbies
+그림을 그리다	to draw a picture [geurimeul geurida]  그림을 그려요. — I draw a picture.	new unit2 hobbies
+등산을 하다	to go hiking [deungsaneul hada]  등산을 해요. — I go hiking.	new unit2 hobbies
+춤을 추다	to dance [chumeul chuda]  춤을 춰요. — I dance.	new unit2 hobbies
 누구	who [nugu]  저 사람이 누구예요? — Who is that person?	new unit5 questions
 무엇	what [mueot]  이게 뭐예요? — What is this?	new unit5 questions
 언제	when [eonje]  언제 와요? — When are you coming?	new unit5 questions
@@ -81,8 +80,8 @@
 전화번호	phone number [jeonhwabeonho]  전화번호가 뭐예요? — What's your phone number?	new unit5 objects
 화장실	bathroom [hwajangsil]  화장실이 어디예요? — Where is the bathroom?	new unit5 place
 여행	travel/trip [yeohaeng]  여행을 가요. — I'm going on a trip.	new unit5 place
-공항	airport [gonghang]  공항에 가요. — I'm going to the airport.	new unit5 place
-은행	bank [eunhaeng]  은행에 가요. — I'm going to the bank.	new unit5 place
+공항	airport [gonghang]  공항에 가요. — I'm going to the airport.	new unit6 place
+은행	bank [eunhaeng]  은행에 가요. — I'm going to the bank.	new unit2 place
 수업	class/lesson [sueop]  수업이 있어요. — I have class.	new unit5 study
 일찍	early [iljjik]  일찍 일어나요. — I get up early.	new unit5 time
 계절	season [gyejeol]  어느 계절을 좋아해요? — Which season do you like?	new unit5 time
@@ -130,7 +129,7 @@
 맛	taste [mat]  맛이 좋아요. — It tastes good.	new unit1B food
 초밥	sushi [chobap]  초밥을 먹어요. — I eat sushi.	new unit1B food
 받다	to receive [batda]  선물을 받아요. — I receive a gift.	new unit1B verbs
-주문하다	to order [jumunhada]  음식을 주문해요. — I order food.	new unit1B verbs
+주문하다	to order (informal: 시키다) [jumunhada]  음식을 주문해요. — I order food.	new unit1B verbs
 가장	the most [gajang]  가장 좋아해요. — I like it the most.	new unit1B phrases
 미안하다	to be sorry [mianhada]  미안해요. — I'm sorry.	new unit1B phrases
 혼자	alone [honja]  혼자 가요. — I go alone.	new unit1B phrases
@@ -173,8 +172,7 @@
 이따가	later (today) [ittaga]  이따가 봐요. — See you later.	new unit3 time
 계획	plan [gyehoek]  계획이 있어요. — I have a plan.	new unit3 phrases
 이유	reason [iyu]  이유가 뭐예요? — What's the reason?	new unit3 phrases
-채소	vegetables [chaeso]  채소를 먹어요. — I eat vegetables.	new unit3 food
-야채	vegetables [yachae]  야채가 신선해요. — The vegetables are fresh.	new unit3 food
+채소	vegetables (also: 야채) [chaeso]  채소를 먹어요. — I eat vegetables.	new unit3 food
 너무	too / very [neomu]  너무 비싸요. — Too expensive.	new unit3 phrases
 운동화	sneakers [undonghwa]  운동화를 신어요. — I wear sneakers.	new unit3 clothes
 기차역	train station [gichayeok]  기차역이 어디예요? — Where is the train station?	new unit3 place
@@ -192,3 +190,240 @@
 보통	usually [botong]  보통 8시에 일어나요. — I usually get up at 8.	new unit2 frequency
 특히	particularly / especially [teukhi]  특히 좋아해요. — I particularly like it.	new unit2 phrases
 년	year [nyeon]  2년 동안. — For 2 years.	new unit2 time
+박물관	museum [bakmulgwan]  박물관에 가요. — I'm going to the museum.	new unit5 place
+지하	basement / underground [jiha]  지하에 주차장이 있어요. — There's a parking lot in the basement.	new unit5 place
+길	road / street [gil]  길이 너무 좁아요. — The road is too narrow.	new unit5 place
+생일	birthday [saengil]  오늘은 제 생일이에요. — Today is my birthday.	new unit5 events
+걸리다	to take (time) [geollida]  얼마나 걸려요? — How long does it take?	new unit5 verbs
+시장	market [sijang]  시장에서 야채를 사요. — I buy vegetables at the market.	new unit5 place
+비행기	airplane [bihaenggi]  비행기로 공항에 가요. — I'm going to the airport by plane.	new unit6 transport
+기차	train [gicha]  기차를 타고 부산에 가요. — I'm taking the train to Busan.	new unit6 transport
+무섭다	to be scary [museopda]  저는 무서운 영화를 좋아해요. — I like scary movies.	new unit5 state
+스페인어	Spanish (language) [seupeineo]  스페인어를 어떻게 배웠어요? — How did you learn Spanish?	new unit5 phrases
+쯤	about / approximately [jjeum]  시간이 한 시간쯤 걸려요. — It takes about one hour.	new unit5 phrases
+테니스장	tennis court [teniseujang]  학교 테니스장에서 테니스를 쳐요. — I play tennis at the school tennis court.	new unit5 place
+저쪽	over there [jeojjok]  교실은 저쪽에 있어요. — The classroom is over there.	new unit5 place
+시청	city hall [sicheong]  시청이 어디에 있어요? — Where is the city hall?	new unit5 place
+엘리베이터	elevator [ellibeiteo]  엘리베이터는 왼쪽에 있어요. — The elevator is on the left.	new unit5 place
+병원	hospital [byeongwon]  병원에서 왼쪽으로 가세요. — From the hospital, go left.	new unit5 place
+알다	to know [alda]  한국병원을 알아요? — Do you know Korea Hospital?	new unit5 verbs
+그러면	then / in that case [geureomyeon]  오른쪽으로 가세요. 그러면 은행이 있어요. — Go right. Then there's a bank.	new unit5 phrases
+빵집	bakery [ppangjip]  빵집 앞에서 길을 건너세요. — Cross the road in front of the bakery.	new unit5 place
+약국	pharmacy [yakguk]  약국 옆에 우리 집이 있어요. — Our house is next to the pharmacy.	new unit5 place
+지도	map [jido]  지도를 보고 길을 찾아 보세요. — Look at the map and try to find the way.	new unit5 objects
+교통수단	transportation [gyotongsudan]  여러분이 자주 타는 교통수단은 뭐예요? — What transportation do you often use?	new unit6 transport
+우체국	post office [uchaeguk]  은행은 우체국 옆에 있어요. — The bank is next to the post office.	new unit6 place
+오토바이	motorcycle [otobai]  집에 오토바이를 타고 가요. — I go home by motorcycle.	new unit6 transport
+택시	taxi [taeksi]  백화점에 택시를 타고 갔어요. — I took a taxi to the department store.	new unit6 transport
+지하철	subway [jihacheol]  학교에 지하철을 타고 가요. — I go to school by subway.	new unit6 transport
+갈아타다	to transfer [garatada]  버스로 갈아타요. — Transfer to the bus.	new unit6 verbs
+내리다	to get off [naerida]  택시에서 내려요. — Get off the taxi.	new unit6 verbs
+가깝다	to be close / near [gakkapda]  집에서 회사까지 가까워요. — It's close from home to the company.	new unit6 descriptions
+멀다	to be far [meolda]  세종학당은 집에서 멀어요. — Sejong Institute is far from home.	new unit6 descriptions
+정류장	bus stop [jeongnyujang]  버스 정류장에서 호텔까지 어떻게 가요? — How do I get from the bus stop to the hotel?	new unit6 place
+호텔	hotel [hotel]  공항에서 호텔까지 어떻게 가요? — How do I get from the airport to the hotel?	new unit6 place
+차	car [cha]  제 차를 타고 가요. — I'll take my car.	new unit6 transport
+간식	snack [gansik]  간식은 뭘 살까요? — What snack should we buy?	new unit6 food
+싫어하다	to dislike [sireohada]  저는 쇼핑을 싫어해요. — I dislike shopping.	new unit6 verbs
+미술관	art museum [misulgwan]  오늘 오후에 미술관에 갈까요? — Shall we go to the art museum this afternoon?	new unit6 place
+산	mountain [san]  산이 높아요. — The mountain is high.	new unit7 nature
+섬	island [seom]  섬이 많아요. — There are many islands.	new unit7 nature
+도시	city [dosi]  도시가 커요. — The city is big.	new unit7 place
+호수	lake [hosu]  호수가 아름다워요. — The lake is beautiful.	new unit7 nature
+약	medicine [yak]  약을 먹어요. — I take medicine.	new unit7 objects
+여권	passport [yeogwon]  여권을 만들어요. — I make a passport.	new unit7 travel
+수영복	swimsuit [suyeongbok]  수영복을 사요. — I buy a swimsuit.	new unit7 travel
+구경	sightseeing [gugyeong]  구경을 해요. — I go sightseeing.	new unit7 travel
+맛집	popular restaurant [matjip]  맛집에 가요. — I'm going to a popular restaurant.	new unit7 place
+경주	Gyeongju (city) [Gyeongju]  경주로 여행을 갈 거예요. — I will travel to Gyeongju.	new unit7 place
+닭갈비	dakgalbi (spicy stir-fried chicken) [dakgalbi]  오늘 저녁에 닭갈비를 먹으려고 해요. — I plan to eat dakgalbi tonight.	new unit7 food
+휴가	vacation [hyuga]  이번 휴가에 여행을 가려고 해요. — I plan to travel on this vacation.	new unit7 travel
+자르다	to cut [jareuda]  머리를 자르려고 해요. — I plan to cut my hair.	new unit7 verbs
+불국사	Bulguksa Temple [Bulguksa]  경주에 가려고 해요. 불국사에 가고 박물관에도 가려고 해요. — I plan to go to Gyeongju. I plan to visit Bulguksa and the museum too.	new unit7 place
+설악산	Seoraksan Mountain [Seoraksan]  친구들하고 설악산으로 여행을 가요. — I'm going on a trip to Seoraksan with friends.	new unit7 place
+밤	night [bam]  밤에 친구들과 파티를 하려고 해요. — I plan to have a party with friends at night.	new unit7 time
+등산화	hiking boots [deungsanhwa]  등산화를 사려고 해요. — I plan to buy hiking boots.	new unit7 travel
+선글라스	sunglasses [seongeullaseu]  선글라스를 샀어요. — I bought sunglasses.	new unit7 travel
+준비하다	to prepare [junbihada]  여행을 준비해요. — I prepare for the trip.	new unit7 verbs
+작년	last year [jangnyeon]  작년에 한국에 갔어요. — I went to Korea last year.	new unit8 time
+후에	after [hue]  수업 후에 만나요. — Let's meet after class.	new unit7 time
+힘들다	to be hard / difficult [himdeulda]  일이 힘들어요. — Work is hard.	new unit10 state
+오래	a long time [orae]  오래 기다렸어요. — I waited a long time.	new unit7 time
+방학	school vacation [banghak]  방학에 여행을 가요. — I travel during the school vacation.	new unit7 time
+청소하다	to clean [cheongsohada]  방을 청소해요. — I clean the room.	new unit7 verbs
+이를 닦다	to brush teeth [ireul dakda]  이를 닦아요. — I brush my teeth.	new unit8 verbs
+세수하다	to wash one's face [sesuhada]  아침에 세수해요. — I wash my face in the morning.	new unit7 verbs
+설거지하다	to wash dishes [seolgeojihada]  설거지를 해요. — I do the dishes.	new unit8 verbs
+많다	to be many / a lot [manta]  사람이 많아요. — There are many people.	new unit4 descriptions
+깨끗하다	to be clean [kkaekkeutada]  방이 깨끗해요. — The room is clean.	new unit4 descriptions
+재미있다	to be fun / interesting [jaemiitda]  영화가 재미있어요. — The movie is fun.	new unit4 descriptions
+무겁다	to be heavy [mugeopda]  가방이 무거워요. — The bag is heavy.	new unit4 descriptions
+좋다	to be good [jota]  날씨가 좋아요. — The weather is good.	new unit4 descriptions
+기쁘다	to be glad [gippeuda]  만나서 기뻐요. — I'm glad to meet you.	new unit4 state
+빠르다	to be fast [ppareuda]  차가 빨라요. — The car is fast.	new unit4 descriptions
+적다	to be few [jeokda]  사람이 적어요. — There are few people.	new unit4 descriptions
+더럽다	to be dirty [deoreopda]  방이 더러워요. — The room is dirty.	new unit4 descriptions
+재미없다	to be uninteresting [jaemieopda]  수업이 재미없어요. — The class is boring.	new unit4 descriptions
+가볍다	to be light (weight) [gabyeopda]  가방이 가벼워요. — The bag is light.	new unit4 descriptions
+느리다	to be slow [neurida]  버스가 느려요. — The bus is slow.	new unit4 descriptions
+춥다	to be cold [chupda]  겨울이 추워요. — Winter is cold.	new unit4 weather
+따뜻하다	to be warm [ttatteutada]  봄이 따뜻해요. — Spring is warm.	new unit4 weather
+쌀쌀하다	to be cool / chilly [ssalssalhada]  날씨가 쌀쌀해요. — The weather is chilly.	new unit4 weather
+맑다	to be clear (weather) [makda]  하늘이 맑아요. — The sky is clear.	new unit4 weather
+흐리다	to be cloudy [heurida]  날씨가 흐려요. — The weather is cloudy.	new unit4 weather
+나라	country [nara]  어느 나라에서 왔어요? — Which country are you from?	new unit7 place
+쪽	page [jjok]  몇 쪽이에요? — What page is it?	new unit7 objects
+빨리	quickly [ppalli]  빨리 오세요. — Please come quickly.	new unit7 time
+아름답다	to be beautiful [areumdapda]  꽃이 아름다워요. — The flower is beautiful.	new unit7 descriptions
+유명하다	to be famous [yumyeonghada]  이 식당이 유명해요. — This restaurant is famous.	new unit8 descriptions
+다음	next [daeum]  다음 주에 만나요. — Let's meet next week.	new unit8 time
+주부	housewife [jubu]  저는 주부예요. — I'm a housewife.	new unit7 people
+남자	man [namja]  저 남자가 누구예요? — Who is that man?	new unit7 people
+여자	woman [yeoja]  저 여자가 친구예요. — That woman is my friend.	new unit7 people
+귤	mandarin (fruit) [gyul]  귤이 맛있어요. — Mandarins are delicious.	new unit8 food
+기타	guitar [gita]  기타를 쳐요. — I play guitar.	new unit2 hobbies
+헬스클럽	gym [helseukeulleop]  헬스클럽에 가요. — I go to the gym.	new unit2 place
+그래서	so / therefore [geuraeseo]  피곤해요. 그래서 자요. — I'm tired. So I sleep.	new unit2 phrases
+바지	pants [baji]  바지를 입어요. — I wear pants.	new unit3 clothes
+떡	rice cake [tteok]  떡을 먹어요. — I eat rice cake.	new unit3 food
+인터넷	internet [inteonet]  인터넷을 해요. — I use the internet.	new unit3 objects
+머리	hair / head [meori]  머리가 길어요. — The hair is long.	new unit4 body
+귀엽다	to be cute [gwiyeopda]  고양이가 귀여워요. — The cat is cute.	new unit4 descriptions
+잠	sleep [jam]  잠을 자요. — I sleep.	new unit4 phrases
+점원	clerk [jeomwon]  점원이 친절해요. — The clerk is kind.	new unit4 people
+사이즈	size [saijeu]  사이즈가 어때요? — How's the size?	new unit4 objects
+죄송하다	to be sorry (formal) [joesonghada]  죄송합니다. — I'm sorry.	new unit4 phrases
+잠시	a moment [jamsi]  잠시만 기다리세요. — Please wait a moment.	new unit4 time
+보이다	to show [boida]  바지를 보여 주세요. — Please show me the pants.	new unit4 verbs
+경험	experience [gyeongheom]  여행 경험을 이야기해요. — I talk about my travel experience.	new unit8 phrases
+거리	street [geori]  거리 구경을 해요. — I sightsee the streets.	new unit8 place
+축제	festival [chukje]  축제에 가요. — I go to a festival.	new unit8 events
+전통 시장	traditional market [jeontong sijang]  전통 시장에 가요. — I go to a traditional market.	new unit8 place
+새롭다	to be new [saeropda]  새로운 음식을 먹어요. — I eat new food.	new unit8 descriptions
+공연	performance [gongyeon]  거리 공연을 봐요. — I watch a street performance.	new unit8 events
+삼계탕	samgyetang (ginseng chicken soup) [samgyetang]  삼계탕을 먹어요. — I eat samgyetang.	new unit8 food
+명동	Myeong-dong [Myeongdong]  명동에 가요. — I go to Myeong-dong.	new unit8 place
+인사동	Insa-dong [Insadong]  인사동에서 전통 음식을 먹었어요. — I ate traditional food in Insa-dong.	new unit8 place
+멋있다	to be cool / fantastic [meositda]  가수가 멋있어요. — The singer is cool.	new unit8 descriptions
+끝나다	to finish / end [kkeutnada]  수업이 끝났어요. — Class is over.	new unit8 verbs
+이	tooth [i]  이가 아파요. — My tooth hurts.	new unit8 body
+닦다	to clean / wipe [dakda]  창문을 닦아요. — I clean the window.	new unit8 verbs
+설거지	dishwashing [seolgeoji]  설거지를 해요. — I do the dishes.	new unit8 phrases
+샤워하다	to shower [syawohada]  샤워해요. — I shower.	new unit8 verbs
+더	more [deo]  더 비싸요. — It's more expensive.	new unit8 phrases
+다녀오다	to come back / go and return [danyeooda]  여행 잘 다녀왔어요. — I had a good trip.	new unit8 verbs
+지난번	last time [jinanbeon]  지난번보다 좋았어요. — It was better than last time.	new unit8 time
+괜찮다	to be fine / all right [gwaenchanta]  괜찮아요. — It's okay.	new unit8 phrases
+바닷가	beach [badatga]  바닷가에서 산책했어요. — I walked at the beach.	new unit8 place
+푹	really / deeply / soundly [puk]  푹 쉬었어요. — I rested well.	new unit8 phrases
+끝	end [kkeut]  축제를 끝까지 봤어요. — I watched the festival to the end.	new unit8 phrases
+먼저	first / before [meonjeo]  먼저 가세요. — Go first.	new unit8 phrases
+경복궁	Gyeongbokgung Palace [Gyeongbokgung]  경복궁을 구경했어요. — I sightsaw Gyeongbokgung.	new unit8 place
+외국 사람	foreigner [oeguk saram]  외국 사람이 많았어요. — There were many foreigners.	new unit8 people
+날	day [nal]  다음 날에 갔어요. — I went the next day.	new unit8 time
+참	really / very [cham]  참 재미있었어요. — It was really fun.	new unit8 phrases
+다시	again [dasi]  다시 가고 싶어요. — I want to go again.	new unit8 phrases
+증상	symptom [jeungsang]  증상이 어때요? — How are the symptoms?	new unit9 body
+눈	eye [nun]  눈이 커요. — The eyes are big.	new unit9 body
+귀	ear [gwi]  귀가 작아요. — The ears are small.	new unit9 body
+코	nose [ko]  코가 아파요. — My nose hurts.	new unit9 body
+입	mouth [ip]  입이 커요. — The mouth is big.	new unit9 body
+목	throat / neck [mok]  목이 아파요. — My throat hurts.	new unit9 body
+팔	arm [pal]  팔이 짧아요. — The arm is short.	new unit9 body
+손	hand [son]  손이 작아요. — The hand is small.	new unit9 body
+다리	leg [dari]  다리가 길어요. — The legs are long.	new unit9 body
+발	foot [bal]  발이 커요. — The feet are big.	new unit9 body
+감기	cold (illness) [gamgi]  감기에 걸렸어요. — I caught a cold.	new unit9 body
+열이 나다	to have a fever [yeori nada]  열이 나요. — I have a fever.	new unit9 body
+콧물	runny nose [kotmul]  콧물이 나요. — I have a runny nose.	new unit9 body
+기침	cough [gichim]  기침을 해요. — I cough.	new unit9 body
+몸	body (formal: 신체) [mom]  오늘은 몸이 어때요? — How is your body today?	new unit9 body
+복잡하다	to be crowded / complicated [bokjapada]  길이 복잡해요. — The street is crowded.	new unit9 descriptions
+아까	a moment ago [akka]  아까 길이 복잡했어요. — The street was crowded a moment ago.	new unit10 time
+단어	word [daneo]  단어를 외워요. — I memorize words.	new unit10 study
+외우다	to memorize [oeuda]  단어를 외워요. — I memorize words.	new unit10 verbs
+드시다	to eat / drink (honorific) [deusida]  맛있게 드세요. — Eat well (enjoy).	new unit10 verbs
+계속	continuously [gyesok]  머리가 계속 아파요. — My head hurts continuously.	new unit10 phrases
+넣다	to put in [neota]  약을 넣어요. — I put in the medicine.	new unit10 verbs
+이제	now / from now [ije]  이제 안 할 거예요. — I won't do it from now on.	new unit10 time
+건강하다	to be healthy [geonganghada]  몸이 건강해요. — The body is healthy.	new unit10 state
+생활	life / lifestyle [saenghwal]  생활이 어때요? — How is life?	new unit10 phrases
+꼭	surely / definitely [kkok]  꼭 오세요. — Please definitely come.	new unit10 phrases
+웃다	to laugh / smile [utda]  많이 웃어요. — I laugh a lot.	new unit10 verbs
+지키다	to keep / protect [jikida]  약속을 지켜요. — I keep my promise.	new unit10 verbs
+퇴근	leaving work [toegeun]  퇴근 후에 만나요. — Let's meet after work.	new unit10 time
+요가	yoga [yoga]  요가를 해요. — I do yoga.	new unit10 hobbies
+대학교	university [daehakgyo]  대학교에 다녀요. — I attend university.	new unit10 place
+졸업하다	to graduate [joreopada]  대학교를 졸업했어요. — I graduated from university.	new unit10 verbs
+팝콘	popcorn [papkon]  팝콘을 먹어요. — I eat popcorn.	new unit10 food
+해외여행	overseas trip [haeoeyeohaeng]  해외여행을 가요. — I go on an overseas trip.	new unit10 phrases
+초대하다	to invite [chodaehada]  친구를 초대해요. — I invite a friend.	new unit10 verbs
+샐러드	salad [saelleodeu]  샐러드를 먹어요. — I eat salad.	new unit10 food
+제일	the most / best [jeil]  제일 좋아해요. — I like it the most.	new unit10 phrases
+습관	habit [seupgwan]  좋은 습관이 있어요. — I have a good habit.	new unit10 phrases
+손을 씻다	to wash hands [soneul ssitda]  손을 씻어요. — I wash my hands.	new unit7 verbs
+빨래하다	to do laundry [ppallaehada]  빨래해요. — I do the laundry.	new unit7 verbs
+바퀴벌레	cockroach [bakwibeolle]  바퀴벌레가 무서워요. — Cockroaches are scary.	new unit7 nature
+새 옷	new clothes [sae ot]  새 옷을 샀어요. — I bought new clothes.	new unit4 clothes
+여행 경험	travel experience [yeohaeng gyeongheom]  여행 경험을 이야기해요. — I talk about travel experience.	new unit8 phrases
+테니스를 치다	to play tennis [teniseureul chida]  테니스를 쳐요. — I play tennis.	new unit2 hobbies
+모두	all / everyone [modu]  모두 같이 가요. — Let's all go together.	new unit8 phrases
+낫다	to get better / recover [natda]  감기가 다 나았어요. — My cold is all gone.	new unit9 verbs
+고향	hometown [gohyang]  고향이 어디예요? — Where is your hometown?	new unit8 place
+모임	gathering / meeting [moim]  반 모임을 준비해요. — We're preparing a class gathering.	new unit11 event
+정하다	to decide / set [jeonghada]  시간을 정해요. — Let's set the time.	new unit11 verb
+예약하다	to make a reservation [yeyakhada]  장소를 예약해요. — I reserve the place.	new unit11 verb
+연락	contact [yeollak]  연락을 해요. — I get in touch.	new unit11 communication
+스키	ski [seuki]  스키를 탈 수 있어요. — I can ski.	new unit11 activity
+전화	phone / phone call [jeonhwa]  지금 전화를 받을 수 없어요. — I can't answer the phone now.	new unit11 communication
+다치다	to get hurt [dachida]  어제 다리를 다쳤어요. — I hurt my leg yesterday.	new unit11 verb
+모이다	to gather (intr.) [moida]  주노 씨 집에서 모일까요? — Shall we gather at Juno's place?	new unit11 verb
+결혼	marriage [gyeolhon]  결혼을 축하해요. — Congratulations on your marriage.	new unit11 event
+축하	congratulations / celebration [chukha]  생일 축하 파티는 어디에서 할까요? — Where shall we hold the birthday party?	new unit11 event
+초대장	invitation card [chodaejang]  안나 씨가 초대장을 썼어요. — Anna wrote the invitation.	new unit11 event
+함께	together [hamkke]  친구들하고 함께 케이크를 먹었어요. — I ate cake together with friends.	new unit11 adverb
+부르다	to sing / to call [bureuda]  한국 노래를 부릅니다. — I sing Korean songs.	new unit11 verb
+춤	dance [chum]  춤도 배울 수 있습니다. — You can also learn to dance.	new unit11 activity
+매주	every week [maeju]  우리는 매주 화요일에 모이고 있습니다. — We gather every Tuesday.	new unit11 time
+소강당	small auditorium / hall [sogangdang]  3층 소강당에서 모임을 해요. — We have the meeting in the small hall on the 3rd floor.	new unit11 place
+문의	inquiry [munui]  이 전화번호로 문의를 하세요. — Please make inquiries at this number.	new unit11 communication
+졸업식	graduation ceremony [joreopsik]  동생 졸업식에 시계를 줄 거예요. — I'll give my sibling a watch for graduation.	new unit12 event
+어버이날	Parents' Day [eobeoinal]  어버이날에 꽃을 선물했어요. — I gave flowers for Parents' Day.	new unit12 event
+어린이날	Children's Day [eorininal]  어린이날에 게임기를 주고 싶어요. — I want to give a game console for Children's Day.	new unit12 event
+명절	national holiday [myeongjeol]  명절 선물을 준비했어요. — I prepared holiday gifts.	new unit12 event
+최근	recently / lately [choegeun]  최근에 무슨 선물을 받았어요? — What gift did you get recently?	new unit12 time
+지갑	wallet [jigap]  졸업식에 지갑을 받았어요. — I got a wallet at graduation.	new unit12 objects
+게임기	game console [geimgi]  생일에 게임기를 받고 싶어요. — I want a game console for my birthday.	new unit12 objects
+보내다	to send [bonaeda]  형한테 사진을 보내고 있어요. — I'm sending photos to my older brother.	new unit12 verb
+누나	older sister (male's) [nuna]  누나에게 전화했어요. — I called my older sister.	new unit12 family
+편지	letter [pyeonji]  친구에게 편지를 보낼 거예요. — I'll send a letter to my friend.	new unit12 objects
+카드	card [kadeu]  동생한테 축하 카드를 썼어요. — I wrote a congratulations card to my sibling.	new unit12 objects
+메시지	text message [mesiji]  리사 씨에게 메시지를 보냈어요. — I sent a message to Lisa.	new unit12 communication
+인형	doll [inhyeong]  수지 씨는 인형을 좋아해요. — Suji likes dolls.	new unit12 objects
+졸업	graduation [joreop]  졸업 선물은 준비했어요? — Did you prepare a graduation gift?	new unit12 event
+생각	idea / thought [saenggak]  좋은 생각이에요. — That's a good idea.	new unit12 abstract
+오래되다	to be old (of things) [oraedoeda]  지갑이 오래되었어요. — The wallet is old.	new unit12 verb
+고등학교	high school [godeunghakgyo]  동생이 고등학교에 다녀요. — My sibling goes to high school.	new unit12 place
+입학식	entrance ceremony [iphaksik]  내일이 동생 입학식이에요. — Tomorrow is my sibling's entrance ceremony.	new unit12 event
+표	ticket [pyo]  친구한테 콘서트 표를 주었어요. — I gave a concert ticket to my friend.	new unit12 objects
+그릇	bowl [geureut]  리사 씨에게 그릇을 선물했어요. — I gave a bowl to Lisa.	new unit12 objects
+처음	first / first time [cheoeum]  케이크를 처음 만들어서 예쁘지 않아요. — It's my first time making cake so it's not pretty.	new unit12 adverb
+식사하다	to have a meal / eat [siksahada]  식사했어요? — Have you eaten?	new unitextra verb
+청국장	cheonggukjang (fermented soybean stew) [cheongukjang]  청국장을 먹어 봤어요. — I tried cheonggukjang.	new unitextra food
+과일	fruit [gwail]  과일을 좋아해요. — I like fruit.	new unitextra food
+취직하다	to get a job [chwijikhada]  회사에 취직했어요. — I got a job at a company.	new unitextra verb
+등장하다	to appear / show up [deungjanghada]  새 모델이 등장했어요. — A new model appeared.	new unitextra verb
+끄다	to turn off [kkeuda]  불을 꺼야 해요. — I have to turn off the light.	new unitextra verb
+내다	to pay / submit [naeda]  수업료를 내야 해요. — I have to pay the tuition.	new unitextra verb
+끝내다	to finish [kkeunnaeda]  숙제를 끝냈어요. — I finished my homework.	new unit1-1 verb
+나중에	later [najunge]  나중에 전화할게요. — I'll call later.	new unit1-1 time
+장을 보다	to go grocery shopping [jangeul boda]  주말에 장을 봐요. — I go grocery shopping on weekends.	new unit1-1 activity
+돈을 모으다	to save money [doneul moeuda]  여행하려고 돈을 모아요. — I'm saving money to travel.	new unit1-1 verb
+연습하다	to practice [yeonseuphada]  한국어를 연습해요. — I practice Korean.	new unit1-1 study
+말하기	speaking [malhagi]  말하기가 어려워요. — Speaking is difficult.	new unit1-1 communication
+약을 먹다	to take medicine [yageul meokda]  약을 먹어야 해요. — I have to take medicine.	new unit1-1 verb
+확인하다	to check [hwaginhada]  이메일을 확인했어요. — I checked the email.	new unit1-1 verb
+곧	soon [got]  곧 도착해요. — I'll arrive soon.	new unit1-1 time
+조심하다	to be careful [josimhada]  길이 미끄러우니까 조심하세요. — Be careful, the road is slippery.	new unit1-1 verb
+더 열심히	harder [deo yeolsimhi]  더 열심히 공부할 거예요. — I will study harder.	new unit1-1 adverb
+꾸준히	consistently [kkujunhi]  꾸준히 운동해요. — I exercise consistently.	new unit1-1 frequency
