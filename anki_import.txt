@@ -427,3 +427,20 @@
 조심하다	to be careful [josimhada]  길이 미끄러우니까 조심하세요. — Be careful, the road is slippery.	new unit1-1 verb
 더 열심히	harder [deo yeolsimhi]  더 열심히 공부할 거예요. — I will study harder.	new unit1-1 adverb
 꾸준히	consistently [kkujunhi]  꾸준히 운동해요. — I exercise consistently.	new unit1-1 frequency
+가져오다	to bring [gajyeooda]  물을 가져오세요. — Please bring water.	new unit1-1 verb
+돈을 내다	to pay [doneul naeda]  제가 돈을 낼게요. — I'll pay.	new unit1-1 verb
+아무것도	anything / nothing (with negative) [amugeotdo]  아무것도 안 했어요. — I didn't do anything.	new unit1-1 phrases
+방	room [bang]  방이 깨끗해요. — The room is clean.	new unit1-1 place
+소개하다	to introduce [sogaehada]  친구를 소개할게요. — I'll introduce my friend.	new unit1-1 communication
+빌려주다	to lend [billyeojuda]  책을 빌려주세요. — Please lend me the book.	new unit1-1 verb
+가르치다	to teach [gareuchida]  한국어를 가르쳐요. — I teach Korean.	new unit1-1 study
+돕다	to help [dopda]  친구를 도와줘요. — I help my friend.	new unit1-1 verb
+주다	to give [juda]  선물을 줬어요. — I gave a gift.	new unit1-1 verb
+그 여자	she / that woman [geu yeoja]  그 여자는 의사예요. — She is a doctor.	new unit1-1 people
+말하다	to speak / say [malhada]  천천히 말해 주세요. — Please speak slowly.	new unit1-1 communication
+할인	discount [harin]  할인을 받았어요. — I got a discount.	new unit1-1 abstract
+묻다	to ask [mutda]  길을 물어봤어요. — I asked for directions.	new unit1-1 questions
+항상	always [hangsang]  항상 바빠요. — I'm always busy.	new unit1-1 frequency
+형	older brother (of a male) [hyeong]  우리 형은 키가 커요. — My older brother is tall.	new unit1-1 family
+위하다	to do for the sake of [wihada]  가족을 위해 일해요. — I work for my family.	new unit1-1 verb
+아/어 주다	to do (something) for someone [a/eo juda]  도와줘서 고마워요. — Thanks for helping me.	new unit1-1 phrases
