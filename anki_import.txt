@@ -464,3 +464,4 @@
 집안일을 하다	to do housework [jibanireul hada]  주말에 집안일을 해요. — I do housework on weekends.	new unit1-2 verb
 공연장	performance hall / concert venue [gongyeonjang]  공연장에서 콘서트를 봤어요. — I watched a concert at the venue.	new unit1-2 place
 기구를 타다	to ride an attraction [gigureul tada]  놀이공원에서 기구를 탔어요. — I rode the rides at the amusement park.	new unit1-2 hobbies
+신청하다	to apply / sign up / request [sincheonghada]  문화 센터에서 요가 수업을 신청했어요. — I signed up for a yoga class at the culture center.	new unit1-2 verb
