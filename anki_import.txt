@@ -444,3 +444,23 @@
 형	older brother (of a male) [hyeong]  우리 형은 키가 커요. — My older brother is tall.	new unit1-1 family
 위하다	to do for the sake of [wihada]  가족을 위해 일해요. — I work for my family.	new unit1-1 verb
 아/어 주다	to do (something) for someone [a/eo juda]  도와줘서 고마워요. — Thanks for helping me.	new unit1-1 phrases
+어울리다	to suit / go well together [eoullida]  이 옷이 잘 어울려요. — This outfit suits you well.	new unit1-2 descriptions
+지난가을	last autumn [jinan-gaeul]  지난가을에 여행을 갔어요. — I traveled last autumn.	new unit1-2 time
+행복하다	to be happy [haengbokhada]  요즘 정말 행복해요. — I'm really happy these days.	new unit1-2 state
+동대문시장	Dongdaemun Market [dongdaemun-sijang]  동대문시장에서 옷을 샀어요. — I bought clothes at Dongdaemun Market.	new unit1-2 place
+소설	novel [soseol]  소설을 읽어요. — I read a novel.	new unit1-2 hobbies
+놀이 기구	amusement ride [nori gigu]  놀이 기구를 탔어요. — I rode the attractions.	new unit1-2 hobbies
+여기저기 돌아다니다	to wander around [yeogijeogi doradanida]  여기저기 돌아다녔어요. — I wandered here and there.	new unit1-2 movement
+사인을 받다	to get an autograph [saineul batda]  가수한테 사인을 받았어요. — I got the singer's autograph.	new unit1-2 phrases
+따라 부르다	to sing along [ttara bureuda]  노래를 따라 불렀어요. — I sang along to the song.	new unit1-2 verb
+문화 센터	culture center [munhwa senteo]  문화 센터에서 요가를 배워요. — I learn yoga at the culture center.	new unit1-2 place
+게임을 하다	to play games [geimeul hada]  친구하고 게임을 해요. — I play games with friends.	new unit1-2 hobbies
+라면을 먹다	to eat ramen [ramyeoneul meokda]  집에서 라면을 먹어요. — I eat ramen at home.	new unit1-2 food
+영화를 보다	to watch a movie [yeonghwareul boda]  주말에 영화를 봐요. — I watch movies on weekends.	new unit1-2 hobbies
+요리를 배우다	to learn cooking [yorireul baeuda]  문화 센터에서 요리를 배워요. — I learn cooking at the culture center.	new unit1-2 hobbies
+요가를 하다	to do yoga [yogareul hada]  매일 아침 요가를 해요. — I do yoga every morning.	new unit1-2 sports
+수영을 배우다	to learn swimming [suyeongeul baeuda]  요즘 수영을 배워요. — I'm learning to swim these days.	new unit1-2 sports
+낮잠을 자다	to take a nap [natjameul jada]  오후에 낮잠을 자요. — I take a nap in the afternoon.	new unit1-2 verb
+집안일을 하다	to do housework [jibanireul hada]  주말에 집안일을 해요. — I do housework on weekends.	new unit1-2 verb
+공연장	performance hall / concert venue [gongyeonjang]  공연장에서 콘서트를 봤어요. — I watched a concert at the venue.	new unit1-2 place
+기구를 타다	to ride an attraction [gigureul tada]  놀이공원에서 기구를 탔어요. — I rode the rides at the amusement park.	new unit1-2 hobbies
