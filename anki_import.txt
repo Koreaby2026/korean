@@ -465,3 +465,8 @@
 공연장	performance hall / concert venue [gongyeonjang]  공연장에서 콘서트를 봤어요. — I watched a concert at the venue.	new unit1-2 place
 기구를 타다	to ride an attraction [gigureul tada]  놀이공원에서 기구를 탔어요. — I rode the rides at the amusement park.	new unit1-2 hobbies
 신청하다	to apply / sign up / request [sincheonghada]  문화 센터에서 요가 수업을 신청했어요. — I signed up for a yoga class at the culture center.	new unit1-2 verb
+서두르다	to hurry [seodureuda]  서두르지 마세요. — Don't hurry. (르-irregular: 서둘러요)	new unit1-1 verb
+하루 종일	all day long [haru jongil]  하루 종일 집에 있었어요. — I was home all day long.	new unit1-1 time
+가져가다	to take (bring there) [gajyeogada]  우산을 가져가세요. — Take an umbrella with you.	new unit1-1 verb
+열심히	hard / diligently [yeolsimhi]  열심히 공부해요. — I study hard.	new unit1-1 adverb
+당장	right away / immediately [dangjang]  당장 시작해요. — Let's start right away.	new unit1-1 adverb
