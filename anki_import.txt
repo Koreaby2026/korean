@@ -470,3 +470,14 @@
 가져가다	to take (bring there) [gajyeogada]  우산을 가져가세요. — Take an umbrella with you.	new teacher unit1-1 verb
 열심히	hard / diligently [yeolsimhi]  열심히 공부해요. — I study hard.	new teacher unit1-1 adverb
 당장	right away / immediately [dangjang]  당장 시작해요. — Let's start right away.	new teacher unit1-1 adverb
+공항	airport [gonghang]  공항에 도착했어요. — I arrived at the airport.	new always-forget unitforget place
+구두	dress shoes [gudu]  구두를 신었어요. — I put on dress shoes.	new always-forget unitforget clothes
+신발	shoes [sinbal]  신발을 벗으세요. — Please take off your shoes.	new always-forget unitforget clothes
+시작하다	to start [sijakhada]  수업을 시작해요. — The class starts.	new always-forget unitforget verb
+장을 보다	to do groceries [jangeul boda]  마트에서 장을 봐요. — I do groceries at the mart.	new always-forget unitforget verb
+공책	notebook (тетрадь) [gongchaek]  공책에 써요. — I write in the notebook.	new always-forget unitforget objects
+여권	passport [yeogwon]  여권을 보여 주세요. — Please show your passport.	new always-forget unitforget objects
+퇴근 후	after work [toegeun hu]  퇴근 후에 만나요. — Let's meet after work.	new always-forget unitforget time
+충전기	charger [chungjeongi]  충전기 좀 빌려주세요. — Please lend me a charger.	new teacher unit1-1 objects
+강아지	dog / puppy [gangaji]  강아지가 귀여워요. — The dog is cute.	new teacher unit1-1 nature
+당신	you (formal) [dangsin]  당신을 사랑해요. — I love you.	new teacher unit1-1 people
