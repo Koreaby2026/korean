@@ -6,18 +6,18 @@
 - **`serve.sh`** — local server for phone access
 - **`vocab.csv`** — main DB. Columns: `korean,romanization,translation,status,category,unit,topic,example`. The `category` column decides which deck (and which download link) a word belongs to.
 
-## 📦 Category decks (separate download links)
+## 📦 One deck, categories as sub-decks
 
-Each category builds into its own `.apkg` so you can import just one at a time — they stay separate from each other:
+Single download link → **https://koreaby2026.github.io/korean/korean.apkg**. The `category` column becomes a sub-deck under `Korean`, so you import once and can study everything or any one category:
 
-| Category | Words | Deck | Download link |
-|---|---|---|---|
-| `old` (старые карточки) | 414 | `Korean::Unit X` | https://koreaby2026.github.io/korean/korean.apkg |
-| `teacher` (занятия с учителем, 1-1) | 34 | `Korean 1-1` | https://koreaby2026.github.io/korean/korean_teacher.apkg |
-| `conversation` (учебник) | 21 | `Korean Conversation` | https://koreaby2026.github.io/korean/korean_conversation.apkg |
-| `always-forget` (не запоминаются) | — | `Korean Always Forget` | https://koreaby2026.github.io/korean/korean_forget.apkg *(появится, когда добавим слова)* |
+| Category | Words | Sub-deck |
+|---|---|---|
+| `old` (старые карточки) | 414 | `Korean::Old` |
+| `teacher` (занятия с учителем, 1-1) | 34 | `Korean::1-1` |
+| `conversation` (учебник) | 21 | `Korean::Conversation` |
+| `always-forget` (не запоминаются) | — | `Korean::Always Forget` *(появится, когда добавим слова)* |
 
-Regenerate all decks after editing `vocab.csv`: `python build_anki.py`.
+Regenerate after editing `vocab.csv`: `python build_anki.py`.
 - **`sentences.json`** — 30 sentences for full-translation practice
 - **`texts.json`** — 6 short reading texts at TOPIK 1B level with glossaries
 - **`quiz.py`** — terminal-based quiz (alternative to web; words only)

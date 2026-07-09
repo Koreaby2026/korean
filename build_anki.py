@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
-"""Build Anki .apkg decks from vocab.csv — one package per category.
+"""Build a single Anki .apkg from vocab.csv, with categories as sub-decks.
 
-Categories (column `category` in vocab.csv) map to separate .apkg files so
-each has its own download link and can be imported independently:
+One package (`korean.apkg`) = one download link. The `category` column in
+vocab.csv becomes a sub-deck under the top-level "Korean" deck, so you can
+study everything at once or focus on any single category in Anki:
 
-  - old          -> korean.apkg             (the original "first link", all old
-                                              handwritten-card words, split into
-                                              Korean::Unit X)
-  - teacher      -> korean_teacher.apkg      (Korean 1-1 — lessons with teacher)
-  - conversation -> korean_conversation.apkg (Korean Conversation — textbook)
-  - always-forget-> korean_forget.apkg       (Korean Always Forget — hard words)
+  - old           -> Korean::Old            (all old handwritten-card words)
+  - teacher       -> Korean::1-1            (lessons with teacher)
+  - conversation  -> Korean::Conversation   (textbook)
+  - always-forget -> Korean::Always Forget  (hard words)
 
-Each word produces ONE card (EN -> 한, active recall). Status kept as a tag.
-Re-run this whenever vocab.csv changes.
+Each word produces ONE card (EN -> 한, active recall). Status/category/unit
+are kept as tags. Re-run this whenever vocab.csv changes.
 """
 
 import csv
@@ -24,18 +23,17 @@ ROOT = Path(__file__).parent
 VOCAB = list(csv.DictReader(open(ROOT / "vocab.csv", encoding="utf-8")))
 
 MODEL_ID = 1611500001
+OUT = "korean.apkg"
 
-# category -> (apkg filename, deck label, split_by_unit)
-CAT_META = {
-    "old": ("korean.apkg", "Korean", True),
-    "teacher": ("korean_teacher.apkg", "Korean 1-1", False),
-    "conversation": ("korean_conversation.apkg", "Korean Conversation", False),
-    "always-forget": ("korean_forget.apkg", "Korean Always Forget", False),
+# category -> sub-deck label under "Korean"
+CAT_DECK = {
+    "old": "Korean::Old",
+    "teacher": "Korean::1-1",
+    "conversation": "Korean::Conversation",
+    "always-forget": "Korean::Always Forget",
 }
-
-
-def slug(s):
-    return "".join(c if c.isalnum() else "_" for c in s)
+# order categories appear in the deck tree
+ORDER = ["old", "teacher", "conversation", "always-forget"]
 
 
 def deck_id(name: str) -> int:
@@ -74,16 +72,6 @@ model = genanki.Model(
 )
 
 
-def unit_sort_key(u: str):
-    if u == "base":
-        return (2, 0, "")
-    head = "".join(c for c in u if c.isdigit())
-    tail = "".join(c for c in u if not c.isdigit())
-    if head:
-        return (0, int(head), tail)
-    return (1, 0, u)
-
-
 def make_note(r):
     return genanki.Note(
         model=model,
@@ -104,30 +92,19 @@ by_cat = {}
 for r in VOCAB:
     by_cat.setdefault(r.get("category", "old"), []).append(r)
 
-# stable, friendly build order
-order = ["old", "teacher", "conversation", "always-forget"]
-cats = [c for c in order if c in by_cat] + [c for c in by_cat if c not in order]
+cats = [c for c in ORDER if c in by_cat] + [c for c in by_cat if c not in ORDER]
 
+decks = []
 for cat in cats:
-    rows = by_cat[cat]
-    fname, label, split = CAT_META.get(
-        cat, (f"korean_{slug(cat)}.apkg", f"Korean {cat}", False))
-    decks = []
-    if split:
-        by_unit = {}
-        for r in rows:
-            by_unit.setdefault(r["unit"], []).append(r)
-        for u in sorted(by_unit, key=unit_sort_key):
-            d = genanki.Deck(deck_id(f"{label}::Unit {u}"), f"{label}::Unit {u}")
-            for r in by_unit[u]:
-                d.add_note(make_note(r))
-            decks.append(d)
-    else:
-        d = genanki.Deck(deck_id(label), label)
-        for r in rows:
-            d.add_note(make_note(r))
-        decks.append(d)
-    genanki.Package(decks).write_to_file(ROOT / fname)
-    print(f"  {fname:<28} {len(rows):>3} notes  [{cat}] -> deck '{label}'")
+    label = CAT_DECK.get(cat, f"Korean::{cat}")
+    deck = genanki.Deck(deck_id(label), label)
+    for r in by_cat[cat]:
+        deck.add_note(make_note(r))
+    decks.append((cat, label, deck))
 
-print(f"\n{len(VOCAB)} words across {len(cats)} category decks. One card per note (EN → 한).")
+genanki.Package([d for _, _, d in decks]).write_to_file(ROOT / OUT)
+
+print(f"{OUT} — {len(VOCAB)} words in one package, categories as sub-decks:")
+for cat, label, deck in decks:
+    print(f"  {label:<26} {len(deck.notes):>3} notes  [{cat}]")
+print("\nImport once. Study 'Korean' for everything, or any sub-deck alone.")
