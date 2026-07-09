@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-"""Build Anki .apkg deck from vocab.csv.
+"""Build Anki .apkg decks from vocab.csv — one package per category.
 
-Generates one package with per-unit sub-decks:
-  - korean.apkg — all words, split into Korean::Unit X
+Categories (column `category` in vocab.csv) map to separate .apkg files so
+each has its own download link and can be imported independently:
 
-Each word produces ONE card (EN → 한, active recall only).
-Forgotten status is preserved as a tag for filtering inside Anki.
+  - old          -> korean.apkg             (the original "first link", all old
+                                              handwritten-card words, split into
+                                              Korean::Unit X)
+  - teacher      -> korean_teacher.apkg      (Korean 1-1 — lessons with teacher)
+  - conversation -> korean_conversation.apkg (Korean Conversation — textbook)
+  - always-forget-> korean_forget.apkg       (Korean Always Forget — hard words)
 
+Each word produces ONE card (EN -> 한, active recall). Status kept as a tag.
 Re-run this whenever vocab.csv changes.
 """
 
@@ -18,14 +23,23 @@ import genanki
 ROOT = Path(__file__).parent
 VOCAB = list(csv.DictReader(open(ROOT / "vocab.csv", encoding="utf-8")))
 
-# New IDs (changed from previous version to force Anki to import as fresh deck
-# and reset spaced-repetition progress).
 MODEL_ID = 1611500001
-DECK_ID = 2070000001
+
+# category -> (apkg filename, deck label, split_by_unit)
+CAT_META = {
+    "old": ("korean.apkg", "Korean", True),
+    "teacher": ("korean_teacher.apkg", "Korean 1-1", False),
+    "conversation": ("korean_conversation.apkg", "Korean Conversation", False),
+    "always-forget": ("korean_forget.apkg", "Korean Always Forget", False),
+}
 
 
-def subdeck_id(unit: str) -> int:
-    h = zlib.crc32(f"{DECK_ID}:{unit}".encode()) & 0x7FFFFFFF
+def slug(s):
+    return "".join(c if c.isalnum() else "_" for c in s)
+
+
+def deck_id(name: str) -> int:
+    h = zlib.crc32(name.encode()) & 0x7FFFFFFF
     return 1_100_000_000 + (h % 1_000_000_000)
 
 
@@ -81,24 +95,39 @@ def make_note(r):
             r["unit"],
             r["topic"],
         ],
-        tags=[r["status"], f"unit{r['unit']}", r["topic"].replace(" ", "_")],
+        tags=[r["status"], r.get("category", "old"),
+              f"unit{r['unit']}", r["topic"].replace(" ", "_")],
     )
 
 
-by_unit = {}
+by_cat = {}
 for r in VOCAB:
-    by_unit.setdefault(r["unit"], []).append(r)
+    by_cat.setdefault(r.get("category", "old"), []).append(r)
 
-decks = []
-for unit in sorted(by_unit, key=unit_sort_key):
-    deck = genanki.Deck(subdeck_id(unit), f"Korean::Unit {unit}")
-    for r in by_unit[unit]:
-        deck.add_note(make_note(r))
-    decks.append((unit, deck))
+# stable, friendly build order
+order = ["old", "teacher", "conversation", "always-forget"]
+cats = [c for c in order if c in by_cat] + [c for c in by_cat if c not in order]
 
-genanki.Package([d for _, d in decks]).write_to_file(ROOT / "korean.apkg")
+for cat in cats:
+    rows = by_cat[cat]
+    fname, label, split = CAT_META.get(
+        cat, (f"korean_{slug(cat)}.apkg", f"Korean {cat}", False))
+    decks = []
+    if split:
+        by_unit = {}
+        for r in rows:
+            by_unit.setdefault(r["unit"], []).append(r)
+        for u in sorted(by_unit, key=unit_sort_key):
+            d = genanki.Deck(deck_id(f"{label}::Unit {u}"), f"{label}::Unit {u}")
+            for r in by_unit[u]:
+                d.add_note(make_note(r))
+            decks.append(d)
+    else:
+        d = genanki.Deck(deck_id(label), label)
+        for r in rows:
+            d.add_note(make_note(r))
+        decks.append(d)
+    genanki.Package(decks).write_to_file(ROOT / fname)
+    print(f"  {fname:<28} {len(rows):>3} notes  [{cat}] -> deck '{label}'")
 
-print(f"korean.apkg — {len(VOCAB)} notes across {len(decks)} unit decks:")
-for unit, deck in decks:
-    print(f"  Unit {unit:>4}: {len(deck.notes)} notes")
-print("\nOne card per note (EN → 한). Import into Anki — old deck should be deleted first.")
+print(f"\n{len(VOCAB)} words across {len(cats)} category decks. One card per note (EN → 한).")

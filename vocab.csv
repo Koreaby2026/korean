@@ -1,470 +1,470 @@
-korean,romanization,translation,status,unit,topic,example
-시계,sigye,clock,new,5,objects,시계가 있어요. — There is a clock.
-돈,don,money,new,7,objects,돈이 없어요. — I don't have money.
-창문,changmun,window,new,5,objects,창문을 열어요. — I open the window.
-방향,banghyang,direction,new,5,place,어느 방향이에요? — Which direction?
-이동,idong,movement,new,5,place,이동 시간이 길어요. — The travel time is long.
-근처,geuncheo,nearby,new,2,place,학교 근처에 살아요. — I live near the school.
-주차장,juchajang,parking lot,new,5,place,주차장이 어디예요? — Where is the parking lot?
-건물,geonmul,building,new,5,place,큰 건물이에요. — It's a big building.
-맞아요,majayo,that's right,new,5,phrases,"네 맞아요. — Yes, that's right."
-학교,hakgyo,school,new,5,place,학교에 가요. — I go to school.
-지난,jinan,last/past,new,5,time,지난 주에. — Last week.
-봄,bom,spring,new,1B,seasons,봄이 좋아요. — I like spring.
-여름,yeoreum,summer,new,1B,seasons,여름이 더워요. — Summer is hot.
-가을,gaeul,autumn/fall,new,1B,seasons,가을이 시원해요. — Autumn is cool.
-겨울,gyeoul,winter,new,1B,seasons,겨울이 추워요. — Winter is cold.
-요일,yoil,day of week,new,1B,time,오늘은 무슨 요일이에요? — What day is today?
-술,sul,alcohol,new,1B,food,술을 안 마셔요. — I don't drink alcohol.
-야구,yagu,baseball,new,1B,sports,야구를 좋아해요. — I like baseball.
-수박,subak,watermelon,new,4,food,수박이 맛있어요. — Watermelon is delicious.
-낚시,naksi,fishing,new,1B,hobbies,낚시를 해요. — I go fishing.
-시간,sigan,time,new,1B,time,시간이 없어요. — I don't have time.
-자전거를 타다,jajeongeoreul tada,to ride a bike,new,1B,hobbies,자전거를 타요. — I ride a bike.
-맵다,maepda,spicy,new,1B,food,김치가 매워요. — Kimchi is spicy.
-아프다,apeuda,to be sick / to hurt,new,9,state,머리가 아파요. — My head hurts.
-배고프다,baegopeuda,to be hungry,new,6,state,배가 고파요. — I'm hungry.
-나쁘다,nappeuda,to be bad,new,4,state,날씨가 나빠요. — The weather is bad.
-슬프다,seulpeuda,to be sad,new,4,state,슬퍼요. — I'm sad.
-피곤하다,pigonhada,to be tired,new,4,state,피곤해요. — I'm tired.
-쉽다,swipda,to be easy,new,4,state,쉬워요. — It's easy.
-어렵다,eoryeopda,to be difficult,new,4,state,어려워요. — It's difficult.
-바쁘다,bappeuda,to be busy,new,4,state,바빠요. — I'm busy.
-늦다,neutda,to be late,new,6,state,늦었어요. — I'm late.
-비가 오다,biga oda,to rain,new,4,weather,비가 와요. — It's raining.
-눈이 오다,nuni oda,to snow,new,4,weather,눈이 와요. — It's snowing.
-덥다,deopda,to be hot,new,4,weather,오늘 더워요. — It's hot today.
-가족,gajok,family,new,4,people,제 가족이에요. — It's my family.
-숙제,sukje,homework,new,10,study,숙제를 해요. — I do homework.
-시험,siheom,exam,new,4,study,시험이 어려워요. — The exam is hard.
-배,bae,stomach,new,9,body,배가 아파요. — My stomach hurts.
-새,sae,bird,new,3,nature,새가 노래해요. — The bird sings.
-지갑,jigap,wallet,new,3,objects,지갑을 잃어버렸어요. — I lost my wallet.
-생선,saengseon,fish (food),new,3,food,생선을 먹어요. — I eat fish.
-넥타이,nektai,tie,new,3,clothes,넥타이를 매요. — I tie a tie.
-스카프,seukapeu,scarf,new,3,clothes,스카프가 예뻐요. — The scarf is pretty.
-모자,moja,hat/cap,new,3,clothes,모자를 써요. — I put on a hat.
-안경,angyeong,glasses,new,3,clothes,안경을 써요. — I wear glasses.
-구두,gudu,dress shoes,new,3,clothes,구두를 신어요. — I put on dress shoes.
-양복,yangbok,men's suit,new,3,clothes,양복을 입어요. — I put on a suit.
-벗다,beotda,to take off (clothes),new,3,clothes,옷을 벗어요. — I take off clothes.
-양말,yangmal,socks,new,3,clothes,양말을 신어요. — I put on socks.
-약속,yaksok,appointment/promise,new,3,phrases,약속이 있어요. — I have an appointment.
-기분,gibun,mood,new,3,state,기분이 좋아요. — I'm in a good mood.
-아침,achim,morning/breakfast,new,3,time,아침을 먹어요. — I eat breakfast.
-점심,jeomsim,lunch,new,3,time,점심을 먹어요. — I eat lunch.
-저녁,jeonyeok,evening/dinner,new,3,time,저녁을 먹어요. — I eat dinner.
-매일,maeil,every day,new,2,frequency,매일 운동해요. — I exercise every day.
-자주,jaju,often,new,2,frequency,자주 가요. — I go often.
-가끔,gaggeum,sometimes,new,10,frequency,가끔 만나요. — We meet sometimes.
-당구를 치다,danggureul chida,to play billiards,new,2,hobbies,당구를 쳐요. — I play billiards.
-볼링을 치다,bollingeul chida,to bowl,new,2,hobbies,볼링을 쳐요. — I go bowling.
-노래를 부르다,noraereul bureuda,to sing a song,new,2,hobbies,노래를 불러요. — I sing a song.
-사진을 찍다,sajineul jjikda,to take a photo,new,2,hobbies,사진을 찍어요. — I take photos.
-축구를 하다,chukgureul hada,to play soccer,new,2,hobbies,축구를 해요. — I play soccer.
-그림을 그리다,geurimeul geurida,to draw a picture,new,2,hobbies,그림을 그려요. — I draw a picture.
-등산을 하다,deungsaneul hada,to go hiking,new,2,hobbies,등산을 해요. — I go hiking.
-춤을 추다,chumeul chuda,to dance,new,2,hobbies,춤을 춰요. — I dance.
-누구,nugu,who,new,5,questions,저 사람이 누구예요? — Who is that person?
-무엇,mueot,what,new,5,questions,이게 뭐예요? — What is this?
-언제,eonje,when,new,5,questions,언제 와요? — When are you coming?
-어디,eodi,where,new,5,questions,어디 가요? — Where are you going?
-어떤,eotteon,what kind of,new,5,questions,어떤 음식 좋아해요? — What kind of food do you like?
-왜,wae,why,new,5,questions,왜 안 가요? — Why aren't you going?
-어떻게,eotteoke,how,new,5,questions,어떻게 가요? — How do you get there?
-얼마나,eolmana,how much / how long,new,5,questions,얼마나 걸려요? — How long does it take?
-몇 번,myeot beon,what number,new,5,questions,몇 번 버스예요? — Which bus number is it?
-무슨,museun,what / which,new,5,questions,무슨 일이에요? — What's the matter?
-전화번호,jeonhwabeonho,phone number,new,5,objects,전화번호가 뭐예요? — What's your phone number?
-화장실,hwajangsil,bathroom,new,5,place,화장실이 어디예요? — Where is the bathroom?
-여행,yeohaeng,travel/trip,new,5,place,여행을 가요. — I'm going on a trip.
-공항,gonghang,airport,new,6,place,공항에 가요. — I'm going to the airport.
-은행,eunhaeng,bank,new,2,place,은행에 가요. — I'm going to the bank.
-수업,sueop,class/lesson,new,5,study,수업이 있어요. — I have class.
-일찍,iljjik,early,new,5,time,일찍 일어나요. — I get up early.
-계절,gyejeol,season,new,5,time,어느 계절을 좋아해요? — Which season do you like?
-월요일,woryoil,Monday,new,base,weekdays,월요일에 만나요. — Let's meet on Monday.
-화요일,hwayoil,Tuesday,new,base,weekdays,오늘은 화요일이에요. — Today is Tuesday.
-수요일,suyoil,Wednesday,new,base,weekdays,수요일에 시간 있어요? — Are you free on Wednesday?
-목요일,mogyoil,Thursday,new,base,weekdays,목요일에 시험이 있어요. — I have an exam on Thursday.
-금요일,geumyoil,Friday,new,base,weekdays,금요일이 좋아요. — I like Friday.
-토요일,toyoil,Saturday,new,base,weekdays,토요일에 쉬어요. — I rest on Saturday.
-일요일,iryoil,Sunday,new,base,weekdays,일요일에 자요. — I sleep on Sunday.
-하나,hana,one (native),new,base,numbers native,사과 하나. — One apple.
-둘,dul,two (native),new,base,numbers native,사람 둘. — Two people.
-셋,set,three (native),new,base,numbers native,셋 주세요. — Three please.
-넷,net,four (native),new,base,numbers native,넷이에요. — It's four.
-다섯,daseot,five (native),new,base,numbers native,다섯 시. — Five o'clock.
-여섯,yeoseot,six (native),new,base,numbers native,여섯 시. — Six o'clock.
-일곱,ilgop,seven (native),new,base,numbers native,일곱 시. — Seven o'clock.
-여덟,yeodeol,eight (native),new,base,numbers native,여덟 시. — Eight o'clock.
-아홉,ahop,nine (native),new,base,numbers native,아홉 시. — Nine o'clock.
-열,yeol,ten (native),new,base,numbers native,열 명. — Ten people.
-스물,seumul,twenty (native),new,base,numbers native,스물 살. — Twenty years old.
-서른,seoreun,thirty (native),new,base,numbers native,서른 살. — Thirty years old.
-백,baek,hundred (sino),new,base,numbers sino,백 원. — One hundred won.
-천,cheon,thousand (sino),new,base,numbers sino,천 원. — One thousand won.
-만,man,ten thousand (sino),new,base,numbers sino,만 원. — Ten thousand won.
-앞,ap,in front of,new,base,place,학교 앞에. — In front of the school.
-뒤,dwi,behind,new,base,place,집 뒤에. — Behind the house.
-아래,arae,under,new,base,place,책상 아래에. — Under the desk.
-위,wi,on / above,new,base,place,책상 위에. — On the desk.
-안,an,inside,new,base,place,방 안에. — Inside the room.
-밖,bak,outside,new,base,place,집 밖에. — Outside the house.
-옆,yeop,beside / next to,new,base,place,저 옆에. — Next to me.
-올라가다,ollagada,to go up,new,5,movement,계단으로 올라가세요. — Go up the stairs.
-내려가다,naeryeogada,to go down,new,5,movement,아래로 내려가세요. — Go down.
-나가다,nagada,to go out,new,5,movement,밖으로 나가세요. — Go outside.
-들어가다,deureogada,to go in / enter,new,5,movement,안으로 들어가세요. — Go inside.
-똑바로 가다,ttokbaro gada,to go straight,new,5,movement,똑바로 가세요. — Go straight.
-돌아가다,doragada,to go back / go around,new,5,movement,돌아가세요. — Go back.
-건너가다,geonneogada,to cross over,new,5,movement,길을 건너가세요. — Cross the street.
-지나가다,jinagada,to pass by,new,5,movement,지나가세요. — Go past.
-음식,eumsik,food,new,1B,food,한국 음식이 맛있어요. — Korean food is delicious.
-선물,seonmul,gift,new,1B,objects,선물을 받아요. — I receive a gift.
-고기,gogi,meat,new,1B,food,고기를 먹어요. — I eat meat.
-것,geot,thing,new,1B,phrases,이것은 무엇이에요? — What is this?
-맛,mat,taste,new,1B,food,맛이 좋아요. — It tastes good.
-초밥,chobap,sushi,new,1B,food,초밥을 먹어요. — I eat sushi.
-받다,batda,to receive,new,1B,verbs,선물을 받아요. — I receive a gift.
-주문하다,jumunhada,to order (informal: 시키다),new,1B,verbs,음식을 주문해요. — I order food.
-가장,gajang,the most,new,1B,phrases,가장 좋아해요. — I like it the most.
-미안하다,mianhada,to be sorry,new,1B,phrases,미안해요. — I'm sorry.
-혼자,honja,alone,new,1B,phrases,혼자 가요. — I go alone.
-치다,chida,to play (tennis) / to hit,new,1B,verbs,테니스를 쳐요. — I play tennis.
-운전하다,unjeonhada,to drive,new,1B,verbs,운전해요. — I drive.
-조금,jogeum,a little,new,1B,phrases,조금 알아요. — I know a little.
-하지만,hajiman,but / however,new,1B,phrases,비싸요. 하지만 좋아요. — It's expensive. But it's good.
-일주일에 한 번,iljuire han beon,once a week,new,1B,frequency,일주일에 한 번 가요. — I go once a week.
-한 달에 한 번,han dare han beon,once a month,new,1B,frequency,한 달에 한 번 만나요. — We meet once a month.
-일 년에 한 번,il nyeone han beon,once a year,new,1B,frequency,일 년에 한 번 여행해요. — I travel once a year.
-크다,keuda,to be big,new,4,descriptions,집이 커요. — The house is big.
-작다,jakda,to be small,new,4,descriptions,방이 작아요. — The room is small.
-넓다,neolda,to be wide / spacious,new,4,descriptions,길이 넓어요. — The road is wide.
-좁다,jopda,to be narrow,new,4,descriptions,길이 좁아요. — The road is narrow.
-높다,nopda,to be high,new,4,descriptions,산이 높아요. — The mountain is high.
-낮다,natda,to be low,new,4,descriptions,책상이 낮아요. — The desk is low.
-길다,gilda,to be long,new,4,descriptions,머리가 길어요. — The hair is long.
-짧다,jjalda,to be short,new,4,descriptions,머리가 짧아요. — The hair is short.
-비싸다,bissada,to be expensive,new,4,descriptions,옷이 비싸요. — Clothes are expensive.
-싸다,ssada,to be cheap,new,4,descriptions,옷이 싸요. — Clothes are cheap.
-편하다,pyeonhada,to be comfortable,new,4,descriptions,의자가 편해요. — The chair is comfortable.
-불편하다,bulpyeonhada,to be uncomfortable,new,4,descriptions,불편해요. — It's uncomfortable.
-꿈,kkum,dream,new,4,phrases,꿈을 꿔요. — I have a dream.
-찾다,chatda,to look for,new,4,verbs,책을 찾아요. — I look for the book.
-손님,sonnim,guest / customer,new,4,people,손님이 와요. — A guest is coming.
-기다리다,gidarida,to wait,new,4,verbs,기다려 주세요. — Please wait.
-가격,gagyeok,price,new,4,phrases,가격이 어때요? — How is the price?
-옷차림,otcharim,outfit / attire,new,3,clothes,옷차림이 멋있어요. — Your outfit looks great.
-티셔츠,tisyeocheu,T-shirt,new,3,clothes,티셔츠를 입어요. — I wear a T-shirt.
-청바지,cheongbaji,jeans,new,3,clothes,청바지를 입어요. — I wear jeans.
-치마,chima,skirt,new,3,clothes,치마를 입어요. — I wear a skirt.
-정장,jeongjang,formal suit,new,3,clothes,정장을 입어요. — I wear a suit.
-운동복,undongbok,sportswear,new,3,clothes,운동복을 입어요. — I wear sportswear.
-매다,maeda,to put on (tie/scarf),new,3,clothes,넥타이를 매요. — I tie a tie.
-입다,ipda,to put on (clothes),new,3,clothes,옷을 입어요. — I put on clothes.
-쓰다,sseuda,to put on (cap/glasses),new,3,clothes,모자를 써요. — I put on a hat.
-신다,sinda,to put on (shoes),new,3,clothes,신발을 신어요. — I put on shoes.
-결혼식,gyeolhonsik,wedding,new,3,events,결혼식에 가요. — I'm going to a wedding.
-아직,ajik,still / yet,new,3,phrases,아직 안 했어요. — I haven't done it yet.
-이따가,ittaga,later (today),new,3,time,이따가 봐요. — See you later.
-계획,gyehoek,plan,new,3,phrases,계획이 있어요. — I have a plan.
-이유,iyu,reason,new,3,phrases,이유가 뭐예요? — What's the reason?
-채소,chaeso,vegetables (also: 야채),new,3,food,채소를 먹어요. — I eat vegetables.
-너무,neomu,too / very,new,3,phrases,너무 비싸요. — Too expensive.
-운동화,undonghwa,sneakers,new,3,clothes,운동화를 신어요. — I wear sneakers.
-기차역,gichayeok,train station,new,3,place,기차역이 어디예요? — Where is the train station?
-취미,chwimi,hobby,new,2,hobbies,취미가 뭐예요? — What's your hobby?
-그림,geurim,picture / drawing,new,2,hobbies,그림이 예뻐요. — The picture is pretty.
-노래,norae,song,new,2,hobbies,노래가 좋아요. — The song is good.
-신문,sinmun,newspaper,new,2,objects,신문을 읽어요. — I read the newspaper.
-사무실,samusil,office,new,2,place,사무실에 가요. — I'm going to the office.
-옷장,otjang,wardrobe,new,2,objects,옷장이 커요. — The wardrobe is big.
-독서,dokseo,reading,new,2,hobbies,독서를 좋아해요. — I like reading.
-전,jeon,ago / before,new,2,time,1년 전에. — One year ago.
-빌리다,billida,to borrow,new,2,verbs,책을 빌려요. — I borrow a book.
-그리다,geurida,to draw,new,2,verbs,그림을 그려요. — I draw a picture.
-돈을 찾다,doneul chatda,to withdraw money,new,2,phrases,돈을 찾아요. — I withdraw money.
-보통,botong,usually,new,2,frequency,보통 8시에 일어나요. — I usually get up at 8.
-특히,teukhi,particularly / especially,new,2,phrases,특히 좋아해요. — I particularly like it.
-년,nyeon,year,new,2,time,2년 동안. — For 2 years.
-박물관,bakmulgwan,museum,new,5,place,박물관에 가요. — I'm going to the museum.
-지하,jiha,basement / underground,new,5,place,지하에 주차장이 있어요. — There's a parking lot in the basement.
-길,gil,road / street,new,5,place,길이 너무 좁아요. — The road is too narrow.
-생일,saengil,birthday,new,5,events,오늘은 제 생일이에요. — Today is my birthday.
-걸리다,geollida,to take (time),new,5,verbs,얼마나 걸려요? — How long does it take?
-시장,sijang,market,new,5,place,시장에서 야채를 사요. — I buy vegetables at the market.
-비행기,bihaenggi,airplane,new,6,transport,비행기로 공항에 가요. — I'm going to the airport by plane.
-기차,gicha,train,new,6,transport,기차를 타고 부산에 가요. — I'm taking the train to Busan.
-무섭다,museopda,to be scary,new,5,state,저는 무서운 영화를 좋아해요. — I like scary movies.
-스페인어,seupeineo,Spanish (language),new,5,phrases,스페인어를 어떻게 배웠어요? — How did you learn Spanish?
-쯤,jjeum,about / approximately,new,5,phrases,시간이 한 시간쯤 걸려요. — It takes about one hour.
-테니스장,teniseujang,tennis court,new,5,place,학교 테니스장에서 테니스를 쳐요. — I play tennis at the school tennis court.
-저쪽,jeojjok,over there,new,5,place,교실은 저쪽에 있어요. — The classroom is over there.
-시청,sicheong,city hall,new,5,place,시청이 어디에 있어요? — Where is the city hall?
-엘리베이터,ellibeiteo,elevator,new,5,place,엘리베이터는 왼쪽에 있어요. — The elevator is on the left.
-병원,byeongwon,hospital,new,5,place,"병원에서 왼쪽으로 가세요. — From the hospital, go left."
-알다,alda,to know,new,5,verbs,한국병원을 알아요? — Do you know Korea Hospital?
-그러면,geureomyeon,then / in that case,new,5,phrases,오른쪽으로 가세요. 그러면 은행이 있어요. — Go right. Then there's a bank.
-빵집,ppangjip,bakery,new,5,place,빵집 앞에서 길을 건너세요. — Cross the road in front of the bakery.
-약국,yakguk,pharmacy,new,5,place,약국 옆에 우리 집이 있어요. — Our house is next to the pharmacy.
-지도,jido,map,new,5,objects,지도를 보고 길을 찾아 보세요. — Look at the map and try to find the way.
-교통수단,gyotongsudan,transportation,new,6,transport,여러분이 자주 타는 교통수단은 뭐예요? — What transportation do you often use?
-우체국,uchaeguk,post office,new,6,place,은행은 우체국 옆에 있어요. — The bank is next to the post office.
-오토바이,otobai,motorcycle,new,6,transport,집에 오토바이를 타고 가요. — I go home by motorcycle.
-택시,taeksi,taxi,new,6,transport,백화점에 택시를 타고 갔어요. — I took a taxi to the department store.
-지하철,jihacheol,subway,new,6,transport,학교에 지하철을 타고 가요. — I go to school by subway.
-갈아타다,garatada,to transfer,new,6,verbs,버스로 갈아타요. — Transfer to the bus.
-내리다,naerida,to get off,new,6,verbs,택시에서 내려요. — Get off the taxi.
-가깝다,gakkapda,to be close / near,new,6,descriptions,집에서 회사까지 가까워요. — It's close from home to the company.
-멀다,meolda,to be far,new,6,descriptions,세종학당은 집에서 멀어요. — Sejong Institute is far from home.
-정류장,jeongnyujang,bus stop,new,6,place,버스 정류장에서 호텔까지 어떻게 가요? — How do I get from the bus stop to the hotel?
-호텔,hotel,hotel,new,6,place,공항에서 호텔까지 어떻게 가요? — How do I get from the airport to the hotel?
-차,cha,car,new,6,transport,제 차를 타고 가요. — I'll take my car.
-간식,gansik,snack,new,6,food,간식은 뭘 살까요? — What snack should we buy?
-싫어하다,sireohada,to dislike,new,6,verbs,저는 쇼핑을 싫어해요. — I dislike shopping.
-미술관,misulgwan,art museum,new,6,place,오늘 오후에 미술관에 갈까요? — Shall we go to the art museum this afternoon?
-산,san,mountain,new,7,nature,산이 높아요. — The mountain is high.
-섬,seom,island,new,7,nature,섬이 많아요. — There are many islands.
-도시,dosi,city,new,7,place,도시가 커요. — The city is big.
-호수,hosu,lake,new,7,nature,호수가 아름다워요. — The lake is beautiful.
-약,yak,medicine,new,7,objects,약을 먹어요. — I take medicine.
-여권,yeogwon,passport,new,7,travel,여권을 만들어요. — I make a passport.
-수영복,suyeongbok,swimsuit,new,7,travel,수영복을 사요. — I buy a swimsuit.
-구경,gugyeong,sightseeing,new,7,travel,구경을 해요. — I go sightseeing.
-맛집,matjip,popular restaurant,new,7,place,맛집에 가요. — I'm going to a popular restaurant.
-경주,Gyeongju,Gyeongju (city),new,7,place,경주로 여행을 갈 거예요. — I will travel to Gyeongju.
-닭갈비,dakgalbi,dakgalbi (spicy stir-fried chicken),new,7,food,오늘 저녁에 닭갈비를 먹으려고 해요. — I plan to eat dakgalbi tonight.
-휴가,hyuga,vacation,new,7,travel,이번 휴가에 여행을 가려고 해요. — I plan to travel on this vacation.
-자르다,jareuda,to cut,new,7,verbs,머리를 자르려고 해요. — I plan to cut my hair.
-불국사,Bulguksa,Bulguksa Temple,new,7,place,경주에 가려고 해요. 불국사에 가고 박물관에도 가려고 해요. — I plan to go to Gyeongju. I plan to visit Bulguksa and the museum too.
-설악산,Seoraksan,Seoraksan Mountain,new,7,place,친구들하고 설악산으로 여행을 가요. — I'm going on a trip to Seoraksan with friends.
-밤,bam,night,new,7,time,밤에 친구들과 파티를 하려고 해요. — I plan to have a party with friends at night.
-등산화,deungsanhwa,hiking boots,new,7,travel,등산화를 사려고 해요. — I plan to buy hiking boots.
-선글라스,seongeullaseu,sunglasses,new,7,travel,선글라스를 샀어요. — I bought sunglasses.
-준비하다,junbihada,to prepare,new,7,verbs,여행을 준비해요. — I prepare for the trip.
-작년,jangnyeon,last year,new,8,time,작년에 한국에 갔어요. — I went to Korea last year.
-후에,hue,after,new,7,time,수업 후에 만나요. — Let's meet after class.
-힘들다,himdeulda,to be hard / difficult,new,10,state,일이 힘들어요. — Work is hard.
-오래,orae,a long time,new,7,time,오래 기다렸어요. — I waited a long time.
-방학,banghak,school vacation,new,7,time,방학에 여행을 가요. — I travel during the school vacation.
-청소하다,cheongsohada,to clean,new,7,verbs,방을 청소해요. — I clean the room.
-이를 닦다,ireul dakda,to brush teeth,new,8,verbs,이를 닦아요. — I brush my teeth.
-세수하다,sesuhada,to wash one's face,new,7,verbs,아침에 세수해요. — I wash my face in the morning.
-설거지하다,seolgeojihada,to wash dishes,new,8,verbs,설거지를 해요. — I do the dishes.
-많다,manta,to be many / a lot,new,4,descriptions,사람이 많아요. — There are many people.
-깨끗하다,kkaekkeutada,to be clean,new,4,descriptions,방이 깨끗해요. — The room is clean.
-재미있다,jaemiitda,to be fun / interesting,new,4,descriptions,영화가 재미있어요. — The movie is fun.
-무겁다,mugeopda,to be heavy,new,4,descriptions,가방이 무거워요. — The bag is heavy.
-좋다,jota,to be good,new,4,descriptions,날씨가 좋아요. — The weather is good.
-기쁘다,gippeuda,to be glad,new,4,state,만나서 기뻐요. — I'm glad to meet you.
-빠르다,ppareuda,to be fast,new,4,descriptions,차가 빨라요. — The car is fast.
-적다,jeokda,to be few,new,4,descriptions,사람이 적어요. — There are few people.
-더럽다,deoreopda,to be dirty,new,4,descriptions,방이 더러워요. — The room is dirty.
-재미없다,jaemieopda,to be uninteresting,new,4,descriptions,수업이 재미없어요. — The class is boring.
-가볍다,gabyeopda,to be light (weight),new,4,descriptions,가방이 가벼워요. — The bag is light.
-느리다,neurida,to be slow,new,4,descriptions,버스가 느려요. — The bus is slow.
-춥다,chupda,to be cold,new,4,weather,겨울이 추워요. — Winter is cold.
-따뜻하다,ttatteutada,to be warm,new,4,weather,봄이 따뜻해요. — Spring is warm.
-쌀쌀하다,ssalssalhada,to be cool / chilly,new,4,weather,날씨가 쌀쌀해요. — The weather is chilly.
-맑다,makda,to be clear (weather),new,4,weather,하늘이 맑아요. — The sky is clear.
-흐리다,heurida,to be cloudy,new,4,weather,날씨가 흐려요. — The weather is cloudy.
-나라,nara,country,new,7,place,어느 나라에서 왔어요? — Which country are you from?
-쪽,jjok,page,new,7,objects,몇 쪽이에요? — What page is it?
-빨리,ppalli,quickly,new,7,time,빨리 오세요. — Please come quickly.
-아름답다,areumdapda,to be beautiful,new,7,descriptions,꽃이 아름다워요. — The flower is beautiful.
-유명하다,yumyeonghada,to be famous,new,8,descriptions,이 식당이 유명해요. — This restaurant is famous.
-다음,daeum,next,new,8,time,다음 주에 만나요. — Let's meet next week.
-주부,jubu,housewife,new,7,people,저는 주부예요. — I'm a housewife.
-남자,namja,man,new,7,people,저 남자가 누구예요? — Who is that man?
-여자,yeoja,woman,new,7,people,저 여자가 친구예요. — That woman is my friend.
-귤,gyul,mandarin (fruit),new,8,food,귤이 맛있어요. — Mandarins are delicious.
-기타,gita,guitar,new,2,hobbies,기타를 쳐요. — I play guitar.
-헬스클럽,helseukeulleop,gym,new,2,place,헬스클럽에 가요. — I go to the gym.
-그래서,geuraeseo,so / therefore,new,2,phrases,피곤해요. 그래서 자요. — I'm tired. So I sleep.
-바지,baji,pants,new,3,clothes,바지를 입어요. — I wear pants.
-떡,tteok,rice cake,new,3,food,떡을 먹어요. — I eat rice cake.
-인터넷,inteonet,internet,new,3,objects,인터넷을 해요. — I use the internet.
-머리,meori,hair / head,new,4,body,머리가 길어요. — The hair is long.
-귀엽다,gwiyeopda,to be cute,new,4,descriptions,고양이가 귀여워요. — The cat is cute.
-잠,jam,sleep,new,4,phrases,잠을 자요. — I sleep.
-점원,jeomwon,clerk,new,4,people,점원이 친절해요. — The clerk is kind.
-사이즈,saijeu,size,new,4,objects,사이즈가 어때요? — How's the size?
-죄송하다,joesonghada,to be sorry (formal),new,4,phrases,죄송합니다. — I'm sorry.
-잠시,jamsi,a moment,new,4,time,잠시만 기다리세요. — Please wait a moment.
-보이다,boida,to show,new,4,verbs,바지를 보여 주세요. — Please show me the pants.
-경험,gyeongheom,experience,new,8,phrases,여행 경험을 이야기해요. — I talk about my travel experience.
-거리,geori,street,new,8,place,거리 구경을 해요. — I sightsee the streets.
-축제,chukje,festival,new,8,events,축제에 가요. — I go to a festival.
-전통 시장,jeontong sijang,traditional market,new,8,place,전통 시장에 가요. — I go to a traditional market.
-새롭다,saeropda,to be new,new,8,descriptions,새로운 음식을 먹어요. — I eat new food.
-공연,gongyeon,performance,new,8,events,거리 공연을 봐요. — I watch a street performance.
-삼계탕,samgyetang,samgyetang (ginseng chicken soup),new,8,food,삼계탕을 먹어요. — I eat samgyetang.
-명동,Myeongdong,Myeong-dong,new,8,place,명동에 가요. — I go to Myeong-dong.
-인사동,Insadong,Insa-dong,new,8,place,인사동에서 전통 음식을 먹었어요. — I ate traditional food in Insa-dong.
-멋있다,meositda,to be cool / fantastic,new,8,descriptions,가수가 멋있어요. — The singer is cool.
-끝나다,kkeutnada,to finish / end,new,8,verbs,수업이 끝났어요. — Class is over.
-이,i,tooth,new,8,body,이가 아파요. — My tooth hurts.
-닦다,dakda,to clean / wipe,new,8,verbs,창문을 닦아요. — I clean the window.
-설거지,seolgeoji,dishwashing,new,8,phrases,설거지를 해요. — I do the dishes.
-샤워하다,syawohada,to shower,new,8,verbs,샤워해요. — I shower.
-더,deo,more,new,8,phrases,더 비싸요. — It's more expensive.
-다녀오다,danyeooda,to come back / go and return,new,8,verbs,여행 잘 다녀왔어요. — I had a good trip.
-지난번,jinanbeon,last time,new,8,time,지난번보다 좋았어요. — It was better than last time.
-괜찮다,gwaenchanta,to be fine / all right,new,8,phrases,괜찮아요. — It's okay.
-바닷가,badatga,beach,new,8,place,바닷가에서 산책했어요. — I walked at the beach.
-푹,puk,really / deeply / soundly,new,8,phrases,푹 쉬었어요. — I rested well.
-끝,kkeut,end,new,8,phrases,축제를 끝까지 봤어요. — I watched the festival to the end.
-먼저,meonjeo,first / before,new,8,phrases,먼저 가세요. — Go first.
-경복궁,Gyeongbokgung,Gyeongbokgung Palace,new,8,place,경복궁을 구경했어요. — I sightsaw Gyeongbokgung.
-외국 사람,oeguk saram,foreigner,new,8,people,외국 사람이 많았어요. — There were many foreigners.
-날,nal,day,new,8,time,다음 날에 갔어요. — I went the next day.
-참,cham,really / very,new,8,phrases,참 재미있었어요. — It was really fun.
-다시,dasi,again,new,8,phrases,다시 가고 싶어요. — I want to go again.
-증상,jeungsang,symptom,new,9,body,증상이 어때요? — How are the symptoms?
-눈,nun,eye,new,9,body,눈이 커요. — The eyes are big.
-귀,gwi,ear,new,9,body,귀가 작아요. — The ears are small.
-코,ko,nose,new,9,body,코가 아파요. — My nose hurts.
-입,ip,mouth,new,9,body,입이 커요. — The mouth is big.
-목,mok,throat / neck,new,9,body,목이 아파요. — My throat hurts.
-팔,pal,arm,new,9,body,팔이 짧아요. — The arm is short.
-손,son,hand,new,9,body,손이 작아요. — The hand is small.
-다리,dari,leg,new,9,body,다리가 길어요. — The legs are long.
-발,bal,foot,new,9,body,발이 커요. — The feet are big.
-감기,gamgi,cold (illness),new,9,body,감기에 걸렸어요. — I caught a cold.
-열이 나다,yeori nada,to have a fever,new,9,body,열이 나요. — I have a fever.
-콧물,kotmul,runny nose,new,9,body,콧물이 나요. — I have a runny nose.
-기침,gichim,cough,new,9,body,기침을 해요. — I cough.
-몸,mom,body (formal: 신체),new,9,body,오늘은 몸이 어때요? — How is your body today?
-복잡하다,bokjapada,to be crowded / complicated,new,9,descriptions,길이 복잡해요. — The street is crowded.
-아까,akka,a moment ago,new,10,time,아까 길이 복잡했어요. — The street was crowded a moment ago.
-단어,daneo,word,new,10,study,단어를 외워요. — I memorize words.
-외우다,oeuda,to memorize,new,10,verbs,단어를 외워요. — I memorize words.
-드시다,deusida,to eat / drink (honorific),new,10,verbs,맛있게 드세요. — Eat well (enjoy).
-계속,gyesok,continuously,new,10,phrases,머리가 계속 아파요. — My head hurts continuously.
-넣다,neota,to put in,new,10,verbs,약을 넣어요. — I put in the medicine.
-이제,ije,now / from now,new,10,time,이제 안 할 거예요. — I won't do it from now on.
-건강하다,geonganghada,to be healthy,new,10,state,몸이 건강해요. — The body is healthy.
-생활,saenghwal,life / lifestyle,new,10,phrases,생활이 어때요? — How is life?
-꼭,kkok,surely / definitely,new,10,phrases,꼭 오세요. — Please definitely come.
-웃다,utda,to laugh / smile,new,10,verbs,많이 웃어요. — I laugh a lot.
-지키다,jikida,to keep / protect,new,10,verbs,약속을 지켜요. — I keep my promise.
-퇴근,toegeun,leaving work,new,10,time,퇴근 후에 만나요. — Let's meet after work.
-요가,yoga,yoga,new,10,hobbies,요가를 해요. — I do yoga.
-대학교,daehakgyo,university,new,10,place,대학교에 다녀요. — I attend university.
-졸업하다,joreopada,to graduate,new,10,verbs,대학교를 졸업했어요. — I graduated from university.
-팝콘,papkon,popcorn,new,10,food,팝콘을 먹어요. — I eat popcorn.
-해외여행,haeoeyeohaeng,overseas trip,new,10,phrases,해외여행을 가요. — I go on an overseas trip.
-초대하다,chodaehada,to invite,new,10,verbs,친구를 초대해요. — I invite a friend.
-샐러드,saelleodeu,salad,new,10,food,샐러드를 먹어요. — I eat salad.
-제일,jeil,the most / best,new,10,phrases,제일 좋아해요. — I like it the most.
-습관,seupgwan,habit,new,10,phrases,좋은 습관이 있어요. — I have a good habit.
-손을 씻다,soneul ssitda,to wash hands,new,7,verbs,손을 씻어요. — I wash my hands.
-빨래하다,ppallaehada,to do laundry,new,7,verbs,빨래해요. — I do the laundry.
-바퀴벌레,bakwibeolle,cockroach,new,7,nature,바퀴벌레가 무서워요. — Cockroaches are scary.
-새 옷,sae ot,new clothes,new,4,clothes,새 옷을 샀어요. — I bought new clothes.
-여행 경험,yeohaeng gyeongheom,travel experience,new,8,phrases,여행 경험을 이야기해요. — I talk about travel experience.
-테니스를 치다,teniseureul chida,to play tennis,new,2,hobbies,테니스를 쳐요. — I play tennis.
-모두,modu,all / everyone,new,8,phrases,모두 같이 가요. — Let's all go together.
-낫다,natda,to get better / recover,new,9,verbs,감기가 다 나았어요. — My cold is all gone.
-고향,gohyang,hometown,new,8,place,고향이 어디예요? — Where is your hometown?
-모임,moim,gathering / meeting,new,11,event,반 모임을 준비해요. — We're preparing a class gathering.
-정하다,jeonghada,to decide / set,new,11,verb,시간을 정해요. — Let's set the time.
-예약하다,yeyakhada,to make a reservation,new,11,verb,장소를 예약해요. — I reserve the place.
-연락,yeollak,contact,new,11,communication,연락을 해요. — I get in touch.
-스키,seuki,ski,new,11,activity,스키를 탈 수 있어요. — I can ski.
-전화,jeonhwa,phone / phone call,new,11,communication,지금 전화를 받을 수 없어요. — I can't answer the phone now.
-다치다,dachida,to get hurt,new,11,verb,어제 다리를 다쳤어요. — I hurt my leg yesterday.
-모이다,moida,to gather (intr.),new,11,verb,주노 씨 집에서 모일까요? — Shall we gather at Juno's place?
-결혼,gyeolhon,marriage,new,11,event,결혼을 축하해요. — Congratulations on your marriage.
-축하,chukha,congratulations / celebration,new,11,event,생일 축하 파티는 어디에서 할까요? — Where shall we hold the birthday party?
-초대장,chodaejang,invitation card,new,11,event,안나 씨가 초대장을 썼어요. — Anna wrote the invitation.
-함께,hamkke,together,new,11,adverb,친구들하고 함께 케이크를 먹었어요. — I ate cake together with friends.
-부르다,bureuda,to sing / to call,new,11,verb,한국 노래를 부릅니다. — I sing Korean songs.
-춤,chum,dance,new,11,activity,춤도 배울 수 있습니다. — You can also learn to dance.
-매주,maeju,every week,new,11,time,우리는 매주 화요일에 모이고 있습니다. — We gather every Tuesday.
-소강당,sogangdang,small auditorium / hall,new,11,place,3층 소강당에서 모임을 해요. — We have the meeting in the small hall on the 3rd floor.
-문의,munui,inquiry,new,11,communication,이 전화번호로 문의를 하세요. — Please make inquiries at this number.
-졸업식,joreopsik,graduation ceremony,new,12,event,동생 졸업식에 시계를 줄 거예요. — I'll give my sibling a watch for graduation.
-어버이날,eobeoinal,Parents' Day,new,12,event,어버이날에 꽃을 선물했어요. — I gave flowers for Parents' Day.
-어린이날,eorininal,Children's Day,new,12,event,어린이날에 게임기를 주고 싶어요. — I want to give a game console for Children's Day.
-명절,myeongjeol,national holiday,new,12,event,명절 선물을 준비했어요. — I prepared holiday gifts.
-최근,choegeun,recently / lately,new,12,time,최근에 무슨 선물을 받았어요? — What gift did you get recently?
-지갑,jigap,wallet,new,12,objects,졸업식에 지갑을 받았어요. — I got a wallet at graduation.
-게임기,geimgi,game console,new,12,objects,생일에 게임기를 받고 싶어요. — I want a game console for my birthday.
-보내다,bonaeda,to send,new,12,verb,형한테 사진을 보내고 있어요. — I'm sending photos to my older brother.
-누나,nuna,older sister (male's),new,12,family,누나에게 전화했어요. — I called my older sister.
-편지,pyeonji,letter,new,12,objects,친구에게 편지를 보낼 거예요. — I'll send a letter to my friend.
-카드,kadeu,card,new,12,objects,동생한테 축하 카드를 썼어요. — I wrote a congratulations card to my sibling.
-메시지,mesiji,text message,new,12,communication,리사 씨에게 메시지를 보냈어요. — I sent a message to Lisa.
-인형,inhyeong,doll,new,12,objects,수지 씨는 인형을 좋아해요. — Suji likes dolls.
-졸업,joreop,graduation,new,12,event,졸업 선물은 준비했어요? — Did you prepare a graduation gift?
-생각,saenggak,idea / thought,new,12,abstract,좋은 생각이에요. — That's a good idea.
-오래되다,oraedoeda,to be old (of things),new,12,verb,지갑이 오래되었어요. — The wallet is old.
-고등학교,godeunghakgyo,high school,new,12,place,동생이 고등학교에 다녀요. — My sibling goes to high school.
-입학식,iphaksik,entrance ceremony,new,12,event,내일이 동생 입학식이에요. — Tomorrow is my sibling's entrance ceremony.
-표,pyo,ticket,new,12,objects,친구한테 콘서트 표를 주었어요. — I gave a concert ticket to my friend.
-그릇,geureut,bowl,new,12,objects,리사 씨에게 그릇을 선물했어요. — I gave a bowl to Lisa.
-처음,cheoeum,first / first time,new,12,adverb,케이크를 처음 만들어서 예쁘지 않아요. — It's my first time making cake so it's not pretty.
-식사하다,siksahada,to have a meal / eat,new,extra,verb,식사했어요? — Have you eaten?
-청국장,cheongukjang,cheonggukjang (fermented soybean stew),new,extra,food,청국장을 먹어 봤어요. — I tried cheonggukjang.
-과일,gwail,fruit,new,extra,food,과일을 좋아해요. — I like fruit.
-취직하다,chwijikhada,to get a job,new,extra,verb,회사에 취직했어요. — I got a job at a company.
-등장하다,deungjanghada,to appear / show up,new,extra,verb,새 모델이 등장했어요. — A new model appeared.
-끄다,kkeuda,to turn off,new,extra,verb,불을 꺼야 해요. — I have to turn off the light.
-내다,naeda,to pay / submit,new,extra,verb,수업료를 내야 해요. — I have to pay the tuition.
-끝내다,kkeunnaeda,to finish,new,1-1,verb,숙제를 끝냈어요. — I finished my homework.
-나중에,najunge,later,new,1-1,time,나중에 전화할게요. — I'll call later.
-장을 보다,jangeul boda,to go grocery shopping,new,1-1,activity,주말에 장을 봐요. — I go grocery shopping on weekends.
-돈을 모으다,doneul moeuda,to save money,new,1-1,verb,여행하려고 돈을 모아요. — I'm saving money to travel.
-연습하다,yeonseuphada,to practice,new,1-1,study,한국어를 연습해요. — I practice Korean.
-말하기,malhagi,speaking,new,1-1,communication,말하기가 어려워요. — Speaking is difficult.
-약을 먹다,yageul meokda,to take medicine,new,1-1,verb,약을 먹어야 해요. — I have to take medicine.
-확인하다,hwaginhada,to check,new,1-1,verb,이메일을 확인했어요. — I checked the email.
-곧,got,soon,new,1-1,time,곧 도착해요. — I'll arrive soon.
-조심하다,josimhada,to be careful,new,1-1,verb,"길이 미끄러우니까 조심하세요. — Be careful, the road is slippery."
-더 열심히,deo yeolsimhi,harder,new,1-1,adverb,더 열심히 공부할 거예요. — I will study harder.
-꾸준히,kkujunhi,consistently,new,1-1,frequency,꾸준히 운동해요. — I exercise consistently.
-가져오다,gajyeooda,to bring,new,1-1,verb,물을 가져오세요. — Please bring water.
-돈을 내다,doneul naeda,to pay,new,1-1,verb,제가 돈을 낼게요. — I'll pay.
-아무것도,amugeotdo,anything / nothing (with negative),new,1-1,phrases,아무것도 안 했어요. — I didn't do anything.
-방,bang,room,new,1-1,place,방이 깨끗해요. — The room is clean.
-소개하다,sogaehada,to introduce,new,1-1,communication,친구를 소개할게요. — I'll introduce my friend.
-빌려주다,billyeojuda,to lend,new,1-1,verb,책을 빌려주세요. — Please lend me the book.
-가르치다,gareuchida,to teach,new,1-1,study,한국어를 가르쳐요. — I teach Korean.
-돕다,dopda,to help,new,1-1,verb,친구를 도와줘요. — I help my friend.
-주다,juda,to give,new,1-1,verb,선물을 줬어요. — I gave a gift.
-그 여자,geu yeoja,she / that woman,new,1-1,people,그 여자는 의사예요. — She is a doctor.
-말하다,malhada,to speak / say,new,1-1,communication,천천히 말해 주세요. — Please speak slowly.
-할인,harin,discount,new,1-1,abstract,할인을 받았어요. — I got a discount.
-묻다,mutda,to ask,new,1-1,questions,길을 물어봤어요. — I asked for directions.
-항상,hangsang,always,new,1-1,frequency,항상 바빠요. — I'm always busy.
-형,hyeong,older brother (of a male),new,1-1,family,우리 형은 키가 커요. — My older brother is tall.
-위하다,wihada,to do for the sake of,new,1-1,verb,가족을 위해 일해요. — I work for my family.
-아/어 주다,a/eo juda,to do (something) for someone,new,1-1,phrases,도와줘서 고마워요. — Thanks for helping me.
-어울리다,eoullida,to suit / go well together,new,1-2,descriptions,이 옷이 잘 어울려요. — This outfit suits you well.
-지난가을,jinan-gaeul,last autumn,new,1-2,time,지난가을에 여행을 갔어요. — I traveled last autumn.
-행복하다,haengbokhada,to be happy,new,1-2,state,요즘 정말 행복해요. — I'm really happy these days.
-동대문시장,dongdaemun-sijang,Dongdaemun Market,new,1-2,place,동대문시장에서 옷을 샀어요. — I bought clothes at Dongdaemun Market.
-소설,soseol,novel,new,1-2,hobbies,소설을 읽어요. — I read a novel.
-놀이 기구,nori gigu,amusement ride,new,1-2,hobbies,놀이 기구를 탔어요. — I rode the attractions.
-여기저기 돌아다니다,yeogijeogi doradanida,to wander around,new,1-2,movement,여기저기 돌아다녔어요. — I wandered here and there.
-사인을 받다,saineul batda,to get an autograph,new,1-2,phrases,가수한테 사인을 받았어요. — I got the singer's autograph.
-따라 부르다,ttara bureuda,to sing along,new,1-2,verb,노래를 따라 불렀어요. — I sang along to the song.
-문화 센터,munhwa senteo,culture center,new,1-2,place,문화 센터에서 요가를 배워요. — I learn yoga at the culture center.
-게임을 하다,geimeul hada,to play games,new,1-2,hobbies,친구하고 게임을 해요. — I play games with friends.
-라면을 먹다,ramyeoneul meokda,to eat ramen,new,1-2,food,집에서 라면을 먹어요. — I eat ramen at home.
-영화를 보다,yeonghwareul boda,to watch a movie,new,1-2,hobbies,주말에 영화를 봐요. — I watch movies on weekends.
-요리를 배우다,yorireul baeuda,to learn cooking,new,1-2,hobbies,문화 센터에서 요리를 배워요. — I learn cooking at the culture center.
-요가를 하다,yogareul hada,to do yoga,new,1-2,sports,매일 아침 요가를 해요. — I do yoga every morning.
-수영을 배우다,suyeongeul baeuda,to learn swimming,new,1-2,sports,요즘 수영을 배워요. — I'm learning to swim these days.
-낮잠을 자다,natjameul jada,to take a nap,new,1-2,verb,오후에 낮잠을 자요. — I take a nap in the afternoon.
-집안일을 하다,jibanireul hada,to do housework,new,1-2,verb,주말에 집안일을 해요. — I do housework on weekends.
-공연장,gongyeonjang,performance hall / concert venue,new,1-2,place,공연장에서 콘서트를 봤어요. — I watched a concert at the venue.
-기구를 타다,gigureul tada,to ride an attraction,new,1-2,hobbies,놀이공원에서 기구를 탔어요. — I rode the rides at the amusement park.
-신청하다,sincheonghada,to apply / sign up / request,new,1-2,verb,문화 센터에서 요가 수업을 신청했어요. — I signed up for a yoga class at the culture center.
-서두르다,seodureuda,to hurry,new,1-1,verb,서두르지 마세요. — Don't hurry. (르-irregular: 서둘러요)
-하루 종일,haru jongil,all day long,new,1-1,time,하루 종일 집에 있었어요. — I was home all day long.
-가져가다,gajyeogada,to take (bring there),new,1-1,verb,우산을 가져가세요. — Take an umbrella with you.
-열심히,yeolsimhi,hard / diligently,new,1-1,adverb,열심히 공부해요. — I study hard.
-당장,dangjang,right away / immediately,new,1-1,adverb,당장 시작해요. — Let's start right away.
+korean,romanization,translation,status,category,unit,topic,example
+시계,sigye,clock,new,old,5,objects,시계가 있어요. — There is a clock.
+돈,don,money,new,old,7,objects,돈이 없어요. — I don't have money.
+창문,changmun,window,new,old,5,objects,창문을 열어요. — I open the window.
+방향,banghyang,direction,new,old,5,place,어느 방향이에요? — Which direction?
+이동,idong,movement,new,old,5,place,이동 시간이 길어요. — The travel time is long.
+근처,geuncheo,nearby,new,old,2,place,학교 근처에 살아요. — I live near the school.
+주차장,juchajang,parking lot,new,old,5,place,주차장이 어디예요? — Where is the parking lot?
+건물,geonmul,building,new,old,5,place,큰 건물이에요. — It's a big building.
+맞아요,majayo,that's right,new,old,5,phrases,"네 맞아요. — Yes, that's right."
+학교,hakgyo,school,new,old,5,place,학교에 가요. — I go to school.
+지난,jinan,last/past,new,old,5,time,지난 주에. — Last week.
+봄,bom,spring,new,old,1B,seasons,봄이 좋아요. — I like spring.
+여름,yeoreum,summer,new,old,1B,seasons,여름이 더워요. — Summer is hot.
+가을,gaeul,autumn/fall,new,old,1B,seasons,가을이 시원해요. — Autumn is cool.
+겨울,gyeoul,winter,new,old,1B,seasons,겨울이 추워요. — Winter is cold.
+요일,yoil,day of week,new,old,1B,time,오늘은 무슨 요일이에요? — What day is today?
+술,sul,alcohol,new,old,1B,food,술을 안 마셔요. — I don't drink alcohol.
+야구,yagu,baseball,new,old,1B,sports,야구를 좋아해요. — I like baseball.
+수박,subak,watermelon,new,old,4,food,수박이 맛있어요. — Watermelon is delicious.
+낚시,naksi,fishing,new,old,1B,hobbies,낚시를 해요. — I go fishing.
+시간,sigan,time,new,old,1B,time,시간이 없어요. — I don't have time.
+자전거를 타다,jajeongeoreul tada,to ride a bike,new,old,1B,hobbies,자전거를 타요. — I ride a bike.
+맵다,maepda,spicy,new,old,1B,food,김치가 매워요. — Kimchi is spicy.
+아프다,apeuda,to be sick / to hurt,new,old,9,state,머리가 아파요. — My head hurts.
+배고프다,baegopeuda,to be hungry,new,old,6,state,배가 고파요. — I'm hungry.
+나쁘다,nappeuda,to be bad,new,old,4,state,날씨가 나빠요. — The weather is bad.
+슬프다,seulpeuda,to be sad,new,old,4,state,슬퍼요. — I'm sad.
+피곤하다,pigonhada,to be tired,new,old,4,state,피곤해요. — I'm tired.
+쉽다,swipda,to be easy,new,old,4,state,쉬워요. — It's easy.
+어렵다,eoryeopda,to be difficult,new,old,4,state,어려워요. — It's difficult.
+바쁘다,bappeuda,to be busy,new,old,4,state,바빠요. — I'm busy.
+늦다,neutda,to be late,new,old,6,state,늦었어요. — I'm late.
+비가 오다,biga oda,to rain,new,old,4,weather,비가 와요. — It's raining.
+눈이 오다,nuni oda,to snow,new,old,4,weather,눈이 와요. — It's snowing.
+덥다,deopda,to be hot,new,old,4,weather,오늘 더워요. — It's hot today.
+가족,gajok,family,new,old,4,people,제 가족이에요. — It's my family.
+숙제,sukje,homework,new,old,10,study,숙제를 해요. — I do homework.
+시험,siheom,exam,new,old,4,study,시험이 어려워요. — The exam is hard.
+배,bae,stomach,new,old,9,body,배가 아파요. — My stomach hurts.
+새,sae,bird,new,old,3,nature,새가 노래해요. — The bird sings.
+지갑,jigap,wallet,new,old,3,objects,지갑을 잃어버렸어요. — I lost my wallet.
+생선,saengseon,fish (food),new,old,3,food,생선을 먹어요. — I eat fish.
+넥타이,nektai,tie,new,old,3,clothes,넥타이를 매요. — I tie a tie.
+스카프,seukapeu,scarf,new,old,3,clothes,스카프가 예뻐요. — The scarf is pretty.
+모자,moja,hat/cap,new,old,3,clothes,모자를 써요. — I put on a hat.
+안경,angyeong,glasses,new,old,3,clothes,안경을 써요. — I wear glasses.
+구두,gudu,dress shoes,new,old,3,clothes,구두를 신어요. — I put on dress shoes.
+양복,yangbok,men's suit,new,old,3,clothes,양복을 입어요. — I put on a suit.
+벗다,beotda,to take off (clothes),new,old,3,clothes,옷을 벗어요. — I take off clothes.
+양말,yangmal,socks,new,old,3,clothes,양말을 신어요. — I put on socks.
+약속,yaksok,appointment/promise,new,old,3,phrases,약속이 있어요. — I have an appointment.
+기분,gibun,mood,new,old,3,state,기분이 좋아요. — I'm in a good mood.
+아침,achim,morning/breakfast,new,old,3,time,아침을 먹어요. — I eat breakfast.
+점심,jeomsim,lunch,new,old,3,time,점심을 먹어요. — I eat lunch.
+저녁,jeonyeok,evening/dinner,new,old,3,time,저녁을 먹어요. — I eat dinner.
+매일,maeil,every day,new,old,2,frequency,매일 운동해요. — I exercise every day.
+자주,jaju,often,new,old,2,frequency,자주 가요. — I go often.
+가끔,gaggeum,sometimes,new,old,10,frequency,가끔 만나요. — We meet sometimes.
+당구를 치다,danggureul chida,to play billiards,new,old,2,hobbies,당구를 쳐요. — I play billiards.
+볼링을 치다,bollingeul chida,to bowl,new,old,2,hobbies,볼링을 쳐요. — I go bowling.
+노래를 부르다,noraereul bureuda,to sing a song,new,old,2,hobbies,노래를 불러요. — I sing a song.
+사진을 찍다,sajineul jjikda,to take a photo,new,old,2,hobbies,사진을 찍어요. — I take photos.
+축구를 하다,chukgureul hada,to play soccer,new,old,2,hobbies,축구를 해요. — I play soccer.
+그림을 그리다,geurimeul geurida,to draw a picture,new,old,2,hobbies,그림을 그려요. — I draw a picture.
+등산을 하다,deungsaneul hada,to go hiking,new,old,2,hobbies,등산을 해요. — I go hiking.
+춤을 추다,chumeul chuda,to dance,new,old,2,hobbies,춤을 춰요. — I dance.
+누구,nugu,who,new,old,5,questions,저 사람이 누구예요? — Who is that person?
+무엇,mueot,what,new,old,5,questions,이게 뭐예요? — What is this?
+언제,eonje,when,new,old,5,questions,언제 와요? — When are you coming?
+어디,eodi,where,new,old,5,questions,어디 가요? — Where are you going?
+어떤,eotteon,what kind of,new,old,5,questions,어떤 음식 좋아해요? — What kind of food do you like?
+왜,wae,why,new,old,5,questions,왜 안 가요? — Why aren't you going?
+어떻게,eotteoke,how,new,old,5,questions,어떻게 가요? — How do you get there?
+얼마나,eolmana,how much / how long,new,old,5,questions,얼마나 걸려요? — How long does it take?
+몇 번,myeot beon,what number,new,old,5,questions,몇 번 버스예요? — Which bus number is it?
+무슨,museun,what / which,new,old,5,questions,무슨 일이에요? — What's the matter?
+전화번호,jeonhwabeonho,phone number,new,old,5,objects,전화번호가 뭐예요? — What's your phone number?
+화장실,hwajangsil,bathroom,new,old,5,place,화장실이 어디예요? — Where is the bathroom?
+여행,yeohaeng,travel/trip,new,old,5,place,여행을 가요. — I'm going on a trip.
+공항,gonghang,airport,new,old,6,place,공항에 가요. — I'm going to the airport.
+은행,eunhaeng,bank,new,old,2,place,은행에 가요. — I'm going to the bank.
+수업,sueop,class/lesson,new,old,5,study,수업이 있어요. — I have class.
+일찍,iljjik,early,new,old,5,time,일찍 일어나요. — I get up early.
+계절,gyejeol,season,new,old,5,time,어느 계절을 좋아해요? — Which season do you like?
+월요일,woryoil,Monday,new,old,base,weekdays,월요일에 만나요. — Let's meet on Monday.
+화요일,hwayoil,Tuesday,new,old,base,weekdays,오늘은 화요일이에요. — Today is Tuesday.
+수요일,suyoil,Wednesday,new,old,base,weekdays,수요일에 시간 있어요? — Are you free on Wednesday?
+목요일,mogyoil,Thursday,new,old,base,weekdays,목요일에 시험이 있어요. — I have an exam on Thursday.
+금요일,geumyoil,Friday,new,old,base,weekdays,금요일이 좋아요. — I like Friday.
+토요일,toyoil,Saturday,new,old,base,weekdays,토요일에 쉬어요. — I rest on Saturday.
+일요일,iryoil,Sunday,new,old,base,weekdays,일요일에 자요. — I sleep on Sunday.
+하나,hana,one (native),new,old,base,numbers native,사과 하나. — One apple.
+둘,dul,two (native),new,old,base,numbers native,사람 둘. — Two people.
+셋,set,three (native),new,old,base,numbers native,셋 주세요. — Three please.
+넷,net,four (native),new,old,base,numbers native,넷이에요. — It's four.
+다섯,daseot,five (native),new,old,base,numbers native,다섯 시. — Five o'clock.
+여섯,yeoseot,six (native),new,old,base,numbers native,여섯 시. — Six o'clock.
+일곱,ilgop,seven (native),new,old,base,numbers native,일곱 시. — Seven o'clock.
+여덟,yeodeol,eight (native),new,old,base,numbers native,여덟 시. — Eight o'clock.
+아홉,ahop,nine (native),new,old,base,numbers native,아홉 시. — Nine o'clock.
+열,yeol,ten (native),new,old,base,numbers native,열 명. — Ten people.
+스물,seumul,twenty (native),new,old,base,numbers native,스물 살. — Twenty years old.
+서른,seoreun,thirty (native),new,old,base,numbers native,서른 살. — Thirty years old.
+백,baek,hundred (sino),new,old,base,numbers sino,백 원. — One hundred won.
+천,cheon,thousand (sino),new,old,base,numbers sino,천 원. — One thousand won.
+만,man,ten thousand (sino),new,old,base,numbers sino,만 원. — Ten thousand won.
+앞,ap,in front of,new,old,base,place,학교 앞에. — In front of the school.
+뒤,dwi,behind,new,old,base,place,집 뒤에. — Behind the house.
+아래,arae,under,new,old,base,place,책상 아래에. — Under the desk.
+위,wi,on / above,new,old,base,place,책상 위에. — On the desk.
+안,an,inside,new,old,base,place,방 안에. — Inside the room.
+밖,bak,outside,new,old,base,place,집 밖에. — Outside the house.
+옆,yeop,beside / next to,new,old,base,place,저 옆에. — Next to me.
+올라가다,ollagada,to go up,new,old,5,movement,계단으로 올라가세요. — Go up the stairs.
+내려가다,naeryeogada,to go down,new,old,5,movement,아래로 내려가세요. — Go down.
+나가다,nagada,to go out,new,old,5,movement,밖으로 나가세요. — Go outside.
+들어가다,deureogada,to go in / enter,new,old,5,movement,안으로 들어가세요. — Go inside.
+똑바로 가다,ttokbaro gada,to go straight,new,old,5,movement,똑바로 가세요. — Go straight.
+돌아가다,doragada,to go back / go around,new,old,5,movement,돌아가세요. — Go back.
+건너가다,geonneogada,to cross over,new,old,5,movement,길을 건너가세요. — Cross the street.
+지나가다,jinagada,to pass by,new,old,5,movement,지나가세요. — Go past.
+음식,eumsik,food,new,old,1B,food,한국 음식이 맛있어요. — Korean food is delicious.
+선물,seonmul,gift,new,old,1B,objects,선물을 받아요. — I receive a gift.
+고기,gogi,meat,new,old,1B,food,고기를 먹어요. — I eat meat.
+것,geot,thing,new,old,1B,phrases,이것은 무엇이에요? — What is this?
+맛,mat,taste,new,old,1B,food,맛이 좋아요. — It tastes good.
+초밥,chobap,sushi,new,old,1B,food,초밥을 먹어요. — I eat sushi.
+받다,batda,to receive,new,old,1B,verbs,선물을 받아요. — I receive a gift.
+주문하다,jumunhada,to order (informal: 시키다),new,old,1B,verbs,음식을 주문해요. — I order food.
+가장,gajang,the most,new,old,1B,phrases,가장 좋아해요. — I like it the most.
+미안하다,mianhada,to be sorry,new,old,1B,phrases,미안해요. — I'm sorry.
+혼자,honja,alone,new,old,1B,phrases,혼자 가요. — I go alone.
+치다,chida,to play (tennis) / to hit,new,old,1B,verbs,테니스를 쳐요. — I play tennis.
+운전하다,unjeonhada,to drive,new,old,1B,verbs,운전해요. — I drive.
+조금,jogeum,a little,new,old,1B,phrases,조금 알아요. — I know a little.
+하지만,hajiman,but / however,new,old,1B,phrases,비싸요. 하지만 좋아요. — It's expensive. But it's good.
+일주일에 한 번,iljuire han beon,once a week,new,old,1B,frequency,일주일에 한 번 가요. — I go once a week.
+한 달에 한 번,han dare han beon,once a month,new,old,1B,frequency,한 달에 한 번 만나요. — We meet once a month.
+일 년에 한 번,il nyeone han beon,once a year,new,old,1B,frequency,일 년에 한 번 여행해요. — I travel once a year.
+크다,keuda,to be big,new,old,4,descriptions,집이 커요. — The house is big.
+작다,jakda,to be small,new,old,4,descriptions,방이 작아요. — The room is small.
+넓다,neolda,to be wide / spacious,new,old,4,descriptions,길이 넓어요. — The road is wide.
+좁다,jopda,to be narrow,new,old,4,descriptions,길이 좁아요. — The road is narrow.
+높다,nopda,to be high,new,old,4,descriptions,산이 높아요. — The mountain is high.
+낮다,natda,to be low,new,old,4,descriptions,책상이 낮아요. — The desk is low.
+길다,gilda,to be long,new,old,4,descriptions,머리가 길어요. — The hair is long.
+짧다,jjalda,to be short,new,old,4,descriptions,머리가 짧아요. — The hair is short.
+비싸다,bissada,to be expensive,new,old,4,descriptions,옷이 비싸요. — Clothes are expensive.
+싸다,ssada,to be cheap,new,old,4,descriptions,옷이 싸요. — Clothes are cheap.
+편하다,pyeonhada,to be comfortable,new,old,4,descriptions,의자가 편해요. — The chair is comfortable.
+불편하다,bulpyeonhada,to be uncomfortable,new,old,4,descriptions,불편해요. — It's uncomfortable.
+꿈,kkum,dream,new,old,4,phrases,꿈을 꿔요. — I have a dream.
+찾다,chatda,to look for,new,old,4,verbs,책을 찾아요. — I look for the book.
+손님,sonnim,guest / customer,new,old,4,people,손님이 와요. — A guest is coming.
+기다리다,gidarida,to wait,new,old,4,verbs,기다려 주세요. — Please wait.
+가격,gagyeok,price,new,old,4,phrases,가격이 어때요? — How is the price?
+옷차림,otcharim,outfit / attire,new,old,3,clothes,옷차림이 멋있어요. — Your outfit looks great.
+티셔츠,tisyeocheu,T-shirt,new,old,3,clothes,티셔츠를 입어요. — I wear a T-shirt.
+청바지,cheongbaji,jeans,new,old,3,clothes,청바지를 입어요. — I wear jeans.
+치마,chima,skirt,new,old,3,clothes,치마를 입어요. — I wear a skirt.
+정장,jeongjang,formal suit,new,old,3,clothes,정장을 입어요. — I wear a suit.
+운동복,undongbok,sportswear,new,old,3,clothes,운동복을 입어요. — I wear sportswear.
+매다,maeda,to put on (tie/scarf),new,old,3,clothes,넥타이를 매요. — I tie a tie.
+입다,ipda,to put on (clothes),new,old,3,clothes,옷을 입어요. — I put on clothes.
+쓰다,sseuda,to put on (cap/glasses),new,old,3,clothes,모자를 써요. — I put on a hat.
+신다,sinda,to put on (shoes),new,old,3,clothes,신발을 신어요. — I put on shoes.
+결혼식,gyeolhonsik,wedding,new,old,3,events,결혼식에 가요. — I'm going to a wedding.
+아직,ajik,still / yet,new,old,3,phrases,아직 안 했어요. — I haven't done it yet.
+이따가,ittaga,later (today),new,old,3,time,이따가 봐요. — See you later.
+계획,gyehoek,plan,new,old,3,phrases,계획이 있어요. — I have a plan.
+이유,iyu,reason,new,old,3,phrases,이유가 뭐예요? — What's the reason?
+채소,chaeso,vegetables (also: 야채),new,old,3,food,채소를 먹어요. — I eat vegetables.
+너무,neomu,too / very,new,old,3,phrases,너무 비싸요. — Too expensive.
+운동화,undonghwa,sneakers,new,old,3,clothes,운동화를 신어요. — I wear sneakers.
+기차역,gichayeok,train station,new,old,3,place,기차역이 어디예요? — Where is the train station?
+취미,chwimi,hobby,new,old,2,hobbies,취미가 뭐예요? — What's your hobby?
+그림,geurim,picture / drawing,new,old,2,hobbies,그림이 예뻐요. — The picture is pretty.
+노래,norae,song,new,old,2,hobbies,노래가 좋아요. — The song is good.
+신문,sinmun,newspaper,new,old,2,objects,신문을 읽어요. — I read the newspaper.
+사무실,samusil,office,new,old,2,place,사무실에 가요. — I'm going to the office.
+옷장,otjang,wardrobe,new,old,2,objects,옷장이 커요. — The wardrobe is big.
+독서,dokseo,reading,new,old,2,hobbies,독서를 좋아해요. — I like reading.
+전,jeon,ago / before,new,old,2,time,1년 전에. — One year ago.
+빌리다,billida,to borrow,new,old,2,verbs,책을 빌려요. — I borrow a book.
+그리다,geurida,to draw,new,old,2,verbs,그림을 그려요. — I draw a picture.
+돈을 찾다,doneul chatda,to withdraw money,new,old,2,phrases,돈을 찾아요. — I withdraw money.
+보통,botong,usually,new,old,2,frequency,보통 8시에 일어나요. — I usually get up at 8.
+특히,teukhi,particularly / especially,new,old,2,phrases,특히 좋아해요. — I particularly like it.
+년,nyeon,year,new,old,2,time,2년 동안. — For 2 years.
+박물관,bakmulgwan,museum,new,old,5,place,박물관에 가요. — I'm going to the museum.
+지하,jiha,basement / underground,new,old,5,place,지하에 주차장이 있어요. — There's a parking lot in the basement.
+길,gil,road / street,new,old,5,place,길이 너무 좁아요. — The road is too narrow.
+생일,saengil,birthday,new,old,5,events,오늘은 제 생일이에요. — Today is my birthday.
+걸리다,geollida,to take (time),new,old,5,verbs,얼마나 걸려요? — How long does it take?
+시장,sijang,market,new,old,5,place,시장에서 야채를 사요. — I buy vegetables at the market.
+비행기,bihaenggi,airplane,new,old,6,transport,비행기로 공항에 가요. — I'm going to the airport by plane.
+기차,gicha,train,new,old,6,transport,기차를 타고 부산에 가요. — I'm taking the train to Busan.
+무섭다,museopda,to be scary,new,old,5,state,저는 무서운 영화를 좋아해요. — I like scary movies.
+스페인어,seupeineo,Spanish (language),new,old,5,phrases,스페인어를 어떻게 배웠어요? — How did you learn Spanish?
+쯤,jjeum,about / approximately,new,old,5,phrases,시간이 한 시간쯤 걸려요. — It takes about one hour.
+테니스장,teniseujang,tennis court,new,old,5,place,학교 테니스장에서 테니스를 쳐요. — I play tennis at the school tennis court.
+저쪽,jeojjok,over there,new,old,5,place,교실은 저쪽에 있어요. — The classroom is over there.
+시청,sicheong,city hall,new,old,5,place,시청이 어디에 있어요? — Where is the city hall?
+엘리베이터,ellibeiteo,elevator,new,old,5,place,엘리베이터는 왼쪽에 있어요. — The elevator is on the left.
+병원,byeongwon,hospital,new,old,5,place,"병원에서 왼쪽으로 가세요. — From the hospital, go left."
+알다,alda,to know,new,old,5,verbs,한국병원을 알아요? — Do you know Korea Hospital?
+그러면,geureomyeon,then / in that case,new,old,5,phrases,오른쪽으로 가세요. 그러면 은행이 있어요. — Go right. Then there's a bank.
+빵집,ppangjip,bakery,new,old,5,place,빵집 앞에서 길을 건너세요. — Cross the road in front of the bakery.
+약국,yakguk,pharmacy,new,old,5,place,약국 옆에 우리 집이 있어요. — Our house is next to the pharmacy.
+지도,jido,map,new,old,5,objects,지도를 보고 길을 찾아 보세요. — Look at the map and try to find the way.
+교통수단,gyotongsudan,transportation,new,old,6,transport,여러분이 자주 타는 교통수단은 뭐예요? — What transportation do you often use?
+우체국,uchaeguk,post office,new,old,6,place,은행은 우체국 옆에 있어요. — The bank is next to the post office.
+오토바이,otobai,motorcycle,new,old,6,transport,집에 오토바이를 타고 가요. — I go home by motorcycle.
+택시,taeksi,taxi,new,old,6,transport,백화점에 택시를 타고 갔어요. — I took a taxi to the department store.
+지하철,jihacheol,subway,new,old,6,transport,학교에 지하철을 타고 가요. — I go to school by subway.
+갈아타다,garatada,to transfer,new,old,6,verbs,버스로 갈아타요. — Transfer to the bus.
+내리다,naerida,to get off,new,old,6,verbs,택시에서 내려요. — Get off the taxi.
+가깝다,gakkapda,to be close / near,new,old,6,descriptions,집에서 회사까지 가까워요. — It's close from home to the company.
+멀다,meolda,to be far,new,old,6,descriptions,세종학당은 집에서 멀어요. — Sejong Institute is far from home.
+정류장,jeongnyujang,bus stop,new,old,6,place,버스 정류장에서 호텔까지 어떻게 가요? — How do I get from the bus stop to the hotel?
+호텔,hotel,hotel,new,old,6,place,공항에서 호텔까지 어떻게 가요? — How do I get from the airport to the hotel?
+차,cha,car,new,old,6,transport,제 차를 타고 가요. — I'll take my car.
+간식,gansik,snack,new,old,6,food,간식은 뭘 살까요? — What snack should we buy?
+싫어하다,sireohada,to dislike,new,old,6,verbs,저는 쇼핑을 싫어해요. — I dislike shopping.
+미술관,misulgwan,art museum,new,old,6,place,오늘 오후에 미술관에 갈까요? — Shall we go to the art museum this afternoon?
+산,san,mountain,new,old,7,nature,산이 높아요. — The mountain is high.
+섬,seom,island,new,old,7,nature,섬이 많아요. — There are many islands.
+도시,dosi,city,new,old,7,place,도시가 커요. — The city is big.
+호수,hosu,lake,new,old,7,nature,호수가 아름다워요. — The lake is beautiful.
+약,yak,medicine,new,old,7,objects,약을 먹어요. — I take medicine.
+여권,yeogwon,passport,new,old,7,travel,여권을 만들어요. — I make a passport.
+수영복,suyeongbok,swimsuit,new,old,7,travel,수영복을 사요. — I buy a swimsuit.
+구경,gugyeong,sightseeing,new,old,7,travel,구경을 해요. — I go sightseeing.
+맛집,matjip,popular restaurant,new,old,7,place,맛집에 가요. — I'm going to a popular restaurant.
+경주,Gyeongju,Gyeongju (city),new,old,7,place,경주로 여행을 갈 거예요. — I will travel to Gyeongju.
+닭갈비,dakgalbi,dakgalbi (spicy stir-fried chicken),new,old,7,food,오늘 저녁에 닭갈비를 먹으려고 해요. — I plan to eat dakgalbi tonight.
+휴가,hyuga,vacation,new,old,7,travel,이번 휴가에 여행을 가려고 해요. — I plan to travel on this vacation.
+자르다,jareuda,to cut,new,old,7,verbs,머리를 자르려고 해요. — I plan to cut my hair.
+불국사,Bulguksa,Bulguksa Temple,new,old,7,place,경주에 가려고 해요. 불국사에 가고 박물관에도 가려고 해요. — I plan to go to Gyeongju. I plan to visit Bulguksa and the museum too.
+설악산,Seoraksan,Seoraksan Mountain,new,old,7,place,친구들하고 설악산으로 여행을 가요. — I'm going on a trip to Seoraksan with friends.
+밤,bam,night,new,old,7,time,밤에 친구들과 파티를 하려고 해요. — I plan to have a party with friends at night.
+등산화,deungsanhwa,hiking boots,new,old,7,travel,등산화를 사려고 해요. — I plan to buy hiking boots.
+선글라스,seongeullaseu,sunglasses,new,old,7,travel,선글라스를 샀어요. — I bought sunglasses.
+준비하다,junbihada,to prepare,new,old,7,verbs,여행을 준비해요. — I prepare for the trip.
+작년,jangnyeon,last year,new,old,8,time,작년에 한국에 갔어요. — I went to Korea last year.
+후에,hue,after,new,old,7,time,수업 후에 만나요. — Let's meet after class.
+힘들다,himdeulda,to be hard / difficult,new,old,10,state,일이 힘들어요. — Work is hard.
+오래,orae,a long time,new,old,7,time,오래 기다렸어요. — I waited a long time.
+방학,banghak,school vacation,new,old,7,time,방학에 여행을 가요. — I travel during the school vacation.
+청소하다,cheongsohada,to clean,new,old,7,verbs,방을 청소해요. — I clean the room.
+이를 닦다,ireul dakda,to brush teeth,new,old,8,verbs,이를 닦아요. — I brush my teeth.
+세수하다,sesuhada,to wash one's face,new,old,7,verbs,아침에 세수해요. — I wash my face in the morning.
+설거지하다,seolgeojihada,to wash dishes,new,old,8,verbs,설거지를 해요. — I do the dishes.
+많다,manta,to be many / a lot,new,old,4,descriptions,사람이 많아요. — There are many people.
+깨끗하다,kkaekkeutada,to be clean,new,old,4,descriptions,방이 깨끗해요. — The room is clean.
+재미있다,jaemiitda,to be fun / interesting,new,old,4,descriptions,영화가 재미있어요. — The movie is fun.
+무겁다,mugeopda,to be heavy,new,old,4,descriptions,가방이 무거워요. — The bag is heavy.
+좋다,jota,to be good,new,old,4,descriptions,날씨가 좋아요. — The weather is good.
+기쁘다,gippeuda,to be glad,new,old,4,state,만나서 기뻐요. — I'm glad to meet you.
+빠르다,ppareuda,to be fast,new,old,4,descriptions,차가 빨라요. — The car is fast.
+적다,jeokda,to be few,new,old,4,descriptions,사람이 적어요. — There are few people.
+더럽다,deoreopda,to be dirty,new,old,4,descriptions,방이 더러워요. — The room is dirty.
+재미없다,jaemieopda,to be uninteresting,new,old,4,descriptions,수업이 재미없어요. — The class is boring.
+가볍다,gabyeopda,to be light (weight),new,old,4,descriptions,가방이 가벼워요. — The bag is light.
+느리다,neurida,to be slow,new,old,4,descriptions,버스가 느려요. — The bus is slow.
+춥다,chupda,to be cold,new,old,4,weather,겨울이 추워요. — Winter is cold.
+따뜻하다,ttatteutada,to be warm,new,old,4,weather,봄이 따뜻해요. — Spring is warm.
+쌀쌀하다,ssalssalhada,to be cool / chilly,new,old,4,weather,날씨가 쌀쌀해요. — The weather is chilly.
+맑다,makda,to be clear (weather),new,old,4,weather,하늘이 맑아요. — The sky is clear.
+흐리다,heurida,to be cloudy,new,old,4,weather,날씨가 흐려요. — The weather is cloudy.
+나라,nara,country,new,old,7,place,어느 나라에서 왔어요? — Which country are you from?
+쪽,jjok,page,new,old,7,objects,몇 쪽이에요? — What page is it?
+빨리,ppalli,quickly,new,old,7,time,빨리 오세요. — Please come quickly.
+아름답다,areumdapda,to be beautiful,new,old,7,descriptions,꽃이 아름다워요. — The flower is beautiful.
+유명하다,yumyeonghada,to be famous,new,old,8,descriptions,이 식당이 유명해요. — This restaurant is famous.
+다음,daeum,next,new,old,8,time,다음 주에 만나요. — Let's meet next week.
+주부,jubu,housewife,new,old,7,people,저는 주부예요. — I'm a housewife.
+남자,namja,man,new,old,7,people,저 남자가 누구예요? — Who is that man?
+여자,yeoja,woman,new,old,7,people,저 여자가 친구예요. — That woman is my friend.
+귤,gyul,mandarin (fruit),new,old,8,food,귤이 맛있어요. — Mandarins are delicious.
+기타,gita,guitar,new,old,2,hobbies,기타를 쳐요. — I play guitar.
+헬스클럽,helseukeulleop,gym,new,old,2,place,헬스클럽에 가요. — I go to the gym.
+그래서,geuraeseo,so / therefore,new,old,2,phrases,피곤해요. 그래서 자요. — I'm tired. So I sleep.
+바지,baji,pants,new,old,3,clothes,바지를 입어요. — I wear pants.
+떡,tteok,rice cake,new,old,3,food,떡을 먹어요. — I eat rice cake.
+인터넷,inteonet,internet,new,old,3,objects,인터넷을 해요. — I use the internet.
+머리,meori,hair / head,new,old,4,body,머리가 길어요. — The hair is long.
+귀엽다,gwiyeopda,to be cute,new,old,4,descriptions,고양이가 귀여워요. — The cat is cute.
+잠,jam,sleep,new,old,4,phrases,잠을 자요. — I sleep.
+점원,jeomwon,clerk,new,old,4,people,점원이 친절해요. — The clerk is kind.
+사이즈,saijeu,size,new,old,4,objects,사이즈가 어때요? — How's the size?
+죄송하다,joesonghada,to be sorry (formal),new,old,4,phrases,죄송합니다. — I'm sorry.
+잠시,jamsi,a moment,new,old,4,time,잠시만 기다리세요. — Please wait a moment.
+보이다,boida,to show,new,old,4,verbs,바지를 보여 주세요. — Please show me the pants.
+경험,gyeongheom,experience,new,old,8,phrases,여행 경험을 이야기해요. — I talk about my travel experience.
+거리,geori,street,new,old,8,place,거리 구경을 해요. — I sightsee the streets.
+축제,chukje,festival,new,old,8,events,축제에 가요. — I go to a festival.
+전통 시장,jeontong sijang,traditional market,new,old,8,place,전통 시장에 가요. — I go to a traditional market.
+새롭다,saeropda,to be new,new,old,8,descriptions,새로운 음식을 먹어요. — I eat new food.
+공연,gongyeon,performance,new,old,8,events,거리 공연을 봐요. — I watch a street performance.
+삼계탕,samgyetang,samgyetang (ginseng chicken soup),new,old,8,food,삼계탕을 먹어요. — I eat samgyetang.
+명동,Myeongdong,Myeong-dong,new,old,8,place,명동에 가요. — I go to Myeong-dong.
+인사동,Insadong,Insa-dong,new,old,8,place,인사동에서 전통 음식을 먹었어요. — I ate traditional food in Insa-dong.
+멋있다,meositda,to be cool / fantastic,new,old,8,descriptions,가수가 멋있어요. — The singer is cool.
+끝나다,kkeutnada,to finish / end,new,old,8,verbs,수업이 끝났어요. — Class is over.
+이,i,tooth,new,old,8,body,이가 아파요. — My tooth hurts.
+닦다,dakda,to clean / wipe,new,old,8,verbs,창문을 닦아요. — I clean the window.
+설거지,seolgeoji,dishwashing,new,old,8,phrases,설거지를 해요. — I do the dishes.
+샤워하다,syawohada,to shower,new,old,8,verbs,샤워해요. — I shower.
+더,deo,more,new,old,8,phrases,더 비싸요. — It's more expensive.
+다녀오다,danyeooda,to come back / go and return,new,old,8,verbs,여행 잘 다녀왔어요. — I had a good trip.
+지난번,jinanbeon,last time,new,old,8,time,지난번보다 좋았어요. — It was better than last time.
+괜찮다,gwaenchanta,to be fine / all right,new,old,8,phrases,괜찮아요. — It's okay.
+바닷가,badatga,beach,new,old,8,place,바닷가에서 산책했어요. — I walked at the beach.
+푹,puk,really / deeply / soundly,new,old,8,phrases,푹 쉬었어요. — I rested well.
+끝,kkeut,end,new,old,8,phrases,축제를 끝까지 봤어요. — I watched the festival to the end.
+먼저,meonjeo,first / before,new,old,8,phrases,먼저 가세요. — Go first.
+경복궁,Gyeongbokgung,Gyeongbokgung Palace,new,old,8,place,경복궁을 구경했어요. — I sightsaw Gyeongbokgung.
+외국 사람,oeguk saram,foreigner,new,old,8,people,외국 사람이 많았어요. — There were many foreigners.
+날,nal,day,new,old,8,time,다음 날에 갔어요. — I went the next day.
+참,cham,really / very,new,old,8,phrases,참 재미있었어요. — It was really fun.
+다시,dasi,again,new,old,8,phrases,다시 가고 싶어요. — I want to go again.
+증상,jeungsang,symptom,new,old,9,body,증상이 어때요? — How are the symptoms?
+눈,nun,eye,new,old,9,body,눈이 커요. — The eyes are big.
+귀,gwi,ear,new,old,9,body,귀가 작아요. — The ears are small.
+코,ko,nose,new,old,9,body,코가 아파요. — My nose hurts.
+입,ip,mouth,new,old,9,body,입이 커요. — The mouth is big.
+목,mok,throat / neck,new,old,9,body,목이 아파요. — My throat hurts.
+팔,pal,arm,new,old,9,body,팔이 짧아요. — The arm is short.
+손,son,hand,new,old,9,body,손이 작아요. — The hand is small.
+다리,dari,leg,new,old,9,body,다리가 길어요. — The legs are long.
+발,bal,foot,new,old,9,body,발이 커요. — The feet are big.
+감기,gamgi,cold (illness),new,old,9,body,감기에 걸렸어요. — I caught a cold.
+열이 나다,yeori nada,to have a fever,new,old,9,body,열이 나요. — I have a fever.
+콧물,kotmul,runny nose,new,old,9,body,콧물이 나요. — I have a runny nose.
+기침,gichim,cough,new,old,9,body,기침을 해요. — I cough.
+몸,mom,body (formal: 신체),new,old,9,body,오늘은 몸이 어때요? — How is your body today?
+복잡하다,bokjapada,to be crowded / complicated,new,old,9,descriptions,길이 복잡해요. — The street is crowded.
+아까,akka,a moment ago,new,old,10,time,아까 길이 복잡했어요. — The street was crowded a moment ago.
+단어,daneo,word,new,old,10,study,단어를 외워요. — I memorize words.
+외우다,oeuda,to memorize,new,old,10,verbs,단어를 외워요. — I memorize words.
+드시다,deusida,to eat / drink (honorific),new,old,10,verbs,맛있게 드세요. — Eat well (enjoy).
+계속,gyesok,continuously,new,old,10,phrases,머리가 계속 아파요. — My head hurts continuously.
+넣다,neota,to put in,new,old,10,verbs,약을 넣어요. — I put in the medicine.
+이제,ije,now / from now,new,old,10,time,이제 안 할 거예요. — I won't do it from now on.
+건강하다,geonganghada,to be healthy,new,old,10,state,몸이 건강해요. — The body is healthy.
+생활,saenghwal,life / lifestyle,new,old,10,phrases,생활이 어때요? — How is life?
+꼭,kkok,surely / definitely,new,old,10,phrases,꼭 오세요. — Please definitely come.
+웃다,utda,to laugh / smile,new,old,10,verbs,많이 웃어요. — I laugh a lot.
+지키다,jikida,to keep / protect,new,old,10,verbs,약속을 지켜요. — I keep my promise.
+퇴근,toegeun,leaving work,new,old,10,time,퇴근 후에 만나요. — Let's meet after work.
+요가,yoga,yoga,new,old,10,hobbies,요가를 해요. — I do yoga.
+대학교,daehakgyo,university,new,old,10,place,대학교에 다녀요. — I attend university.
+졸업하다,joreopada,to graduate,new,old,10,verbs,대학교를 졸업했어요. — I graduated from university.
+팝콘,papkon,popcorn,new,old,10,food,팝콘을 먹어요. — I eat popcorn.
+해외여행,haeoeyeohaeng,overseas trip,new,old,10,phrases,해외여행을 가요. — I go on an overseas trip.
+초대하다,chodaehada,to invite,new,old,10,verbs,친구를 초대해요. — I invite a friend.
+샐러드,saelleodeu,salad,new,old,10,food,샐러드를 먹어요. — I eat salad.
+제일,jeil,the most / best,new,old,10,phrases,제일 좋아해요. — I like it the most.
+습관,seupgwan,habit,new,old,10,phrases,좋은 습관이 있어요. — I have a good habit.
+손을 씻다,soneul ssitda,to wash hands,new,old,7,verbs,손을 씻어요. — I wash my hands.
+빨래하다,ppallaehada,to do laundry,new,old,7,verbs,빨래해요. — I do the laundry.
+바퀴벌레,bakwibeolle,cockroach,new,old,7,nature,바퀴벌레가 무서워요. — Cockroaches are scary.
+새 옷,sae ot,new clothes,new,old,4,clothes,새 옷을 샀어요. — I bought new clothes.
+여행 경험,yeohaeng gyeongheom,travel experience,new,old,8,phrases,여행 경험을 이야기해요. — I talk about travel experience.
+테니스를 치다,teniseureul chida,to play tennis,new,old,2,hobbies,테니스를 쳐요. — I play tennis.
+모두,modu,all / everyone,new,old,8,phrases,모두 같이 가요. — Let's all go together.
+낫다,natda,to get better / recover,new,old,9,verbs,감기가 다 나았어요. — My cold is all gone.
+고향,gohyang,hometown,new,old,8,place,고향이 어디예요? — Where is your hometown?
+모임,moim,gathering / meeting,new,old,11,event,반 모임을 준비해요. — We're preparing a class gathering.
+정하다,jeonghada,to decide / set,new,old,11,verb,시간을 정해요. — Let's set the time.
+예약하다,yeyakhada,to make a reservation,new,old,11,verb,장소를 예약해요. — I reserve the place.
+연락,yeollak,contact,new,old,11,communication,연락을 해요. — I get in touch.
+스키,seuki,ski,new,old,11,activity,스키를 탈 수 있어요. — I can ski.
+전화,jeonhwa,phone / phone call,new,old,11,communication,지금 전화를 받을 수 없어요. — I can't answer the phone now.
+다치다,dachida,to get hurt,new,old,11,verb,어제 다리를 다쳤어요. — I hurt my leg yesterday.
+모이다,moida,to gather (intr.),new,old,11,verb,주노 씨 집에서 모일까요? — Shall we gather at Juno's place?
+결혼,gyeolhon,marriage,new,old,11,event,결혼을 축하해요. — Congratulations on your marriage.
+축하,chukha,congratulations / celebration,new,old,11,event,생일 축하 파티는 어디에서 할까요? — Where shall we hold the birthday party?
+초대장,chodaejang,invitation card,new,old,11,event,안나 씨가 초대장을 썼어요. — Anna wrote the invitation.
+함께,hamkke,together,new,old,11,adverb,친구들하고 함께 케이크를 먹었어요. — I ate cake together with friends.
+부르다,bureuda,to sing / to call,new,old,11,verb,한국 노래를 부릅니다. — I sing Korean songs.
+춤,chum,dance,new,old,11,activity,춤도 배울 수 있습니다. — You can also learn to dance.
+매주,maeju,every week,new,old,11,time,우리는 매주 화요일에 모이고 있습니다. — We gather every Tuesday.
+소강당,sogangdang,small auditorium / hall,new,old,11,place,3층 소강당에서 모임을 해요. — We have the meeting in the small hall on the 3rd floor.
+문의,munui,inquiry,new,old,11,communication,이 전화번호로 문의를 하세요. — Please make inquiries at this number.
+졸업식,joreopsik,graduation ceremony,new,old,12,event,동생 졸업식에 시계를 줄 거예요. — I'll give my sibling a watch for graduation.
+어버이날,eobeoinal,Parents' Day,new,old,12,event,어버이날에 꽃을 선물했어요. — I gave flowers for Parents' Day.
+어린이날,eorininal,Children's Day,new,old,12,event,어린이날에 게임기를 주고 싶어요. — I want to give a game console for Children's Day.
+명절,myeongjeol,national holiday,new,old,12,event,명절 선물을 준비했어요. — I prepared holiday gifts.
+최근,choegeun,recently / lately,new,old,12,time,최근에 무슨 선물을 받았어요? — What gift did you get recently?
+지갑,jigap,wallet,new,old,12,objects,졸업식에 지갑을 받았어요. — I got a wallet at graduation.
+게임기,geimgi,game console,new,old,12,objects,생일에 게임기를 받고 싶어요. — I want a game console for my birthday.
+보내다,bonaeda,to send,new,old,12,verb,형한테 사진을 보내고 있어요. — I'm sending photos to my older brother.
+누나,nuna,older sister (male's),new,old,12,family,누나에게 전화했어요. — I called my older sister.
+편지,pyeonji,letter,new,old,12,objects,친구에게 편지를 보낼 거예요. — I'll send a letter to my friend.
+카드,kadeu,card,new,old,12,objects,동생한테 축하 카드를 썼어요. — I wrote a congratulations card to my sibling.
+메시지,mesiji,text message,new,old,12,communication,리사 씨에게 메시지를 보냈어요. — I sent a message to Lisa.
+인형,inhyeong,doll,new,old,12,objects,수지 씨는 인형을 좋아해요. — Suji likes dolls.
+졸업,joreop,graduation,new,old,12,event,졸업 선물은 준비했어요? — Did you prepare a graduation gift?
+생각,saenggak,idea / thought,new,old,12,abstract,좋은 생각이에요. — That's a good idea.
+오래되다,oraedoeda,to be old (of things),new,old,12,verb,지갑이 오래되었어요. — The wallet is old.
+고등학교,godeunghakgyo,high school,new,old,12,place,동생이 고등학교에 다녀요. — My sibling goes to high school.
+입학식,iphaksik,entrance ceremony,new,old,12,event,내일이 동생 입학식이에요. — Tomorrow is my sibling's entrance ceremony.
+표,pyo,ticket,new,old,12,objects,친구한테 콘서트 표를 주었어요. — I gave a concert ticket to my friend.
+그릇,geureut,bowl,new,old,12,objects,리사 씨에게 그릇을 선물했어요. — I gave a bowl to Lisa.
+처음,cheoeum,first / first time,new,old,12,adverb,케이크를 처음 만들어서 예쁘지 않아요. — It's my first time making cake so it's not pretty.
+식사하다,siksahada,to have a meal / eat,new,old,extra,verb,식사했어요? — Have you eaten?
+청국장,cheongukjang,cheonggukjang (fermented soybean stew),new,old,extra,food,청국장을 먹어 봤어요. — I tried cheonggukjang.
+과일,gwail,fruit,new,old,extra,food,과일을 좋아해요. — I like fruit.
+취직하다,chwijikhada,to get a job,new,old,extra,verb,회사에 취직했어요. — I got a job at a company.
+등장하다,deungjanghada,to appear / show up,new,old,extra,verb,새 모델이 등장했어요. — A new model appeared.
+끄다,kkeuda,to turn off,new,old,extra,verb,불을 꺼야 해요. — I have to turn off the light.
+내다,naeda,to pay / submit,new,old,extra,verb,수업료를 내야 해요. — I have to pay the tuition.
+끝내다,kkeunnaeda,to finish,new,teacher,1-1,verb,숙제를 끝냈어요. — I finished my homework.
+나중에,najunge,later,new,teacher,1-1,time,나중에 전화할게요. — I'll call later.
+장을 보다,jangeul boda,to go grocery shopping,new,teacher,1-1,activity,주말에 장을 봐요. — I go grocery shopping on weekends.
+돈을 모으다,doneul moeuda,to save money,new,teacher,1-1,verb,여행하려고 돈을 모아요. — I'm saving money to travel.
+연습하다,yeonseuphada,to practice,new,teacher,1-1,study,한국어를 연습해요. — I practice Korean.
+말하기,malhagi,speaking,new,teacher,1-1,communication,말하기가 어려워요. — Speaking is difficult.
+약을 먹다,yageul meokda,to take medicine,new,teacher,1-1,verb,약을 먹어야 해요. — I have to take medicine.
+확인하다,hwaginhada,to check,new,teacher,1-1,verb,이메일을 확인했어요. — I checked the email.
+곧,got,soon,new,teacher,1-1,time,곧 도착해요. — I'll arrive soon.
+조심하다,josimhada,to be careful,new,teacher,1-1,verb,"길이 미끄러우니까 조심하세요. — Be careful, the road is slippery."
+더 열심히,deo yeolsimhi,harder,new,teacher,1-1,adverb,더 열심히 공부할 거예요. — I will study harder.
+꾸준히,kkujunhi,consistently,new,teacher,1-1,frequency,꾸준히 운동해요. — I exercise consistently.
+가져오다,gajyeooda,to bring,new,teacher,1-1,verb,물을 가져오세요. — Please bring water.
+돈을 내다,doneul naeda,to pay,new,teacher,1-1,verb,제가 돈을 낼게요. — I'll pay.
+아무것도,amugeotdo,anything / nothing (with negative),new,teacher,1-1,phrases,아무것도 안 했어요. — I didn't do anything.
+방,bang,room,new,teacher,1-1,place,방이 깨끗해요. — The room is clean.
+소개하다,sogaehada,to introduce,new,teacher,1-1,communication,친구를 소개할게요. — I'll introduce my friend.
+빌려주다,billyeojuda,to lend,new,teacher,1-1,verb,책을 빌려주세요. — Please lend me the book.
+가르치다,gareuchida,to teach,new,teacher,1-1,study,한국어를 가르쳐요. — I teach Korean.
+돕다,dopda,to help,new,teacher,1-1,verb,친구를 도와줘요. — I help my friend.
+주다,juda,to give,new,teacher,1-1,verb,선물을 줬어요. — I gave a gift.
+그 여자,geu yeoja,she / that woman,new,teacher,1-1,people,그 여자는 의사예요. — She is a doctor.
+말하다,malhada,to speak / say,new,teacher,1-1,communication,천천히 말해 주세요. — Please speak slowly.
+할인,harin,discount,new,teacher,1-1,abstract,할인을 받았어요. — I got a discount.
+묻다,mutda,to ask,new,teacher,1-1,questions,길을 물어봤어요. — I asked for directions.
+항상,hangsang,always,new,teacher,1-1,frequency,항상 바빠요. — I'm always busy.
+형,hyeong,older brother (of a male),new,teacher,1-1,family,우리 형은 키가 커요. — My older brother is tall.
+위하다,wihada,to do for the sake of,new,teacher,1-1,verb,가족을 위해 일해요. — I work for my family.
+아/어 주다,a/eo juda,to do (something) for someone,new,teacher,1-1,phrases,도와줘서 고마워요. — Thanks for helping me.
+어울리다,eoullida,to suit / go well together,new,conversation,1-2,descriptions,이 옷이 잘 어울려요. — This outfit suits you well.
+지난가을,jinan-gaeul,last autumn,new,conversation,1-2,time,지난가을에 여행을 갔어요. — I traveled last autumn.
+행복하다,haengbokhada,to be happy,new,conversation,1-2,state,요즘 정말 행복해요. — I'm really happy these days.
+동대문시장,dongdaemun-sijang,Dongdaemun Market,new,conversation,1-2,place,동대문시장에서 옷을 샀어요. — I bought clothes at Dongdaemun Market.
+소설,soseol,novel,new,conversation,1-2,hobbies,소설을 읽어요. — I read a novel.
+놀이 기구,nori gigu,amusement ride,new,conversation,1-2,hobbies,놀이 기구를 탔어요. — I rode the attractions.
+여기저기 돌아다니다,yeogijeogi doradanida,to wander around,new,conversation,1-2,movement,여기저기 돌아다녔어요. — I wandered here and there.
+사인을 받다,saineul batda,to get an autograph,new,conversation,1-2,phrases,가수한테 사인을 받았어요. — I got the singer's autograph.
+따라 부르다,ttara bureuda,to sing along,new,conversation,1-2,verb,노래를 따라 불렀어요. — I sang along to the song.
+문화 센터,munhwa senteo,culture center,new,conversation,1-2,place,문화 센터에서 요가를 배워요. — I learn yoga at the culture center.
+게임을 하다,geimeul hada,to play games,new,conversation,1-2,hobbies,친구하고 게임을 해요. — I play games with friends.
+라면을 먹다,ramyeoneul meokda,to eat ramen,new,conversation,1-2,food,집에서 라면을 먹어요. — I eat ramen at home.
+영화를 보다,yeonghwareul boda,to watch a movie,new,conversation,1-2,hobbies,주말에 영화를 봐요. — I watch movies on weekends.
+요리를 배우다,yorireul baeuda,to learn cooking,new,conversation,1-2,hobbies,문화 센터에서 요리를 배워요. — I learn cooking at the culture center.
+요가를 하다,yogareul hada,to do yoga,new,conversation,1-2,sports,매일 아침 요가를 해요. — I do yoga every morning.
+수영을 배우다,suyeongeul baeuda,to learn swimming,new,conversation,1-2,sports,요즘 수영을 배워요. — I'm learning to swim these days.
+낮잠을 자다,natjameul jada,to take a nap,new,conversation,1-2,verb,오후에 낮잠을 자요. — I take a nap in the afternoon.
+집안일을 하다,jibanireul hada,to do housework,new,conversation,1-2,verb,주말에 집안일을 해요. — I do housework on weekends.
+공연장,gongyeonjang,performance hall / concert venue,new,conversation,1-2,place,공연장에서 콘서트를 봤어요. — I watched a concert at the venue.
+기구를 타다,gigureul tada,to ride an attraction,new,conversation,1-2,hobbies,놀이공원에서 기구를 탔어요. — I rode the rides at the amusement park.
+신청하다,sincheonghada,to apply / sign up / request,new,conversation,1-2,verb,문화 센터에서 요가 수업을 신청했어요. — I signed up for a yoga class at the culture center.
+서두르다,seodureuda,to hurry,new,teacher,1-1,verb,서두르지 마세요. — Don't hurry. (르-irregular: 서둘러요)
+하루 종일,haru jongil,all day long,new,teacher,1-1,time,하루 종일 집에 있었어요. — I was home all day long.
+가져가다,gajyeogada,to take (bring there),new,teacher,1-1,verb,우산을 가져가세요. — Take an umbrella with you.
+열심히,yeolsimhi,hard / diligently,new,teacher,1-1,adverb,열심히 공부해요. — I study hard.
+당장,dangjang,right away / immediately,new,teacher,1-1,adverb,당장 시작해요. — Let's start right away.

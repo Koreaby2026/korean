@@ -4,7 +4,20 @@
 
 - **`index.html`** — 🌐 web app (open in browser, fully local). 3 tabs: Words / Sentences / Reading.
 - **`serve.sh`** — local server for phone access
-- **`vocab.csv`** — main DB. 191 words (67 forgotten 🔥, 124 new) from your handwritten cards: Units 1B, 2, 3, 4, 5 + base numbers/days/positions. Columns: `korean,romanization,translation,status,unit,topic,example`.
+- **`vocab.csv`** — main DB. Columns: `korean,romanization,translation,status,category,unit,topic,example`. The `category` column decides which deck (and which download link) a word belongs to.
+
+## 📦 Category decks (separate download links)
+
+Each category builds into its own `.apkg` so you can import just one at a time — they stay separate from each other:
+
+| Category | Words | Deck | Download link |
+|---|---|---|---|
+| `old` (старые карточки) | 414 | `Korean::Unit X` | https://koreaby2026.github.io/korean/korean.apkg |
+| `teacher` (занятия с учителем, 1-1) | 34 | `Korean 1-1` | https://koreaby2026.github.io/korean/korean_teacher.apkg |
+| `conversation` (учебник) | 21 | `Korean Conversation` | https://koreaby2026.github.io/korean/korean_conversation.apkg |
+| `always-forget` (не запоминаются) | — | `Korean Always Forget` | https://koreaby2026.github.io/korean/korean_forget.apkg *(появится, когда добавим слова)* |
+
+Regenerate all decks after editing `vocab.csv`: `python build_anki.py`.
 - **`sentences.json`** — 30 sentences for full-translation practice
 - **`texts.json`** — 6 short reading texts at TOPIK 1B level with glossaries
 - **`quiz.py`** — terminal-based quiz (alternative to web; words only)
