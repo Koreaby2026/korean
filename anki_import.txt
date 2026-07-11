@@ -481,3 +481,25 @@
 충전기	charger [chungjeongi]  충전기 좀 빌려주세요. — Please lend me a charger.	new teacher unit1-1 objects
 강아지	dog / puppy [gangaji]  강아지가 귀여워요. — The dog is cute.	new teacher unit1-1 nature
 당신	you (formal) [dangsin]  당신을 사랑해요. — I love you.	new teacher unit1-1 people
+돕다	to help [dopda]  제가 이사를 도울까요? — Shall I help you move? (ㅂ-irr: 도와요)	new always-forget unitforget verb
+준비하다	to prepare [junbihada]  저녁 식사를 준비할까요? — Shall I prepare dinner?	new always-forget unitforget verb
+찍다	to take (a photo) [jjikda]  사진을 찍을까요? — Shall we take a photo?	new conversation unit1-3 verb
+만들다	to make [mandeulda]  같이 김밥을 만들까요? — Shall we make gimbap together?	new conversation unit1-3 verb
+듣다	to listen [deutda]  한국 음악을 들을까요? — Shall we listen to Korean music? (ㄷ-irr: 들어요)	new conversation unit1-3 verb
+김밥	gimbap [gimbap]  김밥이 맛있어요. — Gimbap is delicious.	new conversation unit1-3 food
+이사하다	to move (house) [isahada]  주말에 이사해요. — I'm moving this weekend.	new conversation unit1-3 verb
+산책하다	to take a walk [sanchaekhada]  공원에서 산책할까요? — Shall we take a walk in the park?	new conversation unit1-3 activity
+공부하다	to study [gongbuhada]  같이 한국어를 공부할까요? — Shall we study Korean together?	new conversation unit1-3 study
+걷다	to walk [geotda]  천천히 걸어요. — I walk slowly. (ㄷ-irr: 걸어요)	new conversation unit1-3 movement
+안내문	notice / announcement [annaemun]  안내문을 읽어요. — I read the notice.	new conversation unit1-3 objects
+게시판	bulletin board [gesipan]  게시판에 안내문을 써요. — I write a notice on the board.	new conversation unit1-3 objects
+행사	event [haengsa]  세종학당 행사에 가요. — I go to the Sejong Institute event.	new conversation unit1-3 event
+계획하다	to plan [gyehoekhada]  행사를 계획해요. — I plan the event.	new conversation unit1-3 verb
+편리하다	convenient [pyeollihada]  지하철이 편리해요. — The subway is convenient.	new conversation unit1-3 descriptions
+친절하다	kind [chinjeolhada]  친구가 친절해요. — My friend is kind.	new conversation unit1-3 descriptions
+다니다	to attend / commute [danida]  한국 회사에 다녀요. — I work at a Korean company.	new conversation unit1-3 verb
+열다	to open [yeolda]  창문을 좀 열까요? — Shall I open the window?	new conversation unit1-3 verb
+식당	restaurant [sikdang]  식당 앞에서 만나요. — Let's meet in front of the restaurant.	new conversation unit1-3 place
+도서관	library [doseogwan]  도서관에서 책을 빌려요. — I borrow books at the library.	new conversation unit1-3 place
+경기	match / game [gyeonggi]  축구 경기를 봐요. — I watch a soccer match.	new conversation unit1-3 sports
+축구	soccer [chukgu]  축구를 좋아해요. — I like soccer.	new conversation unit1-3 sports
