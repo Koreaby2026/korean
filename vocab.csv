@@ -501,3 +501,16 @@ korean,romanization,translation,status,category,unit,topic,example
 도서관,doseogwan,library,new,conversation,1-3,place,도서관에서 책을 빌려요. — I borrow books at the library.
 경기,gyeonggi,match / game,new,conversation,1-3,sports,축구 경기를 봐요. — I watch a soccer match.
 축구,chukgu,soccer,new,conversation,1-3,sports,축구를 좋아해요. — I like soccer.
+개,gae,counter: things (general),new,teacher,1-1,counters,사과 한 개가 필요해요. — I need one apple.
+잔,jan,counter: cups / glasses,new,teacher,1-1,counters,커피 두 잔이 필요해요. — I need two cups of coffee.
+권,gwon,counter: books,new,teacher,1-1,counters,책 세 권이 필요해요. — I need three books.
+병,byeong,counter: bottles,new,teacher,1-1,counters,물 네 병이 필요해요. — I need four bottles of water.
+장,jang,counter: sheets / tickets,new,teacher,1-1,counters,표 다섯 장이 필요해요. — I need five movie tickets.
+켤레,kyeolle,"counter: pairs (shoes, socks)",new,teacher,1-1,counters,신발 한 켤레가 필요해요. — I need one pair of shoes.
+송이,songi,counter: flowers,new,teacher,1-1,counters,꽃 두 송이가 필요해요. — I need two flowers.
+대,dae,counter: vehicles / machines,new,teacher,1-1,counters,차 한 대가 필요해요. — I need one car.
+캔,kaen,counter: cans,new,teacher,1-1,counters,소다 세 캔이 필요해요. — I need three cans of soda.
+명,myeong,counter: people,new,teacher,1-1,counters,학생 네 명이 있어요. — There are four students.
+분,bun,counter: people (polite),new,teacher,1-1,counters,손님 두 분이 오셨어요. — Two guests came.
+마리,mari,counter: animals,new,teacher,1-1,counters,강아지 한 마리가 있어요. — There is one dog.
+한/두/세/네/스무,han/du/se/ne/seumu,"1-4 & 20 before a counter (하나→한, 둘→두, 셋→세, 넷→네, 스물→스무)",new,teacher,1-1,counters,"사과 한 개, 커피 두 잔, 책 세 권 — one apple, two coffees, three books."

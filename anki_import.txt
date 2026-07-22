@@ -503,3 +503,16 @@
 도서관	library [doseogwan]  도서관에서 책을 빌려요. — I borrow books at the library.	new conversation unit1-3 place
 경기	match / game [gyeonggi]  축구 경기를 봐요. — I watch a soccer match.	new conversation unit1-3 sports
 축구	soccer [chukgu]  축구를 좋아해요. — I like soccer.	new conversation unit1-3 sports
+개	counter: things (general) [gae]  사과 한 개가 필요해요. — I need one apple.	new teacher unit1-1 counters
+잔	counter: cups / glasses [jan]  커피 두 잔이 필요해요. — I need two cups of coffee.	new teacher unit1-1 counters
+권	counter: books [gwon]  책 세 권이 필요해요. — I need three books.	new teacher unit1-1 counters
+병	counter: bottles [byeong]  물 네 병이 필요해요. — I need four bottles of water.	new teacher unit1-1 counters
+장	counter: sheets / tickets [jang]  표 다섯 장이 필요해요. — I need five movie tickets.	new teacher unit1-1 counters
+켤레	counter: pairs (shoes, socks) [kyeolle]  신발 한 켤레가 필요해요. — I need one pair of shoes.	new teacher unit1-1 counters
+송이	counter: flowers [songi]  꽃 두 송이가 필요해요. — I need two flowers.	new teacher unit1-1 counters
+대	counter: vehicles / machines [dae]  차 한 대가 필요해요. — I need one car.	new teacher unit1-1 counters
+캔	counter: cans [kaen]  소다 세 캔이 필요해요. — I need three cans of soda.	new teacher unit1-1 counters
+명	counter: people [myeong]  학생 네 명이 있어요. — There are four students.	new teacher unit1-1 counters
+분	counter: people (polite) [bun]  손님 두 분이 오셨어요. — Two guests came.	new teacher unit1-1 counters
+마리	counter: animals [mari]  강아지 한 마리가 있어요. — There is one dog.	new teacher unit1-1 counters
+한/두/세/네/스무	1-4 & 20 before a counter (하나→한, 둘→두, 셋→세, 넷→네, 스물→스무) [han/du/se/ne/seumu]  사과 한 개, 커피 두 잔, 책 세 권 — one apple, two coffees, three books.	new teacher unit1-1 counters
