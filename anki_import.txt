@@ -516,3 +516,42 @@
 분	counter: people (polite) [bun]  손님 두 분이 오셨어요. — Two guests came.	new teacher unit1-1 counters
 마리	counter: animals [mari]  강아지 한 마리가 있어요. — There is one dog.	new teacher unit1-1 counters
 한/두/세/네/스무	1-4 & 20 before a counter (하나→한, 둘→두, 셋→세, 넷→네, 스물→스무) [han/du/se/ne/seumu]  사과 한 개, 커피 두 잔, 책 세 권 — one apple, two coffees, three books.	new teacher unit1-1 counters
+계획	plan [gyehoek]  주말 계획이 있어요. — I have weekend plans.	new always-forget unitforget abstract
+양말	socks [yangmal]  양말을 신어요. — I put on socks.	new always-forget unitforget clothes
+열심히	diligently / hard [yeolsimhi]  열심히 일해요. — I work hard.	new always-forget unitforget adverb
+미술관	art museum [misulgwan]  미술관에 갔어요. — I went to the art museum.	new always-forget unitforget place
+퇴근하다	to leave work [toegeunhada]  6시에 퇴근해요. — I leave work at 6pm.	new always-forget unitforget verb
+물어보다	to ask (inquire) [mureoboda]  길을 물어봤어요. — I asked for directions.	new conversation unit1-4 verb
+바꾸다	to change [bakkuda]  날짜를 바꿨어요. — I changed the date.	new conversation unit1-4 verb
+불리다	to be called [bullida]  이 꽃은 장미라고 불려요. — This flower is called a rose.	new conversation unit1-4 verb
+노란색	yellow [noransaek]  노란색을 좋아해요. — I like yellow.	new conversation unit1-4 colors
+파란색	blue [paransaek]  하늘이 파란색이에요. — The sky is blue.	new conversation unit1-4 colors
+빨간색	red [ppalgansaek]  빨간색 사과예요. — It's a red apple.	new conversation unit1-4 colors
+회색	grey [hoesaek]  회색 코트를 샀어요. — I bought a grey coat.	new conversation unit1-4 colors
+까만색	black [kkamansaek]  까만색 신발이에요. — They're black shoes.	new conversation unit1-4 colors
+하얀색	white [hayansaek]  하얀색 티셔츠를 입어요. — I wear a white t-shirt.	new conversation unit1-4 colors
+하늘색	sky blue [haneulsaek]  하늘색이 예뻐요. — Sky blue is pretty.	new conversation unit1-4 colors
+보라색	purple [borasaek]  보라색 꽃이에요. — It's a purple flower.	new conversation unit1-4 colors
+분홍색	pink [bunhongsaek]  분홍색을 좋아해요. — I like pink.	new conversation unit1-4 colors
+녹색	green [noksaek]  녹색 나무예요. — It's a green tree.	new conversation unit1-4 colors
+장갑을 끼다	to wear gloves [janggabeul kkida]  겨울에 장갑을 껴요. — I wear gloves in winter.	new conversation unit1-4 clothes
+닮다	to resemble [damda]  엄마를 닮았어요. — I resemble my mom.	new conversation unit1-4 verb
+가지고 가다	to take (along) [gajigo gada]  우산을 가지고 가세요. — Take an umbrella with you.	new conversation unit1-4 verb
+단풍 구경을 가다	to go see autumn leaves [danpung gugyeongeul gada]  가을에 단풍 구경을 가요. — I go to see autumn leaves in fall.	new conversation unit1-4 activity
+소풍을 가다	to go on a picnic [sopungeul gada]  주말에 소풍을 가요. — I go on a picnic on weekends.	new conversation unit1-4 activity
+장마	rainy season [jangma]  장마가 시작됐어요. — The rainy season has started.	new conversation unit1-4 weather
+꽃이 피다	flowers bloom [kkochi pida]  봄에 꽃이 펴요. — Flowers bloom in spring.	new conversation unit1-4 nature
+경치	scenery [gyeongchi]  경치가 아름다워요. — The scenery is beautiful.	new conversation unit1-4 nature
+연습	practice (noun) [yeonseup]  연습이 필요해요. — I need practice.	new conversation unit1-4 study
+전혀	(not) at all [jeonhyeo]  전혀 안 매워요. — It's not spicy at all.	new conversation unit1-4 adverb
+별로	not really [byeollo]  별로 안 좋아해요. — I don't really like it.	new conversation unit1-4 adverb
+거의	almost / hardly [geoui]  거의 안 자요. — I hardly sleep.	new conversation unit1-4 adverb
+밝다	to be bright [bakda]  방이 밝아요. — The room is bright.	new conversation unit1-4 descriptions
+어둡다	to be dark [eodupda]  밖이 어두워요. — It's dark outside.	new conversation unit1-4 descriptions
+뜨겁다	to be hot (to touch) [tteugeopda]  커피가 뜨거워요. — The coffee is hot.	new conversation unit1-4 descriptions
+차갑다	to be cold (to touch) [chagapda]  물이 차가워요. — The water is cold.	new conversation unit1-4 descriptions
+같다	to be the same [gatda]  값이 같아요. — The price is the same.	new conversation unit1-4 descriptions
+다르다	to be different [dareuda]  색이 달라요. — The color is different. (르-irr)	new conversation unit1-4 descriptions
+귀걸이를 하다	to wear earrings [gwigeorireul hada]  귀걸이를 했어요. — I put on earrings.	new conversation unit1-4 clothes
+목걸이를 하다	to wear a necklace [mokgeorireul hada]  목걸이를 했어요. — I put on a necklace.	new conversation unit1-4 clothes
+출근하다	to go to work [chulgeunhada]  아침 9시에 출근해요. — I go to work at 9am.	new conversation unit1-4 verb

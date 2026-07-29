@@ -514,3 +514,42 @@ korean,romanization,translation,status,category,unit,topic,example
 분,bun,counter: people (polite),new,teacher,1-1,counters,손님 두 분이 오셨어요. — Two guests came.
 마리,mari,counter: animals,new,teacher,1-1,counters,강아지 한 마리가 있어요. — There is one dog.
 한/두/세/네/스무,han/du/se/ne/seumu,"1-4 & 20 before a counter (하나→한, 둘→두, 셋→세, 넷→네, 스물→스무)",new,teacher,1-1,counters,"사과 한 개, 커피 두 잔, 책 세 권 — one apple, two coffees, three books."
+계획,gyehoek,plan,new,always-forget,forget,abstract,주말 계획이 있어요. — I have weekend plans.
+양말,yangmal,socks,new,always-forget,forget,clothes,양말을 신어요. — I put on socks.
+열심히,yeolsimhi,diligently / hard,new,always-forget,forget,adverb,열심히 일해요. — I work hard.
+미술관,misulgwan,art museum,new,always-forget,forget,place,미술관에 갔어요. — I went to the art museum.
+퇴근하다,toegeunhada,to leave work,new,always-forget,forget,verb,6시에 퇴근해요. — I leave work at 6pm.
+물어보다,mureoboda,to ask (inquire),new,conversation,1-4,verb,길을 물어봤어요. — I asked for directions.
+바꾸다,bakkuda,to change,new,conversation,1-4,verb,날짜를 바꿨어요. — I changed the date.
+불리다,bullida,to be called,new,conversation,1-4,verb,이 꽃은 장미라고 불려요. — This flower is called a rose.
+노란색,noransaek,yellow,new,conversation,1-4,colors,노란색을 좋아해요. — I like yellow.
+파란색,paransaek,blue,new,conversation,1-4,colors,하늘이 파란색이에요. — The sky is blue.
+빨간색,ppalgansaek,red,new,conversation,1-4,colors,빨간색 사과예요. — It's a red apple.
+회색,hoesaek,grey,new,conversation,1-4,colors,회색 코트를 샀어요. — I bought a grey coat.
+까만색,kkamansaek,black,new,conversation,1-4,colors,까만색 신발이에요. — They're black shoes.
+하얀색,hayansaek,white,new,conversation,1-4,colors,하얀색 티셔츠를 입어요. — I wear a white t-shirt.
+하늘색,haneulsaek,sky blue,new,conversation,1-4,colors,하늘색이 예뻐요. — Sky blue is pretty.
+보라색,borasaek,purple,new,conversation,1-4,colors,보라색 꽃이에요. — It's a purple flower.
+분홍색,bunhongsaek,pink,new,conversation,1-4,colors,분홍색을 좋아해요. — I like pink.
+녹색,noksaek,green,new,conversation,1-4,colors,녹색 나무예요. — It's a green tree.
+장갑을 끼다,janggabeul kkida,to wear gloves,new,conversation,1-4,clothes,겨울에 장갑을 껴요. — I wear gloves in winter.
+닮다,damda,to resemble,new,conversation,1-4,verb,엄마를 닮았어요. — I resemble my mom.
+가지고 가다,gajigo gada,to take (along),new,conversation,1-4,verb,우산을 가지고 가세요. — Take an umbrella with you.
+단풍 구경을 가다,danpung gugyeongeul gada,to go see autumn leaves,new,conversation,1-4,activity,가을에 단풍 구경을 가요. — I go to see autumn leaves in fall.
+소풍을 가다,sopungeul gada,to go on a picnic,new,conversation,1-4,activity,주말에 소풍을 가요. — I go on a picnic on weekends.
+장마,jangma,rainy season,new,conversation,1-4,weather,장마가 시작됐어요. — The rainy season has started.
+꽃이 피다,kkochi pida,flowers bloom,new,conversation,1-4,nature,봄에 꽃이 펴요. — Flowers bloom in spring.
+경치,gyeongchi,scenery,new,conversation,1-4,nature,경치가 아름다워요. — The scenery is beautiful.
+연습,yeonseup,practice (noun),new,conversation,1-4,study,연습이 필요해요. — I need practice.
+전혀,jeonhyeo,(not) at all,new,conversation,1-4,adverb,전혀 안 매워요. — It's not spicy at all.
+별로,byeollo,not really,new,conversation,1-4,adverb,별로 안 좋아해요. — I don't really like it.
+거의,geoui,almost / hardly,new,conversation,1-4,adverb,거의 안 자요. — I hardly sleep.
+밝다,bakda,to be bright,new,conversation,1-4,descriptions,방이 밝아요. — The room is bright.
+어둡다,eodupda,to be dark,new,conversation,1-4,descriptions,밖이 어두워요. — It's dark outside.
+뜨겁다,tteugeopda,to be hot (to touch),new,conversation,1-4,descriptions,커피가 뜨거워요. — The coffee is hot.
+차갑다,chagapda,to be cold (to touch),new,conversation,1-4,descriptions,물이 차가워요. — The water is cold.
+같다,gatda,to be the same,new,conversation,1-4,descriptions,값이 같아요. — The price is the same.
+다르다,dareuda,to be different,new,conversation,1-4,descriptions,색이 달라요. — The color is different. (르-irr)
+귀걸이를 하다,gwigeorireul hada,to wear earrings,new,conversation,1-4,clothes,귀걸이를 했어요. — I put on earrings.
+목걸이를 하다,mokgeorireul hada,to wear a necklace,new,conversation,1-4,clothes,목걸이를 했어요. — I put on a necklace.
+출근하다,chulgeunhada,to go to work,new,conversation,1-4,verb,아침 9시에 출근해요. — I go to work at 9am.
