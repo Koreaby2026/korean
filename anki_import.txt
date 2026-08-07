@@ -555,3 +555,4 @@
 귀걸이를 하다	to wear earrings [gwigeorireul hada]  귀걸이를 했어요. — I put on earrings.	new conversation unit1-4 clothes
 목걸이를 하다	to wear a necklace [mokgeorireul hada]  목걸이를 했어요. — I put on a necklace.	new conversation unit1-4 clothes
 출근하다	to go to work [chulgeunhada]  아침 9시에 출근해요. — I go to work at 9am.	new conversation unit1-4 verb
+저렴하다	cheap / inexpensive [jeoryeomhada]  이 가게는 저렴해요. — This shop is cheap.	new teacher unit1-1 descriptions
