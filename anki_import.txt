@@ -556,3 +556,14 @@
 목걸이를 하다	to wear a necklace [mokgeorireul hada]  목걸이를 했어요. — I put on a necklace.	new conversation unit1-4 clothes
 출근하다	to go to work [chulgeunhada]  아침 9시에 출근해요. — I go to work at 9am.	new conversation unit1-4 verb
 저렴하다	cheap / inexpensive [jeoryeomhada]  이 가게는 저렴해요. — This shop is cheap.	new teacher unit1-1 descriptions
+지하철을 타다	to take the subway [jihacheoreul tada]  지하철을 타면 돼요. — You just need to take the subway.	new teacher unit1-1 transport
+환승하다	to transfer (trains) [hwanseunghada]  여기에서 환승하면 돼요. — You can transfer here.	new teacher unit1-1 transport
+출구	exit [chulgu]  몇 번 출구예요? — Which exit is it?	new teacher unit1-1 place
+교통카드	transit card [gyotongkadeu]  교통카드를 충전해요. — I recharge my transit card.	new teacher unit1-1 objects
+교통카드를 찍다	to tap a transit card [gyotongkadeureul jjikda]  교통카드를 찍으세요. — Please tap your transit card.	new teacher unit1-1 transport
+정거장	stop / station [jeonggeojang]  한 정거장만 더 가면 돼요. — You just need to go one more stop.	new teacher unit1-1 transport
+길을 잃다	to get lost [gireul ilta]  길을 잃었어요. — I got lost.	new teacher unit1-1 verb
+금방	soon / right away [geumbang]  금방 도착해요. — We'll arrive soon.	new teacher unit1-1 adverb
+반대 방향	opposite direction [bandae banghyang]  반대 방향이에요. — It's the opposite direction.	new teacher unit1-1 place
+대다	to tap / touch (a card) [daeda]  카드를 대 주세요. — Please tap your card.	new teacher unit1-1 verb
+기다리다	to wait [gidarida]  잠깐만 기다려 주세요. — Please wait a moment.	new always-forget unitforget verb
