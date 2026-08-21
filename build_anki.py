@@ -30,8 +30,9 @@ CAT_META = {
     "teacher": ("korean_teacher.apkg", "Korean 1-1", False),
     "conversation": ("korean_conversation.apkg", "Korean Conversation", False),
     "always-forget": ("korean_forget.apkg", "Korean Always Forget", False),
+    "2A": ("korean_2a.apkg", "Korean 2A", False),
 }
-ORDER = ["old", "teacher", "conversation", "always-forget"]
+ORDER = ["old", "teacher", "conversation", "always-forget", "2A"]
 
 
 def slug(s):

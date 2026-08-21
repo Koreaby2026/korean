@@ -582,3 +582,32 @@
 운전하다	to drive [unjeonhada]  운전을 잘 못해요. — I'm not good at driving.	new always-forget unitforget verb
 기억하다	to remember [gieokhada]  이름을 잘 기억해요. — I remember names well.	new always-forget unitforget verb
 돈을 모으다	to save money [doneul moeuda]  여행하려고 돈을 모아요. — I save money to travel.	new always-forget unitforget verb
+교사	teacher [gyosa]  저는 한국어 교사예요. — I'm a Korean teacher.	new 2A unit2A people
+프로그램	program [peurogeuraem]  저는 한국 회사에서 프로그램을 만들고 싶어요. — I want to make programs at a Korean company.	new 2A unit2A objects
+굽다	to bake [gupda]  아침에 빵을 구워요. — I bake bread in the morning.	new 2A unit2A verb
+가르치다	to teach [gareuchida]  세종학당에서 한국어를 가르쳐요. — I teach Korean at the Sejong Institute.	new 2A unit2A verb
+헤어 디자이너	hair designer [heeo dijaineo]  저는 헤어 디자이너가 되고 싶어요. — I want to become a hair designer.	new 2A unit2A people
+프로그래머	programmer [peurogeuraemeo]  프로그램을 만드는 사람은 프로그래머예요. — A person who makes programs is a programmer.	new 2A unit2A people
+제빵사	baker [jeppangsa]  저는 제빵사예요. — I'm a baker.	new 2A unit2A people
+가구	furniture [gagu]  저는 가구를 만드는 일을 해요. — I make furniture.	new 2A unit2A objects
+잃어버리다	to lose [ireobeorida]  자주 잃어버리는 물건이 뭐예요? — What do you often lose?	new 2A unit2A verb
+반갑다	glad (to meet) [bangapda]  만나서 반가워요. — Nice to meet you.	new 2A unit2A descriptions
+베트남어	Vietnamese (language) [beteunameo]  저는 베트남어를 가르치는 선생님이에요. — I'm a teacher who teaches Vietnamese.	new 2A unit2A objects
+휴게실	lounge / break room [hyugesil]  교실 옆에는 쉴 수 있는 휴게실이 있습니다. — Next to the classroom there's a lounge to rest.	new 2A unit2A place
+즐겁다	joyful / fun [jeulgepda]  친구들과 한국어를 배우는 것이 아주 즐겁습니다. — Learning Korean with friends is very fun.	new 2A unit2A descriptions
+악기	musical instrument [akgi]  무슨 악기를 연주할 수 있어요? — What instrument can you play?	new 2A unit2A objects
+연주하다	to play (an instrument) [yeonjuhada]  무슨 악기를 연주할 수 있어요? — What instrument can you play?	new 2A unit2A verb
+소설	novel [soseol]  소설을 읽거나 음악을 들어요. — I read novels or listen to music.	new 2A unit2A hobbies
+만화	comics [manhwa]  집에서 드라마를 보거나 만화를 그려요. — At home I watch dramas or draw comics.	new 2A unit2A hobbies
+배드민턴	badminton [baedeuminteon]  자전거를 타거나 배드민턴을 쳐요. — I ride a bike or play badminton.	new 2A unit2A sports
+풍경 사진	landscape photo [punggyeong sajin]  주말에 보통 풍경 사진을 찍어요. — On weekends I usually take landscape photos.	new 2A unit2A hobbies
+운동 모임	exercise group [undong moim]  등산을 하거나 운동 모임에 가요. — I go hiking or to an exercise group.	new 2A unit2A activity
+스포츠 경기	sports game [seupocheu gyeonggi]  영화나 스포츠 경기를 봐요. — I watch movies or sports games.	new 2A unit2A sports
+휴일	holiday [hyuil]  휴일에 뭐 해요? — What do you do on holidays?	new 2A unit2A time
+돈가스	pork cutlet [dongaseu]  돈가스나 불고기를 만들어요. — I make pork cutlet or bulgogi.	new 2A unit2A food
+카레	curry [kare]  삼계탕이나 카레를 먹어요. — I eat samgyetang or curry.	new 2A unit2A food
+일기 예보	weather forecast [ilgi yebo]  내일 날씨를 일기 예보에서 봤어요. — I saw tomorrow's weather in the forecast.	new 2A unit2A weather
+글쎄요	well / I'm not sure [geulsseyo]  글쎄요. 잘 모르겠어요. — Well, I'm not sure.	new 2A unit2A phrases
+에스엔에스(SNS)	social networking service (SNS) [eseuenes]  글을 에스엔에스(SNS)에 써 보세요. — Try writing a post on SNS.	new 2A unit2A objects
+심심하다	to be bored [simsimhada]  혼자 취미 생활을 하는 것이 좀 심심해요. — Doing hobbies alone is a bit boring.	new 2A unit2A descriptions
+같다	same [gatda]  저하고 취미가 같은 친구가 있을까요? — Is there a friend who has the same hobby as me?	new 2A unit2A descriptions
