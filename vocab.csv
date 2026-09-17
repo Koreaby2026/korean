@@ -635,3 +635,64 @@ korean,romanization,translation,status,category,unit,topic,example
 누군가,nugunga,someone,new,teacher,1-1,phrases,누군가 왔어요. — Someone came.
 묵다,mukda,to stay (overnight),new,teacher,1-1,verb,호텔에서 묵어요. — I stay at a hotel.
 혼자,honja,alone / by oneself,new,always-forget,forget,adverb,혼자 여행해요. — I travel alone.
+출근하다,chulgeunhada,to go to work,new,2A,2A,routine,아침 9시에 출근해요. — I go to work at 9am.
+퇴근하다,toegeunhada,to leave work,new,2A,2A,routine,6시에 퇴근해요. — I leave work at 6pm.
+회의를 준비하다,hoeireul junbihada,to prepare for a meeting,new,2A,2A,routine,회의를 준비해요. — I prepare for the meeting.
+이메일을 읽다/쓰다/보내다,imeireul ikda/sseuda/bonaeda,to read/write/send an email,new,2A,2A,routine,이메일을 보내요. — I send an email.
+수업을 듣다,sueobeul deutda,to take a class,new,2A,2A,routine,오전에 수업을 들어요. — I take a class in the morning.
+강의를 듣다,gangireul deutda,to listen to a lecture,new,2A,2A,routine,온라인 강의를 들어요. — I listen to an online lecture.
+아르바이트를 하다,areubaiteureul hada,to work part-time,new,2A,2A,routine,카페에서 아르바이트를 해요. — I work part-time at a cafe.
+시험공부하다,siheomgongbuhada,to study for an exam,new,2A,2A,routine,도서관에서 시험공부해요. — I study for exams at the library.
+세수하다,sesuhada,to wash one's face,new,2A,2A,routine,아침에 세수해요. — I wash my face in the morning.
+손을 씻다,soneul ssitda,to wash one's hands,new,2A,2A,routine,밥 먹기 전에 손을 씻어요. — I wash my hands before eating.
+이를 닦다/양치질하다,ireul dakda/yangchijilhada,to brush teeth,new,2A,2A,routine,하루에 세 번 이를 닦아요. — I brush my teeth three times a day.
+머리를 감다,meorireul gamda,to wash one's hair,new,2A,2A,routine,매일 머리를 감아요. — I wash my hair every day.
+머리를 말리다,meorireul mallida,to dry one's hair,new,2A,2A,routine,드라이기로 머리를 말려요. — I dry my hair with a dryer.
+면도하다,myeondohada,to shave,new,2A,2A,routine,아침에 면도해요. — I shave in the morning.
+목욕하다,mogyokhada,to take a bath,new,2A,2A,routine,저녁에 목욕해요. — I take a bath in the evening.
+샤워하다,syawohada,to take a shower,new,2A,2A,routine,운동 후에 샤워해요. — I take a shower after exercising.
+집 안을 정리하다,jip aneul jeongnihada,to tidy up the house,new,2A,2A,routine,주말에 집 안을 정리해요. — I tidy up the house on weekends.
+집안일을 하다,jibanireul hada,to do chores,new,2A,2A,routine,같이 집안일을 해요. — We do chores together.
+로션을 바르다,rosyeoneul bareuda,to apply lotion,new,2A,2A,routine,세수하고 로션을 발라요. — I apply lotion after washing my face.
+화장하다,hwajanghada,to put on makeup,new,2A,2A,routine,아침에 화장해요. — I put on makeup in the morning.
+화장을 지우다,hwajangeul jiuda,to remove makeup,new,2A,2A,routine,자기 전에 화장을 지워요. — I remove my makeup before bed.
+설거지하다,seolgeojihada,to wash the dishes,new,2A,2A,routine,저녁 먹고 설거지해요. — I wash the dishes after dinner.
+빨래하다,ppallaehada,to do laundry,new,2A,2A,routine,주말에 빨래해요. — I do laundry on weekends.
+청소하다,cheongsohada,to clean,new,2A,2A,routine,방을 청소해요. — I clean my room.
+지우다,jiuda,to erase / delete / remove,new,2A,2A,verb,사진을 지워요. — I delete the photo.
+바르다,bareuda,to apply / spread,new,2A,2A,verb,약을 발라요. — I apply the medicine. (르-irr)
+정리하다,jeongnihada,to organize / sort out,new,2A,2A,verb,책상을 정리해요. — I organize my desk.
+말리다,mallida,to dry (something),new,2A,2A,verb,옷을 말려요. — I dry the clothes.
+씻다,ssitda,to wash (with water),new,2A,2A,verb,과일을 씻어요. — I wash the fruit.
+닦다,dakda,to wipe / clean (with something),new,2A,2A,verb,바닥을 닦아요. — I wipe the floor.
+행복하다,haengbokhada,to be happy,new,2A,2A,state,요즘 행복해요. — I'm happy these days.
+짜증나다,jjajeungnada,to feel annoyed,new,2A,2A,state,길이 막혀서 짜증나요. — I'm annoyed because of the traffic.
+외롭다,oeropda,to feel lonely,new,2A,2A,state,혼자 있으면 외로워요. — I feel lonely when I'm alone. (ㅂ-irr)
+긴장되다,ginjangdoeda,to be nervous,new,2A,2A,state,발표 전에 긴장돼요. — I get nervous before a presentation.
+평일,pyeongil,weekday,new,2A,2A,time,평일에는 회사에 가요. — I go to work on weekdays.
+문자,munja,text message,new,2A,2A,objects,친구에게 문자를 보내요. — I send a text to my friend.
+발표,balpyo,presentation,new,2A,2A,objects,다음 주에 발표가 있어요. — I have a presentation next week.
+직접,jikjeop,in person / directly,new,2A,2A,adverb,직접 만나서 이야기해요. — Let's meet in person and talk.
+성격,seonggyeok,personality / character,new,2A,2A,abstract,성격이 밝아요. — He has a bright personality.
+연락하다,yeollakhada,to contact,new,2A,2A,verb,나중에 연락할게요. — I'll contact you later.
+예약하다,yeyakhada,to reserve / book,new,2A,2A,verb,식당을 예약했어요. — I booked a restaurant.
+정하다,jeonghada,to decide / set,new,2A,2A,verb,시간을 정해요. — Let's set a time.
+행사,haengsa,event,new,2A,2A,event,학교 행사에 가요. — I go to a school event.
+장소,jangso,place / venue,new,2A,2A,place,약속 장소를 정해요. — Let's decide the meeting place.
+처음,cheoeum,first time,new,2A,2A,time,한국은 처음이에요. — It's my first time in Korea.
+아직,ajik,not yet / still,new,2A,2A,adverb,아직 안 끝났어요. — It's not finished yet.
+약속하다,yaksokhada,to promise / make an appointment,new,2A,2A,verb,친구하고 약속했어요. — I made a promise with my friend.
+모자를 쓰다,mojareul sseuda,to wear (a hat),new,2A,2A,clothes,모자를 써요. — I wear a hat.
+장갑을 끼다,janggabeul kkida,to wear (gloves),new,2A,2A,clothes,장갑을 껴요. — I wear gloves.
+넥타이를 하다,nektaireul hada,to wear (a tie/scarf),new,2A,2A,clothes,넥타이를 해요. — I wear a tie.
+신발을 신다,sinbareul sinda,to wear (shoes),new,2A,2A,clothes,신발을 신어요. — I put on shoes.
+빨간색,ppalgansaek,red,new,2A,2A,colors,빨간색 사과예요. — It's a red apple.
+노란색,noransaek,yellow,new,2A,2A,colors,노란색을 좋아해요. — I like yellow.
+검은색,geomeunsaek,black,new,2A,2A,colors,검은색 코트예요. — It's a black coat.
+파란색,paransaek,blue,new,2A,2A,colors,하늘이 파란색이에요. — The sky is blue.
+흰색,huinsaek,white,new,2A,2A,colors,흰색 티셔츠를 입어요. — I wear a white t-shirt.
+초록색,choroksaek,green,new,2A,2A,colors,초록색 나무예요. — It's a green tree.
+하늘색,haneulsaek,sky blue,new,2A,2A,colors,하늘색이 예뻐요. — Sky blue is pretty.
+분홍색,bunhongsaek,pink,new,2A,2A,colors,분홍색 꽃이에요. — It's a pink flower.
+보라색,borasaek,purple,new,2A,2A,colors,보라색을 좋아해요. — I like purple.
+회색,hoesaek,grey,new,2A,2A,colors,회색 코트를 샀어요. — I bought a grey coat.

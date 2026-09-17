@@ -637,3 +637,64 @@
 누군가	someone [nugunga]  누군가 왔어요. — Someone came.	new teacher unit1-1 phrases
 묵다	to stay (overnight) [mukda]  호텔에서 묵어요. — I stay at a hotel.	new teacher unit1-1 verb
 혼자	alone / by oneself [honja]  혼자 여행해요. — I travel alone.	new always-forget unitforget adverb
+출근하다	to go to work [chulgeunhada]  아침 9시에 출근해요. — I go to work at 9am.	new 2A unit2A routine
+퇴근하다	to leave work [toegeunhada]  6시에 퇴근해요. — I leave work at 6pm.	new 2A unit2A routine
+회의를 준비하다	to prepare for a meeting [hoeireul junbihada]  회의를 준비해요. — I prepare for the meeting.	new 2A unit2A routine
+이메일을 읽다/쓰다/보내다	to read/write/send an email [imeireul ikda/sseuda/bonaeda]  이메일을 보내요. — I send an email.	new 2A unit2A routine
+수업을 듣다	to take a class [sueobeul deutda]  오전에 수업을 들어요. — I take a class in the morning.	new 2A unit2A routine
+강의를 듣다	to listen to a lecture [gangireul deutda]  온라인 강의를 들어요. — I listen to an online lecture.	new 2A unit2A routine
+아르바이트를 하다	to work part-time [areubaiteureul hada]  카페에서 아르바이트를 해요. — I work part-time at a cafe.	new 2A unit2A routine
+시험공부하다	to study for an exam [siheomgongbuhada]  도서관에서 시험공부해요. — I study for exams at the library.	new 2A unit2A routine
+세수하다	to wash one's face [sesuhada]  아침에 세수해요. — I wash my face in the morning.	new 2A unit2A routine
+손을 씻다	to wash one's hands [soneul ssitda]  밥 먹기 전에 손을 씻어요. — I wash my hands before eating.	new 2A unit2A routine
+이를 닦다/양치질하다	to brush teeth [ireul dakda/yangchijilhada]  하루에 세 번 이를 닦아요. — I brush my teeth three times a day.	new 2A unit2A routine
+머리를 감다	to wash one's hair [meorireul gamda]  매일 머리를 감아요. — I wash my hair every day.	new 2A unit2A routine
+머리를 말리다	to dry one's hair [meorireul mallida]  드라이기로 머리를 말려요. — I dry my hair with a dryer.	new 2A unit2A routine
+면도하다	to shave [myeondohada]  아침에 면도해요. — I shave in the morning.	new 2A unit2A routine
+목욕하다	to take a bath [mogyokhada]  저녁에 목욕해요. — I take a bath in the evening.	new 2A unit2A routine
+샤워하다	to take a shower [syawohada]  운동 후에 샤워해요. — I take a shower after exercising.	new 2A unit2A routine
+집 안을 정리하다	to tidy up the house [jip aneul jeongnihada]  주말에 집 안을 정리해요. — I tidy up the house on weekends.	new 2A unit2A routine
+집안일을 하다	to do chores [jibanireul hada]  같이 집안일을 해요. — We do chores together.	new 2A unit2A routine
+로션을 바르다	to apply lotion [rosyeoneul bareuda]  세수하고 로션을 발라요. — I apply lotion after washing my face.	new 2A unit2A routine
+화장하다	to put on makeup [hwajanghada]  아침에 화장해요. — I put on makeup in the morning.	new 2A unit2A routine
+화장을 지우다	to remove makeup [hwajangeul jiuda]  자기 전에 화장을 지워요. — I remove my makeup before bed.	new 2A unit2A routine
+설거지하다	to wash the dishes [seolgeojihada]  저녁 먹고 설거지해요. — I wash the dishes after dinner.	new 2A unit2A routine
+빨래하다	to do laundry [ppallaehada]  주말에 빨래해요. — I do laundry on weekends.	new 2A unit2A routine
+청소하다	to clean [cheongsohada]  방을 청소해요. — I clean my room.	new 2A unit2A routine
+지우다	to erase / delete / remove [jiuda]  사진을 지워요. — I delete the photo.	new 2A unit2A verb
+바르다	to apply / spread [bareuda]  약을 발라요. — I apply the medicine. (르-irr)	new 2A unit2A verb
+정리하다	to organize / sort out [jeongnihada]  책상을 정리해요. — I organize my desk.	new 2A unit2A verb
+말리다	to dry (something) [mallida]  옷을 말려요. — I dry the clothes.	new 2A unit2A verb
+씻다	to wash (with water) [ssitda]  과일을 씻어요. — I wash the fruit.	new 2A unit2A verb
+닦다	to wipe / clean (with something) [dakda]  바닥을 닦아요. — I wipe the floor.	new 2A unit2A verb
+행복하다	to be happy [haengbokhada]  요즘 행복해요. — I'm happy these days.	new 2A unit2A state
+짜증나다	to feel annoyed [jjajeungnada]  길이 막혀서 짜증나요. — I'm annoyed because of the traffic.	new 2A unit2A state
+외롭다	to feel lonely [oeropda]  혼자 있으면 외로워요. — I feel lonely when I'm alone. (ㅂ-irr)	new 2A unit2A state
+긴장되다	to be nervous [ginjangdoeda]  발표 전에 긴장돼요. — I get nervous before a presentation.	new 2A unit2A state
+평일	weekday [pyeongil]  평일에는 회사에 가요. — I go to work on weekdays.	new 2A unit2A time
+문자	text message [munja]  친구에게 문자를 보내요. — I send a text to my friend.	new 2A unit2A objects
+발표	presentation [balpyo]  다음 주에 발표가 있어요. — I have a presentation next week.	new 2A unit2A objects
+직접	in person / directly [jikjeop]  직접 만나서 이야기해요. — Let's meet in person and talk.	new 2A unit2A adverb
+성격	personality / character [seonggyeok]  성격이 밝아요. — He has a bright personality.	new 2A unit2A abstract
+연락하다	to contact [yeollakhada]  나중에 연락할게요. — I'll contact you later.	new 2A unit2A verb
+예약하다	to reserve / book [yeyakhada]  식당을 예약했어요. — I booked a restaurant.	new 2A unit2A verb
+정하다	to decide / set [jeonghada]  시간을 정해요. — Let's set a time.	new 2A unit2A verb
+행사	event [haengsa]  학교 행사에 가요. — I go to a school event.	new 2A unit2A event
+장소	place / venue [jangso]  약속 장소를 정해요. — Let's decide the meeting place.	new 2A unit2A place
+처음	first time [cheoeum]  한국은 처음이에요. — It's my first time in Korea.	new 2A unit2A time
+아직	not yet / still [ajik]  아직 안 끝났어요. — It's not finished yet.	new 2A unit2A adverb
+약속하다	to promise / make an appointment [yaksokhada]  친구하고 약속했어요. — I made a promise with my friend.	new 2A unit2A verb
+모자를 쓰다	to wear (a hat) [mojareul sseuda]  모자를 써요. — I wear a hat.	new 2A unit2A clothes
+장갑을 끼다	to wear (gloves) [janggabeul kkida]  장갑을 껴요. — I wear gloves.	new 2A unit2A clothes
+넥타이를 하다	to wear (a tie/scarf) [nektaireul hada]  넥타이를 해요. — I wear a tie.	new 2A unit2A clothes
+신발을 신다	to wear (shoes) [sinbareul sinda]  신발을 신어요. — I put on shoes.	new 2A unit2A clothes
+빨간색	red [ppalgansaek]  빨간색 사과예요. — It's a red apple.	new 2A unit2A colors
+노란색	yellow [noransaek]  노란색을 좋아해요. — I like yellow.	new 2A unit2A colors
+검은색	black [geomeunsaek]  검은색 코트예요. — It's a black coat.	new 2A unit2A colors
+파란색	blue [paransaek]  하늘이 파란색이에요. — The sky is blue.	new 2A unit2A colors
+흰색	white [huinsaek]  흰색 티셔츠를 입어요. — I wear a white t-shirt.	new 2A unit2A colors
+초록색	green [choroksaek]  초록색 나무예요. — It's a green tree.	new 2A unit2A colors
+하늘색	sky blue [haneulsaek]  하늘색이 예뻐요. — Sky blue is pretty.	new 2A unit2A colors
+분홍색	pink [bunhongsaek]  분홍색 꽃이에요. — It's a pink flower.	new 2A unit2A colors
+보라색	purple [borasaek]  보라색을 좋아해요. — I like purple.	new 2A unit2A colors
+회색	grey [hoesaek]  회색 코트를 샀어요. — I bought a grey coat.	new 2A unit2A colors
