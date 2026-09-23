@@ -698,3 +698,18 @@
 분홍색	pink [bunhongsaek]  분홍색 꽃이에요. — It's a pink flower.	new 2A unit2A colors
 보라색	purple [borasaek]  보라색을 좋아해요. — I like purple.	new 2A unit2A colors
 회색	grey [hoesaek]  회색 코트를 샀어요. — I bought a grey coat.	new 2A unit2A colors
+좁다	to be narrow [jopda]  방이 좁아요. — The room is narrow.	new 2A unit2A descriptions
+넓다	to be wide / spacious [neolda]  집이 넓어요. — The house is spacious.	new 2A unit2A descriptions
+어둡다	to be dark [eodupda]  방이 어두워요. — The room is dark. (ㅂ-irr)	new 2A unit2A descriptions
+밝다	to be bright [bakda]  방이 밝아요. — The room is bright.	new 2A unit2A descriptions
+지저분하다	to be messy [jijeobunhada]  방이 지저분해요. — The room is messy.	new 2A unit2A descriptions
+깨끗하다	to be clean [kkaekkeuthada]  방이 깨끗해요. — The room is clean.	new 2A unit2A descriptions
+더럽다	to be dirty [deoreopda]  방이 더러워요. — The room is dirty. (ㅂ-irr)	new 2A unit2A descriptions
+짐이 많다	to have a lot of stuff [jimi manta]  방에 짐이 많아요. — There's a lot of stuff in the room.	new 2A unit2A descriptions
+짐이 없다	to have little/no stuff [jimi eopda]  방에 짐이 없어요. — There's no stuff in the room.	new 2A unit2A descriptions
+가깝다	to be close / near [gakkapda]  집이 회사에서 가까워요. — Home is close to work. (ㅂ-irr)	new 2A unit2A descriptions
+멀다	to be far [meolda]  집이 회사에서 멀어요. — Home is far from work.	new 2A unit2A descriptions
+시끄럽다	to be noisy [sikkeureopda]  밖이 시끄러워요. — It's noisy outside. (ㅂ-irr)	new 2A unit2A descriptions
+조용하다	to be quiet [joyonghada]  도서관이 조용해요. — The library is quiet.	new 2A unit2A descriptions
+어렵다	to be difficult [eoryeopda]  한국어가 어려워요. — Korean is difficult. (ㅂ-irr)	new 2A unit2A descriptions
+쉽다	to be easy [swipda]  시험이 쉬워요. — The test is easy. (ㅂ-irr)	new 2A unit2A descriptions

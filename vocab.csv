@@ -696,3 +696,18 @@ korean,romanization,translation,status,category,unit,topic,example
 분홍색,bunhongsaek,pink,new,2A,2A,colors,분홍색 꽃이에요. — It's a pink flower.
 보라색,borasaek,purple,new,2A,2A,colors,보라색을 좋아해요. — I like purple.
 회색,hoesaek,grey,new,2A,2A,colors,회색 코트를 샀어요. — I bought a grey coat.
+좁다,jopda,to be narrow,new,2A,2A,descriptions,방이 좁아요. — The room is narrow.
+넓다,neolda,to be wide / spacious,new,2A,2A,descriptions,집이 넓어요. — The house is spacious.
+어둡다,eodupda,to be dark,new,2A,2A,descriptions,방이 어두워요. — The room is dark. (ㅂ-irr)
+밝다,bakda,to be bright,new,2A,2A,descriptions,방이 밝아요. — The room is bright.
+지저분하다,jijeobunhada,to be messy,new,2A,2A,descriptions,방이 지저분해요. — The room is messy.
+깨끗하다,kkaekkeuthada,to be clean,new,2A,2A,descriptions,방이 깨끗해요. — The room is clean.
+더럽다,deoreopda,to be dirty,new,2A,2A,descriptions,방이 더러워요. — The room is dirty. (ㅂ-irr)
+짐이 많다,jimi manta,to have a lot of stuff,new,2A,2A,descriptions,방에 짐이 많아요. — There's a lot of stuff in the room.
+짐이 없다,jimi eopda,to have little/no stuff,new,2A,2A,descriptions,방에 짐이 없어요. — There's no stuff in the room.
+가깝다,gakkapda,to be close / near,new,2A,2A,descriptions,집이 회사에서 가까워요. — Home is close to work. (ㅂ-irr)
+멀다,meolda,to be far,new,2A,2A,descriptions,집이 회사에서 멀어요. — Home is far from work.
+시끄럽다,sikkeureopda,to be noisy,new,2A,2A,descriptions,밖이 시끄러워요. — It's noisy outside. (ㅂ-irr)
+조용하다,joyonghada,to be quiet,new,2A,2A,descriptions,도서관이 조용해요. — The library is quiet.
+어렵다,eoryeopda,to be difficult,new,2A,2A,descriptions,한국어가 어려워요. — Korean is difficult. (ㅂ-irr)
+쉽다,swipda,to be easy,new,2A,2A,descriptions,시험이 쉬워요. — The test is easy. (ㅂ-irr)
