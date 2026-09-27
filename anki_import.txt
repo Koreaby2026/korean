@@ -713,3 +713,31 @@
 조용하다	to be quiet [joyonghada]  도서관이 조용해요. — The library is quiet.	new 2A unit2A descriptions
 어렵다	to be difficult [eoryeopda]  한국어가 어려워요. — Korean is difficult. (ㅂ-irr)	new 2A unit2A descriptions
 쉽다	to be easy [swipda]  시험이 쉬워요. — The test is easy. (ㅂ-irr)	new 2A unit2A descriptions
+놓여 있다	to be placed / lying (on) [noyeo itda]  테이블 위에 책이 놓여 있어요. — A book is lying on the table.	new 2A unit2A-6 state
+걸려 있다	to be hanging (on) [geollyeo itda]  벽에 사진이 걸려 있어요. — A photo is hanging on the wall.	new 2A unit2A-6 state
+벽	wall [byeok]  벽에 액자가 걸려 있어요. — A frame is hanging on the wall.	new 2A unit2A-6 objects
+메뉴	menu [menyu]  메뉴가 벽에 걸려 있어요. — The menu is hanging on the wall.	new 2A unit2A-6 objects
+포스터	poster [poseuteo]  좋아하는 가수의 포스터를 샀어요. — I bought a poster of my favorite singer.	new 2A unit2A-6 objects
+화분	flowerpot, potted plant [hwabun]  의자 앞에 화분이 놓여 있어요. — A flowerpot is placed in front of the chair.	new 2A unit2A-6 objects
+테이블	table [teibeul]  방에 테이블이 있어요. — There is a table in the room.	new 2A unit2A-6 objects
+꽃병	vase [kkotbyeong]  테이블 위에 꽃병이 놓여 있어요. — A vase is on the table.	new 2A unit2A-6 objects
+쿠션	cushion [kusyeon]  소파 위에 쿠션이 놓여 있어요. — A cushion is on the sofa.	new 2A unit2A-6 objects
+소파	sofa [sopa]  방에 소파가 놓여 있어요. — There is a sofa in the room.	new 2A unit2A-6 objects
+외국어	foreign language [oegugeo]  회사에 다니면서 외국어 공부를 해요. — I study a foreign language while working.	new 2A unit2A-6 abstract
+분위기	atmosphere, ambience [bunwigi]  이 카페 분위기가 정말 좋아요. — This café has a really nice atmosphere.	new 2A unit2A-6 abstract
+여기저기	here and there [yeogijeogi]  여기저기 화분이 놓여 있어요. — There are flowerpots here and there.	new 2A unit2A-6 adverb
+물건	thing, object [mulgeon]  이 물건은 누구 거예요? — Whose thing is this?	new 2A unit2A-6 objects
+거실	living room [geosil]  거실에 소파가 놓여 있어요. — There is a sofa in the living room.	new 2A unit2A-6 place
+모습	appearance, look [moseup]  거실은 어떤 모습이에요? — What does the living room look like?	new 2A unit2A-6 abstract
+옷걸이	clothes hanger / rack [otgeori]  옷걸이에 옷이 걸려 있어요. — Clothes are hanging on the rack.	new 2A unit2A-6 objects
+아파트	apartment (building) [apateu]  저는 아파트에 살아요. — I live in an apartment.	new 2A unit2A-6 place
+주택	(detached) house [jutaek]  친구는 정원이 있는 주택에 살아요. — My friend lives in a house with a garden.	new 2A unit2A-6 place
+원룸	studio apartment [wollum]  학교 근처 원룸에 살아요. — I live in a studio near school.	new 2A unit2A-6 place
+마음에 들다	to like, to be to one's liking [maeume deulda]  이 카페가 마음에 들어요. — I like this café.	new 2A unit2A-6 phrases
+시험을 보다	to take an exam [siheomeul boda]  다음 주에 시험을 봐요. — I take an exam next week.	new 2A unit2A-6 phrases
+시험공부	exam study [siheomgongbu]  카페에서 시험공부를 해요. — I study for the exam at a café.	new 2A unit2A-6 abstract
+요즘	these days [yojeum]  요즘 매일 카페에 가요. — These days I go to a café every day.	new 2A unit2A-6 time
+메모하다	to jot down, to note [memohada]  친구 이야기를 메모해요. — I jot down what my friend says.	new 2A unit2A-6 verb
+발표하다	to present, to give a talk [balpyohada]  반 친구들 앞에서 발표해요. — I present in front of my classmates.	new 2A unit2A-6 verb
+침대	bed [chimdae]  창문 옆에 침대가 놓여 있어요. — The bed is next to the window.	new 2A unit2A-6 objects
+회사에 다니다	to work at a company [hoesae danida]  언니는 회사에 다녀요. — My sister works at a company.	new 2A unit2A-6 phrases
