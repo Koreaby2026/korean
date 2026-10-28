@@ -739,3 +739,146 @@ korean,romanization,translation,status,category,unit,topic,example
 발표하다,balpyohada,"to present, to give a talk",new,2A,2A-6,verb,반 친구들 앞에서 발표해요. — I present in front of my classmates.
 침대,chimdae,bed,new,2A,2A-6,objects,창문 옆에 침대가 놓여 있어요. — The bed is next to the window.
 회사에 다니다,hoesae danida,to work at a company,new,2A,2A-6,phrases,언니는 회사에 다녀요. — My sister works at a company.
+동아리 활동,dongari hwaldong,club activity,new,2A,2A-3,routine,무슨 동아리 활동을 해요? — What club activities do you do?
+데이트,deiteu,date,new,2A,2A-3,routine,일요일마다 데이트를 해요. — I go on a date every Sunday.
+출퇴근하다,chultoegeunhada,commute,new,2A,2A-3,routine,저는 보통 출퇴근할 때 음악을 들어요. — I usually listen to music while commuting.
+출발하다,chulbalhada,depart,new,2A,2A-3,routine,출발할 때 전화 주세요. — Call me when you leave.
+장갑,janggap,gloves,new,2A,2A-4,clothes,추울 때 장갑을 껴요. — I wear gloves when it's cold.
+목도리,mokdori,muffler,new,2A,2A-4,clothes,목도리를 좀 사려고요. — I'm going to buy a muffler.
+블라우스,beulrauseu,blouse,new,2A,2A-4,clothes,블라우스에다가 정장 바지를 입어요. — I wear suit pants with a blouse.
+와이셔츠,waisyeocheu,dress shirt,new,2A,2A-4,clothes,출근할 때 와이셔츠에다가 넥타이를 해요. — When I go to work I wear a tie with a dress shirt.
+스웨터,seuweteo,sweater,new,2A,2A-4,clothes,저는 지금 스웨터에다가 청바지를 입었어요. — Right now I'm wearing jeans with a sweater.
+정장 바지,jeongjang baji,suit pants,new,2A,2A-4,clothes,"친구 결혼식이 있어서 정장 바지를 사려고요. — I have a friend's wedding, so I'm going to buy suit pants."
+반바지,banbaji,shorts,new,2A,2A-4,clothes,운동을 할 때 티셔츠에다가 반바지를 입어요. — When I exercise I wear shorts with a T-shirt.
+원피스,wonpiseu,one-piece dress,new,2A,2A-4,clothes,원피스를 사고 싶어요. — I want to buy a dress.
+(옷을) 입다,oseul ipda,to put on (clothes),new,2A,2A-4,clothes,내일 회의가 있어요. 뭘 입을까요? — I have a meeting tomorrow. What shall I wear?
+(넥타이를) 하다,nektaireul hada,to put on (a tie),new,2A,2A-4,clothes,"회의가 있어서 넥타이를 했어요. — I had a meeting, so I put on a tie."
+(운동화를) 신다,undonghwareul sinda,to put on (shoes),new,2A,2A-4,clothes,운동복에다가 등산화를 신으세요. — Wear hiking boots with your sportswear.
+(장갑을) 끼다,janggabeul kkida,to put on (gloves),new,2A,2A-4,clothes,장갑을 끼고 목도리를 해요. — I put on gloves and a muffler.
+(모자를) 쓰다,mojareul sseuda,to put on (a hat),new,2A,2A-4,clothes,야구 모자를 쓰려고 해요. — I'm going to wear a baseball cap.
+여자 친구,yeoja chingu,girlfriend,new,2A,2A-4,clothes,오늘 저녁에 여자 친구를 만나기로 했어요. — I decided to meet my girlfriend this evening.
+시내,sinae,downtown,new,2A,2A-4,clothes,주말에 시내에서 놀기로 했어요. — We decided to hang out downtown at the weekend.
+고르다,goreuda,choose,new,2A,2A-4,clothes,지금 옷을 고르고 있어요. — I'm choosing clothes right now.
+소개팅,sogaeting,blind date,new,2A,2A-4,clothes,"요즘에는 소개팅을 할 때 보통 어떤 옷을 입습니까? — These days, what do people usually wear on a blind date?"
+중요하다,jungyohada,important,new,2A,2A-4,clothes,소개팅을 할 때는 무엇이 중요해요? — What is important on a blind date?
+짐이 적다,jimi jeokda,have little baggage,new,2A,2A-5,home,"짐이 적어서 이사하기 좋아요. — I have little stuff, so moving is easy."
+부엌,bueok,kitchen,new,2A,2A-5,home,"부엌이 넓어서 요리하기가 좋아요. — The kitchen is spacious, so it's good for cooking."
+냉장고,naengjanggo,refrigerator,new,2A,2A-5,home,냉장고를 버리고 싶어요. — I want to throw away the refrigerator.
+버리다,beorida,throw away,new,2A,2A-5,home,"냉장고가 너무 무거워서 혼자 버리지 못해요. — The fridge is too heavy, so I can't throw it away alone."
+이사,isa,moving house,new,2A,2A-5,home,어제 이사 잘 했어요? — Did the move go well yesterday?
+도와주다,dowajuda,help,new,2A,2A-5,home,도와주지 못해서 미안했어요. — I was sorry I couldn't help.
+새집,saejip,new house,new,2A,2A-5,home,새집은 어때요? — How is the new house?
+그렇게,geureoke,"that much, such",new,2A,2A-5,home,그렇게 좋은 집은 아니에요. — It's not such a good house.
+블로그,beulrogeu,blog,new,2A,2A-5,home,블로그에 집을 소개하는 글을 썼어요. — I wrote a blog post introducing my home.
+스트레스를 받다,seuteureseureul batda,get stressed,new,2A,2A-7,health,저는 일이 많을 때 스트레스를 받아요. — I get stressed when I have a lot of work.
+가슴이 답답하다,gaseumi dapdaphada,feel heavy in the chest,new,2A,2A-7,health,"요즘 스트레스를 많이 받아서 가슴이 답답해요. — I'm very stressed these days, so my chest feels tight."
+머리가 복잡하다,meoriga bokjaphada,have a lot on one's mind,new,2A,2A-7,health,"저는 머리가 복잡하면 공원에서 산책해요. — When my head is a mess, I take a walk in the park."
+속이 안 좋다,sogi an jota,feel sick to one's stomach,new,2A,2A-7,health,"밤에 라면을 먹어서 속이 안 좋습니다. — I ate ramyeon at night, so my stomach feels bad."
+얼굴이 붓다,eolguri butda,have a puffy face,new,2A,2A-7,health,"지금 제 얼굴 많이 부었죠? — My face is really swollen now, isn't it?"
+눈이 붓다,nuni butda,have puffy eyes,new,2A,2A-7,health,피곤하면 눈이 부어요. — When I'm tired my eyes get swollen.
+잠이 안 오다,jami an oda,cannot sleep,new,2A,2A-7,health,"저도 요즘 스트레스를 받아서 잠이 안 와요. — I'm stressed these days too, so I can't sleep."
+얼굴에 뭐가 나다,eolgure mwoga nada,have facial breakout,new,2A,2A-7,health,"스트레스를 받으면 얼굴에 뭐가 나요. — When I'm stressed, things break out on my face."
+달다,dalda,sweet,new,2A,2A-7,health,단 음식을 먹으면 기분이 좋아요. — Eating sweet food makes me feel good.
+배우,baeu,actor / actress,new,2A,2A-7,health,좋아하는 배우나 가수를 만나면 뭐 할 거예요? — What will you do if you meet your favourite actor or singer?
+짓다,jitda,to build; to name,new,2A,2A-7,health,이 빌딩은 10년 전에 지었어요. — This building was built 10 years ago.
+젓다,jeotda,stir,new,2A,2A-7,health,우유에 꿀을 넣고 저으세요. — Put honey in the milk and stir.
+울다,ulda,cry,new,2A,2A-7,health,"어제 많이 울어서 눈이 부었어요. — I cried a lot yesterday, so my eyes are swollen."
+생강차,saenggangcha,ginger tea,new,2A,2A-7,health,"생강차를 마시면 감기가 빨리 나을 거예요. — If you drink ginger tea, your cold will get better quickly."
+오랜만,oraenman,after a long time,new,2A,2A-7,health,오랜만에 만나서 이야기를 해요. — We meet after a long time and talk.
+이야기,iyagi,talk,new,2A,2A-7,health,스트레스 이야기를 해요. — We talk about stress.
+자꾸,jakku,again and again,new,2A,2A-7,health,자꾸 매운 음식이 먹고 싶어요. — I keep wanting spicy food.
+어젯밤,eojetbam,last night,new,2A,2A-7,health,어젯밤에 라면을 먹었어요. — I ate ramyeon last night.
+잘 웃다,jal utda,laugh readily,new,2A,2A-8,habits,저는 잘 웃는 사람을 좋아해요. — I like people who smile a lot.
+일찍 자다,iljjik jada,go to bed early,new,2A,2A-8,habits,일찍 자고 일찍 일어나고 싶어요. — I want to go to bed early and get up early.
+일찍 일어나다,iljjik ireonada,get up early,new,2A,2A-8,habits,일찍 자고 일찍 일어나고 싶어요. — I want to go to bed early and get up early.
+골고루,golgoru,evenly,new,2A,2A-8,habits,저는 음식을 골고루 먹어요. — I eat a balanced diet.
+짜증을 잘 내다,jjajeungeul jal naeda,act irritated,new,2A,2A-8,habits,저는 짜증을 잘 내요. — I get irritated easily.
+늦게,neutge,late,new,2A,2A-8,habits,저는 매일 늦게 자고 늦게 일어나요. — I go to bed late and get up late every day.
+야식,yasik,late-night meal,new,2A,2A-8,habits,"어제 야식을 많이 먹어서 속이 좀 안 좋아요. — I ate a lot of late-night snacks yesterday, so my stomach is a bit off."
+혹시,hoksi,by any chance,new,2A,2A-8,habits,머리가 좀 아픈데 혹시 약이 있어요? — I have a bit of a headache; do you happen to have medicine?
+추천하다,chucheonhada,recommend,new,2A,2A-8,habits,추천하고 싶은 것이 있어요? — Is there anything you'd like to recommend?
+안 그래도,an geuraedo,actually,new,2A,2A-8,habits,"안 그래도 피곤해서 커피를 마시고 싶었는데 고마워요. — I was actually tired and wanted coffee anyway, thanks."
+방법,bangbeop,way,new,2A,2A-8,habits,뭐 좋은 방법 없을까요? — Isn't there a good way?
+낮,nat,daytime,new,2A,2A-8,habits,"잠이 안 오면 낮에 가벼운 운동을 해 보세요. — If you can't sleep, try light exercise during the day."
+건강하게,geonganghage,healthily,new,2A,2A-8,habits,건강하게 살 수 있을 거예요. — You'll be able to live healthily.
+고치다,gochida,fix,new,2A,2A-8,habits,늦게 자는 습관을 고치고 싶은데 어떻게 하면 될까요? — I want to fix my habit of sleeping late; what should I do?
+지각,jigak,tardiness,new,2A,2A-8,habits,"늦게 자서 피곤하고 가끔 지각도 합니다. — I sleep late, so I'm tired and sometimes late."
+움직이다,umjigida,move,new,2A,2A-8,habits,낮에 몸을 많이 움직여 보세요. — Try moving your body a lot during the day.
+국,guk,guk; soup,new,2A,2A-9,food,한국에서는 밥과 국을 먹어요. — In Korea people eat rice and soup.
+찌개,jjigae,jjigae; stew,new,2A,2A-9,food,저는 찌개를 시키려고 해요. — I'm going to order a stew.
+탕,tang,tang; soup,new,2A,2A-9,food,무슨 탕을 좋아해요? — What kind of tang do you like?
+떡국,tteokguk,tteokguk,new,2A,2A-9,food,1월 1일에 떡국을 먹어요. — We eat tteokguk on January 1st.
+미역국,miyeokguk,miyeokguk; seaweed soup,new,2A,2A-9,food,한국 사람들은 생일에 미역국을 먹어요. — Koreans eat seaweed soup on their birthday.
+순두부찌개,sundubujjigae,soft bean curd stew,new,2A,2A-9,food,저는 매운 순두부찌개를 좋아해요. — I like spicy soft tofu stew.
+갈비탕,galbitang,short rib soup,new,2A,2A-9,food,갈비탕을 먹을까요? — Shall we have galbitang?
+면,myeon,noodle,new,2A,2A-9,food,저는 면 요리가 먹고 싶어요. — I want to eat a noodle dish.
+국수,guksu,noodle,new,2A,2A-9,food,점심으로 국수를 먹는 게 어때요? — How about noodles for lunch?
+짬뽕,jjamppong,spicy seafood noodle soup,new,2A,2A-9,food,짬뽕은 매운 음식이에요. — Jjamppong is a spicy dish.
+짜장면,jjajangmyeon,noodles in black bean sauce,new,2A,2A-9,food,저는 짜장면으로 정했어요. — I've decided on jajangmyeon.
+칼국수,kalguksu,kalguksu; noodle soup,new,2A,2A-9,food,칼국수를 먹는 게 어때요? — How about kalguksu?
+스파게티,seupageti,spaghetti,new,2A,2A-9,food,여기 스파게티가 아주 맛있어요. — The spaghetti here is very good.
+계산하다,gyesanhada,pay,new,2A,2A-9,food,카드로 계산할까요? — Shall I pay by card?
+현금,hyeongeum,cash,new,2A,2A-9,food,현금으로 계산하는 게 어때요? — How about paying in cash?
+의미,uimi,meaning,new,2A,2A-9,food,이 단어가 어떤 의미예요? — What does this word mean?
+모르다,moreuda,to not know,new,2A,2A-9,food,저도 잘 몰라요. — I don't know either.
+시키다,sikida,order,new,2A,2A-9,food,식당에 전화해서 먹고 싶은 음식을 시키는 게 어때요? — How about calling the restaurant and ordering what you want?
+짜다,jjada,salty,new,2A,2A-9,food,음식이 너무 짜요. — The food is too salty.
+배달,baedal,delivery,new,2A,2A-9,food,"집에서 밥을 먹을 때는 배달을 시켜서 먹습니다. — When I eat at home, I order delivery."
+끓이다,kkeurida,"boil, cook",new,2A,2A-9,food,된장찌개도 끓이고 떡볶이도 만들 겁니다. — I'll cook doenjang stew and make tteokbokki too.
+색,saek,color,new,2A,2A-10,shopping,어떤 색을 좋아해요? — What colour do you like?
+모양,moyang,shape,new,2A,2A-10,shopping,어떤 모양의 가방을 사고 싶어요? — What shape of bag do you want to buy?
+하얗다,hayata,white,new,2A,2A-10,shopping,"저 하얀 바지 주세요. — Give me those white trousers, please."
+까맣다,kkamata,black,new,2A,2A-10,shopping,저는 제 까만 머리가 좋아요. — I like my black hair.
+파랗다,parata,blue,new,2A,2A-10,shopping,파란 바다를 보고 싶어요. — I want to see the blue sea.
+빨갛다,ppalgata,red,new,2A,2A-10,shopping,"저 빨간 장미 주세요. — Those red roses, please."
+노랗다,norata,yellow,new,2A,2A-10,shopping,"저 노란 우산 주세요. — That yellow umbrella, please."
+단순하다,dansunhada,simple,new,2A,2A-10,shopping,디자인이 더 단순하면 좋겠어요. — I wish the design were simpler.
+적당하다,jeokdanghada,appropriate,new,2A,2A-10,shopping,이 가방은 크기가 적당하고 디자인이 단순해요. — This bag is the right size and has a simple design.
+크기,keugi,size,new,2A,2A-10,shopping,크기가 작고 하얀 책상요. — A small white desk.
+디자인,dijain,design,new,2A,2A-10,shopping,"디자인도 단순해서 여기저기에다가 신기 좋을 것 같아요. — The design is simple, so they'll go with lots of things."
+장미,jangmi,rose,new,2A,2A-10,shopping,장미가 정말 예뻐요. — The roses are really pretty.
+길이,giri,length,new,2A,2A-10,shopping,길이가 더 길면 좋겠어요. — I wish it were longer.
+에어컨,eeokeon,air conditioner,new,2A,2A-10,shopping,"더우면 에어컨을 켤까요? — If it's hot, shall I turn on the air conditioner?"
+켜다,kyeoda,turn on,new,2A,2A-10,shopping,텔레비전을 켤까요? — Shall I turn on the TV?
+비슷하다,biseuthada,similar,new,2A,2A-10,shopping,집에 비슷한 운동화가 있어요. — I have similar sneakers at home.
+종이,jongi,paper,new,2A,2A-10,shopping,종이가 많이 있어요. — There is a lot of paper.
+연필,yeonpil,pencil,new,2A,2A-10,shopping,연필로 쓰세요. — Write with a pencil.
+볼펜,bolpen,ballpoint pen,new,2A,2A-10,shopping,빨간색 볼펜이 있어요? — Do you have a red ballpoint pen?
+알아보다,araboda,research,new,2A,2A-11,travel,유명한 여행지를 알아보고 있어요. — I'm looking up famous destinations.
+여행지,yeohaengji,travel destination,new,2A,2A-11,travel,유명한 여행지를 알아보고 있어요. — I'm looking up famous destinations.
+숙소,sukso,accommodation,new,2A,2A-11,travel,좋은 숙소를 알아보고 있어요. — I'm looking into good accommodation.
+교통편,gyotongpyeon,transportation,new,2A,2A-11,travel,교통편을 알아봤어요? — Did you check the transportation?
+비행기표,bihaenggipyo,airline ticket,new,2A,2A-11,travel,비행기표는 예매했어요? — Did you book the plane ticket?
+기차표,gichapyo,train ticket,new,2A,2A-11,travel,기차표는 예매했어요? — Did you book the train ticket?
+예매하다,yemaehada,make a reservation,new,2A,2A-11,travel,기차표는 예매했어요? — Did you book the train ticket?
+엔 서울 타워,en seoul tawo,N Seoul Tower,new,2A,2A-11,travel,엔 서울 타워에 간 적이 있어요. — I have been to N Seoul Tower.
+독일,dogil,Germany,new,2A,2A-11,travel,독일에서 혼자 여행을 해 보고 싶어요. — I want to try travelling alone in Germany.
+설날,seolnal,Seollal,new,2A,2A-11,travel,이번 설날에는 며칠 쉬어요? — How many days off this Seollal?
+드디어,deudieo,finally,new,2A,2A-11,travel,이번 방학에 드디어 친구와 한국에 가요! — This vacation I'm finally going to Korea with a friend!
+벌써,beolsseo,already,new,2A,2A-11,travel,비행기표도 벌써 예매했어요. — I've already booked the plane ticket.
+세우다,seuda,to make (a plan),new,2A,2A-11,travel,방학 계획 다 세웠어요? — Have you made all your vacation plans?
+인천공항,incheongonghang,Incheon Airport,new,2A,2A-11,travel,밤 10시에 인천공항에서 비행기를 탈 거예요. — I'll take the plane at Incheon Airport at 10 p.m.
+도착하다,dochakhada,arrive,new,2A,2A-11,travel,오후 5시에 인천공항에 도착해요. — I arrive at Incheon Airport at 5 p.m.
+홍대,hongdae,Hongdae,new,2A,2A-11,travel,홍대에서 산 옷이 너무 마음에 들어요. — I really like the clothes I bought in Hongdae.
+청계천,cheonggyecheon,Cheonggyecheon,new,2A,2A-11,travel,청계천과 동대문시장이 가까워요. — Cheonggyecheon and Dongdaemun Market are close.
+광화문,gwanghwamun,Gwanghwamun,new,2A,2A-11,travel,광화문의 야경이 예뻐요. — The night view of Gwanghwamun is pretty.
+게스트하우스,geseuteuhauseu,guesthouse,new,2A,2A-11,travel,숙소는 홍대 게스트하우스로 정했어요. — I chose a guesthouse in Hongdae for accommodation.
+공항버스,gonghangbeoseu,airport bus,new,2A,2A-11,travel,공항버스를 타고 홍대로 가요. — I take the airport bus to Hongdae.
+춘천,chuncheon,Chuncheon,new,2A,2A-11,travel,춘천에 한번 가 보세요. — Try going to Chuncheon.
+남이섬,namiseom,Namiseom,new,2A,2A-11,travel,남이섬에서 드라마나 영화를 많이 찍었어요. — Many dramas and films were shot on Nami Island.
+북촌 한옥마을,bukchon hanokmaeul,Bukchon Hanok Village,new,2A,2A-11,travel,북촌 한옥마을의 경치가 아름다워요. — The scenery of Bukchon Hanok Village is beautiful.
+국립중앙박물관,gukripjungangbakmulgwan,National Museum of Korea,new,2A,2A-11,travel,국립중앙박물관에서 예쁜 물건을 많이 팔아요. — The National Museum sells lots of pretty things.
+야경,yagyeong,night view,new,2A,2A-12,travel,거기에서 본 야경이 정말 아름다웠어요. — The night view I saw there was really beautiful.
+전통 음식,jeontong eumsik,traditional food,new,2A,2A-12,travel,한국 전통 음식도 많이 먹어 봤어요? — Did you try a lot of traditional Korean food?
+기념품,ginyeompum,souvenir,new,2A,2A-12,travel,마리 씨에게 주려고 기념품을 샀어요. — I bought a souvenir to give to Mari.
+입에 맞다,ibe matda,suit one's taste,new,2A,2A-12,travel,음식이 입에 잘 맞았어요. — The food suited my taste.
+구경거리,gugyeonggeori,attraction,new,2A,2A-12,travel,"한국은 구경거리가 많고 음식이 입에 맞아서 좋아요. — Korea has lots to see and the food suits me, so I like it."
+번지 점프,beonji jeompeu,bungee jump,new,2A,2A-12,travel,번지 점프를 해 봤어요? — Have you tried bungee jumping?
+남산,namsan,Namsan,new,2A,2A-12,travel,이 사진은 남산에서 찍은 사진이에요. — This photo was taken on Namsan.
+다행,dahaeng,"relief, luckily",new,2A,2A-12,travel,다행이에요. — That's a relief.
+역사,yeoksa,history,new,2A,2A-12,travel,한국의 역사를 알 수 있어서 좋았어요. — It was good to learn about Korean history.
+도장,dojang,stamp,new,2A,2A-12,travel,박물관에서 도장을 만들어 봤어요. — I tried making a stamp at the museum.
+짜오프라야강,jjaopeurayagang,Chao Phraya River,new,2A,2A-12,travel,짜오프라야강에서 본 야경이 아주 아름다웠어요. — The night view on the Chao Phraya River was beautiful.
+그동안,geudongan,meantime,new,2A,2A-12,travel,그동안 쇼핑도 하고 맛있는 음식도 많이 먹어 봤어요. — Meanwhile I shopped and tried lots of tasty food.
+신당동,sindangdong,Sindang-dong,new,2A,2A-12,travel,신당동에서 떡볶이를 먹어 봤는데 정말 맛있었어요. — I tried tteokbokki in Sindang-dong and it was really good.
+나중,najung,later,new,2A,2A-12,travel,나중에 또 여행 오고 싶어요. — I want to come travelling again later.

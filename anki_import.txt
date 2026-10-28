@@ -741,3 +741,146 @@
 발표하다	to present, to give a talk [balpyohada]  반 친구들 앞에서 발표해요. — I present in front of my classmates.	new 2A unit2A-6 verb
 침대	bed [chimdae]  창문 옆에 침대가 놓여 있어요. — The bed is next to the window.	new 2A unit2A-6 objects
 회사에 다니다	to work at a company [hoesae danida]  언니는 회사에 다녀요. — My sister works at a company.	new 2A unit2A-6 phrases
+동아리 활동	club activity [dongari hwaldong]  무슨 동아리 활동을 해요? — What club activities do you do?	new 2A unit2A-3 routine
+데이트	date [deiteu]  일요일마다 데이트를 해요. — I go on a date every Sunday.	new 2A unit2A-3 routine
+출퇴근하다	commute [chultoegeunhada]  저는 보통 출퇴근할 때 음악을 들어요. — I usually listen to music while commuting.	new 2A unit2A-3 routine
+출발하다	depart [chulbalhada]  출발할 때 전화 주세요. — Call me when you leave.	new 2A unit2A-3 routine
+장갑	gloves [janggap]  추울 때 장갑을 껴요. — I wear gloves when it's cold.	new 2A unit2A-4 clothes
+목도리	muffler [mokdori]  목도리를 좀 사려고요. — I'm going to buy a muffler.	new 2A unit2A-4 clothes
+블라우스	blouse [beulrauseu]  블라우스에다가 정장 바지를 입어요. — I wear suit pants with a blouse.	new 2A unit2A-4 clothes
+와이셔츠	dress shirt [waisyeocheu]  출근할 때 와이셔츠에다가 넥타이를 해요. — When I go to work I wear a tie with a dress shirt.	new 2A unit2A-4 clothes
+스웨터	sweater [seuweteo]  저는 지금 스웨터에다가 청바지를 입었어요. — Right now I'm wearing jeans with a sweater.	new 2A unit2A-4 clothes
+정장 바지	suit pants [jeongjang baji]  친구 결혼식이 있어서 정장 바지를 사려고요. — I have a friend's wedding, so I'm going to buy suit pants.	new 2A unit2A-4 clothes
+반바지	shorts [banbaji]  운동을 할 때 티셔츠에다가 반바지를 입어요. — When I exercise I wear shorts with a T-shirt.	new 2A unit2A-4 clothes
+원피스	one-piece dress [wonpiseu]  원피스를 사고 싶어요. — I want to buy a dress.	new 2A unit2A-4 clothes
+(옷을) 입다	to put on (clothes) [oseul ipda]  내일 회의가 있어요. 뭘 입을까요? — I have a meeting tomorrow. What shall I wear?	new 2A unit2A-4 clothes
+(넥타이를) 하다	to put on (a tie) [nektaireul hada]  회의가 있어서 넥타이를 했어요. — I had a meeting, so I put on a tie.	new 2A unit2A-4 clothes
+(운동화를) 신다	to put on (shoes) [undonghwareul sinda]  운동복에다가 등산화를 신으세요. — Wear hiking boots with your sportswear.	new 2A unit2A-4 clothes
+(장갑을) 끼다	to put on (gloves) [janggabeul kkida]  장갑을 끼고 목도리를 해요. — I put on gloves and a muffler.	new 2A unit2A-4 clothes
+(모자를) 쓰다	to put on (a hat) [mojareul sseuda]  야구 모자를 쓰려고 해요. — I'm going to wear a baseball cap.	new 2A unit2A-4 clothes
+여자 친구	girlfriend [yeoja chingu]  오늘 저녁에 여자 친구를 만나기로 했어요. — I decided to meet my girlfriend this evening.	new 2A unit2A-4 clothes
+시내	downtown [sinae]  주말에 시내에서 놀기로 했어요. — We decided to hang out downtown at the weekend.	new 2A unit2A-4 clothes
+고르다	choose [goreuda]  지금 옷을 고르고 있어요. — I'm choosing clothes right now.	new 2A unit2A-4 clothes
+소개팅	blind date [sogaeting]  요즘에는 소개팅을 할 때 보통 어떤 옷을 입습니까? — These days, what do people usually wear on a blind date?	new 2A unit2A-4 clothes
+중요하다	important [jungyohada]  소개팅을 할 때는 무엇이 중요해요? — What is important on a blind date?	new 2A unit2A-4 clothes
+짐이 적다	have little baggage [jimi jeokda]  짐이 적어서 이사하기 좋아요. — I have little stuff, so moving is easy.	new 2A unit2A-5 home
+부엌	kitchen [bueok]  부엌이 넓어서 요리하기가 좋아요. — The kitchen is spacious, so it's good for cooking.	new 2A unit2A-5 home
+냉장고	refrigerator [naengjanggo]  냉장고를 버리고 싶어요. — I want to throw away the refrigerator.	new 2A unit2A-5 home
+버리다	throw away [beorida]  냉장고가 너무 무거워서 혼자 버리지 못해요. — The fridge is too heavy, so I can't throw it away alone.	new 2A unit2A-5 home
+이사	moving house [isa]  어제 이사 잘 했어요? — Did the move go well yesterday?	new 2A unit2A-5 home
+도와주다	help [dowajuda]  도와주지 못해서 미안했어요. — I was sorry I couldn't help.	new 2A unit2A-5 home
+새집	new house [saejip]  새집은 어때요? — How is the new house?	new 2A unit2A-5 home
+그렇게	that much, such [geureoke]  그렇게 좋은 집은 아니에요. — It's not such a good house.	new 2A unit2A-5 home
+블로그	blog [beulrogeu]  블로그에 집을 소개하는 글을 썼어요. — I wrote a blog post introducing my home.	new 2A unit2A-5 home
+스트레스를 받다	get stressed [seuteureseureul batda]  저는 일이 많을 때 스트레스를 받아요. — I get stressed when I have a lot of work.	new 2A unit2A-7 health
+가슴이 답답하다	feel heavy in the chest [gaseumi dapdaphada]  요즘 스트레스를 많이 받아서 가슴이 답답해요. — I'm very stressed these days, so my chest feels tight.	new 2A unit2A-7 health
+머리가 복잡하다	have a lot on one's mind [meoriga bokjaphada]  저는 머리가 복잡하면 공원에서 산책해요. — When my head is a mess, I take a walk in the park.	new 2A unit2A-7 health
+속이 안 좋다	feel sick to one's stomach [sogi an jota]  밤에 라면을 먹어서 속이 안 좋습니다. — I ate ramyeon at night, so my stomach feels bad.	new 2A unit2A-7 health
+얼굴이 붓다	have a puffy face [eolguri butda]  지금 제 얼굴 많이 부었죠? — My face is really swollen now, isn't it?	new 2A unit2A-7 health
+눈이 붓다	have puffy eyes [nuni butda]  피곤하면 눈이 부어요. — When I'm tired my eyes get swollen.	new 2A unit2A-7 health
+잠이 안 오다	cannot sleep [jami an oda]  저도 요즘 스트레스를 받아서 잠이 안 와요. — I'm stressed these days too, so I can't sleep.	new 2A unit2A-7 health
+얼굴에 뭐가 나다	have facial breakout [eolgure mwoga nada]  스트레스를 받으면 얼굴에 뭐가 나요. — When I'm stressed, things break out on my face.	new 2A unit2A-7 health
+달다	sweet [dalda]  단 음식을 먹으면 기분이 좋아요. — Eating sweet food makes me feel good.	new 2A unit2A-7 health
+배우	actor / actress [baeu]  좋아하는 배우나 가수를 만나면 뭐 할 거예요? — What will you do if you meet your favourite actor or singer?	new 2A unit2A-7 health
+짓다	to build; to name [jitda]  이 빌딩은 10년 전에 지었어요. — This building was built 10 years ago.	new 2A unit2A-7 health
+젓다	stir [jeotda]  우유에 꿀을 넣고 저으세요. — Put honey in the milk and stir.	new 2A unit2A-7 health
+울다	cry [ulda]  어제 많이 울어서 눈이 부었어요. — I cried a lot yesterday, so my eyes are swollen.	new 2A unit2A-7 health
+생강차	ginger tea [saenggangcha]  생강차를 마시면 감기가 빨리 나을 거예요. — If you drink ginger tea, your cold will get better quickly.	new 2A unit2A-7 health
+오랜만	after a long time [oraenman]  오랜만에 만나서 이야기를 해요. — We meet after a long time and talk.	new 2A unit2A-7 health
+이야기	talk [iyagi]  스트레스 이야기를 해요. — We talk about stress.	new 2A unit2A-7 health
+자꾸	again and again [jakku]  자꾸 매운 음식이 먹고 싶어요. — I keep wanting spicy food.	new 2A unit2A-7 health
+어젯밤	last night [eojetbam]  어젯밤에 라면을 먹었어요. — I ate ramyeon last night.	new 2A unit2A-7 health
+잘 웃다	laugh readily [jal utda]  저는 잘 웃는 사람을 좋아해요. — I like people who smile a lot.	new 2A unit2A-8 habits
+일찍 자다	go to bed early [iljjik jada]  일찍 자고 일찍 일어나고 싶어요. — I want to go to bed early and get up early.	new 2A unit2A-8 habits
+일찍 일어나다	get up early [iljjik ireonada]  일찍 자고 일찍 일어나고 싶어요. — I want to go to bed early and get up early.	new 2A unit2A-8 habits
+골고루	evenly [golgoru]  저는 음식을 골고루 먹어요. — I eat a balanced diet.	new 2A unit2A-8 habits
+짜증을 잘 내다	act irritated [jjajeungeul jal naeda]  저는 짜증을 잘 내요. — I get irritated easily.	new 2A unit2A-8 habits
+늦게	late [neutge]  저는 매일 늦게 자고 늦게 일어나요. — I go to bed late and get up late every day.	new 2A unit2A-8 habits
+야식	late-night meal [yasik]  어제 야식을 많이 먹어서 속이 좀 안 좋아요. — I ate a lot of late-night snacks yesterday, so my stomach is a bit off.	new 2A unit2A-8 habits
+혹시	by any chance [hoksi]  머리가 좀 아픈데 혹시 약이 있어요? — I have a bit of a headache; do you happen to have medicine?	new 2A unit2A-8 habits
+추천하다	recommend [chucheonhada]  추천하고 싶은 것이 있어요? — Is there anything you'd like to recommend?	new 2A unit2A-8 habits
+안 그래도	actually [an geuraedo]  안 그래도 피곤해서 커피를 마시고 싶었는데 고마워요. — I was actually tired and wanted coffee anyway, thanks.	new 2A unit2A-8 habits
+방법	way [bangbeop]  뭐 좋은 방법 없을까요? — Isn't there a good way?	new 2A unit2A-8 habits
+낮	daytime [nat]  잠이 안 오면 낮에 가벼운 운동을 해 보세요. — If you can't sleep, try light exercise during the day.	new 2A unit2A-8 habits
+건강하게	healthily [geonganghage]  건강하게 살 수 있을 거예요. — You'll be able to live healthily.	new 2A unit2A-8 habits
+고치다	fix [gochida]  늦게 자는 습관을 고치고 싶은데 어떻게 하면 될까요? — I want to fix my habit of sleeping late; what should I do?	new 2A unit2A-8 habits
+지각	tardiness [jigak]  늦게 자서 피곤하고 가끔 지각도 합니다. — I sleep late, so I'm tired and sometimes late.	new 2A unit2A-8 habits
+움직이다	move [umjigida]  낮에 몸을 많이 움직여 보세요. — Try moving your body a lot during the day.	new 2A unit2A-8 habits
+국	guk; soup [guk]  한국에서는 밥과 국을 먹어요. — In Korea people eat rice and soup.	new 2A unit2A-9 food
+찌개	jjigae; stew [jjigae]  저는 찌개를 시키려고 해요. — I'm going to order a stew.	new 2A unit2A-9 food
+탕	tang; soup [tang]  무슨 탕을 좋아해요? — What kind of tang do you like?	new 2A unit2A-9 food
+떡국	tteokguk [tteokguk]  1월 1일에 떡국을 먹어요. — We eat tteokguk on January 1st.	new 2A unit2A-9 food
+미역국	miyeokguk; seaweed soup [miyeokguk]  한국 사람들은 생일에 미역국을 먹어요. — Koreans eat seaweed soup on their birthday.	new 2A unit2A-9 food
+순두부찌개	soft bean curd stew [sundubujjigae]  저는 매운 순두부찌개를 좋아해요. — I like spicy soft tofu stew.	new 2A unit2A-9 food
+갈비탕	short rib soup [galbitang]  갈비탕을 먹을까요? — Shall we have galbitang?	new 2A unit2A-9 food
+면	noodle [myeon]  저는 면 요리가 먹고 싶어요. — I want to eat a noodle dish.	new 2A unit2A-9 food
+국수	noodle [guksu]  점심으로 국수를 먹는 게 어때요? — How about noodles for lunch?	new 2A unit2A-9 food
+짬뽕	spicy seafood noodle soup [jjamppong]  짬뽕은 매운 음식이에요. — Jjamppong is a spicy dish.	new 2A unit2A-9 food
+짜장면	noodles in black bean sauce [jjajangmyeon]  저는 짜장면으로 정했어요. — I've decided on jajangmyeon.	new 2A unit2A-9 food
+칼국수	kalguksu; noodle soup [kalguksu]  칼국수를 먹는 게 어때요? — How about kalguksu?	new 2A unit2A-9 food
+스파게티	spaghetti [seupageti]  여기 스파게티가 아주 맛있어요. — The spaghetti here is very good.	new 2A unit2A-9 food
+계산하다	pay [gyesanhada]  카드로 계산할까요? — Shall I pay by card?	new 2A unit2A-9 food
+현금	cash [hyeongeum]  현금으로 계산하는 게 어때요? — How about paying in cash?	new 2A unit2A-9 food
+의미	meaning [uimi]  이 단어가 어떤 의미예요? — What does this word mean?	new 2A unit2A-9 food
+모르다	to not know [moreuda]  저도 잘 몰라요. — I don't know either.	new 2A unit2A-9 food
+시키다	order [sikida]  식당에 전화해서 먹고 싶은 음식을 시키는 게 어때요? — How about calling the restaurant and ordering what you want?	new 2A unit2A-9 food
+짜다	salty [jjada]  음식이 너무 짜요. — The food is too salty.	new 2A unit2A-9 food
+배달	delivery [baedal]  집에서 밥을 먹을 때는 배달을 시켜서 먹습니다. — When I eat at home, I order delivery.	new 2A unit2A-9 food
+끓이다	boil, cook [kkeurida]  된장찌개도 끓이고 떡볶이도 만들 겁니다. — I'll cook doenjang stew and make tteokbokki too.	new 2A unit2A-9 food
+색	color [saek]  어떤 색을 좋아해요? — What colour do you like?	new 2A unit2A-10 shopping
+모양	shape [moyang]  어떤 모양의 가방을 사고 싶어요? — What shape of bag do you want to buy?	new 2A unit2A-10 shopping
+하얗다	white [hayata]  저 하얀 바지 주세요. — Give me those white trousers, please.	new 2A unit2A-10 shopping
+까맣다	black [kkamata]  저는 제 까만 머리가 좋아요. — I like my black hair.	new 2A unit2A-10 shopping
+파랗다	blue [parata]  파란 바다를 보고 싶어요. — I want to see the blue sea.	new 2A unit2A-10 shopping
+빨갛다	red [ppalgata]  저 빨간 장미 주세요. — Those red roses, please.	new 2A unit2A-10 shopping
+노랗다	yellow [norata]  저 노란 우산 주세요. — That yellow umbrella, please.	new 2A unit2A-10 shopping
+단순하다	simple [dansunhada]  디자인이 더 단순하면 좋겠어요. — I wish the design were simpler.	new 2A unit2A-10 shopping
+적당하다	appropriate [jeokdanghada]  이 가방은 크기가 적당하고 디자인이 단순해요. — This bag is the right size and has a simple design.	new 2A unit2A-10 shopping
+크기	size [keugi]  크기가 작고 하얀 책상요. — A small white desk.	new 2A unit2A-10 shopping
+디자인	design [dijain]  디자인도 단순해서 여기저기에다가 신기 좋을 것 같아요. — The design is simple, so they'll go with lots of things.	new 2A unit2A-10 shopping
+장미	rose [jangmi]  장미가 정말 예뻐요. — The roses are really pretty.	new 2A unit2A-10 shopping
+길이	length [giri]  길이가 더 길면 좋겠어요. — I wish it were longer.	new 2A unit2A-10 shopping
+에어컨	air conditioner [eeokeon]  더우면 에어컨을 켤까요? — If it's hot, shall I turn on the air conditioner?	new 2A unit2A-10 shopping
+켜다	turn on [kyeoda]  텔레비전을 켤까요? — Shall I turn on the TV?	new 2A unit2A-10 shopping
+비슷하다	similar [biseuthada]  집에 비슷한 운동화가 있어요. — I have similar sneakers at home.	new 2A unit2A-10 shopping
+종이	paper [jongi]  종이가 많이 있어요. — There is a lot of paper.	new 2A unit2A-10 shopping
+연필	pencil [yeonpil]  연필로 쓰세요. — Write with a pencil.	new 2A unit2A-10 shopping
+볼펜	ballpoint pen [bolpen]  빨간색 볼펜이 있어요? — Do you have a red ballpoint pen?	new 2A unit2A-10 shopping
+알아보다	research [araboda]  유명한 여행지를 알아보고 있어요. — I'm looking up famous destinations.	new 2A unit2A-11 travel
+여행지	travel destination [yeohaengji]  유명한 여행지를 알아보고 있어요. — I'm looking up famous destinations.	new 2A unit2A-11 travel
+숙소	accommodation [sukso]  좋은 숙소를 알아보고 있어요. — I'm looking into good accommodation.	new 2A unit2A-11 travel
+교통편	transportation [gyotongpyeon]  교통편을 알아봤어요? — Did you check the transportation?	new 2A unit2A-11 travel
+비행기표	airline ticket [bihaenggipyo]  비행기표는 예매했어요? — Did you book the plane ticket?	new 2A unit2A-11 travel
+기차표	train ticket [gichapyo]  기차표는 예매했어요? — Did you book the train ticket?	new 2A unit2A-11 travel
+예매하다	make a reservation [yemaehada]  기차표는 예매했어요? — Did you book the train ticket?	new 2A unit2A-11 travel
+엔 서울 타워	N Seoul Tower [en seoul tawo]  엔 서울 타워에 간 적이 있어요. — I have been to N Seoul Tower.	new 2A unit2A-11 travel
+독일	Germany [dogil]  독일에서 혼자 여행을 해 보고 싶어요. — I want to try travelling alone in Germany.	new 2A unit2A-11 travel
+설날	Seollal [seolnal]  이번 설날에는 며칠 쉬어요? — How many days off this Seollal?	new 2A unit2A-11 travel
+드디어	finally [deudieo]  이번 방학에 드디어 친구와 한국에 가요! — This vacation I'm finally going to Korea with a friend!	new 2A unit2A-11 travel
+벌써	already [beolsseo]  비행기표도 벌써 예매했어요. — I've already booked the plane ticket.	new 2A unit2A-11 travel
+세우다	to make (a plan) [seuda]  방학 계획 다 세웠어요? — Have you made all your vacation plans?	new 2A unit2A-11 travel
+인천공항	Incheon Airport [incheongonghang]  밤 10시에 인천공항에서 비행기를 탈 거예요. — I'll take the plane at Incheon Airport at 10 p.m.	new 2A unit2A-11 travel
+도착하다	arrive [dochakhada]  오후 5시에 인천공항에 도착해요. — I arrive at Incheon Airport at 5 p.m.	new 2A unit2A-11 travel
+홍대	Hongdae [hongdae]  홍대에서 산 옷이 너무 마음에 들어요. — I really like the clothes I bought in Hongdae.	new 2A unit2A-11 travel
+청계천	Cheonggyecheon [cheonggyecheon]  청계천과 동대문시장이 가까워요. — Cheonggyecheon and Dongdaemun Market are close.	new 2A unit2A-11 travel
+광화문	Gwanghwamun [gwanghwamun]  광화문의 야경이 예뻐요. — The night view of Gwanghwamun is pretty.	new 2A unit2A-11 travel
+게스트하우스	guesthouse [geseuteuhauseu]  숙소는 홍대 게스트하우스로 정했어요. — I chose a guesthouse in Hongdae for accommodation.	new 2A unit2A-11 travel
+공항버스	airport bus [gonghangbeoseu]  공항버스를 타고 홍대로 가요. — I take the airport bus to Hongdae.	new 2A unit2A-11 travel
+춘천	Chuncheon [chuncheon]  춘천에 한번 가 보세요. — Try going to Chuncheon.	new 2A unit2A-11 travel
+남이섬	Namiseom [namiseom]  남이섬에서 드라마나 영화를 많이 찍었어요. — Many dramas and films were shot on Nami Island.	new 2A unit2A-11 travel
+북촌 한옥마을	Bukchon Hanok Village [bukchon hanokmaeul]  북촌 한옥마을의 경치가 아름다워요. — The scenery of Bukchon Hanok Village is beautiful.	new 2A unit2A-11 travel
+국립중앙박물관	National Museum of Korea [gukripjungangbakmulgwan]  국립중앙박물관에서 예쁜 물건을 많이 팔아요. — The National Museum sells lots of pretty things.	new 2A unit2A-11 travel
+야경	night view [yagyeong]  거기에서 본 야경이 정말 아름다웠어요. — The night view I saw there was really beautiful.	new 2A unit2A-12 travel
+전통 음식	traditional food [jeontong eumsik]  한국 전통 음식도 많이 먹어 봤어요? — Did you try a lot of traditional Korean food?	new 2A unit2A-12 travel
+기념품	souvenir [ginyeompum]  마리 씨에게 주려고 기념품을 샀어요. — I bought a souvenir to give to Mari.	new 2A unit2A-12 travel
+입에 맞다	suit one's taste [ibe matda]  음식이 입에 잘 맞았어요. — The food suited my taste.	new 2A unit2A-12 travel
+구경거리	attraction [gugyeonggeori]  한국은 구경거리가 많고 음식이 입에 맞아서 좋아요. — Korea has lots to see and the food suits me, so I like it.	new 2A unit2A-12 travel
+번지 점프	bungee jump [beonji jeompeu]  번지 점프를 해 봤어요? — Have you tried bungee jumping?	new 2A unit2A-12 travel
+남산	Namsan [namsan]  이 사진은 남산에서 찍은 사진이에요. — This photo was taken on Namsan.	new 2A unit2A-12 travel
+다행	relief, luckily [dahaeng]  다행이에요. — That's a relief.	new 2A unit2A-12 travel
+역사	history [yeoksa]  한국의 역사를 알 수 있어서 좋았어요. — It was good to learn about Korean history.	new 2A unit2A-12 travel
+도장	stamp [dojang]  박물관에서 도장을 만들어 봤어요. — I tried making a stamp at the museum.	new 2A unit2A-12 travel
+짜오프라야강	Chao Phraya River [jjaopeurayagang]  짜오프라야강에서 본 야경이 아주 아름다웠어요. — The night view on the Chao Phraya River was beautiful.	new 2A unit2A-12 travel
+그동안	meantime [geudongan]  그동안 쇼핑도 하고 맛있는 음식도 많이 먹어 봤어요. — Meanwhile I shopped and tried lots of tasty food.	new 2A unit2A-12 travel
+신당동	Sindang-dong [sindangdong]  신당동에서 떡볶이를 먹어 봤는데 정말 맛있었어요. — I tried tteokbokki in Sindang-dong and it was really good.	new 2A unit2A-12 travel
+나중	later [najung]  나중에 또 여행 오고 싶어요. — I want to come travelling again later.	new 2A unit2A-12 travel
