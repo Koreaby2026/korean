@@ -17,6 +17,7 @@ Each category builds into its own `.apkg` → its own link. Import just the one 
 | `conversation` (учебник) | 21 | `Korean Conversation` | https://koreaby2026.github.io/korean/korean_conversation.apkg |
 | `always-forget` (не запоминаются) | — | `Korean Always Forget` | https://koreaby2026.github.io/korean/korean_forget.apkg |
 | `2A` (учебник, урок 2A) | — | `Korean 2A` | https://koreaby2026.github.io/korean/korean_2a.apkg |
+| `exam` (слова к экзамену 2A, из Exam_prep_pack) | 128 | `Korean 2A Exam` | https://koreaby2026.github.io/korean/korean_2a_exam.apkg |
 
 Regenerate after editing `vocab.csv`: `python build_anki.py`.
 - **`sentences.json`** — 30 sentences for full-translation practice
